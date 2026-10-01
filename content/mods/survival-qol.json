@@ -1,0 +1,13 @@
+{
+  "id": "survival-qol",
+  "name": "Survival QoL",
+  "author": "JoelT",
+  "status": "verified-route",
+  "version": "1.0.0",
+  "supported_builds": ["1076226"],
+  "category": "gameplay",
+  "description": "A controlled tuning route for survival pacing, durability, shroud time, and stamina.",
+  "source_repository": "https://github.com/FeatherMourn/EnshroudedModHub",
+  "related_research": ["capability-audit-20260927"],
+  "known_issues": ["Verified fields are narrower than the full manifest surface."]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://embervault.invalid/schemas/mod.schema.json",
+  "type": "object",
+  "required": ["id", "name", "author", "status", "version", "supported_builds", "description"],
+  "properties": {
+    "id": {"type": "string"},
+    "name": {"type": "string"},
+    "author": {"type": "string"},
+    "status": {"enum": ["stable", "verified-route", "experimental", "research-only", "blocked", "deprecated"]},
+    "version": {"type": "string"},
+    "supported_builds": {"type": "array", "items": {"type": "string"}},
+    "category": {"type": "string"},
+    "description": {"type": "string"},
+    "source_repository": {"type": "string"},
+    "related_research": {"type": "array", "items": {"type": "string"}},
+    "known_issues": {"type": "array", "items": {"type": "string"}}
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "architect-companion",
+  "name": "Architect Companion",
+  "author": "JoelT",
+  "status": "experimental",
+  "version": "1.0.0",
+  "supported_builds": ["1076226"],
+  "category": "building",
+  "description": "Free-cam, FOV, and building-boundary experiments for builders.",
+  "source_repository": "https://github.com/FeatherMourn/EnshroudedModHub",
+  "related_research": ["builder-placement-feasibility-20260927"],
+  "known_issues": ["Runtime and multiplayer behavior require separate validation."]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "custom-furniture",
+  "name": "Custom Furniture Studio",
+  "author": "JoelT",
+  "status": "research-only",
+  "version": "1.0.0",
+  "supported_builds": ["1076226"],
+  "category": "content",
+  "description": "A donor-resource workflow for studying independent furniture registration and visual consumption.",
+  "source_repository": "https://github.com/FeatherMourn/EnshroudedModHub",
+  "related_research": ["furniture-clone-registration"],
+  "known_issues": ["A valid runtime registration does not yet prove visible in-game rendering."]
+}

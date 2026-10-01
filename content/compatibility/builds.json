@@ -1,0 +1,6 @@
+{
+  "schema": "embervault.compatibility.v1",
+  "builds": [
+    {"id": "1076226", "label": "Recorded research build", "notes": "Primary evidence baseline for current Control Center research."}
+  ]
+}
