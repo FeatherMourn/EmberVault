@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-01T17:45:28.427958+00:00",
+  "contract_versions": {
+    "module_manifest": 1,
+    "package_manifest": 1,
+    "research_record": 1,
+    "content_project": 1,
+    "tuning_adapter": 1
+  },
+  "packages": [
+    {
+      "id": "embervault.example-mod",
+      "name": "Embervault Example Mod",
+      "version": "0.1.0",
+      "author": "Embervault",
+      "description": "A safe sample package used to demonstrate profile-scoped enablement.",
+      "package_type": "mod",
+      "required_builds": [],
+      "dependencies": [],
+      "path": null
+    }
+  ],
+  "modules": [
+    {"id": "embervault.content-creator", "name": "Content Creator Worker", "version": "0.1.0", "publisher": "Embervault", "executable": "content_stub.py", "minimum_core_version": "0.1.0", "capabilities": ["content-creator"], "feature_state": "experimental", "entrypoint": null, "path": null},
+    {"id": "embervault.example", "name": "Example Module", "version": "0.1.0", "publisher": "Embervault", "executable": null, "minimum_core_version": "0.1.0", "capabilities": ["example.inspect"], "feature_state": "experimental", "entrypoint": "module.py", "path": null},
+    {"id": "embervault.research", "name": "Research Lab Worker", "version": "0.1.0", "publisher": "Embervault", "executable": "research_stub.py", "minimum_core_version": "0.1.0", "capabilities": ["research"], "feature_state": "experimental", "entrypoint": null, "path": null},
+    {"id": "embervault.trainer", "name": "Trainer (Guarded Stub)", "version": "0.1.0", "publisher": "Embervault", "executable": "trainer_stub.py", "minimum_core_version": "0.1.0", "capabilities": ["trainer"], "feature_state": "experimental", "entrypoint": null, "path": null},
+    {"id": "embervault.tuning-audit", "name": "Game Settings Audit", "version": "0.1.0", "publisher": "Embervault", "executable": "tuning_stub.py", "minimum_core_version": "0.1.0", "capabilities": ["tuning-audit"], "feature_state": "experimental", "entrypoint": null, "path": null}
+  ],
+  "knowledge": [
+    {"id": "evidence-before-claims", "title": "Evidence before in-game claims", "category": "Research", "summary": "An offline build or registration result does not prove visible in-game behavior.", "content": "Treat successful validation, packaging, or runtime registration as an intermediate result only. A feature should remain experimental or research-only until the target Enshrouded build has fresh runtime evidence and, where relevant, in-game visual confirmation. Record the build context and limitations before promoting the result.", "published_at": "seeded"},
+    {"id": "game-settings-adapter-boundary", "title": "Gameplay settings require an adapter", "category": "Research", "summary": "Staged tuning is portable input, not a direct game mutation.", "content": "The installation exposes client preference settings but no supported native gameplay-tuning document. EmberVault therefore exports staged profile values and keeps live application behind an explicitly identified mod or tuning adapter that declares its input contract, backup requirements, mutation scope, and verification procedure.", "published_at": "seeded"},
+    {"id": "modules", "title": "Module boundaries", "category": "Architecture", "summary": "Modules use contracts and explicit capability boundaries.", "content": "Normal workflows can be embedded in Control Center. Trainer, Research, and other higher-risk tools may run as separate processes with an explicit launch context.", "published_at": "seeded"},
+    {"id": "profiles", "title": "Profiles and isolation", "category": "Core", "summary": "Use separate profiles for stable play and research.", "content": "The Default profile is intended for stable play. The Research profile is an isolated surface for experimental settings and evidence.", "published_at": "seeded"},
+    {"id": "save-safety", "title": "Save safety workflow", "category": "Safety", "summary": "Inspect and protect saves before experiments.", "content": "Save Manager is inspection, backup, verification, restore preview, and safe restore only. It does not directly edit save contents.", "published_at": "seeded"}
+  ],
+  "research": [],
+  "content_projects": []
+}
