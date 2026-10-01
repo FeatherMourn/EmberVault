@@ -23,6 +23,9 @@ def validate(payload: dict) -> None:
     for name in ("packages", "modules", "knowledge", "research", "content_projects"):
         if not isinstance(payload[name], list):
             raise ValueError(f"Catalog collection is not an array: {name}")
+    for item in payload["modules"]:
+        if not isinstance(item, dict) or item.get("process_mode") not in {"embedded", "separate"}:
+            raise ValueError("Module records must declare embedded or separate process_mode")
 
 
 def main() -> int:
