@@ -31,7 +31,7 @@ runtime registration does not automatically prove visible in-game behavior.
 ## Related repositories
 
 - Runtime and Control Center: https://github.com/FeatherMourn/EnshroudedModHub
-- Public content source: https://github.com/FeatherMourn/EmberVault
+- Public content source: https://github.com/FeatherMourn/EmberVault-Web
 
 ## License
 
