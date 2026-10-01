@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-01T18:04:50.777105+00:00",
+  "generated_at": "2026-10-01T18:11:29.672307+00:00",
   "contract_versions": {
     "module_manifest": 1,
     "package_manifest": 1,
@@ -26,7 +26,7 @@
       "id": "embervault.content-creator",
       "name": "Content Creator Worker",
       "version": "0.1.0",
-      "publisher": "Embervault",
+      "publisher": "EmberVault",
       "executable": "content_stub.py",
       "minimum_core_version": "0.1.0",
       "capabilities": [
@@ -40,7 +40,7 @@
       "id": "embervault.example",
       "name": "Example Module",
       "version": "0.1.0",
-      "publisher": "Embervault",
+      "publisher": "EmberVault",
       "executable": null,
       "minimum_core_version": "0.1.0",
       "capabilities": [
@@ -54,7 +54,7 @@
       "id": "embervault.research",
       "name": "Research Lab Worker",
       "version": "0.1.0",
-      "publisher": "Embervault",
+      "publisher": "EmberVault",
       "executable": "research_stub.py",
       "minimum_core_version": "0.1.0",
       "capabilities": [
@@ -68,7 +68,7 @@
       "id": "embervault.trainer",
       "name": "Trainer (Guarded Stub)",
       "version": "0.1.0",
-      "publisher": "Embervault",
+      "publisher": "EmberVault",
       "executable": "trainer_stub.py",
       "minimum_core_version": "0.1.0",
       "capabilities": [
@@ -82,7 +82,7 @@
       "id": "embervault.tuning-audit",
       "name": "Game Settings Audit",
       "version": "0.1.0",
-      "publisher": "Embervault",
+      "publisher": "EmberVault",
       "executable": "tuning_stub.py",
       "minimum_core_version": "0.1.0",
       "capabilities": [
