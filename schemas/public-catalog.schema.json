@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://embervault.local/contracts/catalog.schema.json",
+  "title": "EmberVault Public Catalog",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "contract_versions", "packages", "modules", "knowledge", "research", "content_projects"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "generated_at": {"type": "string", "minLength": 1},
+    "contract_versions": {
+      "type": "object",
+      "required": ["module_manifest", "package_manifest", "research_record", "content_project", "tuning_adapter"],
+      "properties": {
+        "module_manifest": {"type": "integer", "minimum": 1},
+        "package_manifest": {"type": "integer", "minimum": 1},
+        "research_record": {"type": "integer", "minimum": 1},
+        "content_project": {"type": "integer", "minimum": 1},
+        "tuning_adapter": {"type": "integer", "minimum": 1}
+      },
+      "additionalProperties": false
+    },
+    "packages": {"type": "array", "items": {"type": "object"}},
+    "modules": {"type": "array", "items": {"type": "object"}},
+    "knowledge": {"type": "array", "items": {"type": "object"}},
+    "research": {"type": "array", "items": {"type": "object"}},
+    "content_projects": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": false
+}
