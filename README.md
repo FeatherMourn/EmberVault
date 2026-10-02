@@ -37,6 +37,10 @@ The repository includes a dependency-free static catalog at `index.html`. It
 reads only the sanitized `embervault-catalog.json` snapshot and never exposes
 private profiles, save backups, logs, or unpublished research evidence.
 
+The included Pages workflow validates the catalog and public submissions before
+deploying the static catalog. Enable GitHub Pages with **GitHub Actions** as
+the source in the repository settings; no external hosting service is needed.
+
 ## Related repositories
 
 - Runtime and Control Center: https://github.com/FeatherMourn/EnshroudedModHub
