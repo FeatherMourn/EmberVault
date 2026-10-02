@@ -28,6 +28,10 @@ The website should preserve the distinction between verified, experimental,
 research-only, blocked, and unsupported work. A successful offline build or
 runtime registration does not automatically prove visible in-game behavior.
 
+Contribution and research-submission rules are documented in
+[`CONTRIBUTING.md`](CONTRIBUTING.md). Public records require review and must
+not contain private workspace data.
+
 The repository includes a dependency-free static catalog at `index.html`. It
 reads only the sanitized `embervault-catalog.json` snapshot and never exposes
 private profiles, save backups, logs, or unpublished research evidence.
