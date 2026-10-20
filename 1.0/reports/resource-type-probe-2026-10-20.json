@@ -1,0 +1,14 @@
+{
+  "probe_id": "embervault_resource_type_probe_sf",
+  "probe_name": "Resource Type Probe",
+  "loader": "ShroudForge",
+  "game_build": "39026384728",
+  "evidence_state": "observed",
+  "collection_status": "completed",
+  "read_only": true,
+  "type_count": 146,
+  "limitations": [
+    "This records visible resource types only; it does not inspect every payload.",
+    "A type being visible does not prove that it is writable or safe to mutate."
+  ]
+}
