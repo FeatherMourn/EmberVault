@@ -1,0 +1,632 @@
+{
+  "schemaVersion": "1.0",
+  "catalogId": "enshrouded-kfc",
+  "generatedAt": "2026-10-19T18:44:54.4203973Z",
+  "gameBuild": "current local install",
+  "provenance": {
+    "kfcExport": "H:\\enshroudedresearch\\kfc-export-20261019-113420",
+    "typesCache": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\.cache\\types.json",
+    "luaDefinitions": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\.cache\\lua",
+    "readOnly": true
+  },
+  "summary": {
+    "typeRecords": 12646,
+    "sequenceTypes": 157,
+    "sequenceResourceFolders": 4,
+    "resourceFolders": 146,
+    "structuredFiles": 91814
+  },
+  "capabilities": [
+    "search readable type names and hashes",
+    "inspect KFC resource records",
+    "generate ShroudForge type hints and lookup templates",
+    "compare future exports by type and hash",
+    "retain provenance and game-build context"
+  ],
+  "consumers": [
+    {
+      "name": "EmberVault",
+      "uses": [
+        "knowledge catalog",
+        "tuning research",
+        "resource and recipe discovery",
+        "compatibility comparisons"
+      ]
+    },
+    {
+      "name": "ShroudForge",
+      "uses": [
+        "Lua type hints",
+        "resource lookup",
+        "mod template generation",
+        "safe read-only references"
+      ]
+    }
+  ],
+  "resourceFolders": [
+    {
+      "name": "AchievementDefinitionResource",
+      "files": 1
+    },
+    {
+      "name": "ActorSequenceCollectionResource",
+      "files": 1
+    },
+    {
+      "name": "ActorSequenceResource",
+      "files": 2157
+    },
+    {
+      "name": "AmbientCollectionResource",
+      "files": 1
+    },
+    {
+      "name": "AmbientEnvironmentMapResource",
+      "files": 1
+    },
+    {
+      "name": "AmbientEventSoundsResource",
+      "files": 1
+    },
+    {
+      "name": "AmbientParameterResource",
+      "files": 1
+    },
+    {
+      "name": "AmbientPostProcessingResource",
+      "files": 1
+    },
+    {
+      "name": "AmbientSfxCollectionResource",
+      "files": 1
+    },
+    {
+      "name": "AmbientVfxCollectionResource",
+      "files": 1
+    },
+    {
+      "name": "AnimationGraphResource2_0",
+      "files": 279
+    },
+    {
+      "name": "AnimationSequenceContainer",
+      "files": 2894
+    },
+    {
+      "name": "AtmosphereResource",
+      "files": 1
+    },
+    {
+      "name": "AttributeContainerResource",
+      "files": 1
+    },
+    {
+      "name": "BalancingTable",
+      "files": 1
+    },
+    {
+      "name": "BaseAttributeResource",
+      "files": 16
+    },
+    {
+      "name": "BiomeMapResource",
+      "files": 5
+    },
+    {
+      "name": "BlendProfileResource",
+      "files": 1
+    },
+    {
+      "name": "BoneMaskResource",
+      "files": 9
+    },
+    {
+      "name": "BuffTypeCollectionResource",
+      "files": 1
+    },
+    {
+      "name": "BuildingMaterialBlendingResource",
+      "files": 1
+    },
+    {
+      "name": "BuildingMaterialParametersResource",
+      "files": 1
+    },
+    {
+      "name": "CameraStatesManager",
+      "files": 1
+    },
+    {
+      "name": "CameraStatesOverrideConfig",
+      "files": 1
+    },
+    {
+      "name": "CardClusterResource",
+      "files": 530
+    },
+    {
+      "name": "CharacterPresetCollection",
+      "files": 1
+    },
+    {
+      "name": "CharacterScenePostProcessingResource",
+      "files": 1
+    },
+    {
+      "name": "CommerceProductCollection",
+      "files": 1
+    },
+    {
+      "name": "DefaultInventoryResource",
+      "files": 420
+    },
+    {
+      "name": "DefaultLootLabelCollectionResource",
+      "files": 1
+    },
+    {
+      "name": "DetailScatterResource",
+      "files": 2
+    },
+    {
+      "name": "DevEnemyArsenalRegistryResource",
+      "files": 1
+    },
+    {
+      "name": "DevJournalRegistryResource",
+      "files": 1
+    },
+    {
+      "name": "EmoteResource",
+      "files": 1
+    },
+    {
+      "name": "EnemyArsenalRegistryResource",
+      "files": 1
+    },
+    {
+      "name": "EnemyDebugMenu",
+      "files": 1
+    },
+    {
+      "name": "EntityProxyModelSetResource",
+      "files": 1
+    },
+    {
+      "name": "FbUiBundle",
+      "files": 1
+    },
+    {
+      "name": "FeetIKSettings",
+      "files": 2
+    },
+    {
+      "name": "FishingEffectResource",
+      "files": 1
+    },
+    {
+      "name": "FishSpawnTableResource",
+      "files": 30
+    },
+    {
+      "name": "FogVoxelMappingResource",
+      "files": 5
+    },
+    {
+      "name": "Game38ClientResources",
+      "files": 1
+    },
+    {
+      "name": "Game38ServerResources",
+      "files": 1
+    },
+    {
+      "name": "GameKnowledgeQueryResourceDb",
+      "files": 1
+    },
+    {
+      "name": "GameKnowledgeQueryTriggerResource",
+      "files": 1
+    },
+    {
+      "name": "GameKnowledgeResource",
+      "files": 1
+    },
+    {
+      "name": "GameSettingsPresetsResource",
+      "files": 1
+    },
+    {
+      "name": "GiVoxelBuildingMaterialResource",
+      "files": 1
+    },
+    {
+      "name": "GpcResource",
+      "files": 74
+    },
+    {
+      "name": "GuidRegistryResource",
+      "files": 1
+    },
+    {
+      "name": "IblResource",
+      "files": 2
+    },
+    {
+      "name": "ImpactProgram",
+      "files": 570
+    },
+    {
+      "name": "ImpactRegistryResource",
+      "files": 1
+    },
+    {
+      "name": "IngameTimeConfig",
+      "files": 1
+    },
+    {
+      "name": "ItemInfo",
+      "files": 4262
+    },
+    {
+      "name": "ItemKnowledgeResource",
+      "files": 1
+    },
+    {
+      "name": "ItemRegistryResource",
+      "files": 1
+    },
+    {
+      "name": "JointAnimation",
+      "files": 5459
+    },
+    {
+      "name": "JournalRegistryResource",
+      "files": 1
+    },
+    {
+      "name": "LocaTagCollectionResource",
+      "files": 1
+    },
+    {
+      "name": "LogicSystemResource",
+      "files": 1
+    },
+    {
+      "name": "LootableItemsResource",
+      "files": 1
+    },
+    {
+      "name": "LveAnimation",
+      "files": 578
+    },
+    {
+      "name": "MapMarkerRegistryResource",
+      "files": 1
+    },
+    {
+      "name": "MaterialFeedback",
+      "files": 274
+    },
+    {
+      "name": "MaterialFeedbackCollectionResource",
+      "files": 1
+    },
+    {
+      "name": "MidiResource",
+      "files": 15
+    },
+    {
+      "name": "MidiSongCollection",
+      "files": 1
+    },
+    {
+      "name": "MidiSongResource",
+      "files": 15
+    },
+    {
+      "name": "ModelHierarchyResource",
+      "files": 257
+    },
+    {
+      "name": "NotifierResource",
+      "files": 2319
+    },
+    {
+      "name": "NpcCollection",
+      "files": 1
+    },
+    {
+      "name": "Perk",
+      "files": 365
+    },
+    {
+      "name": "PerkCollectionResource",
+      "files": 1
+    },
+    {
+      "name": "Ps5ActivityCollection",
+      "files": 1
+    },
+    {
+      "name": "RecipeRegistryResource",
+      "files": 1
+    },
+    {
+      "name": "RenderClothColliderResource",
+      "files": 27
+    },
+    {
+      "name": "RenderDecal",
+      "files": 52
+    },
+    {
+      "name": "RenderMaterialResource",
+      "files": 3458
+    },
+    {
+      "name": "RenderModel",
+      "files": 10470
+    },
+    {
+      "name": "RenderModelChunkModelResource",
+      "files": 1609
+    },
+    {
+      "name": "RenderResources",
+      "files": 1
+    },
+    {
+      "name": "RenderSettingsGpuPresetsResource",
+      "files": 1
+    },
+    {
+      "name": "RenderSystemResource",
+      "files": 1
+    },
+    {
+      "name": "RenderTextureResource",
+      "files": 304
+    },
+    {
+      "name": "RenderWaterResource",
+      "files": 1
+    },
+    {
+      "name": "RenderWeatherResource",
+      "files": 1
+    },
+    {
+      "name": "RetargetDataResource",
+      "files": 3
+    },
+    {
+      "name": "RootMotionAnimation",
+      "files": 578
+    },
+    {
+      "name": "SamplerInstrumentResource",
+      "files": 7
+    },
+    {
+      "name": "SceneEntityChunkResource",
+      "files": 1609
+    },
+    {
+      "name": "SceneRandomLootResource",
+      "files": 5
+    },
+    {
+      "name": "SceneResource",
+      "files": 5
+    },
+    {
+      "name": "SceneWaterEntityResource",
+      "files": 1609
+    },
+    {
+      "name": "SceneWhiteboxLabelResource",
+      "files": 5
+    },
+    {
+      "name": "SequenceResource",
+      "files": 2899
+    },
+    {
+      "name": "SimpleWorldMaterialResource",
+      "files": 1
+    },
+    {
+      "name": "SkillTreeResource",
+      "files": 1
+    },
+    {
+      "name": "SlopeDefinition",
+      "files": 1
+    },
+    {
+      "name": "SoundContainerResource",
+      "files": 6940
+    },
+    {
+      "name": "SoundResource",
+      "files": 16472
+    },
+    {
+      "name": "SoundReverbCollectionResource",
+      "files": 1
+    },
+    {
+      "name": "SoundReverbEarlyReflectionsResource",
+      "files": 1
+    },
+    {
+      "name": "SoundReverbLateReflectionsResource",
+      "files": 1
+    },
+    {
+      "name": "SoundReverbPresetResource",
+      "files": 7
+    },
+    {
+      "name": "SoundReverbPresetsResource",
+      "files": 1
+    },
+    {
+      "name": "SoundWaterCollectionResource",
+      "files": 1
+    },
+    {
+      "name": "SoundWaterfallParametersResource",
+      "files": 1
+    },
+    {
+      "name": "SoundWaterFlowScenariosResource",
+      "files": 1
+    },
+    {
+      "name": "TargetSelectionSettings",
+      "files": 1
+    },
+    {
+      "name": "TemplateCollectionResource",
+      "files": 1
+    },
+    {
+      "name": "TemplateResource",
+      "files": 12267
+    },
+    {
+      "name": "TerraformingEfficiencyRegistryResource",
+      "files": 1
+    },
+    {
+      "name": "TrashLootTableResource",
+      "files": 7
+    },
+    {
+      "name": "TwitchDropCollection",
+      "files": 1
+    },
+    {
+      "name": "UiFontResource",
+      "files": 1
+    },
+    {
+      "name": "UiMapResource",
+      "files": 1
+    },
+    {
+      "name": "UiTextureResource",
+      "files": 5699
+    },
+    {
+      "name": "UiWorldEventTriggerCollection",
+      "files": 1
+    },
+    {
+      "name": "VfxCurveResource",
+      "files": 8
+    },
+    {
+      "name": "VfxJointCollectionResource",
+      "files": 30
+    },
+    {
+      "name": "VfxMeshResource",
+      "files": 638
+    },
+    {
+      "name": "VfxResource",
+      "files": 1573
+    },
+    {
+      "name": "VfxSystemResource",
+      "files": 1
+    },
+    {
+      "name": "VoiceoverResource",
+      "files": 1273
+    },
+    {
+      "name": "VoicePackDirectoryResource",
+      "files": 1
+    },
+    {
+      "name": "VoicePackResource",
+      "files": 10
+    },
+    {
+      "name": "VolumetricFog3ModelResource",
+      "files": 169
+    },
+    {
+      "name": "VolumetricFog3Resource",
+      "files": 1
+    },
+    {
+      "name": "VoxelBlueprintConfig",
+      "files": 7
+    },
+    {
+      "name": "VoxelBlueprintItemRegistryResource",
+      "files": 1
+    },
+    {
+      "name": "VoxelBlueprintMaterialPoolRegistryResource",
+      "files": 1
+    },
+    {
+      "name": "VoxelMaterialVfxDataResource",
+      "files": 1
+    },
+    {
+      "name": "VoxelModelResource",
+      "files": 78
+    },
+    {
+      "name": "VoxelTemperatureResource",
+      "files": 5
+    },
+    {
+      "name": "VoxelWorldFog3Resource",
+      "files": 5
+    },
+    {
+      "name": "VoxelWorldResource",
+      "files": 145
+    },
+    {
+      "name": "WaterChunkResource",
+      "files": 1604
+    },
+    {
+      "name": "WaterDisplacingResource",
+      "files": 1604
+    },
+    {
+      "name": "WaterSurfaceEffectMaterialResource",
+      "files": 2
+    },
+    {
+      "name": "WaterWorldResource",
+      "files": 5
+    },
+    {
+      "name": "WeatherSystemResource",
+      "files": 1
+    },
+    {
+      "name": "WorkshopRegistryResource",
+      "files": 1
+    },
+    {
+      "name": "WorldMaterialBlending2Resource",
+      "files": 1
+    },
+    {
+      "name": "ZoneVisualizationResource",
+      "files": 1
+    }
+  ]
+}

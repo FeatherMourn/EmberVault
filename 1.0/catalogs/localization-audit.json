@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-10-19T20:45:30.5783554Z",
+  "source": "H:\\enshroudedresearch\\kfc-export-20261019-113420\\item-recipe-catalog.json",
+  "items": {
+    "total": 4262,
+    "withLocalizationTag": 4202,
+    "debugNameFallback": 4262
+  },
+  "recipes": {
+    "total": 2536,
+    "withRecipeName": 13,
+    "debugNameFallback": 2536
+  },
+  "status": "KFC export exposes localization identifiers and hashed bundles, not plain English strings"
+}

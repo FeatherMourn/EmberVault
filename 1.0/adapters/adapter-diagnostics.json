@@ -1,0 +1,1191 @@
+{
+  "schema_version": 1,
+  "build": "39026384728",
+  "adapter_matrix": [
+    "Loader compatibility  \u00b7  READY  \u00b7  health 80  \u00b7  installed runtime inspected",
+    "Parser lifecycle  \u00b7  READY  \u00b7  health 80  \u00b7  runtime parser reported ready",
+    "KFC resource inventory  \u00b7  AVAILABLE  \u00b7  health 40  \u00b7  local contract is defined",
+    "Runtime capability discovery  \u00b7  READY  \u00b7  health 80  \u00b7  exact build profile matched",
+    "Evidence and provenance  \u00b7  AVAILABLE  \u00b7  health 40  \u00b7  local contract is defined",
+    "Guarded runtime operations  \u00b7  GATED  \u00b7  health 10  \u00b7  requires explicit permission, readback, and rollback evidence"
+  ],
+  "adapter_health": [
+    "Loader compatibility \u00b7 80 / 100",
+    "Parser lifecycle \u00b7 80 / 100",
+    "KFC resource inventory \u00b7 40 / 100",
+    "Runtime capability discovery \u00b7 80 / 100",
+    "Evidence and provenance \u00b7 40 / 100",
+    "Guarded runtime operations \u00b7 10 / 100"
+  ],
+  "probe_history": [
+    {
+      "probe_id": "resources",
+      "status": "succeeded",
+      "build": "39026384728",
+      "message": "Resource service is reported ready",
+      "evidence_id": null,
+      "details": {}
+    },
+    {
+      "probe_id": "runtime",
+      "status": "succeeded",
+      "build": "39026384728",
+      "message": "Local runtime inspection is available",
+      "evidence_id": null,
+      "details": {}
+    },
+    {
+      "probe_id": "parser",
+      "status": "succeeded",
+      "build": "39026384728",
+      "message": "KFC runtime reports ready",
+      "evidence_id": null,
+      "details": {}
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "shroudforge-20261020115429",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:29.770499+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115433",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:33.541161+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115435",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:35.319823+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115437",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:37.327722+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115439",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:39.320305+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115441",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:41.323383+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115444",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:44.320443+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115445",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:45.326173+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115447",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:47.318827+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115449",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:49.333366+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115451",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:51.332076+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115453",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:53.326490+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115455",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:55.327255+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115457",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:57.326464+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115459",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:54:59.339360+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115501",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:01.326883+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115503",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:03.335683+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115505",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:05.339934+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115507",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:07.345462+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115509",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:09.341250+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115511",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:11.338439+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115513",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:13.398804+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115515",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:15.341652+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115517",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:17.392519+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115519",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:19.346511+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115521",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:21.348035+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115523",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:23.339180+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115526",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:26.344143+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115528",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:28.289123+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115531",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:31.450160+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115533",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:33.374887+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115535",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:35.493354+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115537",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:37.563166+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115539",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:39.382791+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115541",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:41.374529+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115543",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:43.371519+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115545",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:45.380177+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115547",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:47.375391+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115549",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:49.365704+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115551",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:51.361048+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115553",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:53.390781+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115555",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:55.383763+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115557",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:57.364853+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115559",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:55:59.463448+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115601",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:01.379671+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115603",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:03.362620+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115605",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:05.393907+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115607",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:07.362089+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": false,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115609",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:09.390047+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115611",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:11.440284+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115613",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:13.539914+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115615",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:15.377845+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115617",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:17.471074+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115619",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:19.400425+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115621",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:21.419823+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115623",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:23.429139+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115625",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:25.413769+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115627",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:27.442528+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115629",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:29.446266+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115631",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:31.464363+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115633",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:33.572239+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115635",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:35.434325+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115637",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:37.487754+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115639",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:39.446540+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115641",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:41.418204+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115643",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:43.432759+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115645",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:45.421363+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115647",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:47.427843+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115649",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:49.449998+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115651",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:51.429802+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115653",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:53.430610+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115655",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:55.435583+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "shroudforge-20261020115657",
+      "subject": "ShroudForge runtime",
+      "kind": "runtime-inspection",
+      "build": "39026384728",
+      "source": "local installation",
+      "result": "ready",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:57.482929+00:00",
+      "details": {
+        "status": "Ready",
+        "parser_ready": true,
+        "issues": []
+      }
+    },
+    {
+      "evidence_id": "probe-parser-20261020115659",
+      "subject": "parser",
+      "kind": "read-only-probe",
+      "build": "39026384728",
+      "source": "local runtime inspection",
+      "result": "succeeded",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:56:59.786318+00:00",
+      "details": {
+        "message": "KFC runtime reports ready",
+        "snapshot_status": "Ready"
+      }
+    },
+    {
+      "evidence_id": "probe-runtime-20261020115700",
+      "subject": "runtime",
+      "kind": "read-only-probe",
+      "build": "39026384728",
+      "source": "local runtime inspection",
+      "result": "succeeded",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:57:00.682951+00:00",
+      "details": {
+        "message": "Local runtime inspection is available",
+        "snapshot_status": "Ready"
+      }
+    },
+    {
+      "evidence_id": "probe-resources-20261020115701",
+      "subject": "resources",
+      "kind": "read-only-probe",
+      "build": "39026384728",
+      "source": "local runtime inspection",
+      "result": "succeeded",
+      "confidence": "observed",
+      "created_at": "2026-10-20T18:57:01.570719+00:00",
+      "details": {
+        "message": "Resource service is reported ready",
+        "snapshot_status": "Ready"
+      }
+    }
+  ],
+  "contracts": {
+    "SDK contract": "passed",
+    "Loader inspection": "passed",
+    "Mutation safety gate": "passed"
+  },
+  "read_only": true
+}
