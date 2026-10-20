@@ -1,0 +1,22 @@
+{
+  "registry_version": "1.0",
+  "game_build": "39026384728",
+  "loader": "ShroudForge",
+  "probes": [
+    {"id":"embervault_api_capability_probe_sf","name":"API Capability Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"none"},
+    {"id":"embervault_resource_type_probe_sf","name":"Resource Type Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"previous EML result; SF conversion pending"},
+    {"id":"embervault_iteminfo_safe_probe_sf","name":"ItemInfo Safe Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"none"},
+    {"id":"embervault_localization_probe_sf","name":"Localization Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"none"},
+    {"id":"embervault_loca_tag_probe_sf","name":"Localization Tag Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"none"},
+    {"id":"embervault_field_reference_probe_sf","name":"Field Reference Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"none"},
+    {"id":"embervault_nested_reference_probe_sf","name":"Nested Reference Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"none"},
+    {"id":"embervault_reference_value_probe_sf","name":"Reference Value Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"none"},
+    {"id":"embervault_relationship_inventory_sf","name":"Relationship Inventory Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"none"},
+    {"id":"embervault_platform_inventory_sf","name":"Platform Inventory Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"none"},
+    {"id":"embervault_donor_candidate_probe_sf","name":"Donor Candidate Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"none"}
+  ],
+  "adapters": [
+    {"id":"resource-type-inventory","name":"Resource Type Inventory Adapter","status":"needs_testing","build":"39026384728","permissions":["runtime","read-only"],"readback":false,"rollback":false},
+    {"id":"kfc-resource-catalog","name":"KFC Resource Catalog Adapter","status":"observed-static","build":"39026384728","permissions":["offline-read"],"readback":false,"rollback":false}
+  ]
+}
