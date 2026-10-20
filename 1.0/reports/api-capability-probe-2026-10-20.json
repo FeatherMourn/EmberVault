@@ -1,0 +1,21 @@
+{
+  "probe_id": "embervault_api_capability_probe_sf",
+  "probe_name": "API Capability Probe",
+  "loader": "ShroudForge",
+  "game_build": "39026384728",
+  "evidence_state": "observed",
+  "collection_status": "completed",
+  "read_only": true,
+  "capabilities_observed": {
+    "game": "table",
+    "game.assets": "table",
+    "game.assets.get_resources_by_type": "function",
+    "io": "table",
+    "io.export": "function",
+    "pcall": "function"
+  },
+  "limitations": [
+    "This confirms API availability, not every API's behavior or write safety.",
+    "No game state was changed."
+  ]
+}

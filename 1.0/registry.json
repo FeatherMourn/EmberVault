@@ -3,7 +3,7 @@
   "game_build": "39026384728",
   "loader": "ShroudForge",
   "probes": [
-    {"id":"embervault_api_capability_probe_sf","name":"API Capability Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"none"},
+    {"id":"embervault_api_capability_probe_sf","name":"API Capability Probe","installed":true,"enabled":true,"tested":true,"status":"verified","evidence":"ShroudForge log: completed read-only scan on current game session"},
     {"id":"embervault_resource_type_probe_sf","name":"Resource Type Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"previous EML result; SF conversion pending"},
     {"id":"embervault_iteminfo_safe_probe_sf","name":"ItemInfo Safe Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"none"},
     {"id":"embervault_localization_probe_sf","name":"Localization Probe","installed":true,"enabled":true,"tested":false,"status":"needs_testing","evidence":"none"},
