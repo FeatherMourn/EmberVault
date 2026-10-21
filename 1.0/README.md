@@ -10,3 +10,6 @@ This directory contains the curated, reproducible research map for the current E
 - `adapters/` — adapter contracts and capability records.
 - `methods/` — collection and validation methods.
 - `metadata.json` — source, build, loader, and provenance information.
+- `capability-matrix.md` — central supported, conditional, unverified, and
+  unsupported capability record.
+- `evidence-history.md` — dated probe results and decisions.
