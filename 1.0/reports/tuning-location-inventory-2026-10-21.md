@@ -1,0 +1,22 @@
+# Tuning location inventory
+
+This is a discovery map, not a claim that the fields are writable.
+
+## Confirmed static locations
+
+| Storage layer | Example type | Candidate fields | Current interpretation |
+|---|---|---|---|
+| KFC resource payload | `BalancingTable` | level caps, damage factors, base health, perk costs, thresholds, durability caps | Strong tuning candidates; static evidence only |
+| KFC resource payload | `GameSettingsPresetsResource` | world/server preset values | Candidate configurable settings; needs field inventory |
+| KFC resource payload | `ItemInfo` and recipe registries | stack limits, item references, costs, quantities, station IDs, production data | Content and balance candidates |
+| KFC resource payload | `AttributeContainerResource` | health, damage, recharge, threat, and related attribute names | Attribute schema; values may live in linked resources |
+| Cache/type metadata | current type and field definitions | qualified names, hashes, field layout | Location and decoding evidence, not gameplay values |
+| Runtime state | ShroudForge resource/runtime services | loaded resources, ECS fields, world context | Runtime-only evidence; currently blocked by the missing/ambiguous profile |
+
+## First confirmed examples
+
+The local `BalancingTable` contains `playerLevelCap`, `itemLevelCap`, `damageBoostFlame`, `playerBaseHealth`, `freezeDurationFactor`, `maximumInstrumentsCountedForComfort`, `durabilityLossCap`, and multiple cost and threshold fields. These establish where many balance knobs live, but not whether the live game accepts edits to them.
+
+## Classification rule
+
+Each field will be labeled `static observed`, `runtime observed`, `config candidate`, `inferred`, or `unknown writable status`. No field is treated as editable until a separate, authorized local-mod test proves it without affecting multiplayer or original game files.
