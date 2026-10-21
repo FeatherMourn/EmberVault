@@ -76,6 +76,15 @@
 - **Limit:** Source inspection does not replace a runtime permission or
   execution test.
 
+## 2026-10-21 — Catalog and adapter JSON consistency
+
+- **Scope:** Catalogs, adapters, registries, reports, and metadata in the
+  `1.0` snapshot.
+- **Result:** All 40 JSON artifacts parsed successfully and all explicit build
+  identities matched `39026384728`.
+- **Evidence level:** Static.
+- **Limit:** Consistent metadata does not prove live runtime behavior.
+
 ## Snapshot policy
 
 Add an entry for each meaningful probe or build change. Do not overwrite prior
