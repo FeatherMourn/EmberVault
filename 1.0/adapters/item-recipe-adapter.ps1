@@ -32,7 +32,7 @@ $recipes = @($data.recipes | ForEach-Object {
         recipe_guid = $_.recipeGuid
         debug_name = $_.debugName
         recipe_name = $_.recipeName
-        workshop_id = $_.workshopId
+        workshop_id = $_.workshopId.value
         inputs = @($_.input | ForEach-Object { [ordered]@{ item_id = $_.itemId; item_ref = $_.itemRef; count = $_.count; category_id = $_.categoryId; category_ref = $_.categoryRef } })
         outputs = @($_.output | ForEach-Object { [ordered]@{ item_id = $_.itemId; item_ref = $_.itemRef; count = $_.count } })
         crafting_duration = $_.craftingDuration
