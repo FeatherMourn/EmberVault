@@ -3,12 +3,608 @@
   "adapter_id": "embervault-workshop-recipe",
   "game_scope": "Enshrouded 1.0",
   "probe_output": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\export\\embervault\\workshops-v1.tsv",
-  "recipe_catalog": "I:\\My Drive\\Enshrouded Mods\\EmberVault_Research\\Embervault_Researcher\\1.0\\catalogs\\item-recipe-adapter-v1.json",
+  "recipe_catalog": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\export\\embervault\\recipe-category-v1.tsv",
   "evidence_state": "observed",
   "promotion_state": "research-only",
   "workshop_count": 51,
-  "recipe_workshop_group_count": 0,
-  "unresolved_workshop_group_count": 0,
-  "workshop_usage": [],
+  "recipe_workshop_group_count": 46,
+  "unresolved_workshop_group_count": 1,
+  "workshop_usage": [
+    {
+      "workshop_id": 0,
+      "recipe_count": 57,
+      "workshop_guid": null,
+      "name_id": null,
+      "resolved": false,
+      "sample_recipe_names": [
+        "Prop_Building_FlameAltar_Small_Build_Base_PK",
+        "Prop_Craftingstation_Workbench_PK",
+        "Recipe_Blueprint_Tool_Quickbuilder_empty_PK",
+        "Recipe_NpcSummoner_Tool_empty_PK",
+        "Tool_basic_FishingRod_T0_PK"
+      ]
+    },
+    {
+      "workshop_id": 91067640,
+      "recipe_count": 14,
+      "workshop_guid": "d87666a7-fac9-464e-ad59-0935721ac594",
+      "name_id": 3645293029,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T5_Factory_Obsidian_Dust_HandGrinder",
+        "Material_T5_Factory_Silver_Dust_HandGrinder",
+        "Material_T5_Factory_ChitinPowder_HandGrinder",
+        "Material_T3_Factory_FossilizedBoneDust_HandGrinder",
+        "Material_T3_Factory_Flour_HandGrinder"
+      ]
+    },
+    {
+      "workshop_id": 130966000,
+      "recipe_count": 46,
+      "workshop_guid": "79b093e3-42ae-4ac8-90b4-8301b3ef8963",
+      "name_id": 1547158793,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Food_T7_meat_CabbageRolls",
+        "Food_T6_meat_CrabCakes",
+        "Food_T5_Yakstew",
+        "Food_T4_Meat_DiggerHunterStyle_Wrap",
+        "Food_T3_Meat_Chicken_Soup"
+      ]
+    },
+    {
+      "workshop_id": 448736551,
+      "recipe_count": 6,
+      "workshop_guid": "7b757cec-22a1-4084-9e55-ced9fd2b6550",
+      "name_id": 2517994654,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T5_SlurpBroth",
+        "Material_T6_SlurpBroth",
+        "Material_T4_SlurpBroth",
+        "Material_T3_SlurpBroth",
+        "Material_T2_Factory_GlowDirt_Green"
+      ]
+    },
+    {
+      "workshop_id": 448758083,
+      "recipe_count": 2,
+      "workshop_guid": "8e123d39-371b-48cf-9837-2fd0bcdf12b0",
+      "name_id": 2385919752,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T2_Factory_WoodPlanks",
+        "Material_T2_Factory_Twigs"
+      ]
+    },
+    {
+      "workshop_id": 518647999,
+      "recipe_count": 2,
+      "workshop_guid": "91bf1e57-6f70-475e-bc89-b7d602499f7b",
+      "name_id": 925672142,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Food_T3_Flat_Bread",
+        "Material_T3_Factory_ShortcrustPastryBase_Oven"
+      ]
+    },
+    {
+      "workshop_id": 548957216,
+      "recipe_count": 11,
+      "workshop_guid": "66d50da6-b96e-4b3b-9025-3649892e9362",
+      "name_id": 1011544581,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T6_Factory_Green_Vitriol_Dust_Laboratory",
+        "Material_T5_Factory_ShroudVapor_Base",
+        "Material_T5_Factory_Mauveine",
+        "Material_T5_Factory_WoundOintment",
+        "Material_T5_Factory_FlammableGoo"
+      ]
+    },
+    {
+      "workshop_id": 625389129,
+      "recipe_count": 3,
+      "workshop_guid": "31819004-5ce4-40c1-8a24-4180f2251ab5",
+      "name_id": 2012050564,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T1_Factory_01_WoodAcid",
+        "Material_T1_Factory_02_Tar",
+        "Material_T1_Factory_03_Charcoal"
+      ]
+    },
+    {
+      "workshop_id": 647636903,
+      "recipe_count": 2,
+      "workshop_guid": "bfe92849-fa9b-4181-8aa3-ab60e94e3875",
+      "name_id": 1693806198,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Food_T4_Honey",
+        "Material_T4_Factory_Wax"
+      ]
+    },
+    {
+      "workshop_id": 972806543,
+      "recipe_count": 22,
+      "workshop_guid": "324343b4-9f49-40c3-a598-d2f674f793c6",
+      "name_id": 972139413,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Food_T5_Campfire_YakFatMeat_X_Cooked",
+        "Food_T4_Campfire_Meat_Digger_Cooked",
+        "Food_T3_Campfire_Bird_Meat_Cooked",
+        "Food_T2_Campfire_Meat_Deercat01_Cooked",
+        "Food_T1_Campfire_Meat_Hare_Cooked"
+      ]
+    },
+    {
+      "workshop_id": 973495664,
+      "recipe_count": 31,
+      "workshop_guid": "38bbcee3-efe1-4baf-9a1c-deb73e356259",
+      "name_id": 1768495365,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Food_T5_Campfire_YakFatMeat_X_Overcooked",
+        "Food_T4_Yucca_Fruit_Overcooked",
+        "Food_T4_Campfire_Meat_Digger_Overcooked",
+        "Food_T3_Campfire_Bird_Meat_Overcooked",
+        "Food_T6_Campfire_Fish_epic_01_OverCooked"
+      ]
+    },
+    {
+      "workshop_id": 977061672,
+      "recipe_count": 1,
+      "workshop_guid": "a3dd831b-7c3f-4f42-8622-6f776f44c254",
+      "name_id": 1863782178,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T4_Factory_Fabric_Linen"
+      ]
+    },
+    {
+      "workshop_id": 995228565,
+      "recipe_count": 73,
+      "workshop_guid": "cb3392f7-a789-497a-a805-021e411e6066",
+      "name_id": 1230812543,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T7_Factory_Coloring_Palette_01",
+        "Material_T7_Factory_Coloring_Palette_02",
+        "Material_T7_Factory_Coloring_Palette_03",
+        "Material_T7_Factory_Coloring_Palette_04",
+        "Material_T7_Factory_Coloring_Palette_05"
+      ]
+    },
+    {
+      "workshop_id": 1103055054,
+      "recipe_count": 223,
+      "workshop_guid": "63dc5f14-aa2c-4e1e-b6d7-17e2b15d879a",
+      "name_id": 3357628507,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Prop_GrappleHook_T2_Anchor_PullUp",
+        "Prop_GrappleHook_T2_Anchor_Swing",
+        "Tool_Rake_T1",
+        "Tool_Pickaxe_Sieve_Prospector_T6_under_water_mining",
+        "Tool_Water_Channeling_T3"
+      ]
+    },
+    {
+      "workshop_id": 1214169756,
+      "recipe_count": 9,
+      "workshop_guid": "d31c8d99-01a4-4fda-be1f-4f1cd149a187",
+      "name_id": 675024689,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T6_Factory_GoldBar_BF",
+        "Material_T7_Factory_CelesthiumBar_BF",
+        "Material_T5_Factory_SteelBar_BF",
+        "Material_T5_Factory_SilverBar_BF",
+        "Material_T5_Factory_TinBar_BF"
+      ]
+    },
+    {
+      "workshop_id": 1302892403,
+      "recipe_count": 166,
+      "workshop_guid": "965d3192-0287-49a2-ad51-a716139571a6",
+      "name_id": 3014021066,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Recipe_Blueprint_Tool_Quickbuilder_empty_workbench",
+        "Special_Hookshot_T1",
+        "Special_Glider_T1",
+        "Tool_Rake_T0",
+        "Special_Backpack_T1"
+      ]
+    },
+    {
+      "workshop_id": 1792040910,
+      "recipe_count": 2,
+      "workshop_guid": "c74a451e-3ee1-4fe3-b00f-fa5775f8599e",
+      "name_id": 4025057169,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Food_T3_Factory_Buttermilk_ButterChurn",
+        "Material_T3_Factory_Butter_ButterChurn"
+      ]
+    },
+    {
+      "workshop_id": 1803700182,
+      "recipe_count": 3,
+      "workshop_guid": "5cdd511f-34d4-4b51-8d29-76ff1c9e0cd3",
+      "name_id": 2677516812,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Food_T6_dish_hydration_CoffeeBlack",
+        "Food_T6_dish_hydration_CoffeeMilk",
+        "Food_T6_dish_hydration_CoffeeSweet"
+      ]
+    },
+    {
+      "workshop_id": 1804983347,
+      "recipe_count": 5,
+      "workshop_guid": "dce27796-6036-48ee-9896-32dd53e09ced",
+      "name_id": 4191783154,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Food_T6_fruit_BananaChips",
+        "Material_T1_Factory_Food_T1_Fruit_Berry_Dried",
+        "Material_T6_Factory_WaterReptileLeather",
+        "Material_T2_Factory_ReptileLeather",
+        "Material_T1_Factory_DriedFur"
+      ]
+    },
+    {
+      "workshop_id": 1870486831,
+      "recipe_count": 10,
+      "workshop_guid": "9e191fb2-66a0-4d2b-b7c0-ac3f7910ee13",
+      "name_id": 1222128551,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Flame_Level_10_to_11_AncientLands2_Vorgoth",
+        "Flame_Level_9_to_10_AncientLands",
+        "Flame_Level_8_to_9_Unlock_Wetlands2",
+        "Flame_Level_7_to_8_Unlock_Wetlands1",
+        "Flame_Level_6_to_7_Unlock_ColdHeights2"
+      ]
+    },
+    {
+      "workshop_id": 1917968600,
+      "recipe_count": 14,
+      "workshop_guid": "0287a52d-c264-4fbe-854f-b89e5dd8a2aa",
+      "name_id": 4015956841,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T6_Factory_Grounded_Coffee_ImprovedGrinder",
+        "Material_T6_Factory_Iron_Dust_ImprovedGrinder",
+        "Material_T6_Factory_FishBoneTeeth_Dust_ImprovedGrinder",
+        "Material_T6_Factory_Gold_Dust_ImprovedGrinder",
+        "Material_T6_Factory_Mother_of_Pearl_ImprovedGrinder"
+      ]
+    },
+    {
+      "workshop_id": 1932552551,
+      "recipe_count": 1,
+      "workshop_guid": "f0f044a6-03e0-4a10-be0a-bb93f633a5fd",
+      "name_id": 714231825,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T2_Factory_Linen_HandSpindle"
+      ]
+    },
+    {
+      "workshop_id": 2107047400,
+      "recipe_count": 19,
+      "workshop_guid": "fc328abe-def1-4e74-ac65-20e23fe75d10",
+      "name_id": 3793436469,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Food_T6_Campfire_CrabMeat_Cooked",
+        "Food_T6_Grill_Fishfilet_grilled",
+        "Food_T6_Grill_Fishcutlet_grilled",
+        "Food_T6_processed_herb_AlgaeBuds",
+        "Food_T7_Campfire_Fish_epic_05_Cooked"
+      ]
+    },
+    {
+      "workshop_id": 2216351573,
+      "recipe_count": 275,
+      "workshop_guid": "9f99dbd6-10fd-4b87-8ccd-87df5ded43a0",
+      "name_id": 1579483555,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Tool_improved_FishingRod_T4_Hunter",
+        "Tool_cursed_FishingRod_T3_Hunter",
+        "Consumable_RepairKit_T3",
+        "Consumable_T5_Item_PocketHeater",
+        "Consumable_Bandage_T7"
+      ]
+    },
+    {
+      "workshop_id": 2222893907,
+      "recipe_count": 18,
+      "workshop_guid": "5d06940e-ed3f-4e43-a7fb-e19bfbced02d",
+      "name_id": 4127054386,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T2_Factory_Fired_Bricks",
+        "Prop_Decoration_T2_Vase_Clay_06",
+        "Prop_Decoration_T2_Vase_Clay_05",
+        "Prop_Decoration_T2_Vase_Clay_04",
+        "Prop_Decoration_T2_Vase_Clay_03"
+      ]
+    },
+    {
+      "workshop_id": 2236893082,
+      "recipe_count": 157,
+      "workshop_guid": "ad639c41-b635-461f-a71e-4f804f553129",
+      "name_id": 3824357418,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Craft_Weapon_T7_1H_SwordEpic_chineseNewYear_01",
+        "Craft_Weapon_T6_1H_SwordEpic_chineseNewYear_01",
+        "Craft_Weapon_T5_1H_SwordEpic_chineseNewYear_01",
+        "Craft_Weapon_T4_1H_SwordEpic_chineseNewYear_01",
+        "Craft_Weapon_T3_1H_SwordEpic_chineseNewYear_01"
+      ]
+    },
+    {
+      "workshop_id": 2253424106,
+      "recipe_count": 1,
+      "workshop_guid": "eab754cf-312e-4ec0-85b6-2cce9a778e32",
+      "name_id": 3135058671,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T7_Factory_Ancient_Infusion"
+      ]
+    },
+    {
+      "workshop_id": 2308352196,
+      "recipe_count": 319,
+      "workshop_guid": "05063373-d1a5-4b24-9b8f-6394217c0f0a",
+      "name_id": 675725713,
+      "resolved": true,
+      "sample_recipe_names": [
+        "_Prop_Decoration_T5_Mirror_Large_Barbershop",
+        "_Prop_Decoration_T5_Mirror_Small_Barbershop",
+        "_Prop_Decoration_TX_Wighead_01_braid",
+        "_Prop_Decoration_TX_Wighead_02_cowlick",
+        "_Prop_Decoration_TX_Wighead_03_hanfu"
+      ]
+    },
+    {
+      "workshop_id": 2378837065,
+      "recipe_count": 1,
+      "workshop_guid": "60a2bcc3-f413-40b3-b65c-491fab9b38c7",
+      "name_id": 1532346137,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T1_Factory_Metal_Sheets"
+      ]
+    },
+    {
+      "workshop_id": 2763647653,
+      "recipe_count": 1,
+      "workshop_guid": "7447d540-32ea-4f13-911a-e77ff7b10035",
+      "name_id": 754053094,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T3_Factory_Leather"
+      ]
+    },
+    {
+      "workshop_id": 2800471523,
+      "recipe_count": 1,
+      "workshop_guid": "071fa8f5-a65c-428f-92de-6368ead92cf4",
+      "name_id": 3038581157,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T6_Factory_Roasted_Coffee_Coffee_Roastery"
+      ]
+    },
+    {
+      "workshop_id": 2906865252,
+      "recipe_count": 81,
+      "workshop_guid": "0b966715-c5c9-435d-b727-4c24b4ff7e67",
+      "name_id": 3148204644,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Key_T6_Skeleton_Bone_HollowHalls",
+        "Key_T5_Skeleton_Bone_HollowHalls",
+        "Key_T4_Skeleton_Bone_HollowHalls",
+        "Key_T3_Skeleton_Bone_HollowHalls",
+        "Key_T2_Skeleton_Bone_HollowHalls"
+      ]
+    },
+    {
+      "workshop_id": 3005669442,
+      "recipe_count": 4,
+      "workshop_guid": "9b30b429-2c74-4336-bf13-97ed6acaffe3",
+      "name_id": 3942584753,
+      "resolved": true,
+      "sample_recipe_names": [
+        "FlameAltar_HomeBase_Upgrade_3",
+        "FlameAltar_HomeBase_Upgrade_2",
+        "FlameAltar_HomeBase_Upgrade_1",
+        "FlameAltar_HomeBase_Upgrade_0_Claim"
+      ]
+    },
+    {
+      "workshop_id": 3127317327,
+      "recipe_count": 63,
+      "workshop_guid": "a778ca3f-e94a-4a31-8231-bde05f1fc98d",
+      "name_id": 1414716342,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T7_Factory_Farming_Seedling_Tree_Artichoke",
+        "Material_T7_Factory_Farming_Seedling_Pomegranate",
+        "Material_T6_Factory_Farming_Seedling_Tree_Banana",
+        "Material_T6_Factory_Farming_Seedling_Material_Coconut",
+        "Material_T6_Factory_Farming_Seedling_Tree_Coffee"
+      ]
+    },
+    {
+      "workshop_id": 3185407206,
+      "recipe_count": 338,
+      "workshop_guid": "8dd2cc2d-ddc2-4a94-a8b5-d40603caefa1",
+      "name_id": 1084236782,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Special_Hookshot_T6_Upgrade_02",
+        "Special_Hookshot_T2_Upgrade",
+        "Special_Glider_T4",
+        "Special_Glider_T3",
+        "Special_Glider_T2"
+      ]
+    },
+    {
+      "workshop_id": 3299655940,
+      "recipe_count": 17,
+      "workshop_guid": "8d1e9522-d8d4-4dff-a7bb-c3c6627ae6d8",
+      "name_id": 3049545225,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Tool_lucky_FishingRod_T6_Fisher",
+        "Tool_epic_FishingRod_T6_Fisher",
+        "Armor_T6_Water_DivingMask_Helmet",
+        "Armor_T6_Water_Flippers_Boots",
+        "Food_T6_Fisher_fish_cutlet"
+      ]
+    },
+    {
+      "workshop_id": 3362288633,
+      "recipe_count": 247,
+      "workshop_guid": "f08d9055-de07-43f1-b707-082f19e48794",
+      "name_id": 3333925958,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Consumable_Potion_Flask_T6_SwimSprintStaminaReductionMod",
+        "Consumable_Potion_Flask_T6_DrakBloodLoreReadingFlask",
+        "Consumable_Potion_Flask_T2_StaminaMax_ofTheFallen",
+        "Consumable_Potion_Flask_T2_LightWisp",
+        "Consumable_Potion_T5_Antidote_Poison"
+      ]
+    },
+    {
+      "workshop_id": 3498808064,
+      "recipe_count": 2,
+      "workshop_guid": "c5f50987-f46c-480d-843e-a368a5a8e2e0",
+      "name_id": 498328511,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T3_Factory_Alchemical_Base",
+        "Material_T3_Factory_Antiseptic"
+      ]
+    },
+    {
+      "workshop_id": 3564727450,
+      "recipe_count": 3,
+      "workshop_guid": "c80b7289-87e7-48db-8707-34021fcd54aa",
+      "name_id": 1872823049,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T5_Factory_String_CardingMachineSpinning",
+        "Material_T5_Factory_Wool_CardingMachineSpinning",
+        "Material_T4_Factory_Linen_CardingMachineSpinning"
+      ]
+    },
+    {
+      "workshop_id": 3651361391,
+      "recipe_count": 135,
+      "workshop_guid": "c30042fb-3104-478e-b0b8-e4989c4cb3b7",
+      "name_id": 2395529621,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Recipe_Overgrowth_Tool",
+        "Prop_NPC_T6_MedievalGrill",
+        "Prop_NPC_T6_CoffeeRoastery",
+        "Prop_NPC_T6_CoffeeBrewery",
+        "Prop_Production_T4_BeeHive_Honey_Factory"
+      ]
+    },
+    {
+      "workshop_id": 3798021301,
+      "recipe_count": 2,
+      "workshop_guid": "937d7f85-f783-4d3d-a670-f5006219da08",
+      "name_id": 2310115582,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T1_Factory_String_SpinningWheel",
+        "Material_T4_Factory_Linen_SpinningWheel"
+      ]
+    },
+    {
+      "workshop_id": 3866275888,
+      "recipe_count": 99,
+      "workshop_guid": "aa5d01c2-8298-4f81-92af-2317c2f65597",
+      "name_id": 2340969932,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Special_Backpack_T3",
+        "Special_Backpack_T2",
+        "Prop_Decoration_Trophy_T6_Skull_01",
+        "Prop_Decoration_Trophy_T6_Skull_02",
+        "Prop_Decoration_Trophy_T6_Skull_03"
+      ]
+    },
+    {
+      "workshop_id": 3918094922,
+      "recipe_count": 18,
+      "workshop_guid": "b8973982-1707-40e3-94c0-0593b33808a1",
+      "name_id": 4057153741,
+      "resolved": true,
+      "sample_recipe_names": [
+        "_Tool_Building_Screwdriver",
+        "_Tool_Logic_System_SwitchBox",
+        "_Prop_Logic_Button_Push",
+        "_Prop_Logic_Button_Switch",
+        "_Prop_Logic_Lever"
+      ]
+    },
+    {
+      "workshop_id": 4121605386,
+      "recipe_count": 5,
+      "workshop_guid": "0411e76d-e141-45aa-b9e2-740f37784eba",
+      "name_id": 4072896271,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Material_T4_Factory_IronBar_SM",
+        "Material_T4_Factory_Glass_SM",
+        "Material_T3_Factory_BronzeBar_SM",
+        "Material_T3_Factory_TinBar_SM",
+        "Material_T2_Factory_CopperBar_SM"
+      ]
+    },
+    {
+      "workshop_id": 4219574132,
+      "recipe_count": 15,
+      "workshop_guid": "aa727bcd-d000-4837-87dd-a2168eecda32",
+      "name_id": 2398022097,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Prop_NPC_T7_Player_GemForge",
+        "Prop_NPC_T7_MagicInfusionStation",
+        "Prop_NPC_T7_AncientResearcher_Workbench_Ancient_Variation_VISUAL",
+        "Tool_T7_Lockpick_Ancient_ResearcherNPC",
+        "Craft_Weapon_T7_2H_Lore_SwordEpic_Vorgoth"
+      ]
+    },
+    {
+      "workshop_id": 4247308806,
+      "recipe_count": 12,
+      "workshop_guid": "581af21d-8ebb-494a-955c-7193c90268b8",
+      "name_id": 1768495365,
+      "resolved": true,
+      "sample_recipe_names": [
+        "Prop_Storage_Upgrade_to_24_T1",
+        "Prop_Storage_Upgrade_to_32_T2",
+        "Prop_Storage_Upgrade_to_40_T3",
+        "Prop_Storage_Upgrade_to_56_T4",
+        "Prop_Storage_Upgrade_to_32_T2_Magic"
+      ]
+    }
+  ],
   "limitation": "Workshop name IDs require localization resolution; this report preserves numeric IDs and GUIDs without inventing labels."
 }

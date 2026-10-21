@@ -8,7 +8,8 @@ $ErrorActionPreference = 'Stop'
 $line = Get-Content -LiteralPath $ProbeOutput | Where-Object { $_ -match '^data\t' } | Select-Object -First 1
 if (-not $line) { throw 'Workshop probe output has no data line.' }
 $registry = ($line -split "`t", 2)[1] | ConvertFrom-Json
-$recipes = @($registry.recipes)
+$recipeLine = Get-Content -LiteralPath $RecipeCatalog | Where-Object { $_ -match '^data\t' } | Select-Object -First 1
+$recipes = if ($recipeLine) { @((($recipeLine -split "`t", 2)[1] | ConvertFrom-Json).recipes) } else { @((Get-Content -Raw -LiteralPath $RecipeCatalog | ConvertFrom-Json).recipes) }
 $workshops = @($registry.workshops)
 $byId = @{}
 foreach ($workshop in $workshops) { $byId[[string]$workshop.workshopId.value] = $workshop }
