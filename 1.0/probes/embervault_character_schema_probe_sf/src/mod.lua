@@ -30,6 +30,24 @@ for _,target in ipairs(targets) do
     end
   end
 end
+local ok_collection,collections=pcall(function() return game.assets.get_resources_by_type("keen::CharacterPresetCollection") end)
+if ok_collection and type(collections)=="table" and #collections>0 then
+  local data=collections[1].data
+  local ok_presets,presets=pcall(function() return data.presets end)
+  if ok_presets and presets~=nil then
+    table.insert(lines,"nested\tpresets\t"..type(presets))
+    for _,path in ipairs({"presetId","gender","hair","beard","hairColorPresetId","beardColorPresetId","head"}) do
+      local ok_value,value=pcall(function()
+        local item=presets[1]
+        for part in string.gmatch(path,"[^%.]+") do item=item[part] end
+        return item
+      end)
+      if ok_value then table.insert(lines,"nested_field\tpresets[1]\t"..path.."\t"..type(value).."\t"..tostring(value)) else table.insert(lines,"nested_error\tpresets[1]\t"..path.."\t"..tostring(value)) end
+    end
+  else
+    table.insert(lines,"nested_error\tpresets\t"..tostring(presets))
+  end
+end
 table.insert(lines,"entities\tnot_enumerated")
 table.insert(lines,"writes\tnot_attempted")
 table.insert(lines,"saves\tnot_accessed")
