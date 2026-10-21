@@ -16,3 +16,4 @@ This directory contains the curated, reproducible research map for the current E
 - `api-inventory.md` — the read-only API mapping and probe plan.
 - `probes/` — probe specifications and promotion gates.
 - `adapter-probe-plan.md` — adapter categories, probe types, and investigation order.
+- `mapping-plan.md` — layered collection goals and catalog outputs.
