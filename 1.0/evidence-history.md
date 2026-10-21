@@ -67,6 +67,15 @@
 - **Action:** Future imports must preserve one evidence level across registry,
   report, and history records.
 
+## 2026-10-21 — Probe safety scan
+
+- **Scope:** All tracked `src/mod.lua` probe scripts.
+- **Result:** No mutation-capable calls were found outside comments. Search
+  matches were read-only field names such as `placedEntity` and `visualEntity`.
+- **Evidence level:** Static.
+- **Limit:** Source inspection does not replace a runtime permission or
+  execution test.
+
 ## Snapshot policy
 
 Add an entry for each meaningful probe or build change. Do not overwrite prior
