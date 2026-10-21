@@ -8,11 +8,11 @@ $ErrorActionPreference = 'Stop'
 $line = Get-Content -LiteralPath $ProbeOutput | Where-Object { $_ -match '^data\t' } | Select-Object -First 1
 if (-not $line) { throw 'Workshop probe output has no data line.' }
 $registry = ($line -split "`t", 2)[1] | ConvertFrom-Json
-$recipes = (Get-Content -Raw -LiteralPath $RecipeCatalog | ConvertFrom-Json).recipes
+$recipes = @($registry.recipes)
 $workshops = @($registry.workshops)
 $byId = @{}
 foreach ($workshop in $workshops) { $byId[[string]$workshop.workshopId.value] = $workshop }
-$usage = @($recipes | Group-Object workshop_id | ForEach-Object {
+$usage = @($recipes | Group-Object { $_.workshopId.value } | ForEach-Object {
     $id = [string]$_.Name
     $workshop = $byId[$id]
     [ordered]@{
@@ -21,7 +21,7 @@ $usage = @($recipes | Group-Object workshop_id | ForEach-Object {
         workshop_guid = if ($workshop) { $workshop.workshopGuid } else { $null }
         name_id = if ($workshop) { $workshop.name.value } else { $null }
         resolved = [bool]$workshop
-        sample_recipe_names = @($_.Group | Select-Object -First 5 -ExpandProperty debug_name)
+        sample_recipe_names = @($_.Group | Select-Object -First 5 -ExpandProperty debugName)
     }
 })
 
