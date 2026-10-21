@@ -1,0 +1,9 @@
+{
+  "id": "embervault_resource_type_probe_eml",
+  "name": "EmberVault Resource Type Probe",
+  "version": "1.0.0-eml",
+  "capabilities": ["export"],
+  "description": "Read-only standard EML probe that exports visible resource type names.",
+  "authors": ["EmberVault"],
+  "license": "MIT"
+}
