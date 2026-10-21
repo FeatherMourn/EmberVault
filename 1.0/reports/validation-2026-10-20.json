@@ -1,0 +1,19 @@
+{
+  "snapshot": "1.0",
+  "game_build": "39026384728",
+  "validated_on": "2026-10-20",
+  "raw_kfc_in_repository": false,
+  "catalogs_present": 8,
+  "probe_packages_tracked": 11,
+  "probe_packages_installed": 11,
+  "probes_tested": 0,
+  "adapters_tracked": 2,
+  "new_version_required": false,
+  "result": "valid_structure_needs_runtime_validation",
+  "notes": [
+    "The local build matches the 1.0 snapshot.",
+    "No 1.1 folder should be created until the game build changes.",
+    "Converted ShroudForge probes remain installed but require individual runtime tests.",
+    "Raw KFC files remain local source material and are not part of the repository."
+  ]
+}

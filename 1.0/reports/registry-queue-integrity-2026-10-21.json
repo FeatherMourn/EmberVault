@@ -1,0 +1,12 @@
+{
+  "snapshot": "1.0",
+  "validated_on": "2026-10-21",
+  "registry_probe_count": 11,
+  "missing_registry_packages": 0,
+  "queued_probe_count": 9,
+  "missing_queued_packages": 0,
+  "worktree_clean": true,
+  "evidence_state": "static",
+  "result": "passed",
+  "limitation": "Package presence does not establish runtime execution."
+}

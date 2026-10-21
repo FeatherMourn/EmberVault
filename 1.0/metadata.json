@@ -1,0 +1,20 @@
+{
+  "map_version": "1.0",
+  "game": "Enshrouded",
+  "game_build": "39026384728",
+  "shroudforge": {
+    "installation": "local game installation",
+    "format": "ShroudForge",
+    "probe_policy": "read-only by default"
+  },
+  "source": {
+    "kfc_export": "local export: kfc-export-20261019-113420",
+    "raw_kfc_in_repository": false,
+    "raw_data_note": "Export locally and match the catalog using the source identity and file inventory."
+  },
+  "provenance": {
+    "catalogs": "Curated from the local KFC4 export.",
+    "probes": "Generated or converted for isolated ShroudForge validation.",
+    "adapters": "Must record capability, build, evidence, permissions, and rollback status."
+  }
+}

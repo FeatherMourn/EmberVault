@@ -1,0 +1,15 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_iteminfo_safe_probe_sf",
+  "name": "embervault iteminfo safe probe (ShroudForge)",
+  "version": "1.0.0-sf-test",
+  "description": "Read-only Phase One probe converted to ShroudForge package format.",
+  "authors": [
+    "EmberVault"
+  ],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": [
+    "runtime"
+  ]
+}
