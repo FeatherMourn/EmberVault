@@ -14,3 +14,4 @@ This directory contains the curated, reproducible research map for the current E
   unsupported capability record.
 - `evidence-history.md` — dated probe results and decisions.
 - `api-inventory.md` — the read-only API mapping and probe plan.
+- `probes/` — probe specifications and promotion gates.
