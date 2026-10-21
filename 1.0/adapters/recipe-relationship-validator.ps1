@@ -17,9 +17,9 @@ foreach ($recipe in $data.recipes) {
         if ([int64]$input.item_id -eq 0) { $zeroInputs += [string]$recipe.recipe_id }
         elseif (-not $itemIds.ContainsKey([string]$input.item_id)) { $missingInputs += [ordered]@{ recipe_id = $recipe.recipe_id; debug_name = $recipe.debug_name; item_id = $input.item_id } }
     }
-    foreach ($output in @($recipe.outputs)) {
-        if ([int64]$output.item_id -eq 0) { $zeroOutputs += [string]$recipe.recipe_id }
-        elseif (-not $itemIds.ContainsKey([string]$output.item_id)) { $missingOutputs += [ordered]@{ recipe_id = $recipe.recipe_id; debug_name = $recipe.debug_name; item_id = $output.item_id } }
+    foreach ($recipeOutput in @($recipe.outputs)) {
+        if ([int64]$recipeOutput.item_id -eq 0) { $zeroOutputs += [string]$recipe.recipe_id }
+        elseif (-not $itemIds.ContainsKey([string]$recipeOutput.item_id)) { $missingOutputs += [ordered]@{ recipe_id = $recipe.recipe_id; debug_name = $recipe.debug_name; item_id = $recipeOutput.item_id } }
     }
 }
 
