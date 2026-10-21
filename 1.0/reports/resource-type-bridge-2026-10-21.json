@@ -1,0 +1,1038 @@
+{
+  "schema_version": 1,
+  "adapter_id": "embervault-resource-type",
+  "game_scope": "Enshrouded 1.0",
+  "runtime_report": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\export\\embervault\\resource-types-v1.tsv",
+  "kfc_root": "H:\\enshroudedresearch\\kfc-export-20261019-113420",
+  "runtime_type_count": 146,
+  "kfc_folder_count": 146,
+  "matched_count": 0,
+  "ambiguous_count": 0,
+  "unmatched_count": 146,
+  "promotion_state": "research-only",
+  "limitation": "Direct folder-name matching does not establish a bridge between EML Type identifiers and KFC resource names. Unmatched records require verified same-build mapping metadata.",
+  "records": [
+    {
+      "runtime_type": "Type: 0000024edd791818",
+      "normalized_runtime_id": "0000024edd791818",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791f38",
+      "normalized_runtime_id": "0000024edd791f38",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790b58",
+      "normalized_runtime_id": "0000024edd790b58",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791698",
+      "normalized_runtime_id": "0000024edd791698",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791a58",
+      "normalized_runtime_id": "0000024edd791a58",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791458",
+      "normalized_runtime_id": "0000024edd791458",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790f78",
+      "normalized_runtime_id": "0000024edd790f78",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791158",
+      "normalized_runtime_id": "0000024edd791158",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790d98",
+      "normalized_runtime_id": "0000024edd790d98",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790c18",
+      "normalized_runtime_id": "0000024edd790c18",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790af8",
+      "normalized_runtime_id": "0000024edd790af8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790d38",
+      "normalized_runtime_id": "0000024edd790d38",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790fd8",
+      "normalized_runtime_id": "0000024edd790fd8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791db8",
+      "normalized_runtime_id": "0000024edd791db8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791878",
+      "normalized_runtime_id": "0000024edd791878",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792118",
+      "normalized_runtime_id": "0000024edd792118",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791e18",
+      "normalized_runtime_id": "0000024edd791e18",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791998",
+      "normalized_runtime_id": "0000024edd791998",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7913f8",
+      "normalized_runtime_id": "0000024edd7913f8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7916f8",
+      "normalized_runtime_id": "0000024edd7916f8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7912d8",
+      "normalized_runtime_id": "0000024edd7912d8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790a98",
+      "normalized_runtime_id": "0000024edd790a98",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790df8",
+      "normalized_runtime_id": "0000024edd790df8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791098",
+      "normalized_runtime_id": "0000024edd791098",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790bb8",
+      "normalized_runtime_id": "0000024edd790bb8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7911b8",
+      "normalized_runtime_id": "0000024edd7911b8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790e58",
+      "normalized_runtime_id": "0000024edd790e58",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791e78",
+      "normalized_runtime_id": "0000024edd791e78",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791038",
+      "normalized_runtime_id": "0000024edd791038",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791ab8",
+      "normalized_runtime_id": "0000024edd791ab8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791c38",
+      "normalized_runtime_id": "0000024edd791c38",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7918d8",
+      "normalized_runtime_id": "0000024edd7918d8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790cd8",
+      "normalized_runtime_id": "0000024edd790cd8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790eb8",
+      "normalized_runtime_id": "0000024edd790eb8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790f18",
+      "normalized_runtime_id": "0000024edd790f18",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791b78",
+      "normalized_runtime_id": "0000024edd791b78",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd790978",
+      "normalized_runtime_id": "0000024edd790978",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791cf8",
+      "normalized_runtime_id": "0000024edd791cf8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791398",
+      "normalized_runtime_id": "0000024edd791398",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7914b8",
+      "normalized_runtime_id": "0000024edd7914b8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791518",
+      "normalized_runtime_id": "0000024edd791518",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7915d8",
+      "normalized_runtime_id": "0000024edd7915d8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7909d8",
+      "normalized_runtime_id": "0000024edd7909d8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791758",
+      "normalized_runtime_id": "0000024edd791758",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7919f8",
+      "normalized_runtime_id": "0000024edd7919f8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7917b8",
+      "normalized_runtime_id": "0000024edd7917b8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791f98",
+      "normalized_runtime_id": "0000024edd791f98",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791bd8",
+      "normalized_runtime_id": "0000024edd791bd8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd791c98",
+      "normalized_runtime_id": "0000024edd791c98",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7926b8",
+      "normalized_runtime_id": "0000024edd7926b8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7921d8",
+      "normalized_runtime_id": "0000024edd7921d8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792b98",
+      "normalized_runtime_id": "0000024edd792b98",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792d78",
+      "normalized_runtime_id": "0000024edd792d78",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792dd8",
+      "normalized_runtime_id": "0000024edd792dd8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792538",
+      "normalized_runtime_id": "0000024edd792538",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793858",
+      "normalized_runtime_id": "0000024edd793858",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792838",
+      "normalized_runtime_id": "0000024edd792838",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7937f8",
+      "normalized_runtime_id": "0000024edd7937f8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793738",
+      "normalized_runtime_id": "0000024edd793738",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792e38",
+      "normalized_runtime_id": "0000024edd792e38",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7938b8",
+      "normalized_runtime_id": "0000024edd7938b8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793918",
+      "normalized_runtime_id": "0000024edd793918",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7923b8",
+      "normalized_runtime_id": "0000024edd7923b8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792e98",
+      "normalized_runtime_id": "0000024edd792e98",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793438",
+      "normalized_runtime_id": "0000024edd793438",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792298",
+      "normalized_runtime_id": "0000024edd792298",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7928f8",
+      "normalized_runtime_id": "0000024edd7928f8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792cb8",
+      "normalized_runtime_id": "0000024edd792cb8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792ef8",
+      "normalized_runtime_id": "0000024edd792ef8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7931f8",
+      "normalized_runtime_id": "0000024edd7931f8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792958",
+      "normalized_runtime_id": "0000024edd792958",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792238",
+      "normalized_runtime_id": "0000024edd792238",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792f58",
+      "normalized_runtime_id": "0000024edd792f58",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793258",
+      "normalized_runtime_id": "0000024edd793258",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7930d8",
+      "normalized_runtime_id": "0000024edd7930d8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792bf8",
+      "normalized_runtime_id": "0000024edd792bf8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793498",
+      "normalized_runtime_id": "0000024edd793498",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792fb8",
+      "normalized_runtime_id": "0000024edd792fb8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792178",
+      "normalized_runtime_id": "0000024edd792178",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7922f8",
+      "normalized_runtime_id": "0000024edd7922f8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793138",
+      "normalized_runtime_id": "0000024edd793138",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7929b8",
+      "normalized_runtime_id": "0000024edd7929b8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793018",
+      "normalized_runtime_id": "0000024edd793018",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792a18",
+      "normalized_runtime_id": "0000024edd792a18",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792658",
+      "normalized_runtime_id": "0000024edd792658",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793318",
+      "normalized_runtime_id": "0000024edd793318",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792b38",
+      "normalized_runtime_id": "0000024edd792b38",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793078",
+      "normalized_runtime_id": "0000024edd793078",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7933d8",
+      "normalized_runtime_id": "0000024edd7933d8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792598",
+      "normalized_runtime_id": "0000024edd792598",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792358",
+      "normalized_runtime_id": "0000024edd792358",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793558",
+      "normalized_runtime_id": "0000024edd793558",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792418",
+      "normalized_runtime_id": "0000024edd792418",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793198",
+      "normalized_runtime_id": "0000024edd793198",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792478",
+      "normalized_runtime_id": "0000024edd792478",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792c58",
+      "normalized_runtime_id": "0000024edd792c58",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792a78",
+      "normalized_runtime_id": "0000024edd792a78",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7924d8",
+      "normalized_runtime_id": "0000024edd7924d8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7925f8",
+      "normalized_runtime_id": "0000024edd7925f8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792718",
+      "normalized_runtime_id": "0000024edd792718",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7932b8",
+      "normalized_runtime_id": "0000024edd7932b8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792778",
+      "normalized_runtime_id": "0000024edd792778",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7927d8",
+      "normalized_runtime_id": "0000024edd7927d8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7934f8",
+      "normalized_runtime_id": "0000024edd7934f8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792898",
+      "normalized_runtime_id": "0000024edd792898",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7936d8",
+      "normalized_runtime_id": "0000024edd7936d8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793378",
+      "normalized_runtime_id": "0000024edd793378",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792ad8",
+      "normalized_runtime_id": "0000024edd792ad8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7935b8",
+      "normalized_runtime_id": "0000024edd7935b8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793618",
+      "normalized_runtime_id": "0000024edd793618",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd792d18",
+      "normalized_runtime_id": "0000024edd792d18",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793678",
+      "normalized_runtime_id": "0000024edd793678",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793798",
+      "normalized_runtime_id": "0000024edd793798",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794278",
+      "normalized_runtime_id": "0000024edd794278",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793a38",
+      "normalized_runtime_id": "0000024edd793a38",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7941b8",
+      "normalized_runtime_id": "0000024edd7941b8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793cd8",
+      "normalized_runtime_id": "0000024edd793cd8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794878",
+      "normalized_runtime_id": "0000024edd794878",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7942d8",
+      "normalized_runtime_id": "0000024edd7942d8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794ff8",
+      "normalized_runtime_id": "0000024edd794ff8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7945d8",
+      "normalized_runtime_id": "0000024edd7945d8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793c18",
+      "normalized_runtime_id": "0000024edd793c18",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd795058",
+      "normalized_runtime_id": "0000024edd795058",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794e18",
+      "normalized_runtime_id": "0000024edd794e18",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794ed8",
+      "normalized_runtime_id": "0000024edd794ed8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794f38",
+      "normalized_runtime_id": "0000024edd794f38",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794638",
+      "normalized_runtime_id": "0000024edd794638",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794e78",
+      "normalized_runtime_id": "0000024edd794e78",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794cf8",
+      "normalized_runtime_id": "0000024edd794cf8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794038",
+      "normalized_runtime_id": "0000024edd794038",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794338",
+      "normalized_runtime_id": "0000024edd794338",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794938",
+      "normalized_runtime_id": "0000024edd794938",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7950b8",
+      "normalized_runtime_id": "0000024edd7950b8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794158",
+      "normalized_runtime_id": "0000024edd794158",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7948d8",
+      "normalized_runtime_id": "0000024edd7948d8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd795118",
+      "normalized_runtime_id": "0000024edd795118",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794698",
+      "normalized_runtime_id": "0000024edd794698",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794a58",
+      "normalized_runtime_id": "0000024edd794a58",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794db8",
+      "normalized_runtime_id": "0000024edd794db8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794098",
+      "normalized_runtime_id": "0000024edd794098",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793c78",
+      "normalized_runtime_id": "0000024edd793c78",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793978",
+      "normalized_runtime_id": "0000024edd793978",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793d38",
+      "normalized_runtime_id": "0000024edd793d38",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd794398",
+      "normalized_runtime_id": "0000024edd794398",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd793a98",
+      "normalized_runtime_id": "0000024edd793a98",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    },
+    {
+      "runtime_type": "Type: 0000024edd7940f8",
+      "normalized_runtime_id": "0000024edd7940f8",
+      "status": "unmatched",
+      "kfc_candidates": [],
+      "evidence": "EML runtime enumeration joined to same-build local KFC folder inventory"
+    }
+  ]
+}
