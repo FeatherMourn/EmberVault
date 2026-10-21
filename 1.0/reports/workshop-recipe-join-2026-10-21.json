@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "adapter_id": "embervault-workshop-recipe",
+  "game_scope": "Enshrouded 1.0",
+  "probe_output": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\export\\embervault\\workshops-v1.tsv",
+  "recipe_catalog": "I:\\My Drive\\Enshrouded Mods\\EmberVault_Research\\Embervault_Researcher\\1.0\\catalogs\\item-recipe-adapter-v1.json",
+  "evidence_state": "observed",
+  "promotion_state": "research-only",
+  "workshop_count": 51,
+  "recipe_workshop_group_count": 1,
+  "unresolved_workshop_group_count": 1,
+  "workshop_usage": [
+    {
+      "workshop_id": 0,
+      "recipe_count": 2536,
+      "workshop_guid": null,
+      "name_id": null,
+      "resolved": false,
+      "sample_recipe_names": [
+        "Recipe_Blueprint_Tool_Quickbuilder_empty_workbench",
+        "Key_T6_Skeleton_Bone_HollowHalls",
+        "Key_T5_Skeleton_Bone_HollowHalls",
+        "Key_T4_Skeleton_Bone_HollowHalls",
+        "Key_T3_Skeleton_Bone_HollowHalls"
+      ]
+    }
+  ],
+  "limitation": "Workshop name IDs require localization resolution; this report preserves numeric IDs and GUIDs without inventing labels."
+}
