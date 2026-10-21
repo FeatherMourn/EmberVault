@@ -1,5 +1,7 @@
 -- Bounded read-only inventory. No writes, native calls, saves, or entity enumeration.
 local reported = false
+local attempts = 0
+local max_attempts = 30
 
 local function report(label, fn)
   local ok, value = pcall(fn)
@@ -15,7 +17,12 @@ return {
   update_interval_ms = 1000,
   on_update = function()
     if reported then return end
+    attempts = attempts + 1
+    local ok_registry, registry = pcall(function() return runtime.ecs.get_registry() end)
+    local ready = ok_registry and registry ~= nil
+    if not ready and attempts < max_attempts then return end
     local lines = {"EMBERVAULT_LIVE_INVENTORY|version=1|read_only=true"}
+    table.insert(lines, "attempt=" .. tostring(attempts) .. ";max_attempts=" .. tostring(max_attempts))
     table.insert(lines, report("types", function() return runtime.types.get_all() end))
     table.insert(lines, report("ecs_registry", function() return runtime.ecs.get_registry() end))
     local types = {
