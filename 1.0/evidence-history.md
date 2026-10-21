@@ -85,6 +85,15 @@
 - **Evidence level:** Static.
 - **Limit:** Consistent metadata does not prove live runtime behavior.
 
+## 2026-10-21 — Remaining probe queue
+
+- **Result:** Nine untested probes were ordered from ItemInfo field reads
+  through localization, references, relationships, platform metadata, and
+  donor-candidate analysis.
+- **Evidence level:** Static.
+- **Limit:** Queue order is not runtime evidence; each result still needs a
+  fresh build-matched session.
+
 ## Snapshot policy
 
 Add an entry for each meaningful probe or build change. Do not overwrite prior

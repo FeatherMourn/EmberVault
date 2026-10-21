@@ -17,3 +17,4 @@ This directory contains the curated, reproducible research map for the current E
 - `probes/` — probe specifications and promotion gates.
 - `adapter-probe-plan.md` — adapter categories, probe types, and investigation order.
 - `mapping-plan.md` — layered collection goals and catalog outputs.
+- `reports/probe-queue-2026-10-21.json` — prioritized remaining probe queue.
