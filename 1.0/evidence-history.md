@@ -21,6 +21,15 @@
 - **Decision:** Keep EML 2.0 metadata staged until a real runtime bridge exists;
   use native-compatible manifests for live probes.
 
+## 2026-10-21 — EML 2.0 bridge removed from live scope
+
+- **Decision:** Keep the EML 2.0 bridge staged only and use standard EML
+  packages for live compatibility tests.
+- **Reason:** The current ShroudForge parser rejects the bridge's extra
+  compatibility metadata and custom capability declaration.
+- **Impact:** The bridge is not counted as live support. Its source and staged
+  package remain available for a future loader/runtime integration.
+
 ## Snapshot policy
 
 Add an entry for each meaningful probe or build change. Do not overwrite prior
