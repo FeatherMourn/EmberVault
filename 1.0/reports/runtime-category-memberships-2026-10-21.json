@@ -1,0 +1,799 @@
+{
+  "schema_version": 1,
+  "adapter_id": "embervault-runtime-category-membership",
+  "game_scope": "Enshrouded 1.0",
+  "probe_output": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\export\\embervault\\recipe-category-v1.tsv",
+  "item_catalog": "I:\\My Drive\\Enshrouded Mods\\EmberVault_Research\\Embervault_Researcher\\1.0\\catalogs\\item-recipe-adapter-v1.json",
+  "evidence_state": "observed",
+  "promotion_state": "research-only",
+  "category_count": 22,
+  "total_membership_rows": 90,
+  "unresolved_members": 0,
+  "categories": [
+    {
+      "category_id": 3998935359,
+      "member_count": 6,
+      "resolved_member_count": 6,
+      "members": [
+        {
+          "item_id": 722268629,
+          "scaling": 1,
+          "debug_name": "Material_T1_Wood_Logs",
+          "object_id": "3f4093ae-75ed-4e5d-bd0b-784ba83b88f5",
+          "resolved": true
+        },
+        {
+          "item_id": 1765656585,
+          "scaling": 1,
+          "debug_name": "Material_T2_Wood_Hardwood",
+          "object_id": "18272f9d-0021-4149-9776-4cfcdf2394a9",
+          "resolved": true
+        },
+        {
+          "item_id": 2955233340,
+          "scaling": 1,
+          "debug_name": "Material_T4_Wood_Logs_Palm",
+          "object_id": "df571461-dc7b-4ea5-a4d4-d305106505bc",
+          "resolved": true
+        },
+        {
+          "item_id": 1475408789,
+          "scaling": 1,
+          "debug_name": "Material_T5_Wood_Logs_Pine",
+          "object_id": "432f909f-45c9-4e32-9773-d4708e927524",
+          "resolved": true
+        },
+        {
+          "item_id": 1381084162,
+          "scaling": 1,
+          "debug_name": "Material_T6_Wood_Logs_Bamboo",
+          "object_id": "4fbdd564-096b-4c56-be91-7b684196d425",
+          "resolved": true
+        },
+        {
+          "item_id": 1283252179,
+          "scaling": 1,
+          "debug_name": "Material_T6_Wood_Logs_Tropical",
+          "object_id": "bb19e0b5-a468-4fb7-b7d8-f17bafb1332b",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 2958291185,
+      "member_count": 8,
+      "resolved_member_count": 8,
+      "members": [
+        {
+          "item_id": 631520303,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T1_Stone",
+          "object_id": "8870fa83-04e6-4b5a-ac2a-ea13205ce469",
+          "resolved": true
+        },
+        {
+          "item_id": 1181280513,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T2_Stone_DeepForest",
+          "object_id": "a95fac55-d6db-43b8-877c-05fe389effac",
+          "resolved": true
+        },
+        {
+          "item_id": 760251531,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T2_Stone_Talltree",
+          "object_id": "cb1c819a-fe73-4e5c-afec-fdb505b401f4",
+          "resolved": true
+        },
+        {
+          "item_id": 3445636557,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T3_Stone_Steppes_Limestone",
+          "object_id": "584bbcbe-8ed6-4a5f-97dd-409f9660214e",
+          "resolved": true
+        },
+        {
+          "item_id": 1401630464,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T4_Sandstone",
+          "object_id": "2f9dc768-2081-481c-a700-945c864eb6b0",
+          "resolved": true
+        },
+        {
+          "item_id": 3865976041,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T5_Granite",
+          "object_id": "83101a9d-572a-4427-bdb1-817811f770fb",
+          "resolved": true
+        },
+        {
+          "item_id": 1853942795,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T6_Wetlands_Stone_Limestone_Shells",
+          "object_id": "fefff736-a7ae-4865-b83a-bf4c99992160",
+          "resolved": true
+        },
+        {
+          "item_id": 885155884,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T7_AncientLand_Stone",
+          "object_id": "dea7f8df-4d3c-4577-9744-2a22e34d1ced",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 1052377694,
+      "member_count": 2,
+      "resolved_member_count": 2,
+      "members": [
+        {
+          "item_id": 3316218728,
+          "scaling": 1,
+          "debug_name": "Material_T1_Plant_Fibre",
+          "object_id": "ff00a9f6-fd7e-4933-9c6b-33c36223cd2b",
+          "resolved": true
+        },
+        {
+          "item_id": 1026141130,
+          "scaling": 1,
+          "debug_name": "Material_T6_PaperReed",
+          "object_id": "2800f707-8a8d-4b66-bfac-447c800983a6",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 858856297,
+      "member_count": 4,
+      "resolved_member_count": 4,
+      "members": [
+        {
+          "item_id": 2493843175,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T4_Dirt_Desert_sand",
+          "object_id": "439cbec1-cbc8-4c71-851f-af38642a4e5d",
+          "resolved": true
+        },
+        {
+          "item_id": 3489782185,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T4_Dirt_Desert_fine_sand",
+          "object_id": "165a08b2-3f51-4802-8fb8-fa6791af06c2",
+          "resolved": true
+        },
+        {
+          "item_id": 2181045178,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T6_Dirt_Wetlands_Sand",
+          "object_id": "3d7591c2-b912-4d64-adca-587f31706b82",
+          "resolved": true
+        },
+        {
+          "item_id": 3899759098,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T7_Dirt_AncientLand_Sand",
+          "object_id": "57f712da-5ad3-4b31-b700-0f5761472b5e",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 1302673948,
+      "member_count": 7,
+      "resolved_member_count": 7,
+      "members": [
+        {
+          "item_id": 1558115984,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T1_Dirt_Grassland",
+          "object_id": "20292e7b-858b-4e5f-bdc8-e921190eb0f4",
+          "resolved": true
+        },
+        {
+          "item_id": 3937186197,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T2_Dirt_DeepForest",
+          "object_id": "ca261385-9aa6-4fa4-94c5-cd28f0565669",
+          "resolved": true
+        },
+        {
+          "item_id": 2385754716,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T2_Dirt_Talltrees",
+          "object_id": "4fab9d8b-bdae-4969-898f-ff8b3c2ae2ce",
+          "resolved": true
+        },
+        {
+          "item_id": 2732808327,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T3_Dirt_Steppes",
+          "object_id": "e37da6be-626f-4232-846c-80be26a5adfb",
+          "resolved": true
+        },
+        {
+          "item_id": 2080424991,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T5_Dirt_ColdHeights",
+          "object_id": "323c469c-004b-4a49-89a4-f204d2100b04",
+          "resolved": true
+        },
+        {
+          "item_id": 4095370049,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T6_Dirt_Wetlands",
+          "object_id": "95652556-6b4d-46b4-a6ce-9a4b997b792d",
+          "resolved": true
+        },
+        {
+          "item_id": 2421105715,
+          "scaling": 1,
+          "debug_name": "Build_TerrainMaterial_T7_Dirt_AncientLand",
+          "object_id": "8fe78325-7ad3-46cf-9e65-15286ce85e8a",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 3415491547,
+      "member_count": 2,
+      "resolved_member_count": 2,
+      "members": [
+        {
+          "item_id": 2610555646,
+          "scaling": 1,
+          "debug_name": "Material_T1_OldBooks",
+          "object_id": "5825e3b9-15b5-437d-ac0d-b01c1bad8308",
+          "resolved": true
+        },
+        {
+          "item_id": 287018928,
+          "scaling": 1,
+          "debug_name": "Material_T4_Paper",
+          "object_id": "be75401c-4456-4d51-af9e-24106075097f",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 1533161145,
+      "member_count": 3,
+      "resolved_member_count": 3,
+      "members": [
+        {
+          "item_id": 3480216747,
+          "scaling": 1,
+          "debug_name": "_Food_raw_bad_T1_fish_common_02",
+          "object_id": "c5ce0f55-81f8-4772-962e-5e72411d9b4e",
+          "resolved": true
+        },
+        {
+          "item_id": 2586083671,
+          "scaling": 1,
+          "debug_name": "_Food_raw_T3_fish_common_03",
+          "object_id": "18f83045-fbb3-4f7a-b9a9-0bc6e164f9df",
+          "resolved": true
+        },
+        {
+          "item_id": 2004880509,
+          "scaling": 1,
+          "debug_name": "_Food_raw_bad_T1_fish_common_01",
+          "object_id": "e26c1c47-bdac-43f1-8a14-72101f2ba56b",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 967490225,
+      "member_count": 3,
+      "resolved_member_count": 3,
+      "members": [
+        {
+          "item_id": 887847819,
+          "scaling": 1,
+          "debug_name": "_Food_raw_bad_T2_fish_uncommon_02",
+          "object_id": "f8489ec5-0916-4585-80c8-43c4a17df320",
+          "resolved": true
+        },
+        {
+          "item_id": 3445329106,
+          "scaling": 1,
+          "debug_name": "_Food_raw_bad_T2_fish_uncommon_01",
+          "object_id": "ef455074-f171-4342-a66e-969d65488a84",
+          "resolved": true
+        },
+        {
+          "item_id": 1216878011,
+          "scaling": 1,
+          "debug_name": "_Food_raw_T3_fish_uncommon_03",
+          "object_id": "287f24f6-0810-495c-8f5b-ab8b89fdf18d",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 3433259878,
+      "member_count": 4,
+      "resolved_member_count": 4,
+      "members": [
+        {
+          "item_id": 1675072409,
+          "scaling": 1,
+          "debug_name": "_Food_raw_T5_fish_rare_03",
+          "object_id": "3e810be4-5ada-4276-a149-879ef7a69fc9",
+          "resolved": true
+        },
+        {
+          "item_id": 3419031428,
+          "scaling": 1,
+          "debug_name": "_Food_raw_bad_T4_fish_rare_01",
+          "object_id": "7aa4b513-c962-4b62-8779-646e5a71df33",
+          "resolved": true
+        },
+        {
+          "item_id": 3653119547,
+          "scaling": 1,
+          "debug_name": "_Food_raw_bad_T4_fish_rare_02",
+          "object_id": "027aef97-ae09-48b9-b2c6-a4fe6a352924",
+          "resolved": true
+        },
+        {
+          "item_id": 817023891,
+          "scaling": 1,
+          "debug_name": "_Food_raw_bad_T5_fish_rare_04",
+          "object_id": "bf5e0e0f-034b-4db2-8f09-a0515811a33c",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 1024037675,
+      "member_count": 5,
+      "resolved_member_count": 5,
+      "members": [
+        {
+          "item_id": 4044713321,
+          "scaling": 1,
+          "debug_name": "_Food_raw_bad_T6_fish_epic_01",
+          "object_id": "e50d69e1-f975-46c3-9938-ad28a96bd039",
+          "resolved": true
+        },
+        {
+          "item_id": 780626079,
+          "scaling": 1,
+          "debug_name": "_Food_raw_T6_fish_epic_02",
+          "object_id": "3f19ed1d-8be3-4092-8a18-55eb149da4c3",
+          "resolved": true
+        },
+        {
+          "item_id": 2176589336,
+          "scaling": 1,
+          "debug_name": "_Food_raw_bad_T6_fish_epic_03",
+          "object_id": "f3443cca-ad8f-4e36-be73-e1eef7ffd004",
+          "resolved": true
+        },
+        {
+          "item_id": 4122706847,
+          "scaling": 1,
+          "debug_name": "_Food_raw_bad_T7_fish_epic_04",
+          "object_id": "2c504a08-2193-4fcd-8ce0-b37f8a70ccdc",
+          "resolved": true
+        },
+        {
+          "item_id": 1692397990,
+          "scaling": 1,
+          "debug_name": "_Food_raw_bad_T7_fish_epic_05",
+          "object_id": "722825c7-ddb1-406e-9e79-0d3d57ed0238",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 496914807,
+      "member_count": 3,
+      "resolved_member_count": 3,
+      "members": [
+        {
+          "item_id": 2586083671,
+          "scaling": 1,
+          "debug_name": "_Food_raw_T3_fish_common_03",
+          "object_id": "18f83045-fbb3-4f7a-b9a9-0bc6e164f9df",
+          "resolved": true
+        },
+        {
+          "item_id": 1675072409,
+          "scaling": 1,
+          "debug_name": "_Food_raw_T5_fish_rare_03",
+          "object_id": "3e810be4-5ada-4276-a149-879ef7a69fc9",
+          "resolved": true
+        },
+        {
+          "item_id": 780626079,
+          "scaling": 1,
+          "debug_name": "_Food_raw_T6_fish_epic_02",
+          "object_id": "3f19ed1d-8be3-4092-8a18-55eb149da4c3",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 3267226510,
+      "member_count": 2,
+      "resolved_member_count": 2,
+      "members": [
+        {
+          "item_id": 166917849,
+          "scaling": 1,
+          "debug_name": "_Material_TX_Damaged_FurBoot_Fishing",
+          "object_id": "9e867607-dbc8-4a97-a101-714f795b9a5f",
+          "resolved": true
+        },
+        {
+          "item_id": 661026568,
+          "scaling": 1,
+          "debug_name": "Material_T1_Animal_Fur_Patch",
+          "object_id": "7dc2f07f-8be6-43b1-82fa-ded2d6ba07a1",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 2002427228,
+      "member_count": 2,
+      "resolved_member_count": 2,
+      "members": [
+        {
+          "item_id": 2352305513,
+          "scaling": 1,
+          "debug_name": "Material_T6_Fish_Teeth",
+          "object_id": "31aeb195-12dc-4c02-9919-8b7d0e9a1ae5",
+          "resolved": true
+        },
+        {
+          "item_id": 2244383765,
+          "scaling": 1,
+          "debug_name": "Material_T6_Fish_Bones",
+          "object_id": "5a05aae2-3f44-4561-a6e2-1bd5e5b1ffbb",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 579745429,
+      "member_count": 8,
+      "resolved_member_count": 8,
+      "members": [
+        {
+          "item_id": 2967793968,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T2_ColorPalette_03",
+          "object_id": "f777451c-ef79-46b9-841f-c67dc174a9e1",
+          "resolved": true
+        },
+        {
+          "item_id": 389689356,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T2_ColorPalette_04",
+          "object_id": "a9ea9187-cad4-42aa-bb66-a28a66a00cd3",
+          "resolved": true
+        },
+        {
+          "item_id": 2125851720,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T2_ColorPalette_Reward_01",
+          "object_id": "4dd584e2-98a9-4cf7-bc45-a7d269a8852f",
+          "resolved": true
+        },
+        {
+          "item_id": 4286973253,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T2_ColorPalette_Reward_02",
+          "object_id": "c35e87fe-6e57-4bf3-bf95-ed9070067cc8",
+          "resolved": true
+        },
+        {
+          "item_id": 3494273287,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T6_ColorPalette_03",
+          "object_id": "36b09828-3789-4444-91fb-a1cdac77bb00",
+          "resolved": true
+        },
+        {
+          "item_id": 855563189,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T6_ColorPalette_07",
+          "object_id": "be074a42-dcf1-4598-a6bc-375ca66a730f",
+          "resolved": true
+        },
+        {
+          "item_id": 3909173375,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T6_ColorPalette_Reward_02",
+          "object_id": "78df54a1-9545-43e5-93b0-de4b1339cddd",
+          "resolved": true
+        },
+        {
+          "item_id": 391330740,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T6_ColorPalette_night_01",
+          "object_id": "1c25744b-74d2-4f79-9211-4ef2b30dfe7a",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 2315776532,
+      "member_count": 8,
+      "resolved_member_count": 8,
+      "members": [
+        {
+          "item_id": 968828649,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T1_ColorPalette_Reward_01",
+          "object_id": "20d2a632-2fad-4d8c-b5c9-40e8e19d9130",
+          "resolved": true
+        },
+        {
+          "item_id": 2607932810,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T4_ColorPalette_02",
+          "object_id": "d6d979b3-786e-4dfa-a9c1-f2d6b3c91ad5",
+          "resolved": true
+        },
+        {
+          "item_id": 3687407983,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T4_ColorPalette_03",
+          "object_id": "b72d68b8-e9df-412e-a28f-b55484321431",
+          "resolved": true
+        },
+        {
+          "item_id": 1860080518,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T6_ColorPalette_04",
+          "object_id": "eba8fc74-5fd3-46ba-bfbf-85c19f6406fb",
+          "resolved": true
+        },
+        {
+          "item_id": 1365809698,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T6_ColorPalette_05",
+          "object_id": "29880b42-fe3f-4cec-a491-0da249c0fa5b",
+          "resolved": true
+        },
+        {
+          "item_id": 1966532423,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T6_ColorPalette_06",
+          "object_id": "3a26e060-6615-4b6a-acc9-3bed9378fb3f",
+          "resolved": true
+        },
+        {
+          "item_id": 1932536216,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T6_ColorPalette_Reward_01",
+          "object_id": "ac32feb0-7b91-4193-a2e0-de7fe628fb47",
+          "resolved": true
+        },
+        {
+          "item_id": 835723769,
+          "scaling": 1,
+          "debug_name": "ColorPalette_T6_ColorPalette_night_02",
+          "object_id": "65ac8579-de89-47bb-b70d-4bb57e0f99d2",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 4025961031,
+      "member_count": 3,
+      "resolved_member_count": 3,
+      "members": [
+        {
+          "item_id": 2873455991,
+          "scaling": 1,
+          "debug_name": "Food_T1_raw_hydration_Milk",
+          "object_id": "adcdca63-10f4-43c7-8961-01e434210f68",
+          "resolved": true
+        },
+        {
+          "item_id": 443792978,
+          "scaling": 1,
+          "debug_name": "Food_T5_raw_hydration_MountaingoatMilk",
+          "object_id": "126e833a-2fdf-4fc2-b968-7964ab781f87",
+          "resolved": true
+        },
+        {
+          "item_id": 2012645754,
+          "scaling": 1,
+          "debug_name": "Food_T2_raw_bad_hydration_CatdeerMilk",
+          "object_id": "f43272d0-7a58-4515-abed-4798c8941478",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 4287149168,
+      "member_count": 7,
+      "resolved_member_count": 7,
+      "members": [
+        {
+          "item_id": 1782638906,
+          "scaling": 4.5,
+          "debug_name": "Material_T1_Fognest_Ressource",
+          "object_id": "ab3b4edf-b63f-4db4-a7ec-751141766a5a",
+          "resolved": true
+        },
+        {
+          "item_id": 1323406480,
+          "scaling": 4,
+          "debug_name": "Material_T2_Fognest_Ressource",
+          "object_id": "2371f5e7-7c90-47b4-b0f8-1643d4f6d1b4",
+          "resolved": true
+        },
+        {
+          "item_id": 3928746815,
+          "scaling": 3.5,
+          "debug_name": "Material_T3_Fognest_Ressource",
+          "object_id": "7e001767-b15a-4c50-b686-8662b14a7b39",
+          "resolved": true
+        },
+        {
+          "item_id": 3561488499,
+          "scaling": 3,
+          "debug_name": "Material_T4_Fognest_Ressource",
+          "object_id": "aafd9cc0-78a2-45c1-97f9-ad3b12f9abc9",
+          "resolved": true
+        },
+        {
+          "item_id": 3844432901,
+          "scaling": 2.5,
+          "debug_name": "Material_T5_Fognest_Ressource",
+          "object_id": "535c9a3c-e2a1-43fe-8884-fedbd48565f6",
+          "resolved": true
+        },
+        {
+          "item_id": 417655603,
+          "scaling": 2,
+          "debug_name": "Material_T6_Fognest_Ressource",
+          "object_id": "8b204e6f-ac80-4bb5-9a82-76a9bd2f28ed",
+          "resolved": true
+        },
+        {
+          "item_id": 2135602472,
+          "scaling": 1,
+          "debug_name": "Material_T7_Fognest_Ressource",
+          "object_id": "bd3e92fc-a65e-4838-a024-09f382de2a48",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 2588798904,
+      "member_count": 2,
+      "resolved_member_count": 2,
+      "members": [
+        {
+          "item_id": 2715107589,
+          "scaling": 1,
+          "debug_name": "Material_T6_Gold_Ore",
+          "object_id": "68807927-26ec-4791-b6d5-6d09198159be",
+          "resolved": true
+        },
+        {
+          "item_id": 2141541288,
+          "scaling": 0.800000011920929,
+          "debug_name": "Material_T7_Archaic_Shards",
+          "object_id": "bc2c2984-869e-40ce-a6f9-b8e611442832",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 932294980,
+      "member_count": 2,
+      "resolved_member_count": 2,
+      "members": [
+        {
+          "item_id": 2632607216,
+          "scaling": 2,
+          "debug_name": "Material_T6_Poison_Sting",
+          "object_id": "4937111f-4b09-471e-8c13-f07ef397f9a2",
+          "resolved": true
+        },
+        {
+          "item_id": 3610183331,
+          "scaling": 1,
+          "debug_name": "Material_T7_Fish_Poison_Gland",
+          "object_id": "bb88b739-aff6-439c-9939-dbce3ac1ce73",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 1931450442,
+      "member_count": 5,
+      "resolved_member_count": 5,
+      "members": [
+        {
+          "item_id": 2617088387,
+          "scaling": 1,
+          "debug_name": "Material_T1-T2_Green_Essence",
+          "object_id": "271fcfca-920d-451e-81dd-adb5d07479b0",
+          "resolved": true
+        },
+        {
+          "item_id": 1453689781,
+          "scaling": 1,
+          "debug_name": "Material_T3_Green_Essence",
+          "object_id": "ca6b8ff7-c0c1-4dff-99ab-35fedfd3c6ff",
+          "resolved": true
+        },
+        {
+          "item_id": 3236482539,
+          "scaling": 1,
+          "debug_name": "Material_T4_Green_Essence",
+          "object_id": "71e5d1cd-09bb-4b2a-afe1-3fd54c33408c",
+          "resolved": true
+        },
+        {
+          "item_id": 1903438107,
+          "scaling": 1,
+          "debug_name": "Material_T5_Green_Essence",
+          "object_id": "7ae80332-3095-416b-9aba-ccc43967bb3f",
+          "resolved": true
+        },
+        {
+          "item_id": 4005698976,
+          "scaling": 1,
+          "debug_name": "Material_T6_Green_Essence",
+          "object_id": "d346bf30-c4ee-4d2c-b339-c94893213f7c",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 2164580738,
+      "member_count": 2,
+      "resolved_member_count": 2,
+      "members": [
+        {
+          "item_id": 3264892278,
+          "scaling": 2.5,
+          "debug_name": "Material_T1_CritterParts",
+          "object_id": "23eff985-6f54-4ca0-968c-5b7b11c844bd",
+          "resolved": true
+        },
+        {
+          "item_id": 1611805749,
+          "scaling": 1,
+          "debug_name": "Material_T5_CritterParts_CritterCarapace",
+          "object_id": "5fcea5f2-a4eb-49d1-9c5e-caef7261eb80",
+          "resolved": true
+        }
+      ]
+    },
+    {
+      "category_id": 3345945855,
+      "member_count": 2,
+      "resolved_member_count": 2,
+      "members": [
+        {
+          "item_id": 3376734441,
+          "scaling": 1,
+          "debug_name": "Material_T5_Obsidian",
+          "object_id": "c6283555-6ee3-4e53-91ac-280c316968a5",
+          "resolved": true
+        },
+        {
+          "item_id": 132545371,
+          "scaling": 1,
+          "debug_name": "Material_T1_Metal_Scraps",
+          "object_id": "4fbf9866-7d39-4473-b3f1-b9d03a55ca83",
+          "resolved": true
+        }
+      ]
+    }
+  ],
+  "limitation": "Runtime membership identifies category contents; human-readable category labels remain unavailable from this probe."
+}
