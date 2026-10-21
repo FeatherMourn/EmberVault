@@ -1,0 +1,12 @@
+{
+  "snapshot": "1.0",
+  "validated_on": "2026-10-21",
+  "scope": [
+    "embervault_api_capability_probe_sf",
+    "embervault_resource_type_probe_sf"
+  ],
+  "finding": "registry status is verified while report evidence_state is observed",
+  "decision": "retain observed status until current-session evidence is reconciled",
+  "evidence_state": "static-audit",
+  "matrix_promotion": false
+}

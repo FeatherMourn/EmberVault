@@ -58,6 +58,15 @@
 - **Limit:** These results establish API visibility and enumeration only; they
   do not establish writability, native memory access, or safe mutation.
 
+## 2026-10-21 — Registry/report evidence reconciliation
+
+- **Finding:** The registry marks the API capability and resource-type probes as
+  verified, while their report records classify them as observed.
+- **Decision:** Keep the capability matrix conservative and treat the probes as
+  observed until the underlying current-session evidence is reconciled.
+- **Action:** Future imports must preserve one evidence level across registry,
+  report, and history records.
+
 ## Snapshot policy
 
 Add an entry for each meaningful probe or build change. Do not overwrite prior
