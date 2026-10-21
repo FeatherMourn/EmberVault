@@ -1,7 +1,7 @@
 -- Bounded scalar reads only. No writes, overrides, native calls, or save access.
 local reported = false
 local attempts = 0
-local max_attempts = 30
+local max_attempts = 90
 
 local function line(label, fn)
   local ok, value = pcall(fn)
@@ -36,12 +36,13 @@ return {
     if reported then return end
     attempts = attempts + 1
     local ok_registry, registry = pcall(function() return runtime.ecs.get_registry() end)
-    local ok_resources = pcall(function() return game.assets.get_loaded_resources_by_type("keen::BalancingTable") end)
-    if (not (ok_registry and registry) or not ok_resources) and attempts < max_attempts then return end
+    local ok_resources, resources = pcall(function() return game.assets.get_loaded_resources_by_type("keen::BalancingTable") end)
+    local ok_service, service = pcall(function() return runtime.services.get("ecs::GameSettings") end)
+    local services_ready = ok_service and service ~= nil
+    if (not (ok_registry and registry) or not (ok_resources and resources) or not services_ready) and attempts < max_attempts then return end
     local lines = {"EMBERVAULT_SCALAR_READ|version=1|read_only=true"}
     table.insert(lines, "attempt=" .. tostring(attempts) .. ";max_attempts=" .. tostring(max_attempts))
     table.insert(lines, line("settings_service", function()
-      local service = runtime.services.get("ecs::GameSettings")
       local values = service:read_fields({"factoryProductionSpeedFactor", "enemyHealthFactor", "playerHealthFactor"})
       return fields_text(values)
     end))
