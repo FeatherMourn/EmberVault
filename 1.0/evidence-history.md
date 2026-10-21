@@ -30,6 +30,15 @@
 - **Impact:** The bridge is not counted as live support. Its source and staged
   package remain available for a future loader/runtime integration.
 
+## 2026-10-21 — Tracked probe manifest validation
+
+- **Scope:** All 11 tracked ShroudForge probe packages in `1.0/probes/`.
+- **Result:** All manifests parsed successfully; all use the accepted runtime
+  capability; none contains the rejected compatibility field.
+- **Evidence level:** Static.
+- **Limit:** This validates package shape only; it does not prove runtime
+  execution or API behavior.
+
 ## Snapshot policy
 
 Add an entry for each meaningful probe or build change. Do not overwrite prior
