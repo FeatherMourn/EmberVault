@@ -1,9 +1,19 @@
 -- Bounded scalar reads only. No writes, overrides, native calls, or save access.
 local reported = false
+local attempts = 0
+local max_attempts = 30
 
 local function line(label, fn)
   local ok, value = pcall(fn)
   return label .. "=" .. (ok and tostring(value) or "error:" .. tostring(value))
+end
+
+local function fields_text(values)
+  local parts = {}
+  if type(values) ~= "table" then return tostring(values) end
+  for key, value in pairs(values) do table.insert(parts, tostring(key) .. "=" .. tostring(value)) end
+  table.sort(parts)
+  return table.concat(parts, ",")
 end
 
 local function read_resource(type_name, fields)
@@ -24,13 +34,16 @@ return {
   update_interval_ms = 1000,
   on_update = function()
     if reported then return end
+    attempts = attempts + 1
     local ok_registry, registry = pcall(function() return runtime.ecs.get_registry() end)
-    if not (ok_registry and registry) then return end
+    local ok_resources = pcall(function() return game.assets.get_loaded_resources_by_type("keen::BalancingTable") end)
+    if (not (ok_registry and registry) or not ok_resources) and attempts < max_attempts then return end
     local lines = {"EMBERVAULT_SCALAR_READ|version=1|read_only=true"}
+    table.insert(lines, "attempt=" .. tostring(attempts) .. ";max_attempts=" .. tostring(max_attempts))
     table.insert(lines, line("settings_service", function()
       local service = runtime.services.get("ecs::GameSettings")
       local values = service:read_fields({"factoryProductionSpeedFactor", "enemyHealthFactor", "playerHealthFactor"})
-      return values
+      return fields_text(values)
     end))
     table.insert(lines, line("presets", function()
       return read_resource("keen::GameSettingsPresetsResource", {"minValues.playerHealthFactor", "maxValues.playerHealthFactor", "minValues.factoryProductionSpeedFactor", "maxValues.factoryProductionSpeedFactor"})
