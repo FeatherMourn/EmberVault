@@ -1,6 +1,7 @@
 -- Read-only exact-schema inventory. No entities, writes, natives, or saves.
 local lines={"schema_version=1","probe_id=character-schema","probe_version=1.0.0","evidence_state=observed","collection_status=started","limitations=resource availability and top-level field presence only; no semantic or writable-field claim"}
 local targets={
+  {"keen::CharacterPresetCollection",{"presets","colors","knowledgeUnlocks"}},
   {"keen::CharacterCustomizationResource",{"presets","hairItems","beardItems","hairColors","eyeColors","eyeBrowColors","skinColors","voices"}},
   {"keen::CharacterPresetResource",{"references","presetId","gender","hairColorPresetId","beardColorPresetId","head","hair","beard","chest","armourHead"}},
   {"keen::ecs::CharacterSetup",{"gender","voicePackId","presetId","hair","beard","hairColorId","beardColorId","skinColor","eyeBrowColor","eyeColor","useNewProportions"}},
