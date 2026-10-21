@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "adapter_id": "embervault-item-recipe-catalog-validator",
+  "game_scope": "Enshrouded 1.0",
+  "catalog_source": "H:\\enshroudedresearch\\kfc-export-20261019-113420\\item-recipe-catalog.json",
+  "kfc_root": "H:\\enshroudedresearch\\kfc-export-20261019-113420",
+  "item_count": 4262,
+  "recipe_count": 2536,
+  "distinct_item_debug_names": 4262,
+  "distinct_recipe_debug_names": 2536,
+  "item_source_files_found": 4262,
+  "recipe_source_files_found": 1,
+  "items_missing_source_file": 0,
+  "recipes_missing_source_file": 0,
+  "evidence_state": "observed",
+  "promotion_state": "research-only",
+  "limitation": "Catalog/source validation does not prove live runtime visibility, crafting behavior, or writability.",
+  "missing_item_sources": [],
+  "missing_recipe_sources": []
+}
