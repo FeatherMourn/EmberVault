@@ -4,6 +4,15 @@ Snapshot: `1.0`
 Scope: EML, ShroudForge, EmberVault tooling, and content-generation workflows  
 Status: living record
 
+## Guiding scope
+
+The project maps Enshrouded through standard EML and Lua running under
+ShroudForge. Adapters, read-only probes, offline catalogs, structured logs,
+exports, and build-matched evidence are the primary methods. Every capability
+claim is recorded here with its evidence level and limitations before its
+status changes. The EML 2.0 bridge and mutation paths remain outside the live
+supported scope until independently verified.
+
 ## Evidence levels
 
 | Level | Meaning |
