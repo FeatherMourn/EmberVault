@@ -2,6 +2,8 @@
 
 This is a discovery map, not a claim that the fields are writable.
 
+Historical pre-1.0 correspondences are tracked separately in `pre-1-0-tuning-crosswalk-2026-10-21.md` and are not treated as current evidence.
+
 ## Confirmed static locations
 
 | Storage layer | Example type | Candidate fields | Current interpretation |
