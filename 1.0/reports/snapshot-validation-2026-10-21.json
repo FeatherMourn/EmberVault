@@ -1,0 +1,10 @@
+{
+  "snapshot": "1.0",
+  "validated_on": "2026-10-21",
+  "command": "tools/validate_snapshot.py",
+  "probe_count": 11,
+  "adapter_count": 2,
+  "evidence_state": "static",
+  "result": "passed",
+  "limitation": "Required files are present; runtime execution is not established."
+}

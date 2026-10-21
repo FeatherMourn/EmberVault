@@ -39,6 +39,14 @@
 - **Limit:** This validates package shape only; it does not prove runtime
   execution or API behavior.
 
+## 2026-10-21 — Snapshot integrity validation
+
+- **Command:** `tools/validate_snapshot.py`
+- **Result:** 11 registered probes and 2 adapters validated with their required
+  package and contract files present.
+- **Evidence level:** Static.
+- **Limit:** This does not establish that a probe has executed in the game.
+
 ## Snapshot policy
 
 Add an entry for each meaningful probe or build change. Do not overwrite prior
