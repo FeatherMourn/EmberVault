@@ -92,6 +92,18 @@
           "guid": "001342c3-3065-47ad-92e9-fc719eedd0b4",
           "part": 0,
           "type": "keen::actor::ActorSequenceResource"
+        },
+        {
+          "file": "006e3771-fe4b-4191-9ae6-9dae28acd0eb_9fd4a561_0.json",
+          "guid": "006e3771-fe4b-4191-9ae6-9dae28acd0eb",
+          "part": 0,
+          "type": "keen::actor::ActorSequenceResource"
+        },
+        {
+          "file": "00839b92-453a-4d26-b191-34e3d59a0c8f_9fd4a561_0.json",
+          "guid": "00839b92-453a-4d26-b191-34e3d59a0c8f",
+          "part": 0,
+          "type": "keen::actor::ActorSequenceResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -316,6 +328,18 @@
           "guid": "0022fed6-0380-4125-be31-ba8b5fdcbfcd",
           "part": 0,
           "type": "keen::anim_graph::runtime_graph::AnimationGraphResource2_0"
+        },
+        {
+          "file": "010aecef-a99a-4f9a-ac80-00e5b1dd2484_a345050e_0.json",
+          "guid": "010aecef-a99a-4f9a-ac80-00e5b1dd2484",
+          "part": 0,
+          "type": "keen::anim_graph::runtime_graph::AnimationGraphResource2_0"
+        },
+        {
+          "file": "0145d514-99a6-4f04-b186-e83099710128_a345050e_0.json",
+          "guid": "0145d514-99a6-4f04-b186-e83099710128",
+          "part": 0,
+          "type": "keen::anim_graph::runtime_graph::AnimationGraphResource2_0"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -342,6 +366,18 @@
         {
           "file": "000c4c03-5677-4399-863e-4c5f2d14a50c_b8e417ac_0.json",
           "guid": "000c4c03-5677-4399-863e-4c5f2d14a50c",
+          "part": 0,
+          "type": "keen::AnimationSequenceContainer"
+        },
+        {
+          "file": "001f8495-ca18-41e1-b015-8feb745133c6_b8e417ac_0.json",
+          "guid": "001f8495-ca18-41e1-b015-8feb745133c6",
+          "part": 0,
+          "type": "keen::AnimationSequenceContainer"
+        },
+        {
+          "file": "0024e632-8f5c-43ee-b490-c0513e4ff460_b8e417ac_0.json",
+          "guid": "0024e632-8f5c-43ee-b490-c0513e4ff460",
           "part": 0,
           "type": "keen::AnimationSequenceContainer"
         }
@@ -456,6 +492,18 @@
           "guid": "05ce03e9-0006-4668-82d4-58dd92988dbf",
           "part": 0,
           "type": "keen::BaseAttributeResource"
+        },
+        {
+          "file": "0a0eabad-6094-4ba2-8dc5-614d500d0a34_94708371_0.json",
+          "guid": "0a0eabad-6094-4ba2-8dc5-614d500d0a34",
+          "part": 0,
+          "type": "keen::BaseAttributeResource"
+        },
+        {
+          "file": "461946f8-b443-4dec-8dfd-3f2b63e38a60_94708371_0.json",
+          "guid": "461946f8-b443-4dec-8dfd-3f2b63e38a60",
+          "part": 0,
+          "type": "keen::BaseAttributeResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -482,6 +530,18 @@
         {
           "file": "36234b22-85f2-4001-ac56-002b379d0d88_6287e034_0.json",
           "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
+          "part": 0,
+          "type": "keen::BiomeMapResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_6287e034_0.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
+          "part": 0,
+          "type": "keen::BiomeMapResource"
+        },
+        {
+          "file": "6e616060-71df-4a67-903e-fe6b8319c58f_6287e034_0.json",
+          "guid": "6e616060-71df-4a67-903e-fe6b8319c58f",
           "part": 0,
           "type": "keen::BiomeMapResource"
         }
@@ -538,6 +598,18 @@
         {
           "file": "1500598c-c816-49ca-9c5c-8525b8bd59d5_88e305c6_0.json",
           "guid": "1500598c-c816-49ca-9c5c-8525b8bd59d5",
+          "part": 0,
+          "type": "keen::anim_graph::BoneMaskResource"
+        },
+        {
+          "file": "1c829a23-e8a3-4cb2-a537-cd863e7fcfb3_88e305c6_0.json",
+          "guid": "1c829a23-e8a3-4cb2-a537-cd863e7fcfb3",
+          "part": 0,
+          "type": "keen::anim_graph::BoneMaskResource"
+        },
+        {
+          "file": "2ad70c7e-6d0e-4268-993b-31b2580e5c18_88e305c6_0.json",
+          "guid": "2ad70c7e-6d0e-4268-993b-31b2580e5c18",
           "part": 0,
           "type": "keen::anim_graph::BoneMaskResource"
         }
@@ -708,6 +780,18 @@
           "guid": "0099a263-42dd-4289-9829-197ce7490edf",
           "part": 0,
           "type": "keen::CardClusterResource"
+        },
+        {
+          "file": "0099a263-42dd-4289-9829-197ce7490edf_0f2c8a96_1.json",
+          "guid": "0099a263-42dd-4289-9829-197ce7490edf",
+          "part": 1,
+          "type": "keen::CardClusterResource"
+        },
+        {
+          "file": "00b5de43-476b-443a-bd0c-9c47831aba6d_0f2c8a96_0.json",
+          "guid": "00b5de43-476b-443a-bd0c-9c47831aba6d",
+          "part": 0,
+          "type": "keen::CardClusterResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -820,6 +904,18 @@
           "guid": "00645e44-6e5d-49f7-a153-2632a611d1f9",
           "part": 0,
           "type": "keen::ecs::DefaultInventoryResource"
+        },
+        {
+          "file": "022cb288-e7ae-41c8-815e-aafc0f475bdd_3eb1bc48_0.json",
+          "guid": "022cb288-e7ae-41c8-815e-aafc0f475bdd",
+          "part": 0,
+          "type": "keen::ecs::DefaultInventoryResource"
+        },
+        {
+          "file": "03202033-acd3-4f3f-923d-af53a2408afd_3eb1bc48_0.json",
+          "guid": "03202033-acd3-4f3f-923d-af53a2408afd",
+          "part": 0,
+          "type": "keen::ecs::DefaultInventoryResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -874,6 +970,12 @@
         {
           "file": "08ae74e8-4400-4d2a-a6ec-74e9441aabbe_ad4d5bf7_0.json",
           "guid": "08ae74e8-4400-4d2a-a6ec-74e9441aabbe",
+          "part": 0,
+          "type": "keen::DetailScatterResource"
+        },
+        {
+          "file": "15506ca1-f0b2-8a43-a087-75a7c83d5596_ad4d5bf7_0.json",
+          "guid": "15506ca1-f0b2-8a43-a087-75a7c83d5596",
           "part": 0,
           "type": "keen::DetailScatterResource"
         }
@@ -1100,6 +1202,12 @@
           "guid": "b1e41044-18e4-48b5-bee4-0994b3e037aa",
           "part": 0,
           "type": "keen::anim_graph::tool_graph::FeetIKSettings"
+        },
+        {
+          "file": "bb771b27-3323-425f-9cc7-bcc701539a5a_64e45568_0.json",
+          "guid": "bb771b27-3323-425f-9cc7-bcc701539a5a",
+          "part": 0,
+          "type": "keen::anim_graph::tool_graph::FeetIKSettings"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -1156,6 +1264,18 @@
           "guid": "0397a23d-75b0-43ab-ab53-86dabb47a0a9",
           "part": 0,
           "type": "keen::fishing::FishSpawnTableResource"
+        },
+        {
+          "file": "048cc72a-9e0d-44e2-89cb-b6e0699ae7ef_ed6815bb_0.json",
+          "guid": "048cc72a-9e0d-44e2-89cb-b6e0699ae7ef",
+          "part": 0,
+          "type": "keen::fishing::FishSpawnTableResource"
+        },
+        {
+          "file": "06fba83a-2fd5-4b37-87b9-9089958bac62_ed6815bb_0.json",
+          "guid": "06fba83a-2fd5-4b37-87b9-9089958bac62",
+          "part": 0,
+          "type": "keen::fishing::FishSpawnTableResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -1182,6 +1302,18 @@
         {
           "file": "36234b22-85f2-4001-ac56-002b379d0d88_e4053c64_0.json",
           "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
+          "part": 0,
+          "type": "keen::FogVoxelMappingResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_e4053c64_0.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
+          "part": 0,
+          "type": "keen::FogVoxelMappingResource"
+        },
+        {
+          "file": "6e616060-71df-4a67-903e-fe6b8319c58f_e4053c64_0.json",
+          "guid": "6e616060-71df-4a67-903e-fe6b8319c58f",
           "part": 0,
           "type": "keen::FogVoxelMappingResource"
         }
@@ -1408,6 +1540,18 @@
           "guid": "0302f2aa-7b60-5c9a-b841-c2a29292782e",
           "part": 0,
           "type": "keen::GpcResource"
+        },
+        {
+          "file": "05717f9f-ea13-5f7c-ac05-667b700ecb74_647628d6_0.json",
+          "guid": "05717f9f-ea13-5f7c-ac05-667b700ecb74",
+          "part": 0,
+          "type": "keen::GpcResource"
+        },
+        {
+          "file": "0bdfbc22-770f-5159-ac3a-bf40b87e7aa9_647628d6_0.json",
+          "guid": "0bdfbc22-770f-5159-ac3a-bf40b87e7aa9",
+          "part": 0,
+          "type": "keen::GpcResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -1464,6 +1608,12 @@
           "guid": "52e7b88a-9c25-4be7-a762-3a3a9f0c97fe",
           "part": 0,
           "type": "keen::IblResource"
+        },
+        {
+          "file": "9743d1a0-007d-4a8a-9088-82d34ce7a697_c6ac5f3f_0.json",
+          "guid": "9743d1a0-007d-4a8a-9088-82d34ce7a697",
+          "part": 0,
+          "type": "keen::IblResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -1490,6 +1640,18 @@
         {
           "file": "001566ad-33bc-48d3-bed5-8fdf60cdd6ea_d4922d88_0.json",
           "guid": "001566ad-33bc-48d3-bed5-8fdf60cdd6ea",
+          "part": 0,
+          "type": "keen::ImpactProgram"
+        },
+        {
+          "file": "00d95bee-3853-4bee-8b76-a0769b355967_d4922d88_0.json",
+          "guid": "00d95bee-3853-4bee-8b76-a0769b355967",
+          "part": 0,
+          "type": "keen::ImpactProgram"
+        },
+        {
+          "file": "01c90d42-49d8-4002-a067-87fffc077211_d4922d88_0.json",
+          "guid": "01c90d42-49d8-4002-a067-87fffc077211",
           "part": 0,
           "type": "keen::ImpactProgram"
         }
@@ -1576,6 +1738,18 @@
           "guid": "0002f740-86a7-4764-ad8e-06423588a054",
           "part": 0,
           "type": "keen::ItemInfo"
+        },
+        {
+          "file": "00106bd2-9e3b-45e0-8370-1c225d4fdca4_b5ce8765_0.json",
+          "guid": "00106bd2-9e3b-45e0-8370-1c225d4fdca4",
+          "part": 0,
+          "type": "keen::ItemInfo"
+        },
+        {
+          "file": "001be31d-2ef3-4281-be85-66c8db2b5e35_b5ce8765_0.json",
+          "guid": "001be31d-2ef3-4281-be85-66c8db2b5e35",
+          "part": 0,
+          "type": "keen::ItemInfo"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -1658,6 +1832,18 @@
         {
           "file": "000c4c03-5677-4399-863e-4c5f2d14a50c_cb9cefc0_0.json",
           "guid": "000c4c03-5677-4399-863e-4c5f2d14a50c",
+          "part": 0,
+          "type": "keen::JointAnimation"
+        },
+        {
+          "file": "001f8495-ca18-41e1-b015-8feb745133c6_cb9cefc0_0.json",
+          "guid": "001f8495-ca18-41e1-b015-8feb745133c6",
+          "part": 0,
+          "type": "keen::JointAnimation"
+        },
+        {
+          "file": "0024e632-8f5c-43ee-b490-c0513e4ff460_cb9cefc0_0.json",
+          "guid": "0024e632-8f5c-43ee-b490-c0513e4ff460",
           "part": 0,
           "type": "keen::JointAnimation"
         }
@@ -1800,6 +1986,18 @@
           "guid": "01821f42-37be-4afe-aa46-d1d681f6c8e6",
           "part": 0,
           "type": "keen::LveAnimation"
+        },
+        {
+          "file": "01f17c3d-617c-440f-9ff5-c71b9800c41b_b4ac556f_0.json",
+          "guid": "01f17c3d-617c-440f-9ff5-c71b9800c41b",
+          "part": 0,
+          "type": "keen::LveAnimation"
+        },
+        {
+          "file": "02c70547-63f9-4012-bfbf-80eaa772694c_b4ac556f_0.json",
+          "guid": "02c70547-63f9-4012-bfbf-80eaa772694c",
+          "part": 0,
+          "type": "keen::LveAnimation"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -1854,6 +2052,18 @@
         {
           "file": "000f0c91-093d-4cb7-bfed-e502ecc6383b_d8ba2a70_0.json",
           "guid": "000f0c91-093d-4cb7-bfed-e502ecc6383b",
+          "part": 0,
+          "type": "keen::MaterialFeedback"
+        },
+        {
+          "file": "005db7ce-aa94-44b3-bec9-fd1745d6e813_d8ba2a70_0.json",
+          "guid": "005db7ce-aa94-44b3-bec9-fd1745d6e813",
+          "part": 0,
+          "type": "keen::MaterialFeedback"
+        },
+        {
+          "file": "009470c3-da8c-42b0-bf16-e2fc04ec815b_d8ba2a70_0.json",
+          "guid": "009470c3-da8c-42b0-bf16-e2fc04ec815b",
           "part": 0,
           "type": "keen::MaterialFeedback"
         }
@@ -1912,6 +2122,18 @@
           "guid": "1a186a2b-867b-4fa0-a192-f2e841bd5a97",
           "part": 0,
           "type": "keen::MidiResource"
+        },
+        {
+          "file": "1eabd8da-6373-4dec-944a-f9641bb080b8_e3c0c0a3_0.json",
+          "guid": "1eabd8da-6373-4dec-944a-f9641bb080b8",
+          "part": 0,
+          "type": "keen::MidiResource"
+        },
+        {
+          "file": "23228876-3ca2-4aac-bbe1-163281ab5439_e3c0c0a3_0.json",
+          "guid": "23228876-3ca2-4aac-bbe1-163281ab5439",
+          "part": 0,
+          "type": "keen::MidiResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -1968,6 +2190,18 @@
           "guid": "0d974686-a473-4af0-b84b-263ff94b9996",
           "part": 0,
           "type": "keen::MidiSongResource"
+        },
+        {
+          "file": "2ea66c3b-dae8-47dd-8383-50a15c91a2a6_e6bad4ee_0.json",
+          "guid": "2ea66c3b-dae8-47dd-8383-50a15c91a2a6",
+          "part": 0,
+          "type": "keen::MidiSongResource"
+        },
+        {
+          "file": "31f4e5e1-1ab2-48fe-9ba2-5524ebbb25c9_e6bad4ee_0.json",
+          "guid": "31f4e5e1-1ab2-48fe-9ba2-5524ebbb25c9",
+          "part": 0,
+          "type": "keen::MidiSongResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -1996,6 +2230,18 @@
           "guid": "00e4650a-5939-4cc6-a119-160b8a807afe",
           "part": 0,
           "type": "keen::ModelHierarchyResource"
+        },
+        {
+          "file": "00fe55df-0019-403b-b655-1b5db206c7c8_358470de_0.json",
+          "guid": "00fe55df-0019-403b-b655-1b5db206c7c8",
+          "part": 0,
+          "type": "keen::ModelHierarchyResource"
+        },
+        {
+          "file": "0304e9be-32c6-4ea3-96a8-6248489a531c_358470de_0.json",
+          "guid": "0304e9be-32c6-4ea3-96a8-6248489a531c",
+          "part": 0,
+          "type": "keen::ModelHierarchyResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -2022,6 +2268,18 @@
         {
           "file": "001c72ae-60d3-4df0-bec8-0eedc3606552_88d6b534_0.json",
           "guid": "001c72ae-60d3-4df0-bec8-0eedc3606552",
+          "part": 0,
+          "type": "keen::NotifierResource"
+        },
+        {
+          "file": "0035e4e8-217e-4e80-9dd4-538431b90b0d_88d6b534_0.json",
+          "guid": "0035e4e8-217e-4e80-9dd4-538431b90b0d",
+          "part": 0,
+          "type": "keen::NotifierResource"
+        },
+        {
+          "file": "004a95a0-2268-463c-bca0-7a7350f4fcb8_88d6b534_0.json",
+          "guid": "004a95a0-2268-463c-bca0-7a7350f4fcb8",
           "part": 0,
           "type": "keen::NotifierResource"
         }
@@ -2078,6 +2336,18 @@
         {
           "file": "01ce8e0b-aef8-4cfd-a17c-00993b0bc4ee_6084515a_0.json",
           "guid": "01ce8e0b-aef8-4cfd-a17c-00993b0bc4ee",
+          "part": 0,
+          "type": "keen::Perk"
+        },
+        {
+          "file": "01dd08c6-fd5d-4122-8b5a-06bd97c64842_6084515a_0.json",
+          "guid": "01dd08c6-fd5d-4122-8b5a-06bd97c64842",
+          "part": 0,
+          "type": "keen::Perk"
+        },
+        {
+          "file": "01f0b194-d45f-469c-a3d3-3a23d69fe59b_6084515a_0.json",
+          "guid": "01f0b194-d45f-469c-a3d3-3a23d69fe59b",
           "part": 0,
           "type": "keen::Perk"
         }
@@ -2192,6 +2462,18 @@
           "guid": "1d65a31e-fe6b-441e-a212-200484552a02",
           "part": 0,
           "type": "keen::RenderClothColliderResource"
+        },
+        {
+          "file": "557a258a-b67b-4582-8e23-77e990fdfd53_05b67eb2_0.json",
+          "guid": "557a258a-b67b-4582-8e23-77e990fdfd53",
+          "part": 0,
+          "type": "keen::RenderClothColliderResource"
+        },
+        {
+          "file": "560ef428-7854-4249-9466-7188a4b4ac7a_05b67eb2_0.json",
+          "guid": "560ef428-7854-4249-9466-7188a4b4ac7a",
+          "part": 0,
+          "type": "keen::RenderClothColliderResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -2218,6 +2500,18 @@
         {
           "file": "0a20a8af-570a-4ebf-a64c-2199449bd717_519eff77_0.json",
           "guid": "0a20a8af-570a-4ebf-a64c-2199449bd717",
+          "part": 0,
+          "type": "keen::RenderDecal"
+        },
+        {
+          "file": "0f3287c6-63af-49bd-8ac4-0d0e7c557f54_519eff77_0.json",
+          "guid": "0f3287c6-63af-49bd-8ac4-0d0e7c557f54",
+          "part": 0,
+          "type": "keen::RenderDecal"
+        },
+        {
+          "file": "21bf1e43-0c38-4f6c-9f65-5f024494862f_519eff77_0.json",
+          "guid": "21bf1e43-0c38-4f6c-9f65-5f024494862f",
           "part": 0,
           "type": "keen::RenderDecal"
         }
@@ -2248,6 +2542,18 @@
           "guid": "0025c825-605c-4445-bff9-035590154b51",
           "part": 0,
           "type": "keen::RenderMaterialResource"
+        },
+        {
+          "file": "003bde9a-62bc-4dda-83ad-a6106d87066b_aee1894b_0.json",
+          "guid": "003bde9a-62bc-4dda-83ad-a6106d87066b",
+          "part": 0,
+          "type": "keen::RenderMaterialResource"
+        },
+        {
+          "file": "0048c556-3c8b-43d4-92e1-cdb221c33941_aee1894b_0.json",
+          "guid": "0048c556-3c8b-43d4-92e1-cdb221c33941",
+          "part": 0,
+          "type": "keen::RenderMaterialResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -2276,6 +2582,18 @@
           "guid": "0001f35e-bc4f-4fe0-bf15-c158c8cb924f",
           "part": 0,
           "type": "keen::RenderModel"
+        },
+        {
+          "file": "00096668-684b-4ee9-aad7-18d03bd5179f_177394c7_0.json",
+          "guid": "00096668-684b-4ee9-aad7-18d03bd5179f",
+          "part": 0,
+          "type": "keen::RenderModel"
+        },
+        {
+          "file": "000d9d68-b2fc-43bd-b54a-73ad3c7ad6cd_177394c7_0.json",
+          "guid": "000d9d68-b2fc-43bd-b54a-73ad3c7ad6cd",
+          "part": 0,
+          "type": "keen::RenderModel"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -2302,6 +2620,18 @@
         {
           "file": "36234b22-85f2-4001-ac56-002b379d0d88_3e786789_0.json",
           "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
+          "part": 0,
+          "type": "keen::RenderModelChunkModelResource"
+        },
+        {
+          "file": "36234b22-85f2-4001-ac56-002b379d0d88_3e786789_1.json",
+          "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
+          "part": 1,
+          "type": "keen::RenderModelChunkModelResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_3e786789_0.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
           "part": 0,
           "type": "keen::RenderModelChunkModelResource"
         }
@@ -2416,6 +2746,18 @@
           "guid": "0191fa40-0259-4bce-ab57-9c31e59bc9e4",
           "part": 0,
           "type": "keen::RenderTextureResource"
+        },
+        {
+          "file": "021f0a8c-2ae8-4055-8d66-1bacace1c89e_3002d39d_0.json",
+          "guid": "021f0a8c-2ae8-4055-8d66-1bacace1c89e",
+          "part": 0,
+          "type": "keen::RenderTextureResource"
+        },
+        {
+          "file": "03aa511e-0723-4fa8-8830-61e7878fc10b_3002d39d_0.json",
+          "guid": "03aa511e-0723-4fa8-8830-61e7878fc10b",
+          "part": 0,
+          "type": "keen::RenderTextureResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -2500,6 +2842,18 @@
           "guid": "76987d05-266b-4c69-a595-22e2a4a9b327",
           "part": 0,
           "type": "keen::anim_graph::RetargetDataResource"
+        },
+        {
+          "file": "d0c829ba-2401-44d2-b2ca-4d2903ad1bad_3ed71098_0.json",
+          "guid": "d0c829ba-2401-44d2-b2ca-4d2903ad1bad",
+          "part": 0,
+          "type": "keen::anim_graph::RetargetDataResource"
+        },
+        {
+          "file": "e2c3117b-d585-45fc-8e17-b87b04f56745_3ed71098_0.json",
+          "guid": "e2c3117b-d585-45fc-8e17-b87b04f56745",
+          "part": 0,
+          "type": "keen::anim_graph::RetargetDataResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -2526,6 +2880,18 @@
         {
           "file": "01821f42-37be-4afe-aa46-d1d681f6c8e6_963bc796_0.json",
           "guid": "01821f42-37be-4afe-aa46-d1d681f6c8e6",
+          "part": 0,
+          "type": "keen::RootMotionAnimation"
+        },
+        {
+          "file": "01f17c3d-617c-440f-9ff5-c71b9800c41b_963bc796_0.json",
+          "guid": "01f17c3d-617c-440f-9ff5-c71b9800c41b",
+          "part": 0,
+          "type": "keen::RootMotionAnimation"
+        },
+        {
+          "file": "02c70547-63f9-4012-bfbf-80eaa772694c_963bc796_0.json",
+          "guid": "02c70547-63f9-4012-bfbf-80eaa772694c",
           "part": 0,
           "type": "keen::RootMotionAnimation"
         }
@@ -2556,6 +2922,18 @@
           "guid": "907ec7d7-4ff0-9e47-9b3d-2e6413eefd4d",
           "part": 0,
           "type": "keen::SamplerInstrumentResource"
+        },
+        {
+          "file": "afe11c54-4374-2d4b-a0de-05b525d1d2b1_d72c06b7_0.json",
+          "guid": "afe11c54-4374-2d4b-a0de-05b525d1d2b1",
+          "part": 0,
+          "type": "keen::SamplerInstrumentResource"
+        },
+        {
+          "file": "cd934c5a-da23-944d-9f72-c48f9fdacb2e_d72c06b7_0.json",
+          "guid": "cd934c5a-da23-944d-9f72-c48f9fdacb2e",
+          "part": 0,
+          "type": "keen::SamplerInstrumentResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -2582,6 +2960,18 @@
         {
           "file": "36234b22-85f2-4001-ac56-002b379d0d88_df08aa5a_0.json",
           "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
+          "part": 0,
+          "type": "keen::SceneEntityChunkResource"
+        },
+        {
+          "file": "36234b22-85f2-4001-ac56-002b379d0d88_df08aa5a_1.json",
+          "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
+          "part": 1,
+          "type": "keen::SceneEntityChunkResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_df08aa5a_0.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
           "part": 0,
           "type": "keen::SceneEntityChunkResource"
         }
@@ -2612,6 +3002,18 @@
           "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
           "part": 0,
           "type": "keen::SceneRandomLootResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_3118478f_0.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
+          "part": 0,
+          "type": "keen::SceneRandomLootResource"
+        },
+        {
+          "file": "6e616060-71df-4a67-903e-fe6b8319c58f_3118478f_0.json",
+          "guid": "6e616060-71df-4a67-903e-fe6b8319c58f",
+          "part": 0,
+          "type": "keen::SceneRandomLootResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -2638,6 +3040,18 @@
         {
           "file": "36234b22-85f2-4001-ac56-002b379d0d88_2bc68ebe_0.json",
           "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
+          "part": 0,
+          "type": "keen::SceneResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_2bc68ebe_0.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
+          "part": 0,
+          "type": "keen::SceneResource"
+        },
+        {
+          "file": "6e616060-71df-4a67-903e-fe6b8319c58f_2bc68ebe_0.json",
+          "guid": "6e616060-71df-4a67-903e-fe6b8319c58f",
           "part": 0,
           "type": "keen::SceneResource"
         }
@@ -2668,6 +3082,18 @@
           "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
           "part": 0,
           "type": "keen::SceneWaterEntityResource"
+        },
+        {
+          "file": "36234b22-85f2-4001-ac56-002b379d0d88_405940de_1.json",
+          "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
+          "part": 1,
+          "type": "keen::SceneWaterEntityResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_405940de_0.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
+          "part": 0,
+          "type": "keen::SceneWaterEntityResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -2696,6 +3122,18 @@
           "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
           "part": 0,
           "type": "keen::SceneWhiteboxLabelResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_2569d42a_0.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
+          "part": 0,
+          "type": "keen::SceneWhiteboxLabelResource"
+        },
+        {
+          "file": "6e616060-71df-4a67-903e-fe6b8319c58f_2569d42a_0.json",
+          "guid": "6e616060-71df-4a67-903e-fe6b8319c58f",
+          "part": 0,
+          "type": "keen::SceneWhiteboxLabelResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -2722,6 +3160,18 @@
         {
           "file": "0009057b-a232-4005-b3dc-80d35665d427_f89ee913_0.json",
           "guid": "0009057b-a232-4005-b3dc-80d35665d427",
+          "part": 0,
+          "type": "keen::SequenceResource"
+        },
+        {
+          "file": "0013e78f-0712-411c-b3a3-e6236400c0f9_f89ee913_0.json",
+          "guid": "0013e78f-0712-411c-b3a3-e6236400c0f9",
+          "part": 0,
+          "type": "keen::SequenceResource"
+        },
+        {
+          "file": "00164b0b-4fcf-419b-8fd4-abd11fa03c3d_f89ee913_0.json",
+          "guid": "00164b0b-4fcf-419b-8fd4-abd11fa03c3d",
           "part": 0,
           "type": "keen::SequenceResource"
         }
@@ -2836,6 +3286,18 @@
           "guid": "00014cb3-c082-4a32-89eb-eafb6b9da195",
           "part": 0,
           "type": "keen::SoundContainerResource"
+        },
+        {
+          "file": "0003f7bb-a72d-4813-a886-4cec1d6d41f0_f257640c_0.json",
+          "guid": "0003f7bb-a72d-4813-a886-4cec1d6d41f0",
+          "part": 0,
+          "type": "keen::SoundContainerResource"
+        },
+        {
+          "file": "0006bbdb-e2e3-4289-949e-8ed9ad3f1614_f257640c_0.json",
+          "guid": "0006bbdb-e2e3-4289-949e-8ed9ad3f1614",
+          "part": 0,
+          "type": "keen::SoundContainerResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -2862,6 +3324,18 @@
         {
           "file": "0001ae7a-1920-4c0d-90dd-198d474129fc_df74e485_0.json",
           "guid": "0001ae7a-1920-4c0d-90dd-198d474129fc",
+          "part": 0,
+          "type": "keen::SoundResource"
+        },
+        {
+          "file": "00030420-2592-4a67-9b82-8a92f96986c4_df74e485_0.json",
+          "guid": "00030420-2592-4a67-9b82-8a92f96986c4",
+          "part": 0,
+          "type": "keen::SoundResource"
+        },
+        {
+          "file": "00031dde-f91b-461e-9f8f-ab4dd0c96b8c_df74e485_0.json",
+          "guid": "00031dde-f91b-461e-9f8f-ab4dd0c96b8c",
           "part": 0,
           "type": "keen::SoundResource"
         }
@@ -2974,6 +3448,18 @@
         {
           "file": "05ead0d4-2d7c-423d-8caa-bdc042ba10f9_89b0ccf6_0.json",
           "guid": "05ead0d4-2d7c-423d-8caa-bdc042ba10f9",
+          "part": 0,
+          "type": "keen::SoundReverbPresetResource"
+        },
+        {
+          "file": "37da9719-a882-4e10-825a-91c57661f9d0_89b0ccf6_0.json",
+          "guid": "37da9719-a882-4e10-825a-91c57661f9d0",
+          "part": 0,
+          "type": "keen::SoundReverbPresetResource"
+        },
+        {
+          "file": "4e8a9910-18cb-4c77-986f-9793a394b2b0_89b0ccf6_0.json",
+          "guid": "4e8a9910-18cb-4c77-986f-9793a394b2b0",
           "part": 0,
           "type": "keen::SoundReverbPresetResource"
         }
@@ -3172,6 +3658,18 @@
           "guid": "0005adca-9a83-4ac9-9720-2b8e58647fe4",
           "part": 0,
           "type": "keen::ecs::TemplateResource"
+        },
+        {
+          "file": "0007a3ea-16b1-4f1b-b1b4-fab89383043c_39768775_0.json",
+          "guid": "0007a3ea-16b1-4f1b-b1b4-fab89383043c",
+          "part": 0,
+          "type": "keen::ecs::TemplateResource"
+        },
+        {
+          "file": "000fea99-f8ab-4e40-aa6f-16cafbfe9811_39768775_0.json",
+          "guid": "000fea99-f8ab-4e40-aa6f-16cafbfe9811",
+          "part": 0,
+          "type": "keen::ecs::TemplateResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -3226,6 +3724,18 @@
         {
           "file": "443f7857-ab22-4e50-ba06-6e7434b38a43_8b68a480_0.json",
           "guid": "443f7857-ab22-4e50-ba06-6e7434b38a43",
+          "part": 0,
+          "type": "keen::fishing::TrashLootTableResource"
+        },
+        {
+          "file": "4e1f26ad-1653-42fe-8db0-143aaebf24da_8b68a480_0.json",
+          "guid": "4e1f26ad-1653-42fe-8db0-143aaebf24da",
+          "part": 0,
+          "type": "keen::fishing::TrashLootTableResource"
+        },
+        {
+          "file": "bbc66bae-cd18-4dba-b9b5-4b28151d9f2a_8b68a480_0.json",
+          "guid": "bbc66bae-cd18-4dba-b9b5-4b28151d9f2a",
           "part": 0,
           "type": "keen::fishing::TrashLootTableResource"
         }
@@ -3340,6 +3850,18 @@
           "guid": "0002f740-86a7-4764-ad8e-06423588a054",
           "part": 0,
           "type": "keen::UiTextureResource"
+        },
+        {
+          "file": "00106bd2-9e3b-45e0-8370-1c225d4fdca4_f9e86997_0.json",
+          "guid": "00106bd2-9e3b-45e0-8370-1c225d4fdca4",
+          "part": 0,
+          "type": "keen::UiTextureResource"
+        },
+        {
+          "file": "001be31d-2ef3-4281-be85-66c8db2b5e35_f9e86997_0.json",
+          "guid": "001be31d-2ef3-4281-be85-66c8db2b5e35",
+          "part": 0,
+          "type": "keen::UiTextureResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -3396,6 +3918,18 @@
           "guid": "28e68e8c-b335-44a6-a4db-477396dba722",
           "part": 0,
           "type": "keen::VfxCurveResource"
+        },
+        {
+          "file": "431650c3-d642-422f-9e23-abe1aeff1821_10d3c781_0.json",
+          "guid": "431650c3-d642-422f-9e23-abe1aeff1821",
+          "part": 0,
+          "type": "keen::VfxCurveResource"
+        },
+        {
+          "file": "75558c2e-c940-4232-959f-cdb58687d622_10d3c781_0.json",
+          "guid": "75558c2e-c940-4232-959f-cdb58687d622",
+          "part": 0,
+          "type": "keen::VfxCurveResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -3422,6 +3956,18 @@
         {
           "file": "1f81a2bb-7c82-45c1-ae4d-19939249ce11_97740892_0.json",
           "guid": "1f81a2bb-7c82-45c1-ae4d-19939249ce11",
+          "part": 0,
+          "type": "keen::VfxJointCollectionResource"
+        },
+        {
+          "file": "231e08a6-7789-49bc-89da-44c93a4975da_97740892_0.json",
+          "guid": "231e08a6-7789-49bc-89da-44c93a4975da",
+          "part": 0,
+          "type": "keen::VfxJointCollectionResource"
+        },
+        {
+          "file": "26b49a1f-07ba-4a0a-a363-2ffc3490fa44_97740892_0.json",
+          "guid": "26b49a1f-07ba-4a0a-a363-2ffc3490fa44",
           "part": 0,
           "type": "keen::VfxJointCollectionResource"
         }
@@ -3452,6 +3998,18 @@
           "guid": "005680ee-bdca-41b6-ba7b-768aea1fa523",
           "part": 0,
           "type": "keen::VfxMeshResource"
+        },
+        {
+          "file": "005f050a-97e8-4a10-b550-48b2bff11e79_8e2c1e03_0.json",
+          "guid": "005f050a-97e8-4a10-b550-48b2bff11e79",
+          "part": 0,
+          "type": "keen::VfxMeshResource"
+        },
+        {
+          "file": "00c76a1d-6a7f-4560-921b-4641e0f9d929_8e2c1e03_0.json",
+          "guid": "00c76a1d-6a7f-4560-921b-4641e0f9d929",
+          "part": 0,
+          "type": "keen::VfxMeshResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -3478,6 +4036,18 @@
         {
           "file": "0043def4-4a46-4df3-9c35-ded487281eb6_e64ee036_0.json",
           "guid": "0043def4-4a46-4df3-9c35-ded487281eb6",
+          "part": 0,
+          "type": "keen::VfxResource"
+        },
+        {
+          "file": "004e244d-ca70-41f5-b94f-a38f8367800e_e64ee036_0.json",
+          "guid": "004e244d-ca70-41f5-b94f-a38f8367800e",
+          "part": 0,
+          "type": "keen::VfxResource"
+        },
+        {
+          "file": "00749d1d-529e-4ce1-acd5-d1fb4905f926_e64ee036_0.json",
+          "guid": "00749d1d-529e-4ce1-acd5-d1fb4905f926",
           "part": 0,
           "type": "keen::VfxResource"
         }
@@ -3536,6 +4106,18 @@
           "guid": "0036e928-c574-4a3f-ad7c-75050af06b06",
           "part": 0,
           "type": "keen::VoiceoverResource"
+        },
+        {
+          "file": "0038b360-9e17-4b9b-aeec-e66c62fabe64_53e9cf8a_0.json",
+          "guid": "0038b360-9e17-4b9b-aeec-e66c62fabe64",
+          "part": 0,
+          "type": "keen::VoiceoverResource"
+        },
+        {
+          "file": "00391188-81e1-433b-8c6c-1f053c7d0793_53e9cf8a_0.json",
+          "guid": "00391188-81e1-433b-8c6c-1f053c7d0793",
+          "part": 0,
+          "type": "keen::VoiceoverResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -3592,6 +4174,18 @@
           "guid": "0d547f37-1384-4322-ab54-56972e01fdae",
           "part": 0,
           "type": "keen::VoicePackResource"
+        },
+        {
+          "file": "14eb59ea-afd4-408c-8ae7-bb0e736c03d7_dc8fcef9_0.json",
+          "guid": "14eb59ea-afd4-408c-8ae7-bb0e736c03d7",
+          "part": 0,
+          "type": "keen::VoicePackResource"
+        },
+        {
+          "file": "1d37f1e3-9ad3-4782-b3aa-0ef897a96694_dc8fcef9_0.json",
+          "guid": "1d37f1e3-9ad3-4782-b3aa-0ef897a96694",
+          "part": 0,
+          "type": "keen::VoicePackResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -3618,6 +4212,18 @@
         {
           "file": "0898eecc-fd8e-4cf6-a60a-1b365608e510_5faac3a8_0.json",
           "guid": "0898eecc-fd8e-4cf6-a60a-1b365608e510",
+          "part": 0,
+          "type": "keen::VolumetricFog3ModelResource"
+        },
+        {
+          "file": "33d7997b-2af9-4bc6-82c8-146d07ab9b9a_5faac3a8_0.json",
+          "guid": "33d7997b-2af9-4bc6-82c8-146d07ab9b9a",
+          "part": 0,
+          "type": "keen::VolumetricFog3ModelResource"
+        },
+        {
+          "file": "36234b22-85f2-4001-ac56-002b379d0d88_5faac3a8_0.json",
+          "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
           "part": 0,
           "type": "keen::VolumetricFog3ModelResource"
         }
@@ -3674,6 +4280,18 @@
         {
           "file": "27a9e067-4b9f-45cf-b966-208a5ecbd53b_75dc346b_0.json",
           "guid": "27a9e067-4b9f-45cf-b966-208a5ecbd53b",
+          "part": 0,
+          "type": "keen::VoxelBlueprintConfig"
+        },
+        {
+          "file": "28c4b2ca-4a01-4ba9-9e05-49c871df6904_75dc346b_0.json",
+          "guid": "28c4b2ca-4a01-4ba9-9e05-49c871df6904",
+          "part": 0,
+          "type": "keen::VoxelBlueprintConfig"
+        },
+        {
+          "file": "34aa0c3c-9a88-4f8b-a070-64827a5fdabf_75dc346b_0.json",
+          "guid": "34aa0c3c-9a88-4f8b-a070-64827a5fdabf",
           "part": 0,
           "type": "keen::VoxelBlueprintConfig"
         }
@@ -3788,6 +4406,18 @@
           "guid": "0492a0d4-6902-4d2e-95ea-0ab1d9ba131b",
           "part": 0,
           "type": "keen::VoxelModelResource"
+        },
+        {
+          "file": "05298311-4017-4111-aa55-5407bc984e4a_e53afbaf_0.json",
+          "guid": "05298311-4017-4111-aa55-5407bc984e4a",
+          "part": 0,
+          "type": "keen::VoxelModelResource"
+        },
+        {
+          "file": "059bea8e-687b-4d6e-a68c-384b2e47a397_e53afbaf_0.json",
+          "guid": "059bea8e-687b-4d6e-a68c-384b2e47a397",
+          "part": 0,
+          "type": "keen::VoxelModelResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -3814,6 +4444,18 @@
         {
           "file": "36234b22-85f2-4001-ac56-002b379d0d88_21b2a090_3.json",
           "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
+          "part": 3,
+          "type": "keen::VoxelTemperatureResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_21b2a090_3.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
+          "part": 3,
+          "type": "keen::VoxelTemperatureResource"
+        },
+        {
+          "file": "6e616060-71df-4a67-903e-fe6b8319c58f_21b2a090_3.json",
+          "guid": "6e616060-71df-4a67-903e-fe6b8319c58f",
           "part": 3,
           "type": "keen::VoxelTemperatureResource"
         }
@@ -3844,6 +4486,18 @@
           "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
           "part": 0,
           "type": "keen::VoxelWorldFog3Resource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_67695f1f_0.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
+          "part": 0,
+          "type": "keen::VoxelWorldFog3Resource"
+        },
+        {
+          "file": "6e616060-71df-4a67-903e-fe6b8319c58f_67695f1f_0.json",
+          "guid": "6e616060-71df-4a67-903e-fe6b8319c58f",
+          "part": 0,
+          "type": "keen::VoxelWorldFog3Resource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -3870,6 +4524,18 @@
         {
           "file": "022bd475-089a-43b8-b49a-2bcf2f0cd84f_75f48072_0.json",
           "guid": "022bd475-089a-43b8-b49a-2bcf2f0cd84f",
+          "part": 0,
+          "type": "keen::VoxelWorldResource"
+        },
+        {
+          "file": "024150fb-87bd-43be-9304-4955c7cd095c_75f48072_0.json",
+          "guid": "024150fb-87bd-43be-9304-4955c7cd095c",
+          "part": 0,
+          "type": "keen::VoxelWorldResource"
+        },
+        {
+          "file": "03b9d9ad-d704-46b3-ae97-2dc40e1677fd_75f48072_0.json",
+          "guid": "03b9d9ad-d704-46b3-ae97-2dc40e1677fd",
           "part": 0,
           "type": "keen::VoxelWorldResource"
         }
@@ -3900,6 +4566,18 @@
           "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
           "part": 0,
           "type": "keen::WaterChunkResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_171bf8ae_0.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
+          "part": 0,
+          "type": "keen::WaterChunkResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_171bf8ae_1.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
+          "part": 1,
+          "type": "keen::WaterChunkResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -3927,6 +4605,18 @@
           "file": "36234b22-85f2-4001-ac56-002b379d0d88_55a453fd_0.json",
           "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
           "part": 0,
+          "type": "keen::WaterDisplacingResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_55a453fd_0.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
+          "part": 0,
+          "type": "keen::WaterDisplacingResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_55a453fd_1.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
+          "part": 1,
           "type": "keen::WaterDisplacingResource"
         }
       ],
@@ -3956,6 +4646,12 @@
           "guid": "2e9b6788-e7b6-4c62-ae29-d30eb4bd97df",
           "part": 0,
           "type": "keen::WaterSurfaceEffectMaterialResource"
+        },
+        {
+          "file": "a95706ad-5e54-46ca-b7dd-f92b2cede689_fae9a8b8_0.json",
+          "guid": "a95706ad-5e54-46ca-b7dd-f92b2cede689",
+          "part": 0,
+          "type": "keen::WaterSurfaceEffectMaterialResource"
         }
       ],
       "evidence": "KFC payload $type joined to current game .cache/types.json qualifiedName"
@@ -3982,6 +4678,18 @@
         {
           "file": "36234b22-85f2-4001-ac56-002b379d0d88_577a5583_0.json",
           "guid": "36234b22-85f2-4001-ac56-002b379d0d88",
+          "part": 0,
+          "type": "keen::WaterWorldResource"
+        },
+        {
+          "file": "509feadb-4c60-425f-9c7c-deeefd9b6920_577a5583_0.json",
+          "guid": "509feadb-4c60-425f-9c7c-deeefd9b6920",
+          "part": 0,
+          "type": "keen::WaterWorldResource"
+        },
+        {
+          "file": "6e616060-71df-4a67-903e-fe6b8319c58f_577a5583_0.json",
+          "guid": "6e616060-71df-4a67-903e-fe6b8319c58f",
           "part": 0,
           "type": "keen::WaterWorldResource"
         }
