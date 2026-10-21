@@ -47,6 +47,17 @@
 - **Evidence level:** Static.
 - **Limit:** This does not establish that a probe has executed in the game.
 
+## 2026-10-20 — API capability and resource-type observations
+
+- **API probe:** `embervault_api_capability_probe_sf` observed the `game`,
+  `game.assets`, resource enumeration, export, and protected-call surfaces.
+- **Resource probe:** `embervault_resource_type_probe_sf` observed 146 visible
+  resource types.
+- **Game build:** `39026384728`, matching the `1.0` snapshot metadata.
+- **Evidence level:** Observed.
+- **Limit:** These results establish API visibility and enumeration only; they
+  do not establish writability, native memory access, or safe mutation.
+
 ## Snapshot policy
 
 Add an entry for each meaningful probe or build change. Do not overwrite prior
