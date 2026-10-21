@@ -94,6 +94,13 @@
 - **Limit:** Queue order is not runtime evidence; each result still needs a
   fresh build-matched session.
 
+## 2026-10-21 — Registry and queue integrity
+
+- **Result:** All 11 registry probes have matching package directories, all 9
+  queued probes exist, and the repository worktree is clean.
+- **Evidence level:** Static.
+- **Limit:** Package presence does not establish runtime execution.
+
 ## Snapshot policy
 
 Add an entry for each meaningful probe or build change. Do not overwrite prior
