@@ -30,6 +30,15 @@
 - **Impact:** The bridge is not counted as live support. Its source and staged
   package remain available for a future loader/runtime integration.
 
+## 2026-10-21 — Standard EML scope finalized
+
+- **Decision:** Snapshot 1.0 uses standard EML and ShroudForge-native Lua as
+  the live mapping baseline.
+- **Scope change:** EML 2.0 bridge work is excluded from this snapshot rather
+  than treated as a pending runtime requirement.
+- **Impact:** Future probes and adapters target the accepted standard
+  ShroudForge package format.
+
 ## 2026-10-21 — Tracked probe manifest validation
 
 - **Scope:** All 11 tracked ShroudForge probe packages in `1.0/probes/`.

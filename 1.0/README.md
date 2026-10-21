@@ -1,6 +1,6 @@
 # EmberVault Game Map · Version 1.0
 
-This directory contains the curated, reproducible research map for the current Enshrouded build. Raw KFC files are intentionally not stored here; they can be exported locally and matched using the metadata and checksums.
+This directory contains the curated, reproducible research map for the current Enshrouded build, using standard EML and ShroudForge-native Lua as its live baseline. Raw KFC files are intentionally not stored here; they can be exported locally and matched using the metadata and checksums.
 
 ## Contents
 

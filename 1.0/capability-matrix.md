@@ -1,7 +1,7 @@
 # Capability Matrix
 
 Snapshot: `1.0`  
-Scope: EML, ShroudForge, EmberVault tooling, and content-generation workflows  
+Scope: Standard EML, ShroudForge, EmberVault tooling, and content-generation workflows
 Status: living record
 
 ## Guiding scope
@@ -10,8 +10,9 @@ The project maps Enshrouded through standard EML and Lua running under
 ShroudForge. Adapters, read-only probes, offline catalogs, structured logs,
 exports, and build-matched evidence are the primary methods. Every capability
 claim is recorded here with its evidence level and limitations before its
-status changes. The EML 2.0 bridge and mutation paths remain outside the live
-supported scope until independently verified.
+status changes. Standard EML and ShroudForge-native Lua are the supported
+baseline for this snapshot. The EML 2.0 bridge and mutation paths remain
+outside the 1.0 scope.
 
 ## Evidence levels
 
@@ -32,9 +33,9 @@ supported scope until independently verified.
 | Assets | Read resource records by type | Confirmed | Verified | Current probe covered item resources |
 | Export | Export generated data to CSV | Confirmed | Verified | `eml-item-list.csv` was produced live |
 | Logging | ShroudForge log output | Confirmed | Observed | Marker format may vary by runtime |
-| Lifecycle | Package startup and enable status | Confirmed | Observed | Full EML 2.0 lifecycle remains separate |
-| EML 2.0 | Bridge metadata in a package | Staged only | Synthetic | Removed from live testing; older schemas reject extra compatibility fields |
-| EML 2.0 | Full runner inside ShroudForge | Unverified | None | Requires real loader/runtime integration |
+| Lifecycle | Package startup and enable status | Confirmed | Observed | Only the standard EML lifecycle is in scope |
+| Bridge extensions | EML 2.0 bridge metadata | Out of scope | Staged/static | Not part of the 1.0 live mapping baseline |
+| Bridge extensions | Full EML 2.0 runner inside ShroudForge | Out of scope | None | Future project; standard EML mapping does not depend on it |
 | Catalogs | KFC/resource normalization | Confirmed offline | Static/Synthetic | Catalog identity must match the build |
 | Schemas | Typed fields, dependencies, provenance | Confirmed offline | Static/Synthetic | Not proof of live writability |
 | UI | Native actions and mod status | Confirmed | Observed | Custom fields must use accepted schema |
@@ -50,11 +51,9 @@ supported scope until independently verified.
 
 ## Current live-scope decision
 
-The EML 2.0 bridge package is not part of the live mod set. Standard EML
-packages remain the supported compatibility baseline. The bridge source,
-metadata, and staged probe remain available for future loader integration, but
-they are not treated as live support until a real runtime bridge passes a
-current-build test.
+The EML 2.0 bridge is out of scope for snapshot 1.0. Standard EML packages
+and ShroudForge-native Lua probes are the supported compatibility baseline.
+The mapping work does not depend on the bridge.
 
 ## Rules
 
