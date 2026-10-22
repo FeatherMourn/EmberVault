@@ -36,7 +36,7 @@ local function query(label, ...)
   for i = 1, limit do
     local entity = entities[i]
     lines[#lines + 1] = label .. "\tentity=" .. tostring(entity)
-    if label == "player_candidate" then
+    if label == "player_candidate" or label == "player_state_candidate" then
       lines[#lines + 1] = "player_state\t" .. read_fields(entity, "keen::ecs::PlayerState", {"playerStateMask", "beamEntityId"})
       lines[#lines + 1] = "equipment\t" .. read_fields(entity, "keen::ecs::Equipment", {"visualMask", "impactMask", "bodyMaterialId"})
       lines[#lines + 1] = "character\t" .. read_fields(entity, "keen::ecs::CharacterSetup", {"presetId", "hair", "beard", "useNewProportions"})
@@ -54,12 +54,14 @@ local function run_probe()
     "evidence_state=observed",
     "limitations=bounded read-only query; no ownership or writable-field claim"
   }
-  local first_lines, first_pending = query("player_candidate", "keen::ecs::PlayerState", "keen::ecs::Equipment")
-  local second_lines, second_pending = query("player_character_candidate", "keen::ecs::PlayerState", "keen::ecs::CharacterSetup")
+  local first_lines, first_pending = query("player_state_candidate", "keen::ecs::PlayerState")
+  local second_lines, second_pending = query("client_player_candidate", "keen::ecs::ClientPlayerState")
+  local third_lines, third_pending = query("player_tracking_candidate", "keen::ecs::PlayerTracking")
   local pending = false
-  pending = first_pending or second_pending
+  pending = first_pending or second_pending or third_pending
   for _, line in ipairs(first_lines) do lines[#lines + 1] = line end
   for _, line in ipairs(second_lines) do lines[#lines + 1] = line end
+  for _, line in ipairs(third_lines) do lines[#lines + 1] = line end
   if pending then return false end
   lines[#lines + 1] = "writes\tnot_attempted"
   lines[#lines + 1] = "saves\tnot_accessed"
