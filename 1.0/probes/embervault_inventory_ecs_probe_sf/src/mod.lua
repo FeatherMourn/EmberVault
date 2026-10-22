@@ -1,4 +1,9 @@
 -- Read-only ECS inventory/equipment probe. No entity enumeration, writes, natives, or saves.
+local reported = false
+local attempts = 0
+local max_attempts = 90
+
+local function run_probe()
 local lines = {
   "schema_version=1",
   "probe_id=inventory-ecs",
@@ -66,3 +71,16 @@ local ok_export, export_error = pcall(function()
   io.export("embervault/inventory-ecs-v1.tsv", table.concat(lines, "\n") .. "\n")
 end)
 if not ok_export then print("EMBERVAULT_INVENTORY_ECS|EXPORT_ERROR|" .. tostring(export_error)) end
+end
+
+return {
+  update_interval_ms = 1000,
+  on_update = function()
+    if reported then return end
+    attempts = attempts + 1
+    local ok, registry = pcall(function() return runtime.ecs.get_registry() end)
+    if (not ok or registry == nil) and attempts < max_attempts then return end
+    reported = true
+    run_probe()
+  end,
+}
