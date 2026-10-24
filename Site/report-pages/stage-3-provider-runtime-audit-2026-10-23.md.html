@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 3 Provider Runtime Audit 2026 10 23 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Stage 3 Provider Runtime Audit 2026 10 23</p><h1>Stage 3 Provider Runtime Audit 2026 10 23</h1><p class="lead">Original staged source: <code>data/reports/stage-3-provider-runtime-audit-2026-10-23.md</code></p><section><pre class="report-source"># Stage 3 provider-runtime foundation audit
+
+Date: 2026-10-23
+Fork: `H:\enshroudedresearch\shroudforge\fork\shroudforge-player-accessor`
+
+## Result
+
+Stage 3 is **complete for the offline provider-runtime foundation**. The fork
+now has an independent entity-access gate, shared snapshot provenance, and
+provider metadata on the active player/ECS worker results. Live ownership and
+domain capability validation remain intentionally downstream in Stages 5–6.
+
+## Verified implementation
+
+- Runtime snapshots expose session, ECS, world, context, and local-player
+  state.
+- ECS-read readiness is separated from dispatcher/write readiness in the fork&#39;s
+  context path.
+- Compatibility selection is keyed by game, ABI, and schema and fails closed
+  without a matching profile.
+- Unified statuses include ready, scanning, stale, unavailable, failed, and
+  stopped-style outcomes, with conservative legacy normalization.
+- Lifecycle state, deterministic scheduling, scan budgets, bounded journals,
+  telemetry, capability scoring, and report aggregation have focused tests.
+- ECS reads validate session, generation, identity, ownership, membership,
+  bounds, and read-only conditions.
+- Optional providers are wrapped in fault-containment paths and unsupported
+  operations are represented explicitly.
+
+## Deferred downstream work
+
+- Live ownership and inventory/equipment semantics require Stage 5/6 private-
+  world evidence.
+- Full domain-worker migration will proceed as each Stage 6 worker is enabled;
+  the current player/ECS workers already consume the shared snapshot.
+- Profile/game-build identity remains enforced by the Stage 2 release manifest;
+  provider ABI and status now travel with snapshots and worker results.
+
+## Stage 3 closure checklist
+
+- [x] Make entity-access readiness an independently reported native capability;
+      it now requires the provider&#39;s bounded property-query readiness rather
+      than general ECS readiness.
+- [x] Active player/ECS workers consume the shared snapshot/status API.
+- [x] Cross-layer status, lifecycle, scheduling, telemetry, journal, and budget
+      fixtures pass in the release workspace suite.
+- [x] Snapshot and active worker results include provider ABI/status provenance.
+- [x] The roadmap boundary assigns live domain validation to Stages 5–6.
+
+## Boundary
+
+This audit does not authorize a live install. The next work is Stage 5/6
+read-only capability validation using the completed provider foundation.
+
+</pre></section></main></body></html>
+

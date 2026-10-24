@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0",
+  "evidence": [
+    "runtime-log-import"
+  ],
+  "entryPoints": {
+    "dbghelp.dll": {
+      "runtimeEvidence": false,
+      "eventCount": 0,
+      "kinds": [],
+      "messages": []
+    },
+    "dinput8.dll": {
+      "runtimeEvidence": true,
+      "eventCount": 17,
+      "kinds": [
+        "exports-forwarded",
+        "forward-target-loaded"
+      ],
+      "messages": [
+        "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+        "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+        "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+        "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+        "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+        "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+        "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+        "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+        "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+        "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+        "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+        "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+        "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+        "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+        "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+        "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+        "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll"
+      ]
+    },
+    "winmm.dll": {
+      "runtimeEvidence": false,
+      "eventCount": 0,
+      "kinds": [],
+      "messages": []
+    }
+  },
+  "limitations": [
+    "Absence from imported logs does not prove a DLL was not loaded.",
+    "The current logs may not record every Windows loader event.",
+    "Process-level verification requires an explicitly authorized test method."
+  ]
+}

@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Runtime Category Membership Summary · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Runtime Category Membership Summary</p><h1>Runtime Category Membership Summary</h1><p class="lead">Original staged source: <code>data/reports/runtime-category-membership-summary.md</code></p><section><pre class="report-source"># Runtime Recipe Category Membership Summary
+
+The read-only EML recipe-category probe ran successfully against Enshrouded
+1.0 and exposed the recipe registry&#39;s `inputCategories` table.
+
+## Result
+
+- 22 category IDs were observed.
+- 90 category-to-item membership rows were exported.
+- Every membership item ID resolved to the normalized ItemInfo catalog.
+- No game files or recipe data were modified.
+
+The runtime evidence strengthens the static recipe analysis: category-only
+inputs are real registry categories with concrete item memberships, not missing
+ItemInfo records.
+
+## Remaining limitation
+
+The probe exposed numeric category IDs and their item memberships but no
+human-readable category labels. Labels remain unverified and are not inferred.
+</pre></section></main></body></html>
+

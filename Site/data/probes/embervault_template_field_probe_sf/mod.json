@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_template_field_probe_sf",
+  "name": "EmberVault template field probe",
+  "version": "1.0.0",
+  "description": "Bounded read-only search for appearance references in template and render-model payloads.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

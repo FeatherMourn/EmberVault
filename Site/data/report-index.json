@@ -1,0 +1,782 @@
+[
+  {
+    "text": "# Actor appearance inventory The read-only actor appearance probe loaded successfully in a world session and exported its inventory. ## Available surfaces - `runtime.ecs` and `runtime.ecs.get_registry` are available. - `game.assets.get_resources_by_type` is available. - `keen::It…",
+    "title": "Actor Appearance Inventory 2026 10 21",
+    "source": "data/reports/actor-appearance-inventory-2026-10-21.md",
+    "url": "report-pages/actor-appearance-inventory-2026-10-21.md.html"
+  },
+  {
+    "text": "{ \"probe_id\": \"embervault_api_capability_probe_sf\", \"probe_name\": \"API Capability Probe\", \"loader\": \"ShroudForge\", \"game_build\": \"39026384728\", \"evidence_state\": \"observed\", \"collection_status\": \"completed\", \"read_only\": true, \"capabilities_observed\": { \"game\": \"table\", \"game.ass…",
+    "title": "Api Capability Probe 2026 10 20",
+    "source": "data/reports/api-capability-probe-2026-10-20.json",
+    "url": "report-pages/api-capability-probe-2026-10-20.json.html"
+  },
+  {
+    "text": "# Broad API sweep probe Added and installed `embervault_api_sweep_sf` as a ShroudForge runtime mod. The probe checks the presence of documented runtime surfaces for types, ECS, native-function metadata, services, overrides, assets, settings, logging, and export. It only checks fu…",
+    "title": "Api Sweep Probe 2026 10 21",
+    "source": "data/reports/api-sweep-probe-2026-10-21.md",
+    "url": "report-pages/api-sweep-probe-2026-10-21.md.html"
+  },
+  {
+    "text": "# Broad API sweep results The read-only ShroudForge API sweep ran successfully in a loaded world. ## API surfaces present - Runtime root, type registry, ECS registry, and component lookup - Runtime function metadata and operation listing - Runtime services and override-scope fact…",
+    "title": "Api Sweep Results 2026 10 21",
+    "source": "data/reports/api-sweep-results-2026-10-21.md",
+    "url": "report-pages/api-sweep-results-2026-10-21.md.html"
+  },
+  {
+    "text": "# Appearance no-op write result The guarded private-world write probe completed successfully. - Target: `CharacterPresetCollection.presets[1].hair`. - Original hair ID: zero. - Write attempt: accepted. - Readback: matched the original value. - Restoration: accepted and returned t…",
+    "title": "Appearance Noop Write Result 2026 10 21",
+    "source": "data/reports/appearance-noop-write-result-2026-10-21.md",
+    "url": "report-pages/appearance-noop-write-result-2026-10-21.md.html"
+  },
+  {
+    "text": "# Appearance type search The read-only reflected type-name search completed successfully during a world session. - Search surface: `runtime.types.get_all()`. - Keywords: appearance, hair, facial-hair, beard, body, scale, character, model, mesh, attachment, cosmetic. - Matching re…",
+    "title": "Appearance Type Search 2026 10 21",
+    "source": "data/reports/appearance-type-search-2026-10-21.md",
+    "url": "report-pages/appearance-type-search-2026-10-21.md.html"
+  },
+  {
+    "text": "# BalancingTable field inventory The local Enshrouded 1.0 KFC export contains one `BalancingTable` record with 91 top-level fields. This is a storage inventory only; it does not establish that any field is writable. ## Field groups | Group | Count | Examples | |---|---:|---| | Ca…",
+    "title": "Balancing Table Field Inventory 2026 10 21",
+    "source": "data/reports/balancing-table-field-inventory-2026-10-21.md",
+    "url": "report-pages/balancing-table-field-inventory-2026-10-21.md.html"
+  },
+  {
+    "text": "# Blueprint field runtime result ## Session result The bounded read-only blueprint-field probe exported successfully after the private world loaded. Observed: - One `VoxelBlueprintItemRegistryResource` was readable. - Seven `VoxelBlueprintConfig` resources were readable. - Bluepr…",
+    "title": "Blueprint Field Runtime Result 2026 10 22",
+    "source": "data/reports/blueprint-field-runtime-result-2026-10-22.md",
+    "url": "report-pages/blueprint-field-runtime-result-2026-10-22.md.html"
+  },
+  {
+    "text": "# Enshrouded Building Tools static deep dive Date: 2026-10-23 Source: `https://github.com/AleksanderWojtal-CC/Enshrouded-BuildingTools` Evidence: public source and documentation review only; the DLL was not run. ## What the mod is Building Tools is a native client-side `dinput8.d…",
+    "title": "Building Tools Static Deep Dive 2026 10 23",
+    "source": "data/reports/building-tools-static-deep-dive-2026-10-23.md",
+    "url": "report-pages/building-tools-static-deep-dive-2026-10-23.md.html"
+  },
+  {
+    "text": "# Building and voxel runtime result ## Session result The read-only `embervault_building_voxel_census_sf` probe exported successfully after the private world loaded. Confirmed: - ECS query and field-read functions were callable. - Asset resource lookup was callable. - `VoxelBluep…",
+    "title": "Building Voxel Runtime Result 2026 10 22",
+    "source": "data/reports/building-voxel-runtime-result-2026-10-22.md",
+    "url": "report-pages/building-voxel-runtime-result-2026-10-22.md.html"
+  },
+  {
+    "text": "# Building and voxel static census ## Scope Read-only review of the Enshrouded 1.0 reflection metadata for placement, building limits, no-build zones, voxel materials, blueprints, and building events. ## Confirmed represented surfaces | Surface | Evidence | Classification | |---|…",
+    "title": "Building Voxel Static Census 2026 10 22",
+    "source": "data/reports/building-voxel-static-census-2026-10-22.md",
+    "url": "report-pages/building-voxel-static-census-2026-10-22.md.html"
+  },
+  {
+    "text": "# Localization bundle decoder build blocker The local ShroudForge source includes an `export_kfc_resources` example that could be used as the starting point for a bundle-aware decoder. A read-only offline build was attempted, but the checkout is missing its local `kfc` crate depe…",
+    "title": "Bundle Decoder Build Blocker 2026 10 21",
+    "source": "data/reports/bundle-decoder-build-blocker-2026-10-21.md",
+    "url": "report-pages/bundle-decoder-build-blocker-2026-10-21.md.html"
+  },
+  {
+    "text": "{ \"schema_version\": 1, \"adapter_id\": \"embervault-cache-type-name-bridge\", \"game_scope\": \"Enshrouded 1.0\", \"cache_version\": \"1273043|^/game38/branches/release_1.0|2026-10-20T14:55:29.904125Z\", \"cache_types\": \"H:\\\\SteamLibrary\\\\steamapps\\\\common\\\\Enshrouded\\\\.cache\\\\types.json\", \"k…",
+    "title": "Cache Type Name Bridge 2026 10 21",
+    "source": "data/reports/cache-type-name-bridge-2026-10-21.json",
+    "url": "report-pages/cache-type-name-bridge-2026-10-21.json.html"
+  },
+  {
+    "text": "# Enshrouded 1.0 capability census matrix This is a current-build evidence index. “Represented” means present in reflection or static data; it does not imply runtime access, export, writing, or persistence. | Domain | Represented | Runtime/readable evidence | Export status | Writ…",
+    "title": "Capability Census Matrix 2026 10 22",
+    "source": "data/reports/capability-census-matrix-2026-10-22.md",
+    "url": "report-pages/capability-census-matrix-2026-10-22.md.html"
+  },
+  {
+    "text": "# Character appearance field types Reflection resolves the exact field types for the appearance candidates: ## `keen::ecs::CharacterSetup` - `hair`: `keen::ItemId` - `beard`: `keen::ItemId` - `hairColorId`, `beardColorId`, `skinColor`, `eyeBrowColor`, `eyeColor`: `keen::ColorPres…",
+    "title": "Character Appearance Field Types 2026 10 21",
+    "source": "data/reports/character-appearance-field-types-2026-10-21.md",
+    "url": "report-pages/character-appearance-field-types-2026-10-21.md.html"
+  },
+  {
+    "text": "# Character appearance reflection map The 1.0 reflection data provides concrete schemas for the requested research area: | Reflected type | Relevant fields | |---|---| | `keen::CharacterCustomizationResource` | `presets`, `hairItems`, `beardItems`, `hairColors`, `eyeColors`, `eye…",
+    "title": "Character Appearance Reflection Map 2026 10 21",
+    "source": "data/reports/character-appearance-reflection-map-2026-10-21.md",
+    "url": "report-pages/character-appearance-reflection-map-2026-10-21.md.html"
+  },
+  {
+    "text": "# Character appearance runtime validation plan ## Read-only gate Run the exact-schema probe in a private local world and record: 1. Whether `keen::CharacterPresetCollection` is returned by `game.assets.get_resources_by_type`. 2. Which top-level fields are readable: `presets`, `co…",
+    "title": "Character Appearance Runtime Validation Plan 2026 10 21",
+    "source": "data/reports/character-appearance-runtime-validation-plan-2026-10-21.md",
+    "url": "report-pages/character-appearance-runtime-validation-plan-2026-10-21.md.html"
+  },
+  {
+    "text": "# Character appearance static payload bridge The unpacked 1.0 KFC export confirms that the reflected schemas are used in real template payloads. ## CharacterSetup payload Observed `keen::ecs::CharacterSetup` records contain: - `gender` - `voicePackId.value` - `presetId.value` - `…",
+    "title": "Character Appearance Static Payload Bridge 2026 10 21",
+    "source": "data/reports/character-appearance-static-payload-bridge-2026-10-21.md",
+    "url": "report-pages/character-appearance-static-payload-bridge-2026-10-21.md.html"
+  },
+  {
+    "text": "# Character preset cosmetic inventory The static `CharacterPresetCollection` resource provides a concrete cosmetic catalog. - Total presets: 54. - Presets marked as player customization options: 25. - Presets with nonzero hair references: 53. - Presets with nonzero beard referenc…",
+    "title": "Character Preset Cosmetic Inventory 2026 10 21",
+    "source": "data/reports/character-preset-cosmetic-inventory-2026-10-21.md",
+    "url": "report-pages/character-preset-cosmetic-inventory-2026-10-21.md.html"
+  },
+  {
+    "text": "# Character template coverage The 1.0 KFC template export contains: - 62 templates with `keen::ecs::CharacterSetup`. - 59 templates with `keen::ecs::NewCharacterSetup`. - 303 templates with `keen::ecs::ScaleComponent`. - 63 templates containing hair payload fields. - 63 templates…",
+    "title": "Character Template Coverage 2026 10 21",
+    "source": "data/reports/character-template-coverage-2026-10-21.md",
+    "url": "report-pages/character-template-coverage-2026-10-21.md.html"
+  },
+  {
+    "text": "# Clean probe rerun ## Baseline Unified EML Tweaks was temporarily moved out of the game mod directory before launch. The startup log for this session contains no Unified EML Tweaks load or patch entries. XHL Enemy Difficulty Limits was also not loaded. The probe run therefore pr…",
+    "title": "Clean Probe Rerun 2026 10 22",
+    "source": "data/reports/clean-probe-rerun-2026-10-22.md",
+    "url": "report-pages/clean-probe-rerun-2026-10-22.md.html"
+  },
+  {
+    "text": "# Combined Loader Analysis ## Scope This compares the clean Case A capture with the repaired Case B launch. It reports module coexistence only; it does not infer framework initialization or feature behavior from module presence. ## Confirmed coexistence Both captures observed the…",
+    "title": "Combined Loader Analysis 2026 10 21",
+    "source": "data/reports/combined-loader-analysis-2026-10-21.md",
+    "url": "report-pages/combined-loader-analysis-2026-10-21.md.html"
+  },
+  {
+    "text": "# Component and material key probe The bounded read-only probe completed successfully. - `keen::ecs::TemplateResource` reported 12,267 resources. - `keen::RenderModel` reported 10,470 resources. - The sampled `components` and `materials` values were opaque userdata, not enumerabl…",
+    "title": "Component Key Probe 2026 10 21",
+    "source": "data/reports/component-key-probe-2026-10-21.md",
+    "url": "report-pages/component-key-probe-2026-10-21.md.html"
+  },
+  {
+    "text": "# ECS appearance component search The read-only ECS appearance-component probe completed during a world session. - Reflected type count: 12,646. - Template resources: 12,267. - Render models: 10,470. - No reflected type names matched the appearance, hair, facial-hair, body, scale…",
+    "title": "Ecs Appearance Component Search 2026 10 21",
+    "source": "data/reports/ecs-appearance-component-search-2026-10-21.md",
+    "url": "report-pages/ecs-appearance-component-search-2026-10-21.md.html"
+  },
+  {
+    "text": "# Embervale Toolkit static deep dive Date: 2026-10-23 Scope: `H:\\enshroudedresearch\\embervale-toolkit.zip` ## Scope and method This was a read-only inspection. The archive was listed and extracted to a separate analysis directory; `EmbervaleToolkit.exe` was not launched, installe…",
+    "title": "Embervale Toolkit Static Deep Dive 2026 10 23",
+    "source": "data/reports/embervale-toolkit-static-deep-dive-2026-10-23.md",
+    "url": "report-pages/embervale-toolkit-static-deep-dive-2026-10-23.md.html"
+  },
+  {
+    "text": "# Emily's Face (New Preset) — Static Analysis ## Scope The supplied archive was extracted and inspected without executing it or installing it. The analysis covers the manifest, Lua source, binary asset payloads, and the declared ShroudForge patch behavior. ## What it actually add…",
+    "title": "Emily Face Preset Static Analysis 2026 10 23",
+    "source": "data/reports/emily-face-preset-static-analysis-2026-10-23.md",
+    "url": "report-pages/emily-face-preset-static-analysis-2026-10-23.md.html"
+  },
+  {
+    "text": "# EML Isolation Limitation ## Confirmed result An EML-only Case B run cannot currently be isolated in the available ShroudForge installation. The Shroud Forge updater restores the loader stack before the game reaches the main menu, including `dinput8.dll`, `dbghelp.dll`, and `win…",
+    "title": "Eml Isolation Blocked 2026 10 21",
+    "source": "data/reports/eml-isolation-blocked-2026-10-21.md",
+    "url": "report-pages/eml-isolation-blocked-2026-10-21.md.html"
+  },
+  {
+    "text": "# EML runtime resource profile limitation ## Confirmed result The ShroudForge-native localization diagnostic loads successfully and appears in the active runtime list. This verifies that ShroudForge can load the diagnostic package and that the package structure is valid. The EML …",
+    "title": "Eml Runtime Resource Profile Limitation 2026 10 21",
+    "source": "data/reports/eml-runtime-resource-profile-limitation-2026-10-21.md",
+    "url": "report-pages/eml-runtime-resource-profile-limitation-2026-10-21.md.html"
+  },
+  {
+    "text": "# Entry-Point DLL Classification Date: 2026-10-21 ## `dinput8.dll` **Classification: active intentional forwarding chain.** - Active root `dinput8.dll` is classified as the ModLoader Proxy. - The proxy log records forwarding to `shroudforge-original/dinput8.dll`. - The Shroud For…",
+    "title": "Entry Point Classification 2026 10 21",
+    "source": "data/reports/entry-point-classification-2026-10-21.md",
+    "url": "report-pages/entry-point-classification-2026-10-21.md.html"
+  },
+  {
+    "text": "{ \"schemaVersion\": \"1.0\", \"evidence\": [ \"runtime-log-import\" ], \"entryPoints\": { \"dbghelp.dll\": { \"runtimeEvidence\": false, \"eventCount\": 0, \"kinds\": [], \"messages\": [] }, \"dinput8.dll\": { \"runtimeEvidence\": true, \"eventCount\": 17, \"kinds\": [ \"exports-forwarded\", \"forward-target-…",
+    "title": "Entry Point Runtime Check 2026 10 21",
+    "source": "data/reports/entry-point-runtime-check-2026-10-21.json",
+    "url": "report-pages/entry-point-runtime-check-2026-10-21.json.html"
+  },
+  {
+    "text": "{ \"snapshot\": \"1.0\", \"validated_on\": \"2026-10-21\", \"scope\": [ \"embervault_api_capability_probe_sf\", \"embervault_resource_type_probe_sf\" ], \"finding\": \"registry status is verified while report evidence_state is observed\", \"decision\": \"retain observed status until current-session e…",
+    "title": "Evidence Reconciliation 2026 10 21",
+    "source": "data/reports/evidence-reconciliation-2026-10-21.json",
+    "url": "report-pages/evidence-reconciliation-2026-10-21.json.html"
+  },
+  {
+    "text": "# Fork Local-Player Accessor Milestone ## Verified - The private ShroudForge fork builds successfully with the native accessor, provider bridge, and Lua API. - The fork runtime initializes in a private world and reaches the validated local-authority state. - `runtime.ecs.get_loca…",
+    "title": "Fork Local Player Accessor Milestone 2026 10 22",
+    "source": "data/reports/fork-local-player-accessor-milestone-2026-10-22.md",
+    "url": "report-pages/fork-local-player-accessor-milestone-2026-10-22.md.html"
+  },
+  {
+    "text": "# Full probe rerun ## Session result The current EmberVault probe set was rerun after the user confirmed the game was loaded in a private world. ShroudForge reported the runtime probes active; the six EML export probes were resolved and applied during startup. Fresh exports were …",
+    "title": "Full Probe Rerun 2026 10 22",
+    "source": "data/reports/full-probe-rerun-2026-10-22.md",
+    "url": "report-pages/full-probe-rerun-2026-10-22.md.html"
+  },
+  {
+    "text": "# GameSettingsPresetsResource field inventory The static export contains a separate settings layer from the core `BalancingTable`. It defines minimum values, maximum values, and named presets. This is the clearest confirmed source for player-facing balance knobs, although editabi…",
+    "title": "Game Settings Tuning Field Inventory 2026 10 21",
+    "source": "data/reports/game-settings-tuning-field-inventory-2026-10-21.md",
+    "url": "report-pages/game-settings-tuning-field-inventory-2026-10-21.md.html"
+  },
+  {
+    "text": "# High-impact balance map These are ranked by gameplay impact for local/private balancing. The map does not claim that the fields are writable. | Field path | Observed bounds | Likely consumer | Evidence | |---|---:|---|---| | `GameSettingsPresetsResource.enemyHealthFactor` | 0.2…",
+    "title": "High Impact Balance Map 2026 10 21",
+    "source": "data/reports/high-impact-balance-map-2026-10-21.md",
+    "url": "report-pages/high-impact-balance-map-2026-10-21.md.html"
+  },
+  {
+    "text": "# Inventory entity-ID bridge boundary The runtime census established that `InventorySetup.linksEntities` exposes 16 related entity references per setup. The values are reflected `EntityId` userdata, not the numeric entity argument accepted by the current Lua `runtime.ecs.read_fie…",
+    "title": "Inventory Entity Id Bridge Boundary 2026 10 22",
+    "source": "data/reports/inventory-entity-id-bridge-boundary-2026-10-22.md",
+    "url": "report-pages/inventory-entity-id-bridge-boundary-2026-10-22.md.html"
+  },
+  {
+    "text": "# Inventory and equipment static capability catalog This catalog reconciles the current 1.0 reflection map, runtime evidence, and read-only save-copy research. It does not claim that represented fields are runtime-readable, writable, or persistent. | Field or surface | Static rep…",
+    "title": "Inventory Equipment Static Capability Catalog 2026 10 23",
+    "source": "data/reports/inventory-equipment-static-capability-catalog-2026-10-23.md",
+    "url": "report-pages/inventory-equipment-static-capability-catalog-2026-10-23.md.html"
+  },
+  {
+    "text": "# Inventory schema field map The current 1.0 reflection data identifies these exact fields for the next read-only runtime pass: - `keen::ecs::Inventory`: `slots` - `keen::ecs::InventorySetup`: `linksEntities`, `linksCategories`, `inventoryFlags`, `genericSlotCount`, `availableSlo…",
+    "title": "Inventory Schema Field Map 2026 10 22",
+    "source": "data/reports/inventory-schema-field-map-2026-10-22.md",
+    "url": "report-pages/inventory-schema-field-map-2026-10-22.md.html"
+  },
+  {
+    "text": "# Inventory setup runtime result - `InventorySetup` query completed with 139 entities observed. - Exact reflected fields `linksEntities`, `linksCategories`, `inventoryFlags`, `genericSlotCount`, `availableSlotCount`, and `isInitialized` were readable on bounded samples. - The two…",
+    "title": "Inventory Setup Runtime 2026 10 22",
+    "source": "data/reports/inventory-setup-runtime-2026-10-22.md",
+    "url": "report-pages/inventory-setup-runtime-2026-10-22.md.html"
+  },
+  {
+    "text": "{ \"schema_version\": 1, \"adapter_id\": \"embervault-item-recipe-catalog-validator\", \"game_scope\": \"Enshrouded 1.0\", \"catalog_source\": \"H:\\\\enshroudedresearch\\\\kfc-export-20261019-113420\\\\item-recipe-catalog.json\", \"kfc_root\": \"H:\\\\enshroudedresearch\\\\kfc-export-20261019-113420\", \"it…",
+    "title": "Item Recipe Catalog Validation 2026 10 21",
+    "source": "data/reports/item-recipe-catalog-validation-2026-10-21.json",
+    "url": "report-pages/item-recipe-catalog-validation-2026-10-21.json.html"
+  },
+  {
+    "text": "{ \"snapshot\": \"1.0\", \"validated_on\": \"2026-10-21\", \"json_artifact_count\": 40, \"invalid_json_count\": 0, \"build_identities\": [\"39026384728\"], \"evidence_state\": \"static\", \"result\": \"passed\", \"limitation\": \"Metadata consistency does not prove live runtime behavior.\" }",
+    "title": "Json Consistency 2026 10 21",
+    "source": "data/reports/json-consistency-2026-10-21.json",
+    "url": "report-pages/json-consistency-2026-10-21.json.html"
+  },
+  {
+    "text": "{ \"schema_version\": 1, \"adapter_id\": \"embervault-kfc-payload-type-bridge\", \"game_scope\": \"Enshrouded 1.0\", \"cache_version\": \"1273043|^/game38/branches/release_1.0|2026-10-20T14:55:29.904125Z\", \"kfc_root\": \"H:\\\\enshroudedresearch\\\\kfc-export-20261019-113420\", \"folder_count\": 146, …",
+    "title": "Kfc Payload Type Bridge 2026 10 21",
+    "source": "data/reports/kfc-payload-type-bridge-2026-10-21.json",
+    "url": "report-pages/kfc-payload-type-bridge-2026-10-21.json.html"
+  },
+  {
+    "text": "{ \"schema_version\": 1, \"adapter_id\": \"embervault-kfc-resource-file-identifiers\", \"game_scope\": \"Enshrouded 1.0\", \"source\": \"H:\\\\enshroudedresearch\\\\kfc-export-20261019-113420\", \"record_count\": 91812, \"distinct_resource_folders\": 146, \"distinct_identifiers\": 146, \"limitation\": \"Fi…",
+    "title": "Kfc Resource File Identifiers 2026 10 21",
+    "source": "data/reports/kfc-resource-file-identifiers-2026-10-21.json",
+    "url": "report-pages/kfc-resource-file-identifiers-2026-10-21-summary.html"
+  },
+  {
+    "text": "# KFC Data Usefulness Report Source: current local KFC export and cache type index. This report is read-only research; it does not imply that every field is safe to write at runtime. ## Highest-value integrations | Domain | KFC families | EmberVault use | ShroudForge use | Confid…",
+    "title": "Kfc Usefulness Report",
+    "source": "data/reports/kfc-usefulness-report.md",
+    "url": "report-pages/kfc-usefulness-report.md.html"
+  },
+  {
+    "text": "# KSC1 analysis limits This document records the limits of the current read-only save analysis before decompression or payload decoding is added. ## Established - The inspected character copy begins with the KSC1 container marker. - The header and bounded blob table parse success…",
+    "title": "Ksc1 Analysis Limits 2026 10 23",
+    "source": "data/reports/ksc1-analysis-limits-2026-10-23.md",
+    "url": "report-pages/ksc1-analysis-limits-2026-10-23.md.html"
+  },
+  {
+    "text": "{ \"blobs\": [ { \"compressed_size\": 1825, \"decoded\": false, \"encoding\": \"unknown\", \"index\": 0, \"owner_id\": 3004370292, \"payload_offset\": 432, \"prefix_hex\": \"28b52ffd605413bd38006674b048a014\", \"tag\": \"COUT\" }, { \"compressed_size\": 3042, \"decoded\": false, \"encoding\": \"unknown\", \"inde…",
+    "title": "Ksc1 Payload Inspection 2026 10 23",
+    "source": "data/reports/ksc1-payload-inspection-2026-10-23.json",
+    "url": "report-pages/ksc1-payload-inspection-2026-10-23.json.html"
+  },
+  {
+    "text": "# Enshrouded 1.0 lessons learned This is a living record of research failures, recovered experiments, and rules for deciding whether a mod idea is supported by the current Enshrouded 1.0 runtime. Update it as new evidence is collected. ## Purpose Keep static research, offline sim…",
+    "title": "Lessons Learned",
+    "source": "data/reports/lessons-learned.md",
+    "url": "report-pages/lessons-learned.md.html"
+  },
+  {
+    "text": "# Live character schema read The exact-schema probe completed in a private world. ## Verified live access - `keen::CharacterPresetCollection` is available as one live resource. - Its `presets`, `colors`, and `knowledgeUnlocks` fields are typed userdata. - Nested access through `p…",
+    "title": "Live Character Schema Read 2026 10 21",
+    "source": "data/reports/live-character-schema-read-2026-10-21.md",
+    "url": "report-pages/live-character-schema-read-2026-10-21.md.html"
+  },
+  {
+    "text": "# Live inventory probe Added and installed `embervault_live_inventory_sf`. The probe performs a bounded read-only runtime inventory of the reflected type list, ECS registry summary, and loaded-resource lookup for `GameSettingsPresetsResource`, `BalancingTable`, `RecipeRegistryRes…",
+    "title": "Live Inventory Probe 2026 10 21",
+    "source": "data/reports/live-inventory-probe-2026-10-21.md",
+    "url": "report-pages/live-inventory-probe-2026-10-21.md.html"
+  },
+  {
+    "text": "# Live inventory results The retry-enabled probe succeeded after waiting for world initialization. ## Observed - Attempt 27 of the bounded 30-attempt window - ECS registry returned a table with 640 registrations - `keen::GameSettingsPresetsResource` returned a table - `keen::Bala…",
+    "title": "Live Inventory Results 2026 10 21",
+    "source": "data/reports/live-inventory-results-2026-10-21.md",
+    "url": "report-pages/live-inventory-results-2026-10-21.md.html"
+  },
+  {
+    "text": "# Live scalar read results The extended-retry scalar probe succeeded on attempt 23 of 90. ## Live GameSettings values - `enemyHealthFactor`: 1.0 - `factoryProductionSpeedFactor`: 1.0 - `playerHealthFactor`: 1.0 ## Live preset bounds - `minValues.playerHealthFactor`: 0.25 - `maxVa…",
+    "title": "Live Scalar Read Results 2026 10 21",
+    "source": "data/reports/live-scalar-read-results-2026-10-21.md",
+    "url": "report-pages/live-scalar-read-results-2026-10-21.md.html"
+  },
+  {
+    "text": "# Live/static tuning comparison This report compares the first successful live scalar read with the 1.0 static settings and balancing inventories. It is read-only evidence; no game or save data was changed. ## Confirmed live-backed settings | Setting | Live value | Known bounds |…",
+    "title": "Live Static Tuning Comparison 2026 10 21",
+    "source": "data/reports/live-static-tuning-comparison-2026-10-21.md",
+    "url": "report-pages/live-static-tuning-comparison-2026-10-21.md.html"
+  },
+  {
+    "text": "{ \"schemaVersion\": \"1.0\", \"game\": \"Enshrouded\", \"gameBuild\": \"unknown\", \"evidence\": [ \"static-inventory-correlation\", \"runtime-log-import\" ], \"summary\": { \"artifactCount\": 29, \"runtimeEventCount\": 284, \"entryPointCollisionCount\": 7, \"repeatedLoadEventCount\": 22, \"activationAttemp…",
+    "title": "Loader Conflict Report 2026 10 21",
+    "source": "data/reports/loader-conflict-report-2026-10-21.json",
+    "url": "report-pages/loader-conflict-report-2026-10-21.json.html"
+  },
+  {
+    "text": "{ \"schemaVersion\": \"1.0\", \"snapshot\": \"1.0\", \"game\": \"Enshrouded\", \"gameRoot\": \"H:\\\\SteamLibrary\\\\steamapps\\\\common\\\\Enshrouded\", \"gameBuild\": \"unknown\", \"artifacts\": [ { \"id\": \"creative\", \"path\": \"creative/creative.dll\", \"sha256\": \"c860dae6b1b44728dff09771ab5b60fc16ade7f7075d9f6…",
+    "title": "Loader Inventory 2026 10 21",
+    "source": "data/reports/loader-inventory-2026-10-21.json",
+    "url": "report-pages/loader-inventory-2026-10-21.json.html"
+  },
+  {
+    "text": "{ \"schemaVersion\": \"1.0\", \"game\": \"Enshrouded\", \"importedAt\": \"2026-10-21T23:49:38.942296+00:00\", \"events\": [ { \"source\": \"modloader-proxy.log\", \"kind\": \"exports-forwarded\", \"message\": \"Forwarding exports to C:\\\\WINDOWS\\\\system32\\\\dinput8.dll\", \"timestamp\": null, \"evidence\": [ \"r…",
+    "title": "Loader Runtime Events 2026 10 21",
+    "source": "data/reports/loader-runtime-events-2026-10-21.json",
+    "url": "report-pages/loader-runtime-events-2026-10-21.json.html"
+  },
+  {
+    "text": "# Localization bundle decode result The installed KFC parser was used in read-only filtered mode against the current Enshrouded 1.0 archive, requesting only `LocaTagResource` and `LocaTagCollectionResource` data. The extraction returned the single localization collection descript…",
+    "title": "Localization Bundle Decode 2026 10 21",
+    "source": "data/reports/localization-bundle-decode-2026-10-21.md",
+    "url": "report-pages/localization-bundle-decode-2026-10-21.md.html"
+  },
+  {
+    "text": "# Localization bundle table decode ## Status The matching KFC parser revision now builds and reads the English localization content through the KFC content table. The game files were read only; no game file was modified or repacked. ## Evidence - The English payload was extracted…",
+    "title": "Localization Bundle Table Decode 2026 10 21",
+    "source": "data/reports/localization-bundle-table-decode-2026-10-21.md",
+    "url": "report-pages/localization-bundle-table-decode-2026-10-21.md.html"
+  },
+  {
+    "text": "# Localization inventory runtime result The localization inventory probe was installed and the game reached the main menu, which is sufficient for this probe. No inventory export was produced. This confirms the probe did not execute through the active EML export path. Entering a …",
+    "title": "Localization Inventory Runtime Failure 2026 10 21",
+    "source": "data/reports/localization-inventory-runtime-failure-2026-10-21.md",
+    "url": "report-pages/localization-inventory-runtime-failure-2026-10-21.md.html"
+  },
+  {
+    "text": "# Workshop localization join audit ## Result The English localization payload is readable and contains workshop text, but the final key-to-text join is not yet proven. A scan found 43 of the 44 non-zero workshop name IDs somewhere in the payload's binary indexes. Those occurrence…",
+    "title": "Localization Workshop Join Audit 2026 10 21",
+    "source": "data/reports/localization-workshop-join-audit-2026-10-21.md",
+    "url": "report-pages/localization-workshop-join-audit-2026-10-21.md.html"
+  },
+  {
+    "text": "# Loot and pickup runtime result ## Session result The read-only `embervault_loot_pickup_census_sf` probe exported successfully after the private world loaded. Confirmed during this session: - `runtime.ecs`, registry access, query access, and field-read access were callable. - Th…",
+    "title": "Loot Pickup Runtime Result 2026 10 22",
+    "source": "data/reports/loot-pickup-runtime-result-2026-10-22.md",
+    "url": "report-pages/loot-pickup-runtime-result-2026-10-22.md.html"
+  },
+  {
+    "text": "# Loot and pickup static census ## Scope Read-only reconciliation of the Enshrouded 1.0 reflection metadata and existing Researcher evidence. No game files, saves, or runtime state were modified. ## Confirmed represented types and fields | Area | Evidence | Current classification…",
+    "title": "Loot Pickup Static Census 2026 10 22",
+    "source": "data/reports/loot-pickup-static-census-2026-10-22.md",
+    "url": "report-pages/loot-pickup-static-census-2026-10-22.md.html"
+  },
+  {
+    "text": "# Master roadmap completion audit Date: 2026-10-23 ## Audit result The current audit promotes no additional stages. Stages 0–3 remain the only stages at 100% completion for their explicitly defined scopes. The later stages have useful implementations and evidence, but still have …",
+    "title": "Master Roadmap Completion Audit 2026 10 23",
+    "source": "data/reports/master-roadmap-completion-audit-2026-10-23.md",
+    "url": "report-pages/master-roadmap-completion-audit-2026-10-23.md.html"
+  },
+  {
+    "text": "# Player inventory ownership runtime result ## Evidence - Session: private-world runtime test after rebuilding and installing the EmberVault ShroudForge fork. - Probe: `fork-local-player-accessor`, read-only, bounded component queries. - Player accessor: available. - Inventory co…",
+    "title": "Player Inventory Ownership Runtime 2026 10 22",
+    "source": "data/reports/player-inventory-ownership-runtime-2026-10-22.md",
+    "url": "report-pages/player-inventory-ownership-runtime-2026-10-22.md.html"
+  },
+  {
+    "text": "# Player owner context runtime result ## Probe The fresh-package read-only probe queried the documented player-context components after a bounded retry window: - `keen::ecs::PlayerInput`: zero entities. - `keen::ecs::ClientPlayerInput`: zero entities. - `keen::ecs::ClientPlayerSt…",
+    "title": "Player Owner Context Runtime Result 2026 10 22",
+    "source": "data/reports/player-owner-context-runtime-result-2026-10-22.md",
+    "url": "report-pages/player-owner-context-runtime-result-2026-10-22.md.html"
+  },
+  {
+    "text": "# Player-State Runtime Probe ## Result The EmberVault player-state probe exported successfully in a running client session. The fork returned a validated local-player handle after bounded retry. The probe remained read-only and did not enumerate entities, access saves, or invoke …",
+    "title": "Player State Runtime 2026 10 22",
+    "source": "data/reports/player-state-runtime-2026-10-22.md",
+    "url": "report-pages/player-state-runtime-2026-10-22.md.html"
+  },
+  {
+    "text": "# Pre-1.0 Research Corpus Full-Pass Reconciliation Date: 2026-10-22 Scope: read-only review of the historical Enshrouded Mods corpus on the I drive. Purpose: identify reusable hypotheses, schemas, validation methods, and known failure modes for current 1.0 research. ## Evidence r…",
+    "title": "Pre 1 0 Corpus Full Pass 2026 10 22",
+    "source": "data/reports/pre-1-0-corpus-full-pass-2026-10-22.md",
+    "url": "report-pages/pre-1-0-corpus-full-pass-2026-10-22.md.html"
+  },
+  {
+    "text": "# Pre-1.0 tuning crosswalk appendix Older research is used here as a lead source only. Every current mapping must be revalidated against Enshrouded 1.0. | Historical area | Current 1.0 correspondence | Reuse value | Current status | |---|---|---|---| | Reflected `GameSettings` mo…",
+    "title": "Pre 1 0 Tuning Crosswalk 2026 10 21",
+    "source": "data/reports/pre-1-0-tuning-crosswalk-2026-10-21.md",
+    "url": "report-pages/pre-1-0-tuning-crosswalk-2026-10-21.md.html"
+  },
+  {
+    "text": "# Probe activation and EML conflict record ## Scope This record separates ShroudForge activation state from failures inside the shared EML startup environment. It covers the current retry of the loot, building/voxel, blueprint, category-definition, resource-type, recipe-category,…",
+    "title": "Probe Activation And Eml Conflict 2026 10 22",
+    "source": "data/reports/probe-activation-and-eml-conflict-2026-10-22.md",
+    "url": "report-pages/probe-activation-and-eml-conflict-2026-10-22.md.html"
+  },
+  {
+    "text": "{ \"snapshot\": \"1.0\", \"validated_on\": \"2026-10-21\", \"scope\": \"tracked ShroudForge probes\", \"probe_count\": 11, \"valid_manifest_count\": 11, \"invalid_manifest_count\": 0, \"rejected_compatibility_field_count\": 0, \"evidence_state\": \"static\", \"limitation\": \"Package shape validation does …",
+    "title": "Probe Manifest Validation 2026 10 21",
+    "source": "data/reports/probe-manifest-validation-2026-10-21.json",
+    "url": "report-pages/probe-manifest-validation-2026-10-21.json.html"
+  },
+  {
+    "text": "# Probe Performance and Hot-Reload Validation — 2026-10-22 ## Hot reload The rebuilt EmberVault ShroudForge runtime processed `runtime/mod-reload-request.json` successfully: - request operation: reload - target: `embervault_fork_local_player_probe_sf_v15` - result: `status=reload…",
+    "title": "Probe Performance Hot Reload Validation 2026 10 22",
+    "source": "data/reports/probe-performance-hot-reload-validation-2026-10-22.md",
+    "url": "report-pages/probe-performance-hot-reload-validation-2026-10-22.md.html"
+  },
+  {
+    "text": "{ \"snapshot\": \"1.0\", \"created_on\": \"2026-10-21\", \"evidence_state\": \"static\", \"queue\": [ {\"priority\": 1, \"id\": \"embervault_iteminfo_safe_probe_sf\", \"purpose\": \"read representative ItemInfo scalar and reference fields\"}, {\"priority\": 2, \"id\": \"embervault_localization_probe_sf\", \"pu…",
+    "title": "Probe Queue 2026 10 21",
+    "source": "data/reports/probe-queue-2026-10-21.json",
+    "url": "report-pages/probe-queue-2026-10-21.json.html"
+  },
+  {
+    "text": "{ \"snapshot\": \"1.0\", \"validated_on\": \"2026-10-21\", \"scope\": \"tracked probe Lua scripts\", \"mutation_calls_found_outside_comments\": 0, \"evidence_state\": \"static\", \"result\": \"read-only source scan passed\", \"limitation\": \"Runtime permissions and behavior still require in-game evidenc…",
+    "title": "Probe Safety Audit 2026 10 21",
+    "source": "data/reports/probe-safety-audit-2026-10-21.json",
+    "url": "report-pages/probe-safety-audit-2026-10-21.json.html"
+  },
+  {
+    "text": "# Recipe Category Label Limitation The Enshrouded 1.0 type registry exposes `RecipeInputCategoryResource` and `RecipeInputCategoryDefinition` types, but the read-only EML probe returned zero resources for `RecipeInputCategoryResource`. The recipe registry does expose all 22 numer…",
+    "title": "Recipe Category Label Limitation",
+    "source": "data/reports/recipe-category-label-limitation.md",
+    "url": "report-pages/recipe-category-label-limitation.md.html"
+  },
+  {
+    "text": "{ \"schema_version\": 1, \"adapter_id\": \"embervault-recipe-category-references\", \"game_scope\": \"Enshrouded 1.0\", \"source\": \"I:\\\\My Drive\\\\Enshrouded Mods\\\\EmberVault_Research\\\\Embervault_Researcher\\\\1.0\\\\catalogs\\\\item-recipe-adapter-v1.json\", \"evidence_state\": \"observed\", \"promotio…",
+    "title": "Recipe Category References 2026 10 21",
+    "source": "data/reports/recipe-category-references-2026-10-21.json",
+    "url": "report-pages/recipe-category-references-2026-10-21.json.html"
+  },
+  {
+    "text": "# Recipe Category Source Trace The 22 category references used by the 125 zero-item recipe inputs were traced through the local KFC export. ## Result - All references are present in the recipe registry and item/recipe catalog. - No separate category-name registry was found in the…",
+    "title": "Recipe Category Source Trace 2026 10 21",
+    "source": "data/reports/recipe-category-source-trace-2026-10-21.md",
+    "url": "report-pages/recipe-category-source-trace-2026-10-21.md.html"
+  },
+  {
+    "text": "# Recipe and item validation status ## Static validation complete - 4,262 ItemInfo records were found, each with a source file. - 2,536 recipes were found, including the single recipe registry source. - All non-zero recipe input and output references resolve to ItemInfo records. …",
+    "title": "Recipe Item Validation Status 2026 10 21",
+    "source": "data/reports/recipe-item-validation-status-2026-10-21.md",
+    "url": "report-pages/recipe-item-validation-status-2026-10-21.md.html"
+  },
+  {
+    "text": "{ \"schema_version\": 1, \"adapter_id\": \"embervault-recipe-relationships\", \"game_scope\": \"Enshrouded 1.0\", \"source\": \"I:\\\\My Drive\\\\Enshrouded Mods\\\\EmberVault_Research\\\\Embervault_Researcher\\\\1.0\\\\catalogs\\\\item-recipe-adapter-v1.json\", \"evidence_state\": \"observed\", \"promotion_stat…",
+    "title": "Recipe Relationship Validation 2026 10 21",
+    "source": "data/reports/recipe-relationship-validation-2026-10-21.json",
+    "url": "report-pages/recipe-relationship-validation-2026-10-21.json.html"
+  },
+  {
+    "text": "# Recipe workshop coverage The 2,536 static recipes were grouped by their workshop ID and joined to the verified workshop-to-ItemInfo fallback map. - 46 workshop groups are used by recipes. - 41 groups have a station or NPC debug-name fallback. - 5 groups remain unnamed staticall…",
+    "title": "Recipe Workshop Coverage 2026 10 21",
+    "source": "data/reports/recipe-workshop-coverage-2026-10-21.md",
+    "url": "report-pages/recipe-workshop-coverage-2026-10-21.md.html"
+  },
+  {
+    "text": "{ \"snapshot\": \"1.0\", \"validated_on\": \"2026-10-21\", \"registry_probe_count\": 11, \"missing_registry_packages\": 0, \"queued_probe_count\": 9, \"missing_queued_packages\": 0, \"worktree_clean\": true, \"evidence_state\": \"static\", \"result\": \"passed\", \"limitation\": \"Package presence does not e…",
+    "title": "Registry Queue Integrity 2026 10 21",
+    "source": "data/reports/registry-queue-integrity-2026-10-21.json",
+    "url": "report-pages/registry-queue-integrity-2026-10-21.json.html"
+  },
+  {
+    "text": "{ \"schema_version\": 1, \"adapter_id\": \"embervault-resource-type\", \"game_scope\": \"Enshrouded 1.0\", \"runtime_report\": \"H:\\\\SteamLibrary\\\\steamapps\\\\common\\\\Enshrouded\\\\export\\\\embervault\\\\resource-types-v1.tsv\", \"kfc_root\": \"H:\\\\enshroudedresearch\\\\kfc-export-20261019-113420\", \"runt…",
+    "title": "Resource Type Bridge 2026 10 21",
+    "source": "data/reports/resource-type-bridge-2026-10-21.json",
+    "url": "report-pages/resource-type-bridge-2026-10-21.json.html"
+  },
+  {
+    "text": "# Resource Type Mapping Summary ## Scope This record covers the Enshrouded 1.0 build used by EmberVault Researcher. It joins the read-only EML resource-type export, the local KFC 4 export, and the current game `.cache/types.json` file. ## Identifier sources 1. EML enumerated 146 …",
+    "title": "Resource Type Mapping Summary",
+    "source": "data/reports/resource-type-mapping-summary.md",
+    "url": "report-pages/resource-type-mapping-summary.md.html"
+  },
+  {
+    "text": "{ \"probe_id\": \"embervault_resource_type_probe_sf\", \"probe_name\": \"Resource Type Probe\", \"loader\": \"ShroudForge\", \"game_build\": \"39026384728\", \"evidence_state\": \"observed\", \"collection_status\": \"completed\", \"read_only\": true, \"type_count\": 146, \"limitations\": [ \"This records visib…",
+    "title": "Resource Type Probe 2026 10 20",
+    "source": "data/reports/resource-type-probe-2026-10-20.json",
+    "url": "report-pages/resource-type-probe-2026-10-20.json.html"
+  },
+  {
+    "text": "# Runtime Recipe Category Membership Summary The read-only EML recipe-category probe ran successfully against Enshrouded 1.0 and exposed the recipe registry's `inputCategories` table. ## Result - 22 category IDs were observed. - 90 category-to-item membership rows were exported. …",
+    "title": "Runtime Category Membership Summary",
+    "source": "data/reports/runtime-category-membership-summary.md",
+    "url": "report-pages/runtime-category-membership-summary.md.html"
+  },
+  {
+    "text": "{ \"schema_version\": 1, \"adapter_id\": \"embervault-runtime-category-membership\", \"game_scope\": \"Enshrouded 1.0\", \"probe_output\": \"H:\\\\SteamLibrary\\\\steamapps\\\\common\\\\Enshrouded\\\\export\\\\embervault\\\\recipe-category-v1.tsv\", \"item_catalog\": \"I:\\\\My Drive\\\\Enshrouded Mods\\\\EmberVault…",
+    "title": "Runtime Category Memberships 2026 10 21",
+    "source": "data/reports/runtime-category-memberships-2026-10-21.json",
+    "url": "report-pages/runtime-category-memberships-2026-10-21.json.html"
+  },
+  {
+    "text": "# Runtime Census v2 Result — 2026-10-22 ## Provenance - Probe: `embervault_census_workers_sf_v2` - Probe version: `2.0.0` - Runtime mode: private-world, read-only - Export: `census-workers-v2.tsv` - Player handle: available (`entityId=1`, generation `0`, sequence `1`) - Snapshot …",
+    "title": "Runtime Census V2 Result 2026 10 22",
+    "source": "data/reports/runtime-census-v2-result-2026-10-22.md",
+    "url": "report-pages/runtime-census-v2-result-2026-10-22.md.html"
+  },
+  {
+    "text": "# Runtime DLL static inventory ## Scope Read-only filesystem inventory of native DLLs under the active Enshrouded mods directory. No DLL was loaded, injected, executed for inspection, or modified. ## Observed module One native module was found: `XHL-Enemy-Difficulty-Limits.dll` u…",
+    "title": "Runtime Dll Static Inventory 2026 10 22",
+    "source": "data/reports/runtime-dll-static-inventory-2026-10-22.md",
+    "url": "report-pages/runtime-dll-static-inventory-2026-10-22.md.html"
+  },
+  {
+    "text": "# Runtime world readiness After loading a world, the ShroudForge runtime transitioned from API-present but backend-unready to an operational local-authority state. ## Observed state - Runtime ready: true - ECS registry: ready - Registered storage types: 541 - Registrations: 640 -…",
+    "title": "Runtime World Readiness 2026 10 21",
+    "source": "data/reports/runtime-world-readiness-2026-10-21.md",
+    "url": "report-pages/runtime-world-readiness-2026-10-21.md.html"
+  },
+  {
+    "text": "# Runtime write capability status The latest ShroudForge runtime state reports: - Resource service available and ready. - Guarded resource writes configured and enabled. - Atomic naturally aligned private scalar write policy. - Supported scalar widths: 1, 2, 4, and 8 bytes. - No …",
+    "title": "Runtime Write Capability Status 2026 10 21",
+    "source": "data/reports/runtime-write-capability-status-2026-10-21.md",
+    "url": "report-pages/runtime-write-capability-status-2026-10-21.md.html"
+  },
+  {
+    "text": "# Scalar read probe Added and installed `embervault_scalar_read_sf`. The probe waits for a ready ECS registry, then reads selected live values through documented read APIs: - `ecs::GameSettings`: factory production speed, enemy health, and player health factors - `GameSettingsPre…",
+    "title": "Scalar Read Probe 2026 10 21",
+    "source": "data/reports/scalar-read-probe-2026-10-21.md",
+    "url": "report-pages/scalar-read-probe-2026-10-21.md.html"
+  },
+  {
+    "text": "{ \"snapshot\": \"1.0\", \"validated_on\": \"2026-10-21\", \"command\": \"tools/validate_snapshot.py\", \"probe_count\": 11, \"adapter_count\": 2, \"evidence_state\": \"static\", \"result\": \"passed\", \"limitation\": \"Required files are present; runtime execution is not established.\" }",
+    "title": "Snapshot Validation 2026 10 21",
+    "source": "data/reports/snapshot-validation-2026-10-21.json",
+    "url": "report-pages/snapshot-validation-2026-10-21.json.html"
+  },
+  {
+    "text": "# Stable Census Linked-Inventory Result — 2026-10-22 ## Provenance - Package: `embervault_census_workers_sf` - Package version: `1.1.0` - Export: `census-workers-stable.tsv` - Runtime: private world, read-only - Player handle: available (`entityId=1`, generation `0`, sequence `7`…",
+    "title": "Stable Census Linked Inventory Result 2026 10 22",
+    "source": "data/reports/stable-census-linked-inventory-result-2026-10-22.md",
+    "url": "report-pages/stable-census-linked-inventory-result-2026-10-22.md.html"
+  },
+  {
+    "text": "# Stage 0–3 reconciliation Date: 2026-10-23 Scope: provenance, private-fork release baseline, and provider-runtime readiness. ## Stage 0 — provenance correction - The current live ShroudForge worker is `embervault_census_workers_sf`, version `1.4.6`. - The package is ShroudForge-…",
+    "title": "Stage 0 2 3 Reconciliation 2026 10 23",
+    "source": "data/reports/stage-0-2-3-reconciliation-2026-10-23.md",
+    "url": "report-pages/stage-0-2-3-reconciliation-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 0 closure report Date: 2026-10-23 ## Result Stage 0 is **100% complete for the defined provenance foundation**. The canonical provenance index is `provenance/stage-0-provenance-index-2026-10-23.json`. ## Closure checks - [x] Game build, launcher, fork/profile identity, pa…",
+    "title": "Stage 0 Closure 2026 10 23",
+    "source": "data/reports/stage-0-closure-2026-10-23.md",
+    "url": "report-pages/stage-0-closure-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 1 closure report Date: 2026-10-23 ## Result Stage 1 is **100% complete for the defined static schema and asset census**. This does not claim live ownership, writability, persistence, or safe editing; those remain downstream runtime and save-copy gates. ## Closure checks -…",
+    "title": "Stage 1 Closure 2026 10 23",
+    "source": "data/reports/stage-1-closure-2026-10-23.md",
+    "url": "report-pages/stage-1-closure-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 1 coverage matrix | Domain | Primary artifact | Evidence state | Main limitation | |---|---|---|---| | Reflection/type index | `catalogs/kfc-type-index.json` | observed-static | type names/hashes; field metadata is not universal | | KFC mappings | `catalogs/kfc-mapping-v1…",
+    "title": "Stage 1 Coverage Matrix 2026 10 23",
+    "source": "data/reports/stage-1-coverage-matrix-2026-10-23.md",
+    "url": "report-pages/stage-1-coverage-matrix-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 1 static schema and asset census audit Date: 2026-10-23 Roadmap: `methods/MASTER-ROADMAP.md` Scope: static catalogs, reflection indexes, KFC exports, save-copy notes, and Embervale Toolkit corroboration. No live game access or writes. ## Result At audit time, Stage 1 was …",
+    "title": "Stage 1 Static Census Audit 2026 10 23",
+    "source": "data/reports/stage-1-static-census-audit-2026-10-23.md",
+    "url": "report-pages/stage-1-static-census-audit-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 2 closure report Date: 2026-10-23 Fork: `H:\\enshroudedresearch\\shroudforge\\fork\\shroudforge-player-accessor` ## Result Stage 2 is **100% complete for the private ShroudForge baseline and recovery scope**. The fork remains private, read-only by default, and separate from u…",
+    "title": "Stage 2 Closure 2026 10 23",
+    "source": "data/reports/stage-2-closure-2026-10-23.md",
+    "url": "report-pages/stage-2-closure-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 2 ShroudForge baseline and private-fork audit Date: 2026-10-23 Fork: `H:\\enshroudedresearch\\shroudforge\\fork\\shroudforge-player-accessor` Upstream base: ShroudForge `1.7.5`, commit `2f86315` Fork head: `9f8d3a5` ## Result At audit time, Stage 2 was **partially complete**.…",
+    "title": "Stage 2 Fork Baseline Audit 2026 10 23",
+    "source": "data/reports/stage-2-fork-baseline-audit-2026-10-23.md",
+    "url": "report-pages/stage-2-fork-baseline-audit-2026-10-23.md.html"
+  },
+  {
+    "text": "{ \"manifestVersion\": 2, \"manifestId\": \"embervault-census-workers-sf-1.4.6\", \"project\": \"EmberVault private ShroudForge fork\", \"launcher\": \"ShroudForge\", \"package\": { \"id\": \"embervault_census_workers_sf\", \"version\": \"1.4.6\", \"liveRoot\": \"H:/SteamLibrary/steamapps/common/Enshrouded…",
+    "title": "Stage 2 Release Manifest 2026 10 23 V146",
+    "source": "data/reports/stage-2-release-manifest-2026-10-23-v146.json",
+    "url": "report-pages/stage-2-release-manifest-2026-10-23-v146.json.html"
+  },
+  {
+    "text": "{ \"manifestVersion\": 1, \"project\": \"EmberVault private ShroudForge fork\", \"upstream\": { \"repository\": \"https://github.com/bonsaibauer/shroudforge\", \"baseRef\": \"1.7.5\", \"baseCommit\": \"2f8631504a736eb7ea8160473a6d580b5e677072\" }, \"fork\": { \"branch\": \"embervault/player-accessor\", \"c…",
+    "title": "Stage 2 Release Manifest 2026 10 23",
+    "source": "data/reports/stage-2-release-manifest-2026-10-23.json",
+    "url": "report-pages/stage-2-release-manifest-2026-10-23.json.html"
+  },
+  {
+    "text": "# Stage 2 rollback and packaging verification Date: 2026-10-23 ## Completed offline - Release artifacts were hashed and recorded in `reports/stage-2-release-manifest-2026-10-23.json`. - The fork now contains an explicit EmberVault read-only deny policy at `dev/policies/embervault…",
+    "title": "Stage 2 Rollback Verification 2026 10 23",
+    "source": "data/reports/stage-2-rollback-verification-2026-10-23.md",
+    "url": "report-pages/stage-2-rollback-verification-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 3 provider-runtime addendum Date: 2026-10-23 The 1.4.6 ShroudForge census run confirms that the provider foundation can produce a fresh, uniquely identified export and terminate workers at a global deadline. It does not establish a stable player-context or snapshot-genera…",
+    "title": "Stage 3 Provider Runtime Addendum 2026 10 23",
+    "source": "data/reports/stage-3-provider-runtime-addendum-2026-10-23.md",
+    "url": "report-pages/stage-3-provider-runtime-addendum-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 3 provider-runtime foundation audit Date: 2026-10-23 Fork: `H:\\enshroudedresearch\\shroudforge\\fork\\shroudforge-player-accessor` ## Result Stage 3 is **complete for the offline provider-runtime foundation**. The fork now has an independent entity-access gate, shared snapsh…",
+    "title": "Stage 3 Provider Runtime Audit 2026 10 23",
+    "source": "data/reports/stage-3-provider-runtime-audit-2026-10-23.md",
+    "url": "report-pages/stage-3-provider-runtime-audit-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 4 Corrections Date: 2026-10-23 ## Implemented - Bumped the ShroudForge census worker package to version 1.4.5. - Kept the root and `src` Lua entry points byte-identical. - Added a per-run export token containing the worker graph version, run number, and snapshot generatio…",
+    "title": "Stage 4 Corrections 2026 10 23",
+    "source": "data/reports/stage-4-corrections-2026-10-23.md",
+    "url": "report-pages/stage-4-corrections-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 4 Offline Closure Date: 2026-10-23 ## Result The Stage 4 offline exit criteria are complete. The ShroudForge-only `embervault_census_workers_sf` package remains read-only and version 1.4.6. ## Completed offline gates - All declared census domains are registered as indepen…",
+    "title": "Stage 4 Offline Closure 2026 10 23",
+    "source": "data/reports/stage-4-offline-closure-2026-10-23.md",
+    "url": "report-pages/stage-4-offline-closure-2026-10-23.md.html"
+  },
+  {
+    "text": "{ \"schemaVersion\": 1, \"packageId\": \"embervault_census_workers_sf\", \"packageVersion\": \"1.4.6\", \"classifications\": [ { \"change\": \"Lua function body or worker budget only\", \"result\": \"reloadable\", \"reason\": \"Stable module graph and unchanged native/provider contract.\" }, { \"change\":…",
+    "title": "Stage 4 Reload Classification 2026 10 23",
+    "source": "data/reports/stage-4-reload-classification-2026-10-23.json",
+    "url": "report-pages/stage-4-reload-classification-2026-10-23.json.html"
+  },
+  {
+    "text": "# Stage 4 Scheduler and Hot Reload Audit Date: 2026-10-23 ## Result Stage 4 is offline-complete and awaiting one controlled private-world smoke run. The fork has a working scheduler, shared read-only snapshot/cache, bounded scan modes, cancellation/deadline infrastructure, lifecy…",
+    "title": "Stage 4 Scheduler Hot Reload Audit 2026 10 23",
+    "source": "data/reports/stage-4-scheduler-hot-reload-audit-2026-10-23.md",
+    "url": "report-pages/stage-4-scheduler-hot-reload-audit-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 4 Smoke-Test Result Date: 2026-10-23 ## Result Rejected as stale evidence. ShroudForge executed the prior 1.4.4 worker package, while the corrected 1.4.5 package was not the active runtime package for this session. ## Evidence - The observed export identifies probe versio…",
+    "title": "Stage 4 Smoke Test 2026 10 23",
+    "source": "data/reports/stage-4-smoke-test-2026-10-23.md",
+    "url": "report-pages/stage-4-smoke-test-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 4 Smoke-Test Result — Worker Package 1.4.6 ## Result The corrected ShroudForge package executed and produced a fresh per-run export. The global census deadline worked: the run completed with terminal worker statuses instead of hanging indefinitely. ## Verified - Probe ver…",
+    "title": "Stage 4 Smoke Test V146 2026 10 23",
+    "source": "data/reports/stage-4-smoke-test-v146-2026-10-23.md",
+    "url": "report-pages/stage-4-smoke-test-v146-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 5 Empty `linksEntities` Confirmation Date: 2026-10-24 ## Result The current EmberVault/ShroudForge runtime was tested in a live world with the read-only `InventorySetup` provider port. The reflected schema identifies `InventorySetup.linksEntities` as an inline `StaticArra…",
+    "title": "Stage 5 Empty Links Confirmation 2026 10 24",
+    "source": "data/reports/stage-5-empty-links-confirmation-2026-10-24.md",
+    "url": "report-pages/stage-5-empty-links-confirmation-2026-10-24.md.html"
+  },
+  {
+    "text": "# Stage 5 links bridge implementation Date: 2026-10-23 Fork: `H:\\enshroudedresearch\\shroudforge\\fork\\shroudforge-player-accessor` ## Change The native `InventorySetup` reader was corrected to use the relationship direction documented by upstream evidence: - identify the bounded `…",
+    "title": "Stage 5 Links Bridge Implementation 2026 10 23",
+    "source": "data/reports/stage-5-links-bridge-implementation-2026-10-23.md",
+    "url": "report-pages/stage-5-links-bridge-implementation-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 5 player context and ownership audit Date: 2026-10-23 Roadmap: `methods/MASTER-ROADMAP.md` ## Result Stage 5 is **active and unresolved**. The local-player accessor remains verified in earlier private-world evidence, but the latest v1.4.6 census run timed out at player co…",
+    "title": "Stage 5 Player Ownership Audit 2026 10 23",
+    "source": "data/reports/stage-5-player-ownership-audit-2026-10-23.md",
+    "url": "report-pages/stage-5-player-ownership-audit-2026-10-23.md.html"
+  },
+  {
+    "text": "# Stage 3 linked-entity resolution checkpoint Date: 2026-10-22 ## Current evidence - The private fork returns a validated local-player handle. - The live `InventorySetup` read exposes 32 linked container IDs. - The eight-slot inventory schema is resolved from reflection data. - T…",
+    "title": "Stage3 Linked Entity Resolution 2026 10 22",
+    "source": "data/reports/stage3-linked-entity-resolution-2026-10-22.md",
+    "url": "report-pages/stage3-linked-entity-resolution-2026-10-22.md.html"
+  },
+  {
+    "text": "# Static balance adapter Implemented `adapters/static-balance-catalog.ps1` from the verified ItemInfo and recipe-targeting catalogs. The adapter joins recipe inputs and outputs to ItemInfo debug names when an item ID resolves, while preserving category-only inputs, workshop ident…",
+    "title": "Static Balance Adapter 2026 10 21",
+    "source": "data/reports/static-balance-adapter-2026-10-21.md",
+    "url": "report-pages/static-balance-adapter-2026-10-21.md.html"
+  },
+  {
+    "text": "# Static Reflection Domain Census ## Scope This is a keyword-based inventory of the current 1.0 reflection catalog. It identifies candidate schemas for later read-only probes; it does not establish runtime ownership, readability, writability, or persistence. ## Candidate coverage…",
+    "title": "Static Reflection Domain Census 2026 10 22",
+    "source": "data/reports/static-reflection-domain-census-2026-10-22.md",
+    "url": "report-pages/static-reflection-domain-census-2026-10-22.md.html"
+  },
+  {
+    "text": "# Supported resource accessor evidence The KFC parser/EML implementation documentation establishes the supported accessor model: - `game.assets.get_resources_by_type(type)` returns typed resource objects. - A resource's `data` value is typed Lua userdata with field access semanti…",
+    "title": "Supported Resource Accessor Evidence 2026 10 21",
+    "source": "data/reports/supported-resource-accessor-evidence-2026-10-21.md",
+    "url": "report-pages/supported-resource-accessor-evidence-2026-10-21.md.html"
+  },
+  {
+    "text": "# Tuning candidate priority map The static balance catalog is now ranked by how directly a field represents an adjustment and how clearly its storage location is known. ## Priority 1: explicit settings bounds and presets Source: `GameSettingsPresetsResource`. These are the cleare…",
+    "title": "Tuning Candidate Priority 2026 10 21",
+    "source": "data/reports/tuning-candidate-priority-2026-10-21.md",
+    "url": "report-pages/tuning-candidate-priority-2026-10-21.md.html"
+  },
+  {
+    "text": "# Tuning field-path map ## Game settings paths | Field path | System | Storage | Editability status | |---|---|---|---| | `GameSettingsPresetsResource.minValues.playerHealthFactor` / `maxValues.playerHealthFactor` | Player health | Settings preset resource | Configuration candida…",
+    "title": "Tuning Field Path Map 2026 10 21",
+    "source": "data/reports/tuning-field-path-map-2026-10-21.md",
+    "url": "report-pages/tuning-field-path-map-2026-10-21.md.html"
+  },
+  {
+    "text": "# Tuning location inventory This is a discovery map, not a claim that the fields are writable. Historical pre-1.0 correspondences are tracked separately in `pre-1-0-tuning-crosswalk-2026-10-21.md` and are not treated as current evidence. ## Confirmed static locations | Storage la…",
+    "title": "Tuning Location Inventory 2026 10 21",
+    "source": "data/reports/tuning-location-inventory-2026-10-21.md",
+    "url": "report-pages/tuning-location-inventory-2026-10-21.md.html"
+  },
+  {
+    "text": "# Tuning overrideability matrix This matrix separates where a value lives from whether a mod can override it. | Source | Read status | Override path indicated by documentation | Current classification | |---|---|---|---| | `BalancingTable` | Static KFC export confirmed | No gener…",
+    "title": "Tuning Overrideability Matrix 2026 10 21",
+    "source": "data/reports/tuning-overrideability-matrix-2026-10-21.md",
+    "url": "report-pages/tuning-overrideability-matrix-2026-10-21.md.html"
+  },
+  {
+    "text": "# Unnamed recipe workshop groups The five recipe workshop groups without station item references can still be classified by their recipe debug names, but these classifications are inferred rather than localized or registry-proven. - Workshop ID 0: default or system recipe group; …",
+    "title": "Unamed Recipe Workshop Groups 2026 10 21",
+    "source": "data/reports/unamed-recipe-workshop-groups-2026-10-21.md",
+    "url": "report-pages/unamed-recipe-workshop-groups-2026-10-21.md.html"
+  },
+  {
+    "text": "# Upstream Ownership Resolver Parity — 2026-10-23 ## Result The current EmberVault resolver is not behaviorally upstream-parity. It queries `keen::ecs::DefaultInventory` and `keen::ecs::Equipment`, then accepts only entities whose own entity ID equals the validated local-player I…",
+    "title": "Upstream Ownership Resolver Parity 2026 10 23",
+    "source": "data/reports/upstream-ownership-resolver-parity-2026-10-23.md",
+    "url": "report-pages/upstream-ownership-resolver-parity-2026-10-23.md.html"
+  },
+  {
+    "text": "# Upstream ShroudForge profile review Date: 2026-10-23 ## Result The current upstream branch `1.7.6` contains the same exact Enshrouded client profile for build `26082781` that exists in the EmberVault fork. The profile identity, executable hash, ECS read layout, owner layout, an…",
+    "title": "Upstream Shroudforge Profile Review 2026 10 23",
+    "source": "data/reports/upstream-shroudforge-profile-review-2026-10-23.md",
+    "url": "report-pages/upstream-shroudforge-profile-review-2026-10-23.md.html"
+  },
+  {
+    "text": "{ \"snapshot\": \"1.0\", \"game_build\": \"39026384728\", \"validated_on\": \"2026-10-20\", \"raw_kfc_in_repository\": false, \"catalogs_present\": 8, \"probe_packages_tracked\": 11, \"probe_packages_installed\": 11, \"probes_tested\": 0, \"adapters_tracked\": 2, \"new_version_required\": false, \"result\":…",
+    "title": "Validation 2026 10 20",
+    "source": "data/reports/validation-2026-10-20.json",
+    "url": "report-pages/validation-2026-10-20.json.html"
+  },
+  {
+    "text": "# Workshop to ItemInfo reference join The static workshop registry was joined to the normalized ItemInfo catalog by each workshop's `itemRef` object reference. - 51 workshop records inspected. - 44 nonzero workshop item references present. - All 44 nonzero references matched an I…",
+    "title": "Workshop Item Reference Join 2026 10 21",
+    "source": "data/reports/workshop-item-reference-join-2026-10-21.md",
+    "url": "report-pages/workshop-item-reference-join-2026-10-21.md.html"
+  },
+  {
+    "text": "# Workshop localization resolution ## Result The runtime workshop probe exposes 51 workshop records. The recipe join uses 46 distinct workshop groups: 45 resolve to workshop records and one remains the default or zero workshop group. Each resolved workshop record includes a numer…",
+    "title": "Workshop Localization Limitation 2026 10 21",
+    "source": "data/reports/workshop-localization-limitation-2026-10-21.md",
+    "url": "report-pages/workshop-localization-limitation-2026-10-21.md.html"
+  },
+  {
+    "text": "# Workshop localized-name fallback map The runtime workshop registry contains 51 records and 49 distinct numeric localization IDs. The localization bundles available in the static export are hashed manifests, so they do not provide the English strings directly. As a usable fallba…",
+    "title": "Workshop Localized Name Fallbacks 2026 10 21",
+    "source": "data/reports/workshop-localized-name-fallbacks-2026-10-21.md",
+    "url": "report-pages/workshop-localized-name-fallbacks-2026-10-21.md.html"
+  },
+  {
+    "text": "{ \"schema_version\": 1, \"adapter_id\": \"embervault-workshop-recipe\", \"game_scope\": \"Enshrouded 1.0\", \"probe_output\": \"H:\\\\SteamLibrary\\\\steamapps\\\\common\\\\Enshrouded\\\\export\\\\embervault\\\\workshops-v1.tsv\", \"recipe_catalog\": \"H:\\\\SteamLibrary\\\\steamapps\\\\common\\\\Enshrouded\\\\export\\\\…",
+    "title": "Workshop Recipe Join 2026 10 21",
+    "source": "data/reports/workshop-recipe-join-2026-10-21.json",
+    "url": "report-pages/workshop-recipe-join-2026-10-21.json.html"
+  },
+  {
+    "text": "# Build diff — 2026-10-23 ## Scope Stage 1 static census snapshot for the local Enshrouded/KFC export and type cache. This is a provenance checkpoint, not a runtime compatibility claim. ## Baseline - KFC export: `H:\\enshroudedresearch\\kfc-export-20261019-113420` - Type cache: `H:…",
+    "title": "Build Diff 2026 10 23",
+    "source": "data/reports/build-diffs/build-diff-2026-10-23.md",
+    "url": "report-pages/build-diffs-build-diff-2026-10-23.md.html"
+  },
+  {
+    "text": "# Build diffs Create a dated comparison here when a new game build is available. Compare the new local KFC export and runtime evidence against the previous snapshot before creating the next version folder. No build-diff report is required for the current snapshot because the curr…",
+    "title": "README",
+    "source": "data/reports/build-diffs/README.md",
+    "url": "report-pages/build-diffs-README.md.html"
+  }
+]

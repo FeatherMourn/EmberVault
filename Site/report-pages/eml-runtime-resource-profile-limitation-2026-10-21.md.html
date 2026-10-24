@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Eml Runtime Resource Profile Limitation 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Eml Runtime Resource Profile Limitation 2026 10 21</p><h1>Eml Runtime Resource Profile Limitation 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/eml-runtime-resource-profile-limitation-2026-10-21.md</code></p><section><pre class="report-source"># EML runtime resource profile limitation
+
+## Confirmed result
+
+The ShroudForge-native localization diagnostic loads successfully and appears in the active runtime list. This verifies that ShroudForge can load the diagnostic package and that the package structure is valid.
+
+The EML localization probe does not produce an export because the active runtime reports no exact resource-read profile. The runtime is initialized, but its resource service is unavailable and the game profile remains missing or ambiguous. This prevents EML resource enumeration and export during the current Enshrouded 1.0 session.
+
+## Interpretation
+
+This is a runtime/profile limitation, not a localization probe packaging failure. The static KFC and cache evidence remains usable for identifiers, workshop GUIDs, and numeric localization IDs. Human-readable workshop names require either a compatible EML resource-read profile or a decoded localization bundle.
+
+## Evidence state and safety
+
+- ShroudForge diagnostic: observed active runtime load.
+- EML localization probe: not executed to completion.
+- No game data or KFC source files were modified.
+- The numeric workshop localization IDs remain preserved in the workshop join report.
+</pre></section></main></body></html>
+

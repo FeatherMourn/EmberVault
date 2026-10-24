@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 4 Corrections 2026 10 23 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Stage 4 Corrections 2026 10 23</p><h1>Stage 4 Corrections 2026 10 23</h1><p class="lead">Original staged source: <code>data/reports/stage-4-corrections-2026-10-23.md</code></p><section><pre class="report-source"># Stage 4 Corrections
+
+Date: 2026-10-23
+
+## Implemented
+
+- Bumped the ShroudForge census worker package to version 1.4.5.
+- Kept the root and `src` Lua entry points byte-identical.
+- Added a per-run export token containing the worker graph version, run number, and snapshot generation.
+- Added a unique per-run export alongside the latest convenience export, preventing an old stable file from being mistaken for fresh evidence.
+- Added explicit stale-export interpretation rules to every export.
+- Added independent status workers for appearance, buffs, buildings, voxels, loot, pickup, localization, resources, and saves. These workers report `unsupported` with a reason and do not guess component names, scan broadly, access saves, or write data.
+
+## Validation
+
+- Root and `src` entry points have matching hashes.
+- Repository whitespace validation passes.
+- The package remains ShroudForge-only and read-only.
+- No live install, game launch, save access, or world change was performed.
+
+## Remaining Stage 4 gate
+
+The package still needs a controlled private-world smoke test to verify that the new per-run exports and explicit unsupported statuses are emitted by the active loader. Native or module-graph changes remain restart-required; source-only Lua changes remain candidates for hot reload.
+</pre></section></main></body></html>
+

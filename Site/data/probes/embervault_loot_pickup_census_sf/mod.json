@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_loot_pickup_census_sf",
+  "name": "EmberVault loot and pickup census",
+  "version": "1.0.0",
+  "description": "Bounded read-only availability probe for confirmed loot, pickup, inventory, and player-context surfaces.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

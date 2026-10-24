@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 5 Empty Links Confirmation 2026 10 24 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Stage 5 Empty Links Confirmation 2026 10 24</p><h1>Stage 5 Empty Links Confirmation 2026 10 24</h1><p class="lead">Original staged source: <code>data/reports/stage-5-empty-links-confirmation-2026-10-24.md</code></p><section><pre class="report-source"># Stage 5 Empty `linksEntities` Confirmation
+
+Date: 2026-10-24
+
+## Result
+
+The current EmberVault/ShroudForge runtime was tested in a live world with the
+read-only `InventorySetup` provider port. The reflected schema identifies
+`InventorySetup.linksEntities` as an inline `StaticArray&lt;EntityId,16&gt;` at offset
+`0x0`.
+
+The bounded reader now reads only the 64-byte field, verifies it with a second
+read, and preserves the fail-closed gate. The live result was stable but all 16
+entries were zero. The reader now classifies this as:
+
+`component present but empty`
+
+It does not publish an ownership relationship, perform native writes, access
+saves, or enable the direct ownership/equipment operation.
+
+## Roadmap impact
+
+- Stage 5 remains active and unresolved.
+- The empty negative outcome is confirmed for this target profile.
+- Stage 6 inventory/equipment workers remain gated because no unique player to
+  inventory relationship was observed.
+- Stage 10 remains gated.
+
+## Remaining Stage 5 fixtures
+
+The next validation set must cover absent component, stable empty array,
+unstable link words, moved component address, stale player identity or
+generation, ambiguous player match, unsupported layout, and one repeatable
+unique non-empty relationship across two clean sessions.
+</pre></section></main></body></html>
+

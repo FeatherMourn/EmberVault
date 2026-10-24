@@ -1,0 +1,11 @@
+{
+  "snapshot": "1.0",
+  "validated_on": "2026-10-21",
+  "scope": "tracked ShroudForge probes",
+  "probe_count": 11,
+  "valid_manifest_count": 11,
+  "invalid_manifest_count": 0,
+  "rejected_compatibility_field_count": 0,
+  "evidence_state": "static",
+  "limitation": "Package shape validation does not prove runtime execution or API behavior."
+}

@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Workshop Localization Limitation 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Workshop Localization Limitation 2026 10 21</p><h1>Workshop Localization Limitation 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/workshop-localization-limitation-2026-10-21.md</code></p><section><pre class="report-source"># Workshop localization resolution
+
+## Result
+
+The runtime workshop probe exposes 51 workshop records. The recipe join uses 46 distinct workshop groups: 45 resolve to workshop records and one remains the default or zero workshop group.
+
+Each resolved workshop record includes a numeric `name` localization ID, but the available static `LocaTagCollectionResource` is only a hashed bundle manifest. It contains language bundle sizes, hashes, categories, and bundle metadata; it does not contain the English strings or a name-ID-to-text table.
+
+The KFC export contains no separate localization string registry beyond that manifest, and the existing localization audit likewise identifies localization IDs without plain-text values. Therefore the adapter preserves workshop IDs, GUIDs, and numeric name IDs as verified identifiers, without inventing human-readable labels.
+
+## Evidence and limits
+
+- Runtime source: `workshops-v1.tsv` from the read-only EML probe.
+- Static source: KFC `LocaTagCollectionResource` and localization audit.
+- Evidence state: observed/static research evidence.
+- No game files or KFC originals were modified.
+- Human-readable workshop names require a runtime localization lookup, a decoded localization bundle, or another verified string source.
+
+## Next useful probe
+
+Add a read-only localization lookup probe that accepts the workshop `name` IDs and requests the current English text through the runtime localization API, if that API is exposed by EML.
+</pre></section></main></body></html>
+

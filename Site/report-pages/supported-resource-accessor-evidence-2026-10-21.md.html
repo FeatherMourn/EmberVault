@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Supported Resource Accessor Evidence 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Supported Resource Accessor Evidence 2026 10 21</p><h1>Supported Resource Accessor Evidence 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/supported-resource-accessor-evidence-2026-10-21.md</code></p><section><pre class="report-source"># Supported resource accessor evidence
+
+The KFC parser/EML implementation documentation establishes the supported accessor model:
+
+- `game.assets.get_resources_by_type(type)` returns typed resource objects.
+- A resource&#39;s `data` value is typed Lua userdata with field access semantics.
+- Nested typed fields are intended to be read like regular Lua fields.
+- Resource field assignments are validated by the runtime; invalid values raise an error.
+- Reference assignments create validated deep copies.
+
+For the appearance goal, the exact reflected schemas are now known: `CharacterCustomizationResource`, `CharacterPresetResource`, `CharacterPreset`, `ecs::CharacterSetup`, and `ecs::ScaleComponent`. The character schema probe targets these types and their hair, beard, color, proportion, preset, and scale fields.
+
+## Current proof boundary
+
+The documentation proves that a supported accessor model exists for typed resource data. It does not yet prove that actor appearance data is exposed as a loaded writable resource in this Enshrouded 1.0 session, nor that `ecs::CharacterSetup` or `ecs::ScaleComponent` can be written safely. The next evidence is the live read-only probe export, followed by any explicitly authorized local/private write test only if the runtime reports a guarded path.
+</pre></section></main></body></html>
+

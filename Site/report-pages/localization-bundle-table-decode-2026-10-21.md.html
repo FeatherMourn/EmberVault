@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Localization Bundle Table Decode 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Localization Bundle Table Decode 2026 10 21</p><h1>Localization Bundle Table Decode 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/localization-bundle-table-decode-2026-10-21.md</code></p><section><pre class="report-source"># Localization bundle table decode
+
+## Status
+
+The matching KFC parser revision now builds and reads the English localization content through the KFC content table. The game files were read only; no game file was modified or repacked.
+
+## Evidence
+
+- The English payload was extracted at its declared size of 1,732,416 bytes.
+- The payload contains readable localization text rather than only a manifest.
+- Workshop-related strings were found, including `Workbench`, `Hand Grinder`, `Charcoal Kiln`, `Forge`, `Smelter`, `Alchemy`, and `Tanning`.
+- The parser source defines the expected `LocaTagResource` shape: hash-key ID, text, arguments, and generic argument count.
+
+## Remaining work
+
+The payload is a table-backed binary bundle, so raw string occurrence is not enough to prove a localization-key mapping. The next decoder step is to parse each table entry into its hash-key ID and text, then join those IDs to the 49 workshop localization IDs already cataloged.
+
+## Provenance and limits
+
+The extracted bundle remains outside the Git repository in the Researcher workspace because it is generated game data. Only compact reports and derived mappings belong in the repository. Any workshop name will be marked verified only after its key-to-text table record is decoded; string proximity alone is not treated as proof.
+</pre></section></main></body></html>
+

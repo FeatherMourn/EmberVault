@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Inventory Equipment Static Capability Catalog 2026 10 23 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Inventory Equipment Static Capability Catalog 2026 10 23</p><h1>Inventory Equipment Static Capability Catalog 2026 10 23</h1><p class="lead">Original staged source: <code>data/reports/inventory-equipment-static-capability-catalog-2026-10-23.md</code></p><section><pre class="report-source"># Inventory and equipment static capability catalog
+
+This catalog reconciles the current 1.0 reflection map, runtime evidence, and
+read-only save-copy research. It does not claim that represented fields are
+runtime-readable, writable, or persistent.
+
+| Field or surface | Static representation | Runtime evidence | Save-copy evidence | Capability state |
+|---|---|---|---|---|
+| `Inventory.slots` | Reflected exact field | Inventory component observed; item values not resolved | Not decoded | Represented; runtime field unreadable |
+| `InventorySetup.linksEntities` | Sixteen reflected entity links | Links observed, but no supported `EntityId` to ECS-handle conversion | Not decoded | Represented; ownership bridge missing |
+| `InventorySetup.linksCategories` | Reflected category links | Not tested independently | Not decoded | Represented; unknown |
+| `InventorySetup.inventoryFlags` | Reflected flags | Not tested | Not decoded | Represented; unknown |
+| `InventorySetup.genericSlotCount` / `availableSlotCount` | Reflected numeric fields | Not tested | Not decoded | Represented; unknown |
+| `InventorySetup.isInitialized` | Reflected initialization flag | Not tested | Not decoded | Represented; unknown |
+| `ItemState.containedInSlotId` | Reflected slot relationship | Direct item-instance read not reached | Not decoded | Represented; owner unresolved |
+| `ItemState.itemId` | Reflected item definition link | Item IDs are represented in static/runtime schemas; player-owned value not reached | Not decoded | Represented; live owner unresolved |
+| `ItemState.baseDamageUi` | Reflected damage value | Not tested on a player-owned instance | Not decoded | Represented; unknown |
+| `ItemState.itemState` | Reflected state flags | Not tested | Not decoded | Represented; unknown |
+| `ItemState.itemRarityUi` / `itemLevelUi` | Reflected rarity and level values | Not tested on a player-owned instance | Not decoded | Represented; editor target candidate |
+| `DefaultInventory` | Reflected inventory component | Candidate type found; ownership unresolved | Not decoded | Represented; owner unresolved |
+| `EquipmentSlotData` | Reflected armor, rings, weapons, shield, spells, bait, hookshot, glider, backpack | Candidate type found; ownership unresolved | Not decoded | Represented; owner unresolved |
+| `PackedEquipmentSlotEntityIds` | Reflected equipment entity references | Link conversion unavailable | Not decoded | Represented; bridge missing |
+| `PerkContainerNew.availablePerks` / `unlockedPerks` | Reflected perk collections | Candidate type found; instance read not reached | Not decoded | Represented; unknown |
+| `WeaponGemSlot.weaponGem` | Reflected gem reference | Candidate type found; instance read not reached | Not decoded | Represented; unknown |
+| `ItemInstanceInfo.slotId` / `itemId` / `pide` / `stateMask` | Reflected item identity and state fields | Item-instance ownership not resolved | Not decoded | Represented; owner unresolved |
+
+## Save-copy findings
+
+- Character and world snapshots are KSC1 binary containers.
+- Copies were made before inspection; originals remain untouched.
+- Existing research identifies character and inventory-related regions, but no
+  item-instance round trip has been decoded or validated.
+- No checksum, compression, serializer, or persistence contract should be
+  assumed from the current byte-level observations.
+
+## Capability classification
+
+- **Represented:** confirmed by reflection or static catalog evidence.
+- **Runtime-readable:** not established for player-owned item instances.
+- **Writable:** not established; no item-instance write was attempted.
+- **Persistent:** not established; save round-trip remains unproven.
+- **Next safe static target:** decode the KSC1 copy structure and correlate
+  candidate item regions with the reflected field map without editing bytes.
+
+## Provenance
+
+- `inventory-schema-field-map-2026-10-22.md`
+- `player-inventory-ownership-runtime-2026-10-22.md`
+- `inventory-entity-id-bridge-boundary-2026-10-22.md`
+- `loot-pickup-static-census-2026-10-22.md`
+- `capability-census-matrix-2026-10-22.md`
+- Current KFC/reflection type index and read-only KSC1 copy notes.
+
+## Offline KSC1 correlation result
+
+The read-only character-copy inspection found an active `characters-8` KSC1
+container with 34 blobs. Its table contains repeated `CHAR`, `FOWR`, and
+`COUT` records plus a `KNPL` record and four-byte binary tags that are not yet
+identified. The existing decoder can validate the container and enumerate its
+blob table, but it does not yet decompress or interpret the character payloads
+that could contain item instances.
+
+A bounded byte-string search found no plain-text field names such as item,
+equipment, perk, gem, or slot identifiers. That is consistent with compressed
+or serialized payloads; it is not evidence that those fields are absent.
+
+**Updated classification:** KSC1 structure is readable; blob categories are
+partially classified; item-instance field correlation is still unknown; no
+bytes were changed and no round-trip or persistence claim is made.
+</pre></section></main></body></html>
+

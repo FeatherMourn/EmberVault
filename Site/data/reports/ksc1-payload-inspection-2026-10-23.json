@@ -1,0 +1,349 @@
+{
+  "blobs": [
+    {
+      "compressed_size": 1825,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 0,
+      "owner_id": 3004370292,
+      "payload_offset": 432,
+      "prefix_hex": "28b52ffd605413bd38006674b048a014",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 3042,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 1,
+      "owner_id": 988981527,
+      "payload_offset": 2257,
+      "prefix_hex": "28b52ffd604426c55e004a7ed0192f10",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1867,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 2,
+      "owner_id": 3275851972,
+      "payload_offset": 5299,
+      "prefix_hex": "28b52ffd6054130d3a000678be4680d4",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1393,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 3,
+      "owner_id": 4216299623,
+      "payload_offset": 7166,
+      "prefix_hex": "28b52ffd6014103d2b007a41f00c48b0",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1872,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 4,
+      "owner_id": 387293653,
+      "payload_offset": 8559,
+      "prefix_hex": "28b52ffd605413353a004678c1468096",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 198480,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 5,
+      "owner_id": 3275851972,
+      "payload_offset": 10431,
+      "prefix_hex": "28b52ffda0cc2909004412014aa7f824",
+      "tag": "CHAR"
+    },
+    {
+      "compressed_size": 6973,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 6,
+      "owner_id": 3275851972,
+      "payload_offset": 208911,
+      "prefix_hex": "28b52ffda0050019007400003046474f",
+      "tag": "FOWR"
+    },
+    {
+      "compressed_size": 12408,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 7,
+      "owner_id": 4179926409,
+      "payload_offset": 215884,
+      "prefix_hex": "28b52ffd602c54758301bcc102020000",
+      "tag": "\ufffd\ufffd\ufffd\ufffd"
+    },
+    {
+      "compressed_size": 253053,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 8,
+      "owner_id": 2992650618,
+      "payload_offset": 228292,
+      "prefix_hex": "28b52ffda0b4900b00949800ea6dd016",
+      "tag": "CHAR"
+    },
+    {
+      "compressed_size": 74,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 9,
+      "owner_id": 2992650618,
+      "payload_offset": 481345,
+      "prefix_hex": "28b52ffda0050019007400003046474f",
+      "tag": "FOWR"
+    },
+    {
+      "compressed_size": 15398,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 10,
+      "owner_id": 152707397,
+      "payload_offset": 481419,
+      "prefix_hex": "28b52ffd606c68e5e001ec6a03020000",
+      "tag": "\ufffd\ufffd\ufffd\ufffd"
+    },
+    {
+      "compressed_size": 1832,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 11,
+      "owner_id": 3176046056,
+      "payload_offset": 496817,
+      "prefix_hex": "28b52ffd605413f53800f674b2489056",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1724,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 12,
+      "owner_id": 2992650618,
+      "payload_offset": 498649,
+      "prefix_hex": "28b52ffd6054139535002a4ca40f4470",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1380,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 13,
+      "owner_id": 1835536345,
+      "payload_offset": 500373,
+      "prefix_hex": "28b52ffd601410d52a00963fc948a090",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 135,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 14,
+      "owner_id": 0,
+      "payload_offset": 501753,
+      "prefix_hex": "28b52ffd20b8f5030084060000000008",
+      "tag": "KNPL"
+    },
+    {
+      "compressed_size": 1381,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 15,
+      "owner_id": 4032212137,
+      "payload_offset": 501888,
+      "prefix_hex": "28b52ffd601410dd2a00967fc948a052",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1828,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 16,
+      "owner_id": 391650016,
+      "payload_offset": 503269,
+      "prefix_hex": "28b52ffd605413d5380046b4b048a054",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 74,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 17,
+      "owner_id": 152707397,
+      "payload_offset": 505097,
+      "prefix_hex": "28b52ffda0050019007400003046474f",
+      "tag": "FOWR"
+    },
+    {
+      "compressed_size": 232703,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 18,
+      "owner_id": 152707397,
+      "payload_offset": 505171,
+      "prefix_hex": "28b52ffda0c4c10a00ec84006a6a2416",
+      "tag": "CHAR"
+    },
+    {
+      "compressed_size": 2062,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 19,
+      "owner_id": 2992650618,
+      "payload_offset": 737874,
+      "prefix_hex": "28b52ffd60c00c254000347501000000",
+      "tag": "\ufffd\ufffd\ufffd\ufffd"
+    },
+    {
+      "compressed_size": 1824,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 20,
+      "owner_id": 3788615485,
+      "payload_offset": 739936,
+      "prefix_hex": "28b52ffd605413b538006674b0489054",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1825,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 21,
+      "owner_id": 2052698764,
+      "payload_offset": 741760,
+      "prefix_hex": "28b52ffd605413bd38006674b048a014",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1886,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 22,
+      "owner_id": 152707397,
+      "payload_offset": 743585,
+      "prefix_hex": "28b52ffd605413a53a0036f9c34570d6",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1825,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 23,
+      "owner_id": 1061675540,
+      "payload_offset": 745471,
+      "prefix_hex": "28b52ffd605413bd38006674b048a014",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1717,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 24,
+      "owner_id": 3422355271,
+      "payload_offset": 747296,
+      "prefix_hex": "28b52ffd6054135d35005a4ca80f4570",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 3131,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 25,
+      "owner_id": 3831939748,
+      "payload_offset": 749013,
+      "prefix_hex": "28b52ffd608c268d61008a7f081a2f10",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1707,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 26,
+      "owner_id": 1117063948,
+      "payload_offset": 752144,
+      "prefix_hex": "28b52ffd6054130d3500da49300f4680",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1386,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 27,
+      "owner_id": 1828928460,
+      "payload_offset": 753851,
+      "prefix_hex": "28b52ffd601c10052b0066bfc848b050",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1825,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 28,
+      "owner_id": 1546667002,
+      "payload_offset": 755237,
+      "prefix_hex": "28b52ffd605413bd38006674b048a014",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1878,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 29,
+      "owner_id": 4179926409,
+      "payload_offset": 757062,
+      "prefix_hex": "28b52ffd605413653a0076f8c34670d6",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 3136,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 30,
+      "owner_id": 2984357494,
+      "payload_offset": 758940,
+      "prefix_hex": "28b52ffd608c26b56100ba7f141a2f10",
+      "tag": "COUT"
+    },
+    {
+      "compressed_size": 1061,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 31,
+      "owner_id": 3275851972,
+      "payload_offset": 762076,
+      "prefix_hex": "28b52ffd60fc05dd2000b43a02000000",
+      "tag": "\ufffd\ufffd\ufffd\ufffd"
+    },
+    {
+      "compressed_size": 233649,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 32,
+      "owner_id": 4179926409,
+      "payload_offset": 763137,
+      "prefix_hex": "28b52ffda048d60a007c7a003a6af815",
+      "tag": "CHAR"
+    },
+    {
+      "compressed_size": 86666,
+      "decoded": false,
+      "encoding": "unknown",
+      "index": 33,
+      "owner_id": 4179926409,
+      "payload_offset": 996786,
+      "prefix_hex": "28b52ffda0050019007400003046474f",
+      "tag": "FOWR"
+    }
+  ],
+  "file_size": 1083452,
+  "read_only": true,
+  "reconstructed_save": false,
+  "schema": "embervault.ksc1_payload_inspection.v1",
+  "source": "H:\\enshroudedresearch\\save-work\\2026-10-21-readonly\\characters-8"
+}

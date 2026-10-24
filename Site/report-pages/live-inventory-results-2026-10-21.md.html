@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Live Inventory Results 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Live Inventory Results 2026 10 21</p><h1>Live Inventory Results 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/live-inventory-results-2026-10-21.md</code></p><section><pre class="report-source"># Live inventory results
+
+The retry-enabled probe succeeded after waiting for world initialization.
+
+## Observed
+
+- Attempt 27 of the bounded 30-attempt window
+- ECS registry returned a table with 640 registrations
+- `keen::GameSettingsPresetsResource` returned a table
+- `keen::BalancingTable` returned a table
+- `keen::RecipeRegistryResource` returned a table
+- `keen::WorkshopRegistryResource` returned a table
+- `keen::ItemInfo` returned a table
+
+## Boundary
+
+This confirms live resource lookup is available after delayed initialization. The probe did not enumerate entity data, access saves, call native functions, create overrides, or write resources. The next step can safely be a bounded read-only field inventory for the settings and balancing resources.
+</pre></section></main></body></html>
+

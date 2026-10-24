@@ -1,0 +1,38 @@
+{
+  "manifestVersion": 2,
+  "manifestId": "embervault-census-workers-sf-1.4.6",
+  "project": "EmberVault private ShroudForge fork",
+  "launcher": "ShroudForge",
+  "package": {
+    "id": "embervault_census_workers_sf",
+    "version": "1.4.6",
+    "liveRoot": "H:/SteamLibrary/steamapps/common/Enshrouded/mods/embervault_census_workers_sf",
+    "export": "H:/SteamLibrary/steamapps/common/Enshrouded/shroudforge/exports/embervault/census-workers-v146-run-1.tsv",
+    "latestPointer": "H:/SteamLibrary/steamapps/common/Enshrouded/shroudforge/exports/embervault/census-workers-latest.tsv"
+  },
+  "purpose": "read-only Stage 4 scheduler and hot-reload smoke baseline",
+  "files": [
+    {"path":"extended.mod.json","sha256":"4131e37a3e98b4306c505672b23cfe4e97ae0aaf98e068a400266d5a6eb916d8","bytes":262},
+    {"path":"mod.json","sha256":"fa284f3bea7de12c09408d44f3f5a11007398b17e7f8ac0e472c8f9c0deaeeb1","bytes":411},
+    {"path":"mod.lua","sha256":"cc54c96810299017c2c407fce487596de69b014bbf5860918b5e5dca298f00e3","bytes":8191},
+    {"path":"src/mod.lua","sha256":"cc54c96810299017c2c407fce487596de69b014bbf5860918b5e5dca298f00e3","bytes":8191},
+    {"path":"src/census_runtime.lua","sha256":"54df723ce137e13488b2eca392fcdee7e41e09bb522affd8df404acc0ba0cb73","bytes":13107},
+    {"path":"src/ecs_read_scheduler.lua","sha256":"3605dfaf97f73e089651f4bcb80b3b346d5ee35675dc2258f56c7557d31d37b4","bytes":2977},
+    {"path":"src/ecs_snapshot.lua","sha256":"6f08644d8b3849cba38f22706b1fde375b204be10544eeab6311e82a8070b2477","bytes":1638}
+  ],
+  "evidence": {
+    "freshRun": "census-workers-v146-run-1.tsv",
+    "exportIdentityVerified": true,
+    "globalDeadlineVerified": true,
+    "playerContext": "timeout",
+    "snapshotGeneration": "unknown",
+    "ownership": "not proven"
+  },
+  "safety": {
+    "writesEnabled": false,
+    "saveAccess": false,
+    "duplicatePackagesQuarantined": true,
+    "cacheQuarantined": true,
+    "fullRestoreStartupVerification": false
+  }
+}

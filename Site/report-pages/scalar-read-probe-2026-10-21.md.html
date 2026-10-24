@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Scalar Read Probe 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Scalar Read Probe 2026 10 21</p><h1>Scalar Read Probe 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/scalar-read-probe-2026-10-21.md</code></p><section><pre class="report-source"># Scalar read probe
+
+Added and installed `embervault_scalar_read_sf`.
+
+The probe waits for a ready ECS registry, then reads selected live values through documented read APIs:
+
+- `ecs::GameSettings`: factory production speed, enemy health, and player health factors
+- `GameSettingsPresetsResource`: selected minimum and maximum health and production fields
+- `BalancingTable`: player and item caps, flame and altar caps, and durability loss cap
+
+It reports field values and reflected types only. It does not create overrides, write resources, call native functions, access saves, or change gameplay. A full restart and world load are required before checking its log output.
+</pre></section></main></body></html>
+

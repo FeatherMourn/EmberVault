@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Inventory Setup Runtime 2026 10 22 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Inventory Setup Runtime 2026 10 22</p><h1>Inventory Setup Runtime 2026 10 22</h1><p class="lead">Original staged source: <code>data/reports/inventory-setup-runtime-2026-10-22.md</code></p><section><pre class="report-source"># Inventory setup runtime result
+
+- `InventorySetup` query completed with 139 entities observed.
+- Exact reflected fields `linksEntities`, `linksCategories`, `inventoryFlags`, `genericSlotCount`, `availableSlotCount`, and `isInitialized` were readable on bounded samples.
+- The two link arrays are exposed to Lua as opaque read-only collections rather than ordinary tables.
+- Direct player-handle reads still do not expose `InventorySetup`.
+- The next probe should use supported indexed field paths for the link arrays, then compare the resulting entity references against the validated player context.
+- No writes, save access, or unrestricted entity enumeration occurred.
+</pre></section></main></body></html>
+

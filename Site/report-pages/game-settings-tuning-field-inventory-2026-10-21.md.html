@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Game Settings Tuning Field Inventory 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Game Settings Tuning Field Inventory 2026 10 21</p><h1>Game Settings Tuning Field Inventory 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/game-settings-tuning-field-inventory-2026-10-21.md</code></p><section><pre class="report-source"># GameSettingsPresetsResource field inventory
+
+The static export contains a separate settings layer from the core `BalancingTable`. It defines minimum values, maximum values, and named presets. This is the clearest confirmed source for player-facing balance knobs, although editability still requires a separate local/private-world test.
+
+## Confirmed settings categories
+
+- Player health, mana, stamina, body heat, and diving-time factors
+- Durability and starving-debuff toggles
+- Food-buff duration and hunger thresholds
+- Shroud-time, day, and night durations
+- Tombstone mode and glider turbulence toggle
+- Weather and fishing difficulty modes
+- Mining damage, plant growth, resource-drop stack, and factory-production factors
+- Perk recycling and perk-cost factors
+- Combat, mining, exploration, and quest experience factors
+- Random spawner and aggro-pool modes
+- Enemy, boss, perception, and threat factors
+- Pacify-all-enemies toggle and taming behavior mode
+- Curse modifier and flame-level fog removal
+
+The resource explicitly supplies lower and upper bounds for many numeric factors and named preset records such as Relaxed. This establishes a strong “configuration candidate” classification, distinct from the static core balancing constants.
+
+No setting was changed, and the original game files remain read-only.
+</pre></section></main></body></html>
+

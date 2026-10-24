@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Localization Bundle Decode 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Localization Bundle Decode 2026 10 21</p><h1>Localization Bundle Decode 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/localization-bundle-decode-2026-10-21.md</code></p><section><pre class="report-source"># Localization bundle decode result
+
+The installed KFC parser was used in read-only filtered mode against the current Enshrouded 1.0 archive, requesting only `LocaTagResource` and `LocaTagCollectionResource` data.
+
+The extraction returned the single localization collection descriptor. It records the English bundle size and hash metadata, but the English string payload is not stored in the descriptor or exposed as a KFC resource record. The available static export likewise contains no plain-text localization table.
+
+## Result
+
+- Filtered extraction completed without modifying the game archive.
+- The localization collection descriptor was recovered.
+- No English string payload or name-ID-to-text table was recovered.
+- Workshop numeric localization IDs and ItemInfo debug-name fallbacks remain valid.
+
+The remaining decode target is the hashed English bundle referenced by the descriptor. It requires a bundle-aware reader or a compatible runtime localization API; the current KFC parser cannot expose that payload through its filtered resource extraction.
+</pre></section></main></body></html>
+

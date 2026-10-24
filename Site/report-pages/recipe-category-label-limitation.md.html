@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Recipe Category Label Limitation · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Recipe Category Label Limitation</p><h1>Recipe Category Label Limitation</h1><p class="lead">Original staged source: <code>data/reports/recipe-category-label-limitation.md</code></p><section><pre class="report-source"># Recipe Category Label Limitation
+
+The Enshrouded 1.0 type registry exposes `RecipeInputCategoryResource` and
+`RecipeInputCategoryDefinition` types, but the read-only EML probe returned zero
+resources for `RecipeInputCategoryResource`.
+
+The recipe registry does expose all 22 numeric category IDs and their 90
+resolved item memberships. Those IDs and memberships are retained as the
+reliable runtime evidence. Human-readable category labels remain unresolved;
+no label is inferred from a debug name or item membership.
+
+The next mapping slice is workshop/station data from the recipe registry and
+`WorkshopRegistryResource`.
+</pre></section></main></body></html>
+

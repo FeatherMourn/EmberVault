@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 5 Links Bridge Implementation 2026 10 23 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Stage 5 Links Bridge Implementation 2026 10 23</p><h1>Stage 5 Links Bridge Implementation 2026 10 23</h1><p class="lead">Original staged source: <code>data/reports/stage-5-links-bridge-implementation-2026-10-23.md</code></p><section><pre class="report-source"># Stage 5 links bridge implementation
+
+Date: 2026-10-23
+Fork: `H:\enshroudedresearch\shroudforge\fork\shroudforge-player-accessor`
+
+## Change
+
+The native `InventorySetup` reader was corrected to use the relationship
+direction documented by upstream evidence:
+
+- identify the bounded `InventorySetup` candidate by matching its entity
+  identity to the validated local-player entity;
+- treat `linksEntities` as related inventory entities, not as a reverse list
+  containing the player entity;
+- require at least one non-zero link in the bounded sixteen-entry array;
+- retain double-read byte consistency, generation/sequence checks, and explicit
+  stale/unresolved/ambiguous outcomes;
+- keep the unsafe direct inventory/equipment operation disabled.
+
+## Validation
+
+- Native CMake Release build: passed.
+- Existing warning: disabled unsafe ownership function has unused parameters by
+  design.
+- No live binaries installed.
+- No saves or worlds touched.
+
+## Current boundary
+
+This proves the corrected bridge compiles; it does not yet prove that the
+current live build exposes a unique player-side `InventorySetup` relationship.
+The next Stage 5 gate is a ShroudForge-only read-only package test using the
+rebuilt native runtime, with fresh export identity and no ownership writes.
+</pre></section></main></body></html>
+

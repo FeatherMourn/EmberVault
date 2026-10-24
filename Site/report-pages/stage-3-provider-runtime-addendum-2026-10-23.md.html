@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 3 Provider Runtime Addendum 2026 10 23 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Stage 3 Provider Runtime Addendum 2026 10 23</p><h1>Stage 3 Provider Runtime Addendum 2026 10 23</h1><p class="lead">Original staged source: <code>data/reports/stage-3-provider-runtime-addendum-2026-10-23.md</code></p><section><pre class="report-source"># Stage 3 provider-runtime addendum
+
+Date: 2026-10-23
+
+The 1.4.6 ShroudForge census run confirms that the provider foundation can
+produce a fresh, uniquely identified export and terminate workers at a global
+deadline. It does not establish a stable player-context or snapshot-generation
+accessor.
+
+| Capability | Evidence | Correct status |
+|---|---|---|
+| Shared scheduler/export lifecycle | v1.4.6 fresh run | Verified |
+| Per-run identity and stale-result rejection | v1.4.6 export markers | Verified |
+| Bounded terminal statuses | deadline converted pending work to timeout | Verified |
+| Player context | timed out | Unavailable in this run |
+| Snapshot generation | no value exported | Unknown |
+| Inventory/equipment ownership | downstream workers did not receive stable player context | Unresolved |
+
+This addendum supersedes any wording that treats the 1.4.6 run as live
+ownership success. Stage 3 remains closed only for its offline foundation;
+Stages 5–6 retain the live capability gates.
+</pre></section></main></body></html>
+

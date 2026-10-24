@@ -1,0 +1,60 @@
+# Stage 5 player context and ownership audit
+
+Date: 2026-10-23
+Roadmap: `methods/MASTER-ROADMAP.md`
+
+## Result
+
+Stage 5 is **active and unresolved**. The local-player accessor remains
+verified in earlier private-world evidence, but the latest v1.4.6 census run
+timed out at player context and did not produce a current ownership result.
+Older reports that describe owned inventory/equipment are retained as
+historical evidence and are not promoted over the newer bounded export.
+
+## Current evidence boundary
+
+| Gate | Current state | Interpretation |
+|---|---|---|
+| Local-player identity | Previously verified | Revalidate against the current package/runtime before promotion |
+| Session/world identity | Provider snapshot exists | Must be attached to every relationship result |
+| Snapshot generation | Unknown in v1.4.6 export | Ownership results cannot be considered stable yet |
+| Player-context readiness | Timed out in v1.4.6 | Current primary blocker |
+| `InventorySetup` schema | Reflected and statically mapped | Does not by itself prove ownership |
+| `linksEntities` | Represented; array conversion unresolved in current run | Next native read gate |
+| Inventory/equipment ownership | Unresolved | No live promotion |
+
+## Required implementation order
+
+1. Keep the unsafe direct ownership/equipment operation disabled for the target
+   build.
+2. Expose a bounded, read-only `InventorySetup.linksEntities` reader through
+   the active ShroudForge API, with explicit API/version availability.
+3. Reacquire the local-player handle for each attempt and bind the read to the
+   current session, world, generation, and provider identity.
+4. Accept only one stable relationship after two consistent reads; otherwise
+   return `scanning`, `stale`, `ambiguous`, `unresolved`, or `unsupported`.
+5. Resolve inventory slot references only after the setup relationship passes.
+   Keep equipment, perks, gems, and item-instance reads as separate gates.
+6. Add negative fixtures for stale generation, duplicate candidates, empty
+   links, changing arrays, missing API functions, and unsupported layouts.
+
+## Exit criteria
+
+Stage 5 cannot close until the declared target profile produces a repeatable
+unique relationship in two separate sessions, with fresh export identity and
+passing negative tests. A static field match, an old probe result, or a
+non-unique candidate is insufficient. No writes, save edits, or editor work
+are authorized by this stage.
+
+## Implementation update — 2026-10-23
+
+The typed native bridge has now been corrected and rebuilt. It matches the
+`InventorySetup` candidate to the validated player entity, then validates a
+bounded non-empty `linksEntities` array. The unsafe direct ownership path
+remains disabled. See `reports/stage-5-links-bridge-implementation-2026-10-23.md`.
+
+## Immediate next action
+
+Implement and offline-test the typed `linksEntities` bridge and its status
+contract. Only after the bridge and fixtures pass should a ShroudForge-only
+private-world validation be scheduled.

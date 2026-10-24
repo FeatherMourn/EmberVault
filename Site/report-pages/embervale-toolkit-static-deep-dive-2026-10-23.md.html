@@ -1,0 +1,94 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Embervale Toolkit Static Deep Dive 2026 10 23 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Embervale Toolkit Static Deep Dive 2026 10 23</p><h1>Embervale Toolkit Static Deep Dive 2026 10 23</h1><p class="lead">Original staged source: <code>data/reports/embervale-toolkit-static-deep-dive-2026-10-23.md</code></p><section><pre class="report-source"># Embervale Toolkit static deep dive
+
+Date: 2026-10-23  
+Scope: `H:\enshroudedresearch\embervale-toolkit.zip`
+
+## Scope and method
+
+This was a read-only inspection. The archive was listed and extracted to a separate analysis directory; `EmbervaleToolkit.exe` was not launched, installed, injected, or loaded into the game. The README and version file were reviewed, and the executable was examined for PE metadata, imports, and embedded strings/catalog clues.
+
+## Contents
+
+- `EmbervaleToolkit.exe` — self-contained x64 Windows executable, toolkit version 3.2.0.
+- `README.txt` — usage, mod-maker, resource, and safety notes.
+- `VERSION.txt` — toolkit version metadata.
+
+## Useful evidence
+
+### 1. Name-based scalar field model
+
+The toolkit’s Tweak Maker describes a field table for scalar values addressed by dotted names rather than fixed memory addresses. The documented example is `BalancingTable.itemLevelCap`; the UI also refers to item, perk, and balancing values and supports bounded ranges such as `{min,max}`.
+
+This is valuable as a static schema hypothesis: EmberVault can compare these names and value constraints against current KFC reflection data and generated package descriptors. It is not proof that the same fields exist on live item instances.
+
+### 2. KFC and resource-container knowledge
+
+The executable contains references to KFC3/KFC4, KFC version checks, `.kfc` and `.kfc_resources` files, `enshrouded.kfc`, and resource bundle/index validation. It also contains error and validation terminology for resource keys, indices, descriptors, generated packages, and bundle consistency.
+
+This can improve the static resource census and provide candidate validation rules for an offline KFC analyzer. The strings alone do not reveal a complete decoder or authorize modifying game resources.
+
+### 3. Relevant resource and registry names
+
+Embedded names include:
+
+- `keen::ItemRegistryResource`
+- `keen::PerkCollectionResource`
+- `keen::RecipeRegistryResource`
+- `keen::WorkshopRegistryResource`
+- `keen::GameKnowledgeResource`
+- `keen::ItemKnowledgeResource`
+- `keen::ecs::TemplateCollectionResource`
+- `keen::LootableItemsResource`
+
+These corroborate several resource categories already present in EmberVault’s 1.0 static census and add useful vocabulary for catalog reconciliation.
+
+### 4. Item, perk, appearance, and asset clues
+
+Static strings reference item IDs and values, perk pools, item level caps, `lookOf`, models, materials, props, terrain/block materials, and generated package metadata. The README describes catalogs for props, no-model items, materials, item/perk/balancing resources, and resource-based mod generation.
+
+These are useful candidate fields and relationships for the static catalog and future offline comparison work.
+
+### 5. Packaging and validation conventions
+
+The toolkit describes generated, switchable mods and includes validation-oriented strings for field names, scalar values, resource keys, package descriptors, and bundle/index consistency. This gives EmberVault useful design references for manifest validation, provenance, and clear rejection of unsupported fields.
+
+## What this does not prove
+
+The toolkit does not, from the evidence available here, prove any of the following:
+
+- a supported live player-entity accessor;
+- access to inventory or equipment item instances;
+- live editing of item level, damage, perks, gems, sockets, or durability;
+- persistence of those edits in saves;
+- safe runtime writes through ShroudForge;
+- a complete or reusable KSC1 decoder;
+- compatibility with the current game build or EmberVault fork.
+
+Its Tweak Maker appears oriented toward generating resource/package modifications. That is materially different from reaching a player-owned runtime item instance.
+
+## Roadmap integration
+
+Add this archive as a historical/static evidence source, not as a runtime dependency.
+
+1. Extend the static schema catalog with the toolkit’s resource names, dotted scalar-field convention, value-range convention, and package validation vocabulary.
+2. Compare the toolkit’s KFC3/KFC4 and resource-index clues with current KFC exports and mark each match with provenance.
+3. Use its item/perk/balancing names to prioritize offline field correlation and generated-package validation tests.
+4. Keep KSC1 save analysis separate; toolkit resource metadata cannot be treated as a save-format decoder.
+5. Keep live ownership and runtime writes gated behind the verified ShroudForge/native capability matrix.
+
+## Cross-check against existing EmberVault evidence
+
+The current Research repo already contains matching static entries for `ItemRegistryResource`, `LootableItemsResource`, and `PerkCollectionResource`, and existing historical Unified EML material references `BalancingTable.itemLevelCap` and `LootableItemsResource`. The toolkit therefore corroborates vocabulary and field candidates that EmberVault has independently encountered; it does not establish that either tool is using the same implementation or that the fields are instance-owned.
+
+This cross-check is useful for prioritization:
+
+- compare toolkit field names against the KFC type/field catalog;
+- compare resource names and counts across builds;
+- treat toolkit-generated package behavior as a separate resource-layer capability;
+- preserve independent provenance rather than merging the toolkit’s claims into runtime capability results.
+
+## Safety and provenance
+
+No executable was run. No DLLs were loaded. No game, mod, save, or world files were changed. All observations above are static evidence from the archive’s documentation and embedded metadata; behavioral claims remain unverified until independently tested in an isolated, private environment.
+</pre></section></main></body></html>
+

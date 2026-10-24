@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Recipe Item Validation Status 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Recipe Item Validation Status 2026 10 21</p><h1>Recipe Item Validation Status 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/recipe-item-validation-status-2026-10-21.md</code></p><section><pre class="report-source"># Recipe and item validation status
+
+## Static validation complete
+
+- 4,262 ItemInfo records were found, each with a source file.
+- 2,536 recipes were found, including the single recipe registry source.
+- All non-zero recipe input and output references resolve to ItemInfo records.
+- 125 zero-valued input references remain classified as category-only requirements.
+- 68 recipes are marked as cooking recipes and 14 as upgrade recipes.
+
+## Runtime validation status
+
+The live runtime has already proven that the ItemInfo and recipe resource families are available after world initialization, but no live item or recipe payload read has been captured yet. Therefore the static catalog remains research-only for behavior and writability.
+
+## Next read-only check
+
+On the next world session, read a small representative sample rather than exporting the entire catalog: one ordinary item, one stackable item, one cooking recipe, one upgrade recipe, and one category-only recipe input. Compare IDs, quantities, duration, workshop, and flags against this catalog. No writes, crafting actions, or save access are needed.
+</pre></section></main></body></html>
+

@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Character Preset Cosmetic Inventory 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Character Preset Cosmetic Inventory 2026 10 21</p><h1>Character Preset Cosmetic Inventory 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/character-preset-cosmetic-inventory-2026-10-21.md</code></p><section><pre class="report-source"># Character preset cosmetic inventory
+
+The static `CharacterPresetCollection` resource provides a concrete cosmetic catalog.
+
+- Total presets: 54.
+- Presets marked as player customization options: 25.
+- Presets with nonzero hair references: 53.
+- Presets with nonzero beard references: 16.
+- Preset records also carry head, body-part, armour, hair-color, beard-color, skin-color, eye, and voice references.
+
+The `references` subrecord uses GUID references for the visual parts, while the runtime-facing preset fields use hashed identifiers. This gives us a static bridge for hair and beard assets, but does not establish that changing a preset or `CharacterSetup` value will update a live player. That requires the exact-schema runtime read and a separate guarded-write capability check.
+</pre></section></main></body></html>
+

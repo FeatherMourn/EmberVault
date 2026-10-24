@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_component_key_probe_sf",
+  "name": "EmberVault component key probe",
+  "version": "1.0.0",
+  "description": "Bounded read-only inspection of template component and render material keys.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

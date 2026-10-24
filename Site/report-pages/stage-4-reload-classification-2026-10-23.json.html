@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 4 Reload Classification 2026 10 23 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Stage 4 Reload Classification 2026 10 23</p><h1>Stage 4 Reload Classification 2026 10 23</h1><p class="lead">Original staged source: <code>data/reports/stage-4-reload-classification-2026-10-23.json</code></p><section><pre class="report-source">{
+  &quot;schemaVersion&quot;: 1,
+  &quot;packageId&quot;: &quot;embervault_census_workers_sf&quot;,
+  &quot;packageVersion&quot;: &quot;1.4.6&quot;,
+  &quot;classifications&quot;: [
+    {
+      &quot;change&quot;: &quot;Lua function body or worker budget only&quot;,
+      &quot;result&quot;: &quot;reloadable&quot;,
+      &quot;reason&quot;: &quot;Stable module graph and unchanged native/provider contract.&quot;
+    },
+    {
+      &quot;change&quot;: &quot;Lua module add/remove or dependency graph&quot;,
+      &quot;result&quot;: &quot;restart-required&quot;,
+      &quot;reason&quot;: &quot;Loaded module cache and graph identity may be stale.&quot;
+    },
+    {
+      &quot;change&quot;: &quot;native runtime, loader, ABI, profile, executable, or manifest identity&quot;,
+      &quot;result&quot;: &quot;restart-required&quot;,
+      &quot;reason&quot;: &quot;Process-loaded components cannot be replaced safely in-session.&quot;
+    },
+    {
+      &quot;change&quot;: &quot;missing active package, stale export, or failed lifecycle recovery&quot;,
+      &quot;result&quot;: &quot;blocked&quot;,
+      &quot;reason&quot;: &quot;Do not interpret results or retry blindly; restore or revalidate first.&quot;
+    }
+  ]
+}
+</pre></section></main></body></html>
+

@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tuning Candidate Priority 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Tuning Candidate Priority 2026 10 21</p><h1>Tuning Candidate Priority 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/tuning-candidate-priority-2026-10-21.md</code></p><section><pre class="report-source"># Tuning candidate priority map
+
+The static balance catalog is now ranked by how directly a field represents an adjustment and how clearly its storage location is known.
+
+## Priority 1: explicit settings bounds and presets
+
+Source: `GameSettingsPresetsResource`.
+
+These are the clearest configuration candidates because the resource contains minimum values, maximum values, and named presets. Highest-value groups are player factors, durability and hunger toggles, time controls, resource and factory multipliers, experience factors, enemy and boss factors, perception and aggro, tombstone mode, weather, fishing, and flame fog removal.
+
+## Priority 2: core balance constants
+
+Source: `BalancingTable`.
+
+Strong candidates include player and item caps, flame and altar progression, build-zone sizing, damage factors, base health and mana, perk costs, freeze and suffocation timing, durability loss, XP thresholds, and animal or instrument limits. These are clearly stored, but their override path is not yet proven.
+
+## Priority 3: recipe balance
+
+Sources: `RecipeRegistryResource` and the normalized static catalog.
+
+Useful fields are input and output counts, category-only requirements, crafting duration, workshop ID, level, cooking status, upgrade status, and unlock references. These are content-level values and are suitable for comparison and local/private-world research.
+
+## Priority 4: item balance
+
+Sources: `ItemInfo` records and linked stat resources.
+
+The current catalog reliably exposes item identity, category, rarity, stack size, equipment slot, class, flags, and source file. Durability and combat values may be linked through additional item or attribute resources and should be traced separately rather than inferred from debug names.
+
+## Evidence rule
+
+This map identifies where candidates live. It does not claim that they are writable. Any future local override test must use a supported guarded API, preserve the original value, and be restricted to a private or offline world.
+</pre></section></main></body></html>
+

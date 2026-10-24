@@ -1,0 +1,118 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lessons Learned · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Lessons Learned</p><h1>Lessons Learned</h1><p class="lead">Original staged source: <code>data/reports/lessons-learned.md</code></p><section><pre class="report-source"># Enshrouded 1.0 lessons learned
+
+This is a living record of research failures, recovered experiments, and
+rules for deciding whether a mod idea is supported by the current Enshrouded
+1.0 runtime. Update it as new evidence is collected.
+
+## Purpose
+
+Keep static research, offline simulations, read-only observations, guarded
+operations, and verified gameplay behavior separate. The goal is to prevent
+an attractive prototype or a successful package build from being mistaken for
+working in the live game.
+
+## Current evidence boundary
+
+- Static catalogs and source inspection identify resources, fields, and
+  relationships. They do not prove that a value is writable.
+- Offline Emberworks simulations validate data contracts and algorithms. They
+  do not prove that Enshrouded accepts the corresponding operation.
+- A ShroudForge probe that loads successfully proves package/runtime loading,
+  not gameplay behavior.
+- Read-only runtime output is required before designing a write or adapter.
+- A live write is only considered guarded after backup verification,
+  permission checks, readback, rollback, and a disposable-world test.
+- Older-build evidence must not be presented as current 1.0 support.
+
+## Known failures and lessons
+
+### EML runtime surface
+
+The available EML research supports asset and resource access, but the current
+runtime surface has not provided verified world, player, entity, or
+construction actions. Therefore Zooping, Chiselcraft, Builder&#39;s Wand,
+Worldwright, and similar systems may be implemented offline without being
+runtime-capable.
+
+**Rule:** label these systems `offline` or `probe_required` until a
+build-matched read-only probe demonstrates the required live object or action.
+
+### Native DLL bridge
+
+Host-side DLL loading and exported markers were demonstrated in research, but
+that does not prove that the game loaded the bridge or that its functions are
+safe and callable in-game.
+
+**Rule:** distinguish host loading, loader registration, in-game loading,
+callable API, and gameplay effect as separate evidence claims.
+
+### Unsupported probe capabilities
+
+At least one probe used an `observe` capability that the loader rejected. The
+manifest was corrected to supported capabilities before the probe was rerun.
+
+**Rule:** validate capability names against the current manifest schema before
+launching. Record the exact loader and game build with every probe.
+
+### Version drift and stale baselines
+
+ShroudForge failed to start Enshrouded after an update because its saved
+`enshrouded.kfc.bak` was incompatible with the current game file. The loader
+correctly stopped before loading inconsistent assets. Moving the stale backup
+to a recoverable quarantine allowed a fresh baseline to be generated.
+
+**Rule:** after a game update, verify the clean game files and regenerate the
+ShroudForge baseline. Never delete a recovery file before confirming a fresh
+baseline exists.
+
+### Probe scope creep
+
+Read-only research can gradually become a live mutation experiment. That
+creates unnecessary risk and makes results harder to interpret.
+
+**Rule:** begin with observation only. Add one narrowly scoped write only after
+the observed field, owner, permissions, and rollback path are documented.
+
+## Autorun investigation
+
+The current autorun idea requires Num Lock toggling, Caps Lock walk/run mode,
+forward movement, cancellation on movement input, collision, combat, and
+menus, plus normal terrain handling.
+
+The first valid test is a read-only probe for `ClientPlayerInput` and known
+movement fields. It must not synthesize input or write movement. If the public
+Lua API cannot inject forward input, a native ShroudForge bridge may be needed;
+that bridge remains unverified until it loads in-game and passes a disposable
+world test.
+
+## Recovery checklist
+
+1. Record game build, KFC identity, ShroudForge version, loader version, and
+   active mod set.
+2. Back up the save and active loader profile.
+3. Use a disposable offline world.
+4. Run a read-only probe first.
+5. Capture the complete log and exact result.
+6. Stop on missing or ambiguous runtime profiles.
+7. For guarded writes, verify backup, permissions, readback, and rollback.
+8. On failure, restore or quarantine recoverable artifacts rather than deleting
+   them.
+9. Record the failure as useful capability evidence.
+10. Do not promote the result until it is reproducible on the current build.
+
+## Status vocabulary
+
+- `static`: documentation or offline file evidence.
+- `synthetic`: simulation or generated package evidence.
+- `observed`: read-only output from a running game.
+- `verified`: reproducible current-build behavior with provenance.
+- `guarded`: controlled operation with backup, readback, and rollback.
+- `blocked`: required runtime surface or evidence is unavailable.
+
+## Update log
+
+| Date | Change |
+| --- | --- |
+| 2026-10-21 | Initial living record created for the Enshrouded 1.0 snapshot. |
+</pre></section></main></body></html>
+

@@ -1,0 +1,66 @@
+# Pre-1.0 Research Corpus Full-Pass Reconciliation
+
+Date: 2026-10-22  
+Scope: read-only review of the historical Enshrouded Mods corpus on the I drive.  
+Purpose: identify reusable hypotheses, schemas, validation methods, and known failure modes for current 1.0 research.
+
+## Evidence rule
+
+Historical material is a hypothesis source only. A pre-1.0 name, field, write result, or runtime behavior is not promoted to 1.0 evidence until it matches the current KFC/reflection data and is independently observed through the current supported runtime.
+
+## Findings carried forward
+
+### EML resource and export patterns
+
+- Older EML guides document loaded-resource enumeration, resource export, localization extraction, GUID/content-hash resolution, and buffer streaming.
+- These patterns explain why loaded resources and off-memory payloads need separate handling.
+- They provide useful adapter and probe shapes, but current 1.0 bindings remain authoritative.
+
+### Game settings and balancing
+
+- The historical Ember implementation confirms the practical grouping of player, survival, world, combat, enemy, boss, XP, and time settings.
+- It also demonstrates the need for bounds, clamping, type checks, feature toggles, and per-field failure reporting.
+- Current 1.0 validation found the same broad settings families, but one historical mapping is unsafe: `enemyAttackFrequency` was mapped to an enum-like `aggroPoolAmount` in the old implementation. It must remain a typed mismatch, not a numeric tuning candidate.
+- Historical durability handling also treated a boolean enable flag separately from scalar durability; current 1.0 research preserves that distinction.
+
+### Item, gem, and stack-size research
+
+- Historical item experiments identify useful candidate surfaces: `ItemInfo.maxStackSize`, gem probability/salvage fields, item level and perk-related metadata, and equipment/item references.
+- These findings support the current static ItemInfo and balance catalogs.
+- They do not prove that a live inventory instance, equipped item, gem socket, or persisted character item can be reached or edited through the current runtime API.
+
+### Building and world systems
+
+- The earlier building research provides a strong relationship model for blueprints, material pools, terrain/building efficiency, snap rules, and placement metadata.
+- Current 1.0 work should reuse those relationship categories for offline cataloging and read-only probes.
+- Placement authority, world mutation, replication, and persistence remain separate capabilities and must not be inferred from static registry data.
+
+### Save-format research
+
+- Historical save work identifies KSC1 containers and tagged world/character regions, including character appearance and inventory-related regions.
+- This is useful for designing a future copy-only parser and round-trip fixtures.
+- Unknown sections, cross-component references, and possible integrity fields mean no selective save edit should be attempted until a decoder and exact revert validation exist.
+
+### Runtime and loader diagnostics
+
+- Prior loader inventories, conflict reports, crash reports, and controlled-install checklists are useful for isolating EML, ShroudForge, game, and mod conflicts.
+- The current fork logging work should preserve this separation: record loader/profile state, runtime readiness, world context, query inputs, errors, and result counts without entity dumps or writes.
+
+## Historical material intentionally not promoted
+
+- Cheat-table, process-memory, injection, AOB, pointer, and native-hook material remains historical context only. It is not used to build a bypass or multiplayer cheat.
+- Older write demonstrations are not treated as proof of current 1.0 write support.
+- Archived generated applications, duplicate builds, and large raw exports are not copied into the Researcher repository.
+
+## 1.0 actions resulting from this pass
+
+1. Retain typed settings validation and reject enum/scalar mismatches.
+2. Reuse historical field groupings in the current tuning map, marked as crosswalk evidence.
+3. Keep ItemInfo definition research separate from live item-instance research.
+4. Keep save parsing copy-only, with backups and round-trip checks before any edit path.
+5. Use historical loader diagnostics to improve provenance and crash triage.
+6. Prioritize the supported local-player accessor in the ShroudForge fork; static inventory schemas alone are insufficient.
+
+## Conclusion
+
+The historical corpus is useful and has been incorporated as hypothesis and validation guidance. The strongest reusable contributions are typed tuning categories, bounds/clamping patterns, resource-versus-buffer distinctions, building relationship maps, save-container inventories, and loader diagnostics. Current 1.0 evidence remains the gate for any runtime or write claim.

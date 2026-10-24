@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Probe Queue 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Probe Queue 2026 10 21</p><h1>Probe Queue 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/probe-queue-2026-10-21.json</code></p><section><pre class="report-source">{
+  &quot;snapshot&quot;: &quot;1.0&quot;,
+  &quot;created_on&quot;: &quot;2026-10-21&quot;,
+  &quot;evidence_state&quot;: &quot;static&quot;,
+  &quot;queue&quot;: [
+    {&quot;priority&quot;: 1, &quot;id&quot;: &quot;embervault_iteminfo_safe_probe_sf&quot;, &quot;purpose&quot;: &quot;read representative ItemInfo scalar and reference fields&quot;},
+    {&quot;priority&quot;: 2, &quot;id&quot;: &quot;embervault_localization_probe_sf&quot;, &quot;purpose&quot;: &quot;enumerate localization records and export tags&quot;},
+    {&quot;priority&quot;: 3, &quot;id&quot;: &quot;embervault_loca_tag_probe_sf&quot;, &quot;purpose&quot;: &quot;inspect localization tag references&quot;},
+    {&quot;priority&quot;: 4, &quot;id&quot;: &quot;embervault_field_reference_probe_sf&quot;, &quot;purpose&quot;: &quot;map typed field references&quot;},
+    {&quot;priority&quot;: 5, &quot;id&quot;: &quot;embervault_nested_reference_probe_sf&quot;, &quot;purpose&quot;: &quot;map nested resource relationships&quot;},
+    {&quot;priority&quot;: 6, &quot;id&quot;: &quot;embervault_reference_value_probe_sf&quot;, &quot;purpose&quot;: &quot;read representative reference values&quot;},
+    {&quot;priority&quot;: 7, &quot;id&quot;: &quot;embervault_relationship_inventory_sf&quot;, &quot;purpose&quot;: &quot;inventory related-resource edges&quot;},
+    {&quot;priority&quot;: 8, &quot;id&quot;: &quot;embervault_platform_inventory_sf&quot;, &quot;purpose&quot;: &quot;inventory platform and runtime metadata&quot;},
+    {&quot;priority&quot;: 9, &quot;id&quot;: &quot;embervault_donor_candidate_probe_sf&quot;, &quot;purpose&quot;: &quot;identify read-only content donor candidates&quot;}
+  ],
+  &quot;gate&quot;: &quot;Each probe requires fresh current-build evidence before its registry status changes.&quot;
+}
+</pre></section></main></body></html>
+

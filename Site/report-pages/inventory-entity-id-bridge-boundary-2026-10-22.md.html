@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Inventory Entity Id Bridge Boundary 2026 10 22 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Inventory Entity Id Bridge Boundary 2026 10 22</p><h1>Inventory Entity Id Bridge Boundary 2026 10 22</h1><p class="lead">Original staged source: <code>data/reports/inventory-entity-id-bridge-boundary-2026-10-22.md</code></p><section><pre class="report-source"># Inventory entity-ID bridge boundary
+
+The runtime census established that `InventorySetup.linksEntities` exposes 16 related entity references per setup. The values are reflected `EntityId` userdata, not the numeric entity argument accepted by the current Lua `runtime.ecs.read_fields` API.
+
+The bounded bridge test produced zero successful linked-inventory reads. This does not show that the links are invalid; it shows that the current fork lacks a supported conversion from reflected `EntityId` values to ECS entity handles or numeric entity IDs.
+
+Next fork milestone: add a typed, read-only entity-ID conversion or an ECS read-by-entity-reference operation, with generation/session validation and no write capability. Only then should item-state fields be read through inventory links.
+</pre></section></main></body></html>
+

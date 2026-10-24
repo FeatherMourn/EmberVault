@@ -1,0 +1,2566 @@
+{
+  "schemaVersion": "1.0",
+  "game": "Enshrouded",
+  "importedAt": "2026-10-21T23:49:38.942296+00:00",
+  "events": [
+    {
+      "source": "modloader-proxy.log",
+      "kind": "exports-forwarded",
+      "message": "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\creative\\creative.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "forward-target-loaded",
+      "message": "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "exports-forwarded",
+      "message": "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\creative\\creative.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "forward-target-loaded",
+      "message": "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "exports-forwarded",
+      "message": "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\creative\\creative.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "forward-target-loaded",
+      "message": "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "exports-forwarded",
+      "message": "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\creative\\creative.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "forward-target-loaded",
+      "message": "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "exports-forwarded",
+      "message": "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\creative\\creative.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "forward-target-loaded",
+      "message": "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "exports-forwarded",
+      "message": "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\creative\\creative.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\minimap_mod\\minimap_mod.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\XHL-Area-Harvest\\XHL-Area-Harvest.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\XHL-Enemy-Difficulty-Limits\\XHL-Enemy-Difficulty-Limits.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\M182_Client\\M182_Panel.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "forward-target-loaded",
+      "message": "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "exports-forwarded",
+      "message": "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\creative\\creative.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\minimap_mod\\minimap_mod.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\XHL-Area-Harvest\\XHL-Area-Harvest.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\XHL-Enemy-Difficulty-Limits\\XHL-Enemy-Difficulty-Limits.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\M182_Client\\M182_Panel.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\auto-loot-plus.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "forward-target-loaded",
+      "message": "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "exports-forwarded",
+      "message": "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\creative\\creative.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\minimap_mod\\minimap_mod.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\XHL-Area-Harvest\\XHL-Area-Harvest.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\XHL-Enemy-Difficulty-Limits\\XHL-Enemy-Difficulty-Limits.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\M182_Client\\M182_Panel.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\auto-loot-plus.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "forward-target-loaded",
+      "message": "ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "exports-forwarded",
+      "message": "Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\creative\\creative.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\minimap_mod\\minimap_mod.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\XHL-Area-Harvest\\XHL-Area-Harvest.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\XHL-Enemy-Difficulty-Limits\\XHL-Enemy-Difficulty-Limits.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\M182_Client\\M182_Panel.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "modloader-proxy.log",
+      "kind": "loaded",
+      "message": "Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\auto-loot-plus.dll",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:30Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:30Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:30Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:30Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:31Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:31Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:31Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:31Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:32Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:32Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:32Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:32Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:33Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:33Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:33Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:33Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:34Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:34Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:34Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:34Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:35Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:35Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:35Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:35Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:36Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:36Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:36Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:36Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:37Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:37Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:37Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:37Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:38Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:38Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:38Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:38Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:39Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:39Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:39Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:39Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:40Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:40Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:40Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:40Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:41Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:41Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:41Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:41Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:42Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:42Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:42Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:42Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:43Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:43Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:43Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:43Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:44Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:44Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:44Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:44Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:45Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:45Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:45Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:45Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:46Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:46Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:46Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:46Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:47Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:47Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:47Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:47Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:48Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:48Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:48Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:48Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:49Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:49Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:49Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:49Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:50Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:50Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:50Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:50Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:51Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:51Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:51Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:51Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:52Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:52Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:52Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:52Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:53Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:53Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:53Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:53Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:54Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:54Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:54Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:54Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:55Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:55Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:55Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:55Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:56Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:56Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:56Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:56Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:57Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:57Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:58Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:58Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:58Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:58Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:59Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:59Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:29:59Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:29:59Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:00Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:00Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:00Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:00Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:01Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:01Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:01Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:01Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:02Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:02Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:02Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:02Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:03Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:03Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:03Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:03Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:04Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:04Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:04Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:04Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:05Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:05Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:05Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:05Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:06Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:06Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:06Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:06Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:07Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:07Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:07Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:07Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:08Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:08Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:08Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:08Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:09Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:09Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:09Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:09Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:10Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:10Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:10Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:10Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:11Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:11Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:11Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:11Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:12Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:12Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:12Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:12Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:13Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:13Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:13Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:13Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:14Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:14Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:14Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:14Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:15Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:15Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:15Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:15Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:16Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:16Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:16Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:16Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:17Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:17Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:17Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:17Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:18Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:18Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:18Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:18Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:19Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:19Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:19Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:19Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:20Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:20Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:20Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:20Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:21Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:21Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:21Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:21Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:22Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:22Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:22Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:22Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:23Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:23Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:23Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:23Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:24Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:24Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:24Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:24Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:25Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:25Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:25Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:25Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:26Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:26Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:26Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:26Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:27Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:27Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:27Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:27Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:28Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:28Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:28Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:28Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:29Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:29Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-attempt",
+      "message": "[2026-10-21T22:30:29Z][shroudtopia][INFO] Activating: minimap_mod",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "activation-skipped",
+      "message": "[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile",
+      "timestamp": "2026-10-21T22:30:29Z",
+      "evidence": [
+        "runtime-log-import"
+      ]
+    },
+    {
+      "source": "shroudtopia.log",
+      "kind": "process-detach",
+      "message": "[2026-10-21T22:30:30Z][shroudtopia][INFO] DLL process detach.",
+      "timestamp": null,
+      "evidence": [
+        "runtime-log-import"
+      ]
+    }
+  ],
+  "evidence": [
+    "runtime-log-import"
+  ]
+}

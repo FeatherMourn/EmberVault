@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_ecs_appearance_component_probe_sf",
+  "name": "EmberVault ECS appearance component probe",
+  "version": "1.0.0",
+  "description": "Read-only ECS and template metadata search for actor appearance fields.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

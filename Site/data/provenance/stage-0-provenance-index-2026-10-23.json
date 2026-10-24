@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "stage-0-provenance-1",
+  "generatedAt": "2026-10-23",
+  "project": "EmberVault private ShroudForge fork",
+  "game": "Enshrouded",
+  "gameBuild": "39026384728",
+  "launcher": "ShroudForge",
+  "livePolicy": "ShroudForge-only; EML is historical/static corroboration only",
+  "fork": {
+    "repository": "https://github.com/bonsaibauer/shroudforge",
+    "baseRef": "1.7.5",
+    "profile": "enshrouded-client-26082781",
+    "readOnlyByDefault": true
+  },
+  "currentProbe": {
+    "packageId": "embervault_census_workers_sf",
+    "version": "1.4.6",
+    "freshExport": "shroudforge/exports/embervault/census-workers-v146-run-1.tsv",
+    "evidenceState": "verified-bounded-export; player-context-unavailable",
+    "writesEnabled": false
+  },
+  "evidenceStates": [
+    "observed", "inferred", "hypothesis", "verified", "partial",
+    "blocked", "unsupported", "unavailable", "contradicted", "historical"
+  ],
+  "separationRules": {
+    "static": "reflection, KFC, package, and offline artifacts cannot prove live ownership or writability",
+    "live": "runtime exports must carry package, build, profile, session, and timestamp identity",
+    "saveCopy": "copy-only evidence must remain separate and cannot prove live ownership",
+    "rawExports": "raw exports remain outside canonical catalogs; reports retain stable paths or inventory references"
+  },
+  "requiredProvenanceFields": [
+    "sourceIdentity", "sourceHashOrInventoryReference", "gameBuild",
+    "generatedAt", "toolVersion", "evidenceState", "limitations"
+  ],
+  "authoritativeArtifacts": [
+    {"path":"1.0/catalogs/character-appearance-catalog-v1.json","sha256":"230fe61a06c09b969edbc0b2dd7740e66936cd9592bfba2d29707380230de73b","bytes":77267},
+    {"path":"1.0/catalogs/game-data-catalog.json","sha256":"d6a8cfc8c230624bb2c74a6b22b417bd56e8d18eb7078c5cab15f7bfb87e8f9a","bytes":12280},
+    {"path":"1.0/catalogs/item-recipe-adapter-v1.json","sha256":"53b1b8f7677de4d87d7deddc7818b18315c14d4228734f0e6cd5a99806b11047","bytes":6684400},
+    {"path":"1.0/catalogs/item-recipe-catalog.json","sha256":"603f83cbe2ba376fafddf004fae393727be288508889e49fa7c3edd3a34f12ac","bytes":4549686},
+    {"path":"1.0/catalogs/kfc-mapping-v1.json","sha256":"99a1dc7ca50d3802620c4986b617cb16b5b9c84baa4351dc2d146bcf94b16e8d","bytes":1902391},
+    {"path":"1.0/catalogs/kfc-type-index.json","sha256":"44f3b2e371b4e07cff300b3850349e49776f6590ba2e4c57fc3df93850cc2d20","bytes":3038979},
+    {"path":"1.0/catalogs/localization-audit.json","sha256":"12dada288086f19a54c16297ee9edfaeb4e709823fbece0a930702728ed66195","bytes":486},
+    {"path":"1.0/catalogs/recipe-targeting-catalog-v1.json","sha256":"68ba2ac01b5dabf99b1a7acad4260324584bc9fea42a481a998dc86606764209","bytes":3649805},
+    {"path":"1.0/catalogs/sequence-type-map.json","sha256":"e78a08f2264e52de92632e5dc88a70bc41e98692f8c8e05c7c5393f0d1149938","bytes":39575},
+    {"path":"1.0/catalogs/tuning-progression-catalog.json","sha256":"34abe50903713b64d1c3fa8bb8526415444d03014fb2a9e9cc8be74ecbd7c0ed","bytes":870410},
+    {"path":"1.0/catalogs/world-resource-catalog.json","sha256":"488b0f503fd37f0b4c6c0990d3ed8792ad74a5bf9fcc30731736b654451fea1f","bytes":2715213},
+    {"path":"1.0/registry.json","sha256":"86bda07ef06c1f8e2baffa0b43abc47e059930d8def840be7b03ef12dd0952da","bytes":2534},
+    {"path":"1.0/metadata.json","sha256":"3da3a62e8d687119b83182e1b569f4888bf610e96c34f7dcee0c42e7e7513610","bytes":716}
+  ],
+  "closure": {
+    "catalogInventoryComplete": true,
+    "evidenceTaxonomyDefined": true,
+    "rawStaticLiveSaveSeparated": true,
+    "currentPackageProvenanceRecorded": true,
+    "limitationsRecorded": true
+  }
+}

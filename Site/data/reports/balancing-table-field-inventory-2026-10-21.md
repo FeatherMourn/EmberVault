@@ -1,0 +1,21 @@
+# BalancingTable field inventory
+
+The local Enshrouded 1.0 KFC export contains one `BalancingTable` record with 91 top-level fields. This is a storage inventory only; it does not establish that any field is writable.
+
+## Field groups
+
+| Group | Count | Examples |
+|---|---:|---|
+| Caps and limits | 16 | `flameLevelMax`, `altarLevelMax`, `playerLevelCap`, `itemLevelCap`, `maximumAnimalsInWorld`, `durabilityLossCap` |
+| Costs | 11 | `perkUpgradeCostSeed`, `perkCostFactorArmor`, `hookShotCostBase`, `waterChargeAmount` |
+| Damage and power | 6 | `damageBoostFlame`, `damageMod2Handed`, `expectedBaseDamageFactor`, `perkPower` |
+| Health and defenses | 6 | `playerBaseHealth`, `playerBaseMana`, `defaultArmorBlowthrough` |
+| Timing | 3 | `freezeDurationFactor`, `freezeDurationOffset`, `suffocationDuration` |
+| Toggle-like fields | 1 | `disableFreezingBaseLevel` |
+| Thresholds and scaling | 11 | `apPerFlameLevel`, `altarsPerFlameLevel`, `buildzoneSizesPerAltarLevel`, `experienceNeedPerLevel` |
+
+The remaining fields include XP, rarity, durability, comfort, fishing, spawning, aggro, and other nested balancing structures. `$type`, `$guid`, and `$part` are metadata rather than tuning controls.
+
+## Interpretation
+
+This confirms that altar limits, build-zone sizing, flame-level progression, player and item caps, durability, costs, damage, and several toggles live in a static balancing resource. The next step is tracing each field to its consumers or linked resources, then classifying it as static-only, configuration-backed, runtime-read, or unknown writable status.

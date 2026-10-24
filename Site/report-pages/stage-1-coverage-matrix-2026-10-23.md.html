@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 1 Coverage Matrix 2026 10 23 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Stage 1 Coverage Matrix 2026 10 23</p><h1>Stage 1 Coverage Matrix 2026 10 23</h1><p class="lead">Original staged source: <code>data/reports/stage-1-coverage-matrix-2026-10-23.md</code></p><section><pre class="report-source"># Stage 1 coverage matrix
+
+| Domain | Primary artifact | Evidence state | Main limitation |
+|---|---|---|---|
+| Reflection/type index | `catalogs/kfc-type-index.json` | observed-static | type names/hashes; field metadata is not universal |
+| KFC mappings | `catalogs/kfc-mapping-v1.json` | observed-static | unresolved records remain research-only |
+| Inventory/equipment/items | inventory field map and capability catalog | observed-static | live ownership is Stage 5; payload mappings remain incomplete |
+| Perks/gems/slots | inventory/equipment catalog | observed-static | readable instance and persistence evidence not established |
+| Recipes/workshops/resources | recipe, world-resource, and tuning catalogs | observed-static | localization and runtime service access are separate claims |
+| Localization | `catalogs/localization-audit.json` | partial-observed-static | identifiers and hashes exist; plain strings unresolved |
+| Appearance | character appearance catalog and reflection reports | observed-static | does not prove live ownership or writability |
+| Attributes/buffs/progression | tuning/progression catalog | observed-static | static representation only |
+| Loot/pickup | loot/pickup census | observed-static | runtime service/ownership remains unproven |
+| Building/voxel | building/voxel static census | observed-static | live voxel/no-build queries remain unproven |
+| Save-copy/KSC1 | KSC1 reports and parser notes | observed-static | payload encoding and field correlation incomplete |
+| External corroboration | Embervale Toolkit deep dive | corroborating-static | no proof of live item-instance access |
+
+Promotion rule: no row advances beyond static evidence without a reproducible
+source, build identity, bounded test, and explicit runtime or save-copy result.
+
+</pre></section></main></body></html>
+

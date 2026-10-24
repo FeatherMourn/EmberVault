@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 1 Static Census Audit 2026 10 23 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Stage 1 Static Census Audit 2026 10 23</p><h1>Stage 1 Static Census Audit 2026 10 23</h1><p class="lead">Original staged source: <code>data/reports/stage-1-static-census-audit-2026-10-23.md</code></p><section><pre class="report-source"># Stage 1 static schema and asset census audit
+
+Date: 2026-10-23
+Roadmap: `methods/MASTER-ROADMAP.md`
+Scope: static catalogs, reflection indexes, KFC exports, save-copy notes, and Embervale Toolkit corroboration. No live game access or writes.
+
+## Result
+
+At audit time, Stage 1 was **substantially complete but not closed**. The
+catalog set covered the planned domains and recorded important limitations.
+The following four conditions were open at that time:
+
+1. provenance is not normalized across all catalogs;
+2. the current build has no dated build-diff report;
+3. localization payload resolution remains incomplete;
+4. supporting plans contain stale EML-live wording that conflicts with the master ShroudForge-only live baseline.
+
+## Verified coverage
+
+- Reflection/type coverage: 12,646 types indexed from the local `.cache/types.json` source.
+- KFC mappings: 1,016 read-only mapping records with unresolved records retained as research-only.
+- Inventory/equipment/item/perk/gem/slot: represented in the static capability and field-map reports; runtime ownership remains a separate Stage 5 concern.
+- Appearance, attributes, buffs, progression, recipes, workshops, resources, loot, pickup, building, and voxel domains have catalog or report coverage.
+- KSC1 save-copy structure is documented; payload decoding and field correlation remain incomplete.
+- Embervale Toolkit findings are marked static corroboration only and do not establish live instance access.
+- Localization identifiers and hashed bundles are cataloged, but plain localized strings are not resolved.
+
+## Required Stage 1 closure work
+
+- Add a shared provenance block to every catalog: source identity, source hash or inventory reference, game-build fingerprint, generated timestamp, tool version, evidence state, and limitations.
+- Create the first dated build-diff report, even if it records “no prior comparable snapshot” or “no material change.”
+- Expand `localization-audit.json` into a complete audit artifact with explicit unresolved payload counts and source inventory.
+- Mark older supporting plans as historical/supporting where they describe EML runtime work; ShroudForge remains the only live fork/probe target.
+- Add a Stage 1 coverage matrix mapping each domain to artifact, evidence state, provenance, and open limitation.
+
+## Explicit non-claims
+
+Static representation does not prove runtime ownership, live readability, writability, persistence, or safe editor behavior. Those require later runtime or save-copy evidence and remain gated by the master roadmap.
+
+## Closure addendum — 2026-10-23
+
+All four audit actions are now closed. Provenance is centralized by the Stage 0
+index; the dated build diff and Stage 1 coverage matrix exist; the localization
+artifact now records source inventory and unresolved payload counts; and EML
+runtime wording is historical/static while ShroudForge is the sole live target.
+See `reports/stage-1-closure-2026-10-23.md`.
+
+</pre></section></main></body></html>
+

@@ -1,0 +1,121 @@
+# Stable Census Linked-Inventory Result — 2026-10-22
+
+## Provenance
+
+- Package: `embervault_census_workers_sf`
+- Package version: `1.1.0`
+- Export: `census-workers-stable.tsv`
+- Runtime: private world, read-only
+- Player handle: available (`entityId=1`, generation `0`, sequence `7`)
+- Snapshot generation: `1:0:435`
+- Writes: not attempted
+- Saves: not accessed
+
+## Result
+
+The stable package loaded and all seven workers completed without a package restart between workers. The stable identity
+is therefore working as intended for future Lua iterations.
+
+`InventorySetup.linksEntities[1].id` returned valid linked entity IDs. Sixteen bounded linked inventory entities were
+resolved and their `keen::ecs::Inventory` slot structures were readable. In this session, all sampled slot IDs,
+quantities, and PIDE IDs were zero. No item-instance candidates were therefore available for `ItemState` resolution.
+
+This proves the ownership path reaches inventory containers, but it does not prove that these particular containers are
+the player's populated inventory, nor that item instances are absent from the game. The broad registry scan also returned
+no populated records. Item editor controls remain disabled.
+
+## Next investigation
+
+Identify the category or related link corresponding to the player's populated inventory, then repeat the same bounded
+linked read. Do not infer ownership from entity IDs or write to empty containers.
+
+## Hot-reload follow-up
+
+The stable package was reloaded without restarting the game after a source-only worker change. The export timestamp
+advanced and `run_count=1` was recorded under the same stable package identity. This confirms the reduced-restart
+workflow: Lua worker changes can be deployed through the runtime reload path, while manifest, native, or loader changes
+still require a full restart.
+
+The item-state worker was corrected to consume both `populated_inventories` and `linked_inventories`, with the existing
+16-item cap and duplicate suppression retained. The current export still reports `item_states_count=0` because all
+sampled linked slot IDs and PIDE IDs remain zero; this is an evidence result, not a failed handoff.
+
+## Category-mapping stage
+
+The next worker revision now preserves the source row for each `InventorySetup` link and reports a bounded
+`linked_inventories_nonzero_count`. This is intended to distinguish generic, equipment, storage, and other linked
+containers before any item editor work is considered. The revision is installed through the stable package and is
+eligible for hot reload; a fresh export is still required before interpreting its category results.
+
+## Category result
+
+The fresh stable export completed through the hot-reload path. The observed `InventorySetup` links use the `Generic`
+category with eight available generic slots; the remaining sampled category slots report `Invalid`. Thirty-two linked
+inventory entities were resolved, and two currently contain nonzero slot counts. Their PIDE and item-ID fields still
+read as zero, so these are populated containers but not yet proven item-instance records.
+
+This advances the inventory stage: linked-container discovery is verified, while item-instance ownership and field
+decoding remain open. The next bounded step is to inspect the nonzero generic containers using their slot IDs and
+definition-reference fields, without writing or inferring ownership from numeric entity IDs alone.
+
+## Nested slot-field result
+
+The linked worker was widened to read slot IDs, counts, PIDE IDs, PIDE values, and item-definition fields from the
+same four bounded slots. The hot-reloaded export completed successfully. The two nonzero generic containers still
+report count `1` in their populated slots, but all tested item-ID and PIDE fields remain zero and
+`item_state_candidate_count` remains zero.
+
+This confirms the scheduler, linked-entity resolution, and hot-reload path are functioning. The remaining uncertainty
+is the nested slot payload schema or the accessor's representation of item definitions. The next stage is reflection-led
+slot-schema discovery, not a write attempt.
+
+## Reflection-led slot candidates
+
+Historical 1.0 source evidence identifies `keen::ItemStack`, `keen::ItemData`, and `keen::ItemId` as the relevant
+nested types, with the stack layout using an eight-entry inventory and a count field. The worker now probes the bounded
+variants `data.item.value`, `data.item`, and `data.itemId.value` in addition to the previously tested PIDE and legacy
+item-ID paths. The fresh run completed without errors, but produced no item-state candidates. These paths remain
+read-only schema candidates; no write or save operation is authorized by this result.
+
+The package has two supported entry-point layouts (root and `src`); both are now synchronized so reflection-worker
+changes cannot be masked by a stale root loader script. The runtime export now contains resolved `slot_schema_*` records;
+the exact nested layout is promoted for read-only diagnostics, but not for writes.
+
+The next diagnostic revision adds bounded slot-consistency counters for empty rows, nonzero counts without item IDs,
+item IDs, and PIDE IDs. It is installed in both package entry points; its counters remain pending runtime output and
+will not be inferred from the earlier captures.
+
+## Consistency result
+
+The subsequent fresh export completed through the stable worker. It resolved the live slot schema and classified all
+32 linked inventories as empty for that capture: `slot_summary_empty=32`, `slot_summary_count_without_item_id=0`,
+`slot_summary_item_id_present=0`, and `slot_summary_pide_present=0`. This makes the earlier two nonzero containers a
+transient observation rather than a reproducible item-instance result. No item editor field is promoted, and no write
+test is justified until a known populated container can be captured and read back consistently.
+
+The live schema export has now completed. It confirms the exact current layout: `Inventory.slots` is a fixed eight-entry
+array of `ItemStack`; `ItemStack.id` is `ItemId`; `ItemStack.data` is `ItemData`; `ItemData.count` is `uint32`;
+`ItemData.pide` is `keen::ecs::EntityId`; and `ItemId.value` is `uint32`. This closes the schema-discovery gate.
+The next gate is data-consistency classification: distinguish a nonzero count with zero item/PIDE identifiers from a
+real item instance before any editor or write capability is considered.
+
+The versioned package was then loaded after a full restart. The graph verifier passed: graph `1.4.0` was present and
+all expected workers appeared. `slot-schema`, `default-inventory`, `perk-container`, and `weapon-gem-slot` completed;
+`equipment-links` timed out and remains unresolved. All four related-component counts were zero, and the inventory
+consistency counters again showed no item IDs or PIDE IDs.
+
+The export still reports `probe_version=1.1.0` while reporting graph `1.4.0`. This provenance mismatch is recorded as a
+metadata bug; the capability results are not promoted to a clean final baseline until the version marker is corrected.
+
+The deployed exporter completed another source-only run with `run_count=2` and no game restart. The current result is
+again `slot_summary_empty=32` with zero item IDs and zero PIDE IDs; no nonempty evidence file was created, as expected.
+This validates the reduced-restart execution path and the preservation condition independently of item discovery.
+
+An offline reconciliation of all retained `census-workers-v1` through `v5` exports found no prior item ID, PIDE ID,
+or item-state candidate to promote. The historical nonempty observation was not preserved by the older exporter. The
+new preservation path is therefore required for the next known-populated capture; no current-build item instance is
+claimed from the discarded observation.
+
+The exporter now preserves transient evidence: it always writes the current stable snapshot and additionally writes
+`census-workers-nonempty.tsv` only when a linked container has a nonzero count, item ID, or PIDE ID. Empty captures do
+not overwrite that nonempty evidence file. This prevents a later empty scan from erasing a useful populated capture.

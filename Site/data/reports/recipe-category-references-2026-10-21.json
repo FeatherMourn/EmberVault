@@ -1,0 +1,462 @@
+{
+  "schema_version": 1,
+  "adapter_id": "embervault-recipe-category-references",
+  "game_scope": "Enshrouded 1.0",
+  "source": "I:\\My Drive\\Enshrouded Mods\\EmberVault_Research\\Embervault_Researcher\\1.0\\catalogs\\item-recipe-adapter-v1.json",
+  "evidence_state": "observed",
+  "promotion_state": "research-only",
+  "zero_item_input_count": 125,
+  "distinct_category_reference_count": 22,
+  "category_references": [
+    {
+      "category_id": 1024037675,
+      "category_ref": "a22b0e1c-44ab-41ca-8028-656db8ccbf82",
+      "usage_count": 2,
+      "recipe_ids": [
+        36460965,
+        1736846922
+      ],
+      "debug_names": [
+        "Food_T6_Fisher_fish_filet",
+        "Food_T7_fish_FishTacos"
+      ]
+    },
+    {
+      "category_id": 1052377694,
+      "category_ref": "6162a32b-e135-4c00-b7ee-0cd360ca0f61",
+      "usage_count": 13,
+      "recipe_ids": [
+        39651374,
+        94242175,
+        733744780,
+        1173223683,
+        1400155870,
+        1696501517,
+        1752491976,
+        1928833035,
+        2005422229,
+        2094533124,
+        2119054650,
+        2190367984,
+        3984619120
+      ],
+      "debug_names": [
+        "Animal_Food_FishBait_simple_T0_PK",
+        "Consumable_Grenade_T1_Explosive_PowderBall_PK",
+        "Material_T1_Factory_String_SpinningWheel",
+        "Material_T1_String_PK",
+        "Material_T4_Factory_Wax",
+        "Material_T5_Factory_String_CardingMachineSpinning",
+        "Prop_Decoration_Comfort1_T0_Bed_Matress",
+        "Prop_Decoration_T0_IlluminationCeiling_Firefly",
+        "Prop_Decoration_T0_IlluminationFloor_Firefly",
+        "Prop_Decoration_T0_IlluminationSmall_Firefly",
+        "Prop_Decoration_T0_IlluminationWall_Firefly",
+        "Tool_Pickaxe_Sieve_Prospector_T6_under_water_mining",
+        "Tool_Torch01_T0_PK"
+      ]
+    },
+    {
+      "category_id": 1302673948,
+      "category_ref": "49368a02-6da8-4170-8a35-374134382e79",
+      "usage_count": 3,
+      "recipe_ids": [
+        2897568,
+        3547771296,
+        4008871773
+      ],
+      "debug_names": [
+        "Material_T1_Factory_01_WoodAcid",
+        "Material_T1_Factory_02_Tar",
+        "Material_T1_Factory_03_Charcoal"
+      ]
+    },
+    {
+      "category_id": 1533161145,
+      "category_ref": "f97904bd-ce84-4b3c-bd65-d4440f73c1ef",
+      "usage_count": 2,
+      "recipe_ids": [
+        481339571,
+        2748446961
+      ],
+      "debug_names": [
+        "Animal_Food_T2_Cat_Bait",
+        "Animal_Food_T2_Cat_Feeding"
+      ]
+    },
+    {
+      "category_id": 1931450442,
+      "category_ref": "d5793b41-79a3-47c3-a0ef-4c439db8e654",
+      "usage_count": 6,
+      "recipe_ids": [
+        428698244,
+        1249424513,
+        2349426234,
+        3274424246,
+        3902594634,
+        4074647277
+      ],
+      "debug_names": [
+        "Material_T1_Crypt_Crystal",
+        "Prop_Collection_Cyclops_Showcase",
+        "Prop_Decoration_T4_Illumination_Ceiling_HollowHalls_Huge",
+        "Prop_Decoration_T4_Illumination_Floor_HollowHalls_Huge",
+        "Prop_Decoration_T4_Illumination_Floor_HollowHalls_Medium",
+        "Prop_Decoration_T4_Illumination_Wall_HollowHalls_Huge"
+      ]
+    },
+    {
+      "category_id": 2002427228,
+      "category_ref": "5f6a1f73-fc10-414f-bdad-d9515f8d5b69",
+      "usage_count": 1,
+      "recipe_ids": [
+        1846839289
+      ],
+      "debug_names": [
+        "Material_T6_Factory_FishBoneTeeth_Dust_ImprovedGrinder"
+      ]
+    },
+    {
+      "category_id": 2164580738,
+      "category_ref": "d39b7208-144a-4896-ae87-f9628f7fd279",
+      "usage_count": 1,
+      "recipe_ids": [
+        2759380610
+      ],
+      "debug_names": [
+        "Material_T5_Factory_ChitinPowder_HandGrinder"
+      ]
+    },
+    {
+      "category_id": 2315776532,
+      "category_ref": "eb7cccce-cf68-4978-a230-9c389c7629e3",
+      "usage_count": 1,
+      "recipe_ids": [
+        2618433157
+      ],
+      "debug_names": [
+        "Tool_cursed_FishingRod_T3_Hunter"
+      ]
+    },
+    {
+      "category_id": 2588798904,
+      "category_ref": "1a304b19-42fa-4898-8ada-8d75f96de055",
+      "usage_count": 1,
+      "recipe_ids": [
+        4083315263
+      ],
+      "debug_names": [
+        "Material_T6_Factory_GoldBar_BF"
+      ]
+    },
+    {
+      "category_id": 2958291185,
+      "category_ref": "34dd6057-6672-4570-af67-20bcd0d29c5b",
+      "usage_count": 8,
+      "recipe_ids": [
+        1181467124,
+        1405278374,
+        1498713992,
+        2390259004,
+        2634113982,
+        3647579549,
+        3672214080,
+        3981765546
+      ],
+      "debug_names": [
+        "_Prop_Logic_Button_Push",
+        "_Prop_Logic_Button_Switch",
+        "_Prop_Logic_Ranged_Switch",
+        "_Prop_Logic_Trap_Door_Stone_2m",
+        "_Prop_Logic_Trap_Door_Stone_4m",
+        "Prop_Building_FlameAltar_Small_Build_Base_PK",
+        "Recipe_Blueprint_Tool_Quickbuilder_empty_PK",
+        "Recipe_Blueprint_Tool_Quickbuilder_empty_workbench"
+      ]
+    },
+    {
+      "category_id": 3267226510,
+      "category_ref": "dbdfeab9-8681-42a7-a0eb-6648d2cd3165",
+      "usage_count": 3,
+      "recipe_ids": [
+        59548952,
+        1149034200,
+        3155427372
+      ],
+      "debug_names": [
+        "Consumable_RepairKit_T3",
+        "Consumable_Water_Bomb_T1_PK",
+        "Material_T1_Fur"
+      ]
+    },
+    {
+      "category_id": 3345945855,
+      "category_ref": "14b98cec-b7f0-43eb-89da-7b1b20b34cac",
+      "usage_count": 2,
+      "recipe_ids": [
+        1383790953,
+        2876165776
+      ],
+      "debug_names": [
+        "Tool_T0_Lockpick_Scrappy_Player_PK",
+        "Tool_T1_Lockpick_Scrappy_Smith"
+      ]
+    },
+    {
+      "category_id": 3415491547,
+      "category_ref": "289062f7-0096-46d0-a566-26e63f940b28",
+      "usage_count": 8,
+      "recipe_ids": [
+        26176031,
+        691990834,
+        912350331,
+        1056266357,
+        1217971967,
+        2113734398,
+        2704033528,
+        2722057042
+      ],
+      "debug_names": [
+        "Prop_Decoration_Book_Pile_Recycle_01",
+        "Prop_Decoration_Book_Pile_Recycle_03",
+        "Prop_Decoration_Book_Pile_Recycle_05",
+        "Prop_Decoration_Book_Recycle_01",
+        "Prop_Decoration_Book_Recycle_05",
+        "Prop_Decoration_Book_Recycle_09",
+        "Prop_Decoration_Book_Recycle_11",
+        "Prop_Decoration_Book_Recycle_15"
+      ]
+    },
+    {
+      "category_id": 3433259878,
+      "category_ref": "9d0d7553-6e7f-4762-9aaf-798822fa6a3d",
+      "usage_count": 2,
+      "recipe_ids": [
+        85518310,
+        2882068660
+      ],
+      "debug_names": [
+        "Food_T4_fishChowderSoup",
+        "Food_T6_Fisher_fish_cutlet"
+      ]
+    },
+    {
+      "category_id": 3998935359,
+      "category_ref": "59d0e4a1-d959-48df-980a-af3b5adc54d1",
+      "usage_count": 40,
+      "recipe_ids": [
+        2897568,
+        64294923,
+        237464125,
+        241764297,
+        290154448,
+        297173759,
+        333911960,
+        363285501,
+        600408661,
+        814703083,
+        912032773,
+        915755601,
+        1062024590,
+        1097266803,
+        1118016628,
+        1315246177,
+        1330812423,
+        1644996472,
+        1651322766,
+        1804514625,
+        1829263101,
+        1997772259,
+        2025066016,
+        2057052985,
+        2705427868,
+        2781648867,
+        2812749739,
+        2863187717,
+        2982963027,
+        3022356377,
+        3218088240,
+        3226034021,
+        3297994390,
+        3404243853,
+        3485145566,
+        3547771296,
+        3758855642,
+        3889956874,
+        4008871773,
+        4179290854
+      ],
+      "debug_names": [
+        "_Prop_Decoration_TX_Wighead_01_braid",
+        "_Prop_Decoration_TX_Wighead_02_cowlick",
+        "_Prop_Decoration_TX_Wighead_03_hanfu",
+        "_Prop_Decoration_TX_Wighead_04_slickFade",
+        "_Prop_Decoration_TX_Wighead_05_afro",
+        "_Prop_Decoration_TX_Wighead_06_barber",
+        "Block_T1_Metal_Sheets_CRAFTING",
+        "Block_T2_Metal_Copper_CRAFTING",
+        "Block_T3_Metal_Bronze_CRAFTING",
+        "Block_T4_Metal_Iron_CRAFTING",
+        "Consumable_Tool_Campfire_PK",
+        "Material_T1_Factory_01_WoodAcid",
+        "Material_T1_Factory_02_Tar",
+        "Material_T1_Factory_03_Charcoal",
+        "Material_T2_Factory_Fired_Bricks",
+        "Material_T2_Factory_Flower_Pot_Long_Empty",
+        "Material_T2_Factory_Flower_Pot_Low_Large_Empty",
+        "Material_T2_Factory_Flower_Pot_Medium_Empty",
+        "Material_T2_Factory_Flower_Pot_Round_Large_Empty",
+        "Material_T2_Factory_Flower_Pot_Small_Empty",
+        "Material_T2_Factory_Flower_Pot_Squared_Empty",
+        "Material_T2_Factory_Flower_Pot_Tiny_Empty",
+        "Material_T2_Factory_Twigs",
+        "Material_T2_Factory_WoodPlanks",
+        "Material_T4_Factory_Paper",
+        "Prop_Collection_T7_WorldMap_Showcase",
+        "Prop_Craftingstation_Workbench_PK",
+        "Prop_Decoration_T2_Vase_Clay_01",
+        "Prop_Decoration_T2_Vase_Clay_02",
+        "Prop_Decoration_T2_Vase_Clay_03",
+        "Prop_Decoration_T2_Vase_Clay_04",
+        "Prop_Decoration_T2_Vase_Clay_05",
+        "Prop_Decoration_T2_Vase_Clay_06",
+        "Prop_Decoration_T2_Villageprops_Pottery_01",
+        "Prop_Decoration_T2_Villageprops_Pottery_02",
+        "Prop_Decoration_T2_Villageprops_Pottery_03",
+        "Prop_Decoration_T2_Villageprops_Pottery_04",
+        "Prop_Storage_24_T1",
+        "Prop_Storage_Upgrade_to_24_T1",
+        "Recipe_Tool_Camera"
+      ]
+    },
+    {
+      "category_id": 4025961031,
+      "category_ref": "65cd3c9e-c678-46eb-a309-296c32efcb2c",
+      "usage_count": 3,
+      "recipe_ids": [
+        1912168097,
+        2139932937,
+        2507691227
+      ],
+      "debug_names": [
+        "Food_T3_Factory_Buttermilk_ButterChurn",
+        "Food_T6_dish_hydration_CoffeeMilk",
+        "Material_T3_Factory_Butter_ButterChurn"
+      ]
+    },
+    {
+      "category_id": 4287149168,
+      "category_ref": "1d49ee8d-1695-41cb-b584-e29dbcb38624",
+      "usage_count": 9,
+      "recipe_ids": [
+        294448813,
+        1181467124,
+        1204801914,
+        1405278374,
+        2406705580,
+        2544437929,
+        3288511919,
+        3387491745,
+        3449711390
+      ],
+      "debug_names": [
+        "_Prop_Logic_Button_Switch",
+        "_Prop_Logic_Goalpost",
+        "_Prop_Logic_Lever_with_Light",
+        "_Prop_Logic_Light",
+        "_Prop_Logic_Ranged_Switch",
+        "_Prop_Logic_Trap_Lightning",
+        "_Tool_Building_Screwdriver",
+        "_Tool_Logic_System_SwitchBox",
+        "Prop_NPC_T2_Carpenter_Logic_System_Workbench"
+      ]
+    },
+    {
+      "category_id": 496914807,
+      "category_ref": "77648363-8b97-40db-a37e-764cb2f5b6d0",
+      "usage_count": 1,
+      "recipe_ids": [
+        2660055665
+      ],
+      "debug_names": [
+        "Food_T6_fish_Sushi"
+      ]
+    },
+    {
+      "category_id": 579745429,
+      "category_ref": "31b28a3a-7cc5-47a2-8ce7-60b4520c87a5",
+      "usage_count": 1,
+      "recipe_ids": [
+        3049287913
+      ],
+      "debug_names": [
+        "Tool_improved_FishingRod_T4_Hunter"
+      ]
+    },
+    {
+      "category_id": 858856297,
+      "category_ref": "f5023b30-c6c4-4f17-b93d-2a871d945329",
+      "usage_count": 16,
+      "recipe_ids": [
+        278924774,
+        1383061310,
+        1434892604,
+        1439077972,
+        1494906654,
+        1841236650,
+        2054936877,
+        2525770388,
+        2627297412,
+        2870779691,
+        2892226555,
+        2961836092,
+        3067856328,
+        3241707533,
+        3253394857,
+        3818852042
+      ],
+      "debug_names": [
+        "_Material_T4_Factory_Coloring_T4_Palette_01",
+        "_Material_T4_Factory_Coloring_T4_Palette_Reward_01",
+        "_Material_T4_Terrain_fertile_Highgrass",
+        "_Material_T4_Terrain_Stone_Rubble",
+        "Material_T4_Factory_Farming_Seedling_Herb_DesertFlower",
+        "Material_T4_Factory_Farming_Seedling_Herb_DevilsClaw",
+        "Material_T4_Factory_Farming_Seedling_Material_Aloe",
+        "Material_T4_Factory_Farming_Seedling_T4_Yucca",
+        "Material_T4_Factory_Glass_SM",
+        "Material_T4_Factory_Nitrate",
+        "Material_T4_Farming_Farm_Soil_Improved",
+        "Material_T5_Factory_Glass_BF",
+        "Prop_Component_T2_Crucible",
+        "Prop_Component_T4_Smoker_for_Beehive_Honey_Factory",
+        "Prop_NPC_T4_Mortar_Pestle",
+        "Prop_NPC_T5_BlastFurnace"
+      ]
+    },
+    {
+      "category_id": 932294980,
+      "category_ref": "6b0e1a81-c435-49ef-9e39-4bca516b1b81",
+      "usage_count": 1,
+      "recipe_ids": [
+        3573838789
+      ],
+      "debug_names": [
+        "Ammo_Arrow_T7_Celesthium_Poison"
+      ]
+    },
+    {
+      "category_id": 967490225,
+      "category_ref": "02e9288d-accc-4f58-90e8-d97efb2e5dd8",
+      "usage_count": 1,
+      "recipe_ids": [
+        3632646542
+      ],
+      "debug_names": [
+        "Food_T2_TomatoFishSoup"
+      ]
+    }
+  ],
+  "unresolved_category_names": 22,
+  "limitation": "Category IDs and GUIDs are preserved as static evidence; names require a verified category registry or runtime lookup."
+}

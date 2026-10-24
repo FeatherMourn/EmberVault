@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Runtime Dll Static Inventory 2026 10 22 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Runtime Dll Static Inventory 2026 10 22</p><h1>Runtime Dll Static Inventory 2026 10 22</h1><p class="lead">Original staged source: <code>data/reports/runtime-dll-static-inventory-2026-10-22.md</code></p><section><pre class="report-source"># Runtime DLL static inventory
+
+## Scope
+
+Read-only filesystem inventory of native DLLs under the active Enshrouded mods directory. No DLL was loaded, injected, executed for inspection, or modified.
+
+## Observed module
+
+One native module was found: `XHL-Enemy-Difficulty-Limits.dll` under the `XHL-Enemy-Difficulty-Limits` mod directory. The file has no embedded Windows version-information fields populated. The current environment does not provide `dumpbin`, so exported-symbol enumeration was not performed.
+
+## Classification
+
+- **Represented:** native module exists on disk.
+- **Readable:** file metadata and path are readable; exported API surface is unknown.
+- **Exportable:** not established.
+- **Writable:** not established and not attempted.
+- **Persistent:** not applicable to the DLL itself.
+- **Runtime compatibility:** unknown until loader logs or documented module metadata identify its entry contract.
+
+## Boundary
+
+The census may use DLL metadata, source, documentation, and loader logs as evidence. It does not load arbitrary modules into the game, inject code, inspect process memory, or bypass loader or game protections.
+</pre></section></main></body></html>
+

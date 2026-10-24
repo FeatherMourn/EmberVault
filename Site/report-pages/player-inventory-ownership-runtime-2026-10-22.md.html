@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Player Inventory Ownership Runtime 2026 10 22 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Player Inventory Ownership Runtime 2026 10 22</p><h1>Player Inventory Ownership Runtime 2026 10 22</h1><p class="lead">Original staged source: <code>data/reports/player-inventory-ownership-runtime-2026-10-22.md</code></p><section><pre class="report-source"># Player inventory ownership runtime result
+
+## Evidence
+
+- Session: private-world runtime test after rebuilding and installing the EmberVault ShroudForge fork.
+- Probe: `fork-local-player-accessor`, read-only, bounded component queries.
+- Player accessor: available.
+- Inventory component: readable.
+- Inventory query: 145 entities observed.
+- Player-handle match: true for the `Inventory` query.
+- `InventorySetup`: readable.
+- Candidate reflected component types: 44 matching inventory, equipment, item, perk, socket, or gem terms.
+
+## Current boundary
+
+The probe confirmed the player-owned inventory relationship, but the first pass still spent its query budget on ECS scans. It did not yet establish which inventory fields contain item-instance IDs, slots, quantities, levels, durability, perks, gems, or sockets. Those fields are the next targeted read-only pass.
+
+## Safety and provenance
+
+- No writes attempted.
+- No save files accessed.
+- No unrestricted entity dump performed.
+- Evidence source: live ShroudForge export and runtime log, with the raw export kept outside the repository.
+- The repository records the sanitized result; the raw export remains available for audit if needed.
+</pre></section></main></body></html>
+

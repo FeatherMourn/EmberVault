@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fork Local Player Accessor Milestone 2026 10 22 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Fork Local Player Accessor Milestone 2026 10 22</p><h1>Fork Local Player Accessor Milestone 2026 10 22</h1><p class="lead">Original staged source: <code>data/reports/fork-local-player-accessor-milestone-2026-10-22.md</code></p><section><pre class="report-source"># Fork Local-Player Accessor Milestone
+
+## Verified
+
+- The private ShroudForge fork builds successfully with the native accessor, provider bridge, and Lua API.
+- The fork runtime initializes in a private world and reaches the validated local-authority state.
+- `runtime.ecs.get_local_player()` returned a generation-checked handle and identity metadata after bounded retry.
+- The successful probe was read-only: no entity enumeration, writes, save access, or native calls.
+
+## Current gate
+
+The next probe uses that handle to test inventory, equipment, and item-instance component reads. The component probe is installed in ShroudForge format and checks only known candidate component types. It does not enumerate entities or attempt writes.
+
+## Evidence states
+
+| Capability | Status |
+|---|---|
+| Local-player handle | Verified live read |
+| Inventory component discovery | 44 exact reflected candidates found |
+| Inventory component read | Reflected; not readable on player handle |
+| Equipment component read | Reflected; not readable on player handle |
+| Item-instance fields | `ItemState.itemId` readable on bounded samples; ownership unresolved |
+| Item writes | Closed |
+| Save persistence | Not tested |
+
+## Safety boundary
+
+No memory injection, undocumented hooks, multiplayer use, arbitrary save edits, or unverified live writes are part of this milestone.
+
+## Latest discovery
+
+The live reflected catalog returned 44 names matching inventory, equipment, item, perk, socket, or gem terms. Notable candidates include `keen::ecs::Equipment`, `RenderEquipment`, `PerkContainer`, `PerkContainerNew`, `WeaponGemSlot`, `ItemState`, `DefaultInventory`, `InventorySetup`, `DynamicItemCollectionComponent`, and `Inventory`. The next probe tests these exact names against the validated player handle.
+
+## Related-entity census
+
+The first bounded ECS query completed after retrying the scan. No candidate component matched the local-player handle directly, but several related entity populations exist: `PerkContainerNew` (16), `WeaponGemSlot` (11), `ItemState` (21), `InventorySetup` (143), `Inventory` (150), and `DefaultInventory` (7,687). This establishes that item and equipment data is represented in separate entities; the next step is to read only owner/link fields from bounded samples.
+
+## Relationship-field evidence
+
+Reflection identifies the strongest relationship-bearing fields as `keen::ecs::InventorySetup.linksEntities` and `keen::ecs::Inventory.slots`. Additional structured fields include `DefaultInventory.defaultInventory`, `Equipment.equipmentVisuals`, and `WeaponGemSlot.weaponGem`. The owner-link probe now samples those fields, plus conservative fallback names such as `ownerEntityId` and `playerEntityId`, from at most eight entities per component. The latest clean export read `ItemState.itemId` on eight samples but found no player matches; no ownership conclusion is made until the relationship-bearing fields are read successfully.
+
+The reflection schema resolves `InventorySetup.linksEntities` to a fixed array of `keen::ecs::EntityId`, whose scalar member is `id`. It resolves `Inventory.slots` to a fixed array of `keen::ItemStack`; each stack has an `id` and `ItemData` containing `count` and `pide`. The probe now checks bounded array members so an ownership match can be detected without exporting entity identifiers.
+</pre></section></main></body></html>
+

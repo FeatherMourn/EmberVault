@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Entry Point Runtime Check 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Entry Point Runtime Check 2026 10 21</p><h1>Entry Point Runtime Check 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/entry-point-runtime-check-2026-10-21.json</code></p><section><pre class="report-source">{
+  &quot;schemaVersion&quot;: &quot;1.0&quot;,
+  &quot;evidence&quot;: [
+    &quot;runtime-log-import&quot;
+  ],
+  &quot;entryPoints&quot;: {
+    &quot;dbghelp.dll&quot;: {
+      &quot;runtimeEvidence&quot;: false,
+      &quot;eventCount&quot;: 0,
+      &quot;kinds&quot;: [],
+      &quot;messages&quot;: []
+    },
+    &quot;dinput8.dll&quot;: {
+      &quot;runtimeEvidence&quot;: true,
+      &quot;eventCount&quot;: 17,
+      &quot;kinds&quot;: [
+        &quot;exports-forwarded&quot;,
+        &quot;forward-target-loaded&quot;
+      ],
+      &quot;messages&quot;: [
+        &quot;Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll&quot;,
+        &quot;ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll&quot;,
+        &quot;Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll&quot;,
+        &quot;ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll&quot;,
+        &quot;Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll&quot;,
+        &quot;ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll&quot;,
+        &quot;Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll&quot;,
+        &quot;ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll&quot;,
+        &quot;Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll&quot;,
+        &quot;ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll&quot;,
+        &quot;Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll&quot;,
+        &quot;ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll&quot;,
+        &quot;Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll&quot;,
+        &quot;ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll&quot;,
+        &quot;Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll&quot;,
+        &quot;ForwardTo module loaded: H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original\\dinput8.dll&quot;,
+        &quot;Forwarding exports to C:\\WINDOWS\\system32\\dinput8.dll&quot;
+      ]
+    },
+    &quot;winmm.dll&quot;: {
+      &quot;runtimeEvidence&quot;: false,
+      &quot;eventCount&quot;: 0,
+      &quot;kinds&quot;: [],
+      &quot;messages&quot;: []
+    }
+  },
+  &quot;limitations&quot;: [
+    &quot;Absence from imported logs does not prove a DLL was not loaded.&quot;,
+    &quot;The current logs may not record every Windows loader event.&quot;,
+    &quot;Process-level verification requires an explicitly authorized test method.&quot;
+  ]
+}
+</pre></section></main></body></html>
+

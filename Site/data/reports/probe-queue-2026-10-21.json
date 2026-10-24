@@ -1,0 +1,17 @@
+{
+  "snapshot": "1.0",
+  "created_on": "2026-10-21",
+  "evidence_state": "static",
+  "queue": [
+    {"priority": 1, "id": "embervault_iteminfo_safe_probe_sf", "purpose": "read representative ItemInfo scalar and reference fields"},
+    {"priority": 2, "id": "embervault_localization_probe_sf", "purpose": "enumerate localization records and export tags"},
+    {"priority": 3, "id": "embervault_loca_tag_probe_sf", "purpose": "inspect localization tag references"},
+    {"priority": 4, "id": "embervault_field_reference_probe_sf", "purpose": "map typed field references"},
+    {"priority": 5, "id": "embervault_nested_reference_probe_sf", "purpose": "map nested resource relationships"},
+    {"priority": 6, "id": "embervault_reference_value_probe_sf", "purpose": "read representative reference values"},
+    {"priority": 7, "id": "embervault_relationship_inventory_sf", "purpose": "inventory related-resource edges"},
+    {"priority": 8, "id": "embervault_platform_inventory_sf", "purpose": "inventory platform and runtime metadata"},
+    {"priority": 9, "id": "embervault_donor_candidate_probe_sf", "purpose": "identify read-only content donor candidates"}
+  ],
+  "gate": "Each probe requires fresh current-build evidence before its registry status changes."
+}

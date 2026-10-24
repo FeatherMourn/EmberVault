@@ -1,0 +1,9 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/extended.mod.schema.json",
+  "schemaVersion": 1,
+  "enabled": true,
+  "targets": ["client"],
+  "launcher": "SF",
+  "changelog": ["Sample owner and item link fields on related inventory entities without exporting entity IDs."],
+  "settings": {}
+}

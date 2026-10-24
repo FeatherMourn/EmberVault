@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 4 Offline Closure 2026 10 23 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Stage 4 Offline Closure 2026 10 23</p><h1>Stage 4 Offline Closure 2026 10 23</h1><p class="lead">Original staged source: <code>data/reports/stage-4-offline-closure-2026-10-23.md</code></p><section><pre class="report-source"># Stage 4 Offline Closure
+
+Date: 2026-10-23
+
+## Result
+
+The Stage 4 offline exit criteria are complete. The ShroudForge-only
+`embervault_census_workers_sf` package remains read-only and version 1.4.6.
+
+## Completed offline gates
+
+- All declared census domains are registered as independent workers.
+- Unsupported domains return explicit terminal `unsupported` results with a
+  reason rather than disappearing or guessing.
+- Worker result status and reason are preserved in scheduler summaries.
+- Root and `src/mod.lua` entry points remain byte-identical.
+- Stable package identity, client target, version, export identity, run token,
+  worker-graph version, snapshot generation, and stale-export markers are
+  present.
+- Reload classification is recorded as machine-readable `reloadable`,
+  `restart-required`, or `blocked` with reasons.
+- The dedicated Stage 4 contract suite passes 34 checks.
+- The fork workspace test suite passes with zero failures; existing warnings
+  and ignored environment-dependent tests remain documented.
+
+## Remaining live gate
+
+The first fresh v1.4.6 run after the module-cache correction produced a
+current export and proved worker isolation: unsupported workers completed with
+explicit statuses while slow workers timed out independently. The session was
+not in a resolved private world, however, so `snapshot_generation` remained
+unavailable and this run cannot close the smoke-test gate.
+
+One valid private-world smoke run is still required before Stage 4 can be
+marked 100% complete. It must use the active ShroudForge package at v1.4.6,
+produce a fresh per-run export with a real session/snapshot generation, and
+verify the same independent terminal statuses without an unrelated worker
+suppressing the export. No write capability is involved.
+</pre></section></main></body></html>
+

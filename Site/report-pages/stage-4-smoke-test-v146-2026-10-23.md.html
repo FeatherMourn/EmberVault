@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 4 Smoke Test V146 2026 10 23 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Stage 4 Smoke Test V146 2026 10 23</p><h1>Stage 4 Smoke Test V146 2026 10 23</h1><p class="lead">Original staged source: <code>data/reports/stage-4-smoke-test-v146-2026-10-23.md</code></p><section><pre class="report-source"># Stage 4 Smoke-Test Result — Worker Package 1.4.6
+
+## Result
+
+The corrected ShroudForge package executed and produced a fresh per-run export. The global census deadline worked: the run completed with terminal worker statuses instead of hanging indefinitely.
+
+## Verified
+
+- Probe version and worker graph version are 1.4.6.
+- A unique per-run export and latest pointer were written.
+- The export contains the run identity and stale-result rule.
+- Player, inventory, equipment, item, and unsupported-domain workers all reached explicit terminal statuses.
+- The global deadline classified the blocked run as `census deadline exceeded`.
+- No saves or world data were accessed or written.
+
+## Current limitation
+
+Player context remained unavailable and the snapshot generation was unknown, so no ownership or inventory capability is promoted. This is a successful Stage 4 scheduler/export-isolation result, not a Stage 5 ownership result.
+
+## Follow-up
+
+Add a bounded readiness preflight so workers that depend on player context are marked `blocked` or `unavailable` before the global deadline, while independent schema and unsupported-domain workers can still complete normally.
+</pre></section></main></body></html>
+

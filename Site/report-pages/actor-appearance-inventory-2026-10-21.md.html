@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Actor Appearance Inventory 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Actor Appearance Inventory 2026 10 21</p><h1>Actor Appearance Inventory 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/actor-appearance-inventory-2026-10-21.md</code></p><section><pre class="report-source"># Actor appearance inventory
+
+The read-only actor appearance probe loaded successfully in a world session and exported its inventory.
+
+## Available surfaces
+
+- `runtime.ecs` and `runtime.ecs.get_registry` are available.
+- `game.assets.get_resources_by_type` is available.
+- `keen::ItemInfo`: 4,262 resources.
+- `keen::RenderModel`: 10,470 resources.
+- `keen::ecs::TemplateResource`: 12,267 resources.
+
+## Not found
+
+The guessed dedicated resource types `keen::CharacterAppearanceResource`, `keen::PlayerAppearanceResource`, and `keen::ActorAppearanceResource` are not registered. This does not prove appearance data is absent; it suggests the data is likely held in ECS components, templates, or model/attachment references.
+
+## Safety result
+
+No entities were enumerated, no writes or overrides were attempted, and no saves were accessed.
+
+## Next read-only step
+
+Search the reflected ECS type registry and relevant template/model payloads for appearance, body-scale, hair, facial-hair, material, and attachment fields. Only after a concrete field and supported ownership path are identified should editability be assessed.
+</pre></section></main></body></html>
+

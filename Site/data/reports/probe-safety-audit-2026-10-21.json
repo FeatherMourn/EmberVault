@@ -1,0 +1,9 @@
+{
+  "snapshot": "1.0",
+  "validated_on": "2026-10-21",
+  "scope": "tracked probe Lua scripts",
+  "mutation_calls_found_outside_comments": 0,
+  "evidence_state": "static",
+  "result": "read-only source scan passed",
+  "limitation": "Runtime permissions and behavior still require in-game evidence."
+}

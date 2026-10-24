@@ -1,0 +1,31 @@
+# Enshrouded 1.0 capability census matrix
+
+This is a current-build evidence index. “Represented” means present in reflection or static data; it does not imply runtime access, export, writing, or persistence.
+
+| Domain | Represented | Runtime/readable evidence | Export status | Writable status | Persistent status | Current blocker or next test |
+|---|---|---|---|---|---|---|
+| Resource types | Verified in reflection, KFC, and cache bridges | Live resource service proven after world initialization | Proven for earlier inventories | Not generalized | Not applicable | Keep provenance per resource family |
+| Game settings | Verified presets, bounds, and fields | Live scalar reads verified | Read-only probe evidence | Guarded capability exists; field writes untested | Not tested | Compare more live values |
+| Balancing table | Verified static fields and caps | Selected live values read | Read-only evidence | Not proven for this resource | Not tested | Field-level readback and ownership |
+| Items and recipes | 4,262 items and 2,536 recipes statically joined | Small runtime sample has been intermittent | Static catalogs exported | Item-instance writes unresolved | Not tested | Player inventory owner bridge |
+| Workshops/categories | 51 workshop records and category memberships mapped | Runtime category/workshop reads documented | Proven for prior probes | Not tested | Not tested | Localization remains partially unresolved |
+| Appearance | Character presets and nested hair/beard/color fields read | Live nested preset read verified | Probe export verified | No-op preset write verified only | Player persistence not tested | Find live player appearance owner |
+| Loot/pickup | Loot events, item state, slots, pickup fields represented | Clean probe ran; targeted live component surfaces returned nil | Export completed; no live component matches | Not attempted | Not tested | Player ownership/context remains unavailable |
+| Inventory/equipment | Item instances, slots, equipment, gems, perks represented | v1.4.6 bounded census exported, but player context timed out and no ownership read was produced | Fresh export identity and terminal statuses verified; no player-owned inventory export | Not attempted | Not tested | Resolve stable player context/snapshot generation before Stage 5 ownership work |
+| Building/voxels | Voxel models, no-build zones, blueprints, placement and building events represented | Clean probe ran; targeted live ECS surfaces returned nil; blueprint resources readable | Blueprint registry/config export completed | Not claimed | Not tested | Live building/voxel component ownership remains unresolved |
+| Entity components | Broad reflected component families | ECS readiness and bounded registry reads verified | Limited; entity enumeration intentionally excluded | Not claimed | Not applicable | Query only documented context surfaces |
+| Localization | Tags, language metadata, and English bundle extracted | Runtime text resolver unavailable | Bundle metadata and partial decode proven | Not applicable | Not applicable | Complete key-to-text decoder or resolver |
+| Save containers | KSC1 structure and copies identified | Read-only copies available | No item round-trip export | No blind edits | Round-trip unproven | Decode copies before any edit |
+| Loader/integration | Loader order, proxy, conflicts, and crash evidence cataloged | ShroudForge native diagnostic loads | Logs proven; export depends on profile/readiness | Not applicable | Not applicable | Keep fork and native DLL tests isolated |
+
+## Interpretation
+
+The strongest current evidence is static representation plus selected read-only resource and settings reads. The largest unresolved capability is authoritative player ownership: without it, item-instance, live loot ownership, and player appearance edits cannot be promoted beyond schema-level research. The census remains read-only by default; any future write test requires a disposable private world, expected-value checks, readback, and restoration.
+
+## Gate state
+
+The clean full probe run and the player-owner context retry have completed.
+Player ownership remains represented statically but not readable through the
+current supported ECS query path. The next meaningful work would require a new
+supported accessor, a loader-fork change, or a separately validated save-copy
+decoder; no live write is implied by the current evidence.

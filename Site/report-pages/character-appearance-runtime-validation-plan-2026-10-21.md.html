@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Character Appearance Runtime Validation Plan 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Character Appearance Runtime Validation Plan 2026 10 21</p><h1>Character Appearance Runtime Validation Plan 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/character-appearance-runtime-validation-plan-2026-10-21.md</code></p><section><pre class="report-source"># Character appearance runtime validation plan
+
+## Read-only gate
+
+Run the exact-schema probe in a private local world and record:
+
+1. Whether `keen::CharacterPresetCollection` is returned by `game.assets.get_resources_by_type`.
+2. Which top-level fields are readable: `presets`, `colors`, and `knowledgeUnlocks`.
+3. Whether `CharacterCustomizationResource` is present as a standalone resource.
+4. Whether `CharacterSetup` and `ScaleComponent` are standalone resources or only embedded in templates.
+
+## Accessor gate
+
+For any returned typed resource, read only known fields and record their runtime types. Do not assign values. A successful read establishes supported access, but not writability.
+
+## Write gate
+
+Only if a live object is identified as the local player’s authoritative appearance state, and the runtime reports guarded write support, consider one reversible private-world test. The test must use an expected-value check, a documented scalar or typed value, readback, and restoration. No process-memory access, bypass, multiplayer session, or save manipulation is permitted.
+
+## Current status
+
+Static schemas and payloads are verified. The exact probe is installed. No live character appearance export has yet been captured, so the write gate is not open.
+</pre></section></main></body></html>
+

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "packageId": "embervault_census_workers_sf",
+  "packageVersion": "1.4.6",
+  "classifications": [
+    {
+      "change": "Lua function body or worker budget only",
+      "result": "reloadable",
+      "reason": "Stable module graph and unchanged native/provider contract."
+    },
+    {
+      "change": "Lua module add/remove or dependency graph",
+      "result": "restart-required",
+      "reason": "Loaded module cache and graph identity may be stale."
+    },
+    {
+      "change": "native runtime, loader, ABI, profile, executable, or manifest identity",
+      "result": "restart-required",
+      "reason": "Process-loaded components cannot be replaced safely in-session."
+    },
+    {
+      "change": "missing active package, stale export, or failed lifecycle recovery",
+      "result": "blocked",
+      "reason": "Do not interpret results or retry blindly; restore or revalidate first."
+    }
+  ]
+}

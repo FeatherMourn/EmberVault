@@ -1,0 +1,3568 @@
+{
+  "schema_version": 1,
+  "adapter_id": "embervault-cache-type-name-bridge",
+  "game_scope": "Enshrouded 1.0",
+  "cache_version": "1273043|^/game38/branches/release_1.0|2026-10-20T14:55:29.904125Z",
+  "cache_types": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\.cache\\types.json",
+  "kfc_root": "H:\\enshroudedresearch\\kfc-export-20261019-113420",
+  "kfc_folder_count": 146,
+  "matched_count": 39,
+  "ambiguous_count": 107,
+  "unmatched_count": 0,
+  "promotion_state": "research-only",
+  "limitation": "This bridges KFC folder names to current cache type metadata; it does not by itself prove live EML resource access or writability.",
+  "records": [
+    {
+      "kfc_resource_folder": "AchievementDefinitionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 19,
+          "name": "AchievementDefinitionResource",
+          "qualified_name": "keen::AchievementDefinitionResource",
+          "name_hash": 2001504521,
+          "qualified_hash": 17978028,
+          "internal_hash": 1037949757,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11870,
+          "name": "AchievementDefinitionResource",
+          "qualified_name": "keen::ds::AchievementDefinitionResource",
+          "name_hash": 2001504521,
+          "qualified_hash": 2489585271,
+          "internal_hash": 1037949757,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "ActorSequenceCollectionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 1945,
+          "name": "ActorSequenceCollectionResource",
+          "qualified_name": "keen::ActorSequenceCollectionResource",
+          "name_hash": 4174089671,
+          "qualified_hash": 2728896694,
+          "internal_hash": 2720173546,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8183,
+          "name": "ActorSequenceCollectionResource",
+          "qualified_name": "keen::ds::ActorSequenceCollectionResource",
+          "name_hash": 4174089671,
+          "qualified_hash": 2416131813,
+          "internal_hash": 2720173546,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "ActorSequenceResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 1754,
+          "name": "ActorSequenceResource",
+          "qualified_name": "keen::actor::ActorSequenceResource",
+          "name_hash": 1257832511,
+          "qualified_hash": 2681513313,
+          "internal_hash": 1622079664,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 7961,
+          "name": "ActorSequenceResource",
+          "qualified_name": "keen::ds::actor::ActorSequenceResource",
+          "name_hash": 1257832511,
+          "qualified_hash": 4261574520,
+          "internal_hash": 1622079664,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "AmbientCollectionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 97,
+          "name": "AmbientCollectionResource",
+          "qualified_name": "keen::AmbientCollectionResource",
+          "name_hash": 1046524399,
+          "qualified_hash": 2110614082,
+          "internal_hash": 841762653,
+          "field_count": 6,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11868,
+          "name": "AmbientCollectionResource",
+          "qualified_name": "keen::ds::AmbientCollectionResource",
+          "name_hash": 1046524399,
+          "qualified_hash": 2511197373,
+          "internal_hash": 841762653,
+          "field_count": 6,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "AmbientEnvironmentMapResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 88,
+          "name": "AmbientEnvironmentMapResource",
+          "qualified_name": "keen::AmbientEnvironmentMapResource",
+          "name_hash": 3983529810,
+          "qualified_hash": 3452623347,
+          "internal_hash": 686365044,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12128,
+          "name": "AmbientEnvironmentMapResource",
+          "qualified_name": "keen::ds::AmbientEnvironmentMapResource",
+          "name_hash": 3983529810,
+          "qualified_hash": 2758540508,
+          "internal_hash": 686365044,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "AmbientEventSoundsResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 68,
+          "name": "AmbientEventSoundsResource",
+          "qualified_name": "keen::AmbientEventSoundsResource",
+          "name_hash": 1536849625,
+          "qualified_hash": 2049990602,
+          "internal_hash": 1325724963,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12130,
+          "name": "AmbientEventSoundsResource",
+          "qualified_name": "keen::ds::AmbientEventSoundsResource",
+          "name_hash": 1536849625,
+          "qualified_hash": 505645999,
+          "internal_hash": 1325724963,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "AmbientParameterResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 70,
+          "name": "AmbientParameterResource",
+          "qualified_name": "keen::AmbientParameterResource",
+          "name_hash": 3090519962,
+          "qualified_hash": 3562641517,
+          "internal_hash": 3930164098,
+          "field_count": 40,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12126,
+          "name": "AmbientParameterResource",
+          "qualified_name": "keen::ds::AmbientParameterResource",
+          "name_hash": 3090519962,
+          "qualified_hash": 2889243984,
+          "internal_hash": 3930164098,
+          "field_count": 40,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "AmbientPostProcessingResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 135,
+          "name": "AmbientPostProcessingResource",
+          "qualified_name": "keen::AmbientPostProcessingResource",
+          "name_hash": 3413605430,
+          "qualified_hash": 4057077435,
+          "internal_hash": 566745460,
+          "field_count": 18,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12132,
+          "name": "AmbientPostProcessingResource",
+          "qualified_name": "keen::ds::AmbientPostProcessingResource",
+          "name_hash": 3413605430,
+          "qualified_hash": 464805996,
+          "internal_hash": 566745460,
+          "field_count": 18,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "AmbientSfxCollectionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 61,
+          "name": "AmbientSfxCollectionResource",
+          "qualified_name": "keen::AmbientSfxCollectionResource",
+          "name_hash": 2805369430,
+          "qualified_hash": 3489162009,
+          "internal_hash": 326402681,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12123,
+          "name": "AmbientSfxCollectionResource",
+          "qualified_name": "keen::ds::AmbientSfxCollectionResource",
+          "name_hash": 2805369430,
+          "qualified_hash": 1791717152,
+          "internal_hash": 326402681,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "AmbientVfxCollectionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 86,
+          "name": "AmbientVfxCollectionResource",
+          "qualified_name": "keen::AmbientVfxCollectionResource",
+          "name_hash": 2154783957,
+          "qualified_hash": 2564601570,
+          "internal_hash": 4197450190,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12125,
+          "name": "AmbientVfxCollectionResource",
+          "qualified_name": "keen::ds::AmbientVfxCollectionResource",
+          "name_hash": 2154783957,
+          "qualified_hash": 1229314575,
+          "internal_hash": 4197450190,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "AnimationGraphResource2_0",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 538,
+          "name": "AnimationGraphResource2_0",
+          "qualified_name": "keen::anim_graph::runtime_graph::AnimationGraphResource2_0",
+          "name_hash": 2592105412,
+          "qualified_hash": 2739209486,
+          "internal_hash": 3652366955,
+          "field_count": 19,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "AnimationSequenceContainer",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 159,
+          "name": "AnimationSequenceContainer",
+          "qualified_name": "keen::AnimationSequenceContainer",
+          "name_hash": 3717169303,
+          "qualified_hash": 3101956012,
+          "internal_hash": 253187659,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "AtmosphereResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 5417,
+          "name": "AtmosphereResource",
+          "qualified_name": "keen::AtmosphereResource",
+          "name_hash": 86720965,
+          "qualified_hash": 3757599650,
+          "internal_hash": 3075225472,
+          "field_count": 5,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "AttributeContainerResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2020,
+          "name": "AttributeContainerResource",
+          "qualified_name": "keen::AttributeContainerResource",
+          "name_hash": 2760207714,
+          "qualified_hash": 369220241,
+          "internal_hash": 2349748086,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8260,
+          "name": "AttributeContainerResource",
+          "qualified_name": "keen::ds::AttributeContainerResource",
+          "name_hash": 2760207714,
+          "qualified_hash": 3944785852,
+          "internal_hash": 2349748086,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "BalancingTable",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2052,
+          "name": "BalancingTable",
+          "qualified_name": "keen::BalancingTable",
+          "name_hash": 105462496,
+          "qualified_hash": 2476271431,
+          "internal_hash": 3924895504,
+          "field_count": 88,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8291,
+          "name": "BalancingTable",
+          "qualified_name": "keen::ds::BalancingTable",
+          "name_hash": 105462496,
+          "qualified_hash": 2704929962,
+          "internal_hash": 3924895504,
+          "field_count": 88,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "BaseAttributeResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2018,
+          "name": "BaseAttributeResource",
+          "qualified_name": "keen::BaseAttributeResource",
+          "name_hash": 3383246140,
+          "qualified_hash": 2490401649,
+          "internal_hash": 3846503406,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8258,
+          "name": "BaseAttributeResource",
+          "qualified_name": "keen::ds::BaseAttributeResource",
+          "name_hash": 3383246140,
+          "qualified_hash": 2473298598,
+          "internal_hash": 3846503406,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "BiomeMapResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 6970,
+          "name": "BiomeMapResource",
+          "qualified_name": "keen::BiomeMapResource",
+          "name_hash": 2989839839,
+          "qualified_hash": 1653071924,
+          "internal_hash": 3939864685,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "BlendProfileResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 258,
+          "name": "BlendProfileResource",
+          "qualified_name": "keen::anim_graph::BlendProfileResource",
+          "name_hash": 1478706333,
+          "qualified_hash": 3359376280,
+          "internal_hash": 1560427531,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "BoneMaskResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 253,
+          "name": "BoneMaskResource",
+          "qualified_name": "keen::anim_graph::BoneMaskResource",
+          "name_hash": 4124106887,
+          "qualified_hash": 2296579526,
+          "internal_hash": 3801633762,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "BuffTypeCollectionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2087,
+          "name": "BuffTypeCollectionResource",
+          "qualified_name": "keen::BuffTypeCollectionResource",
+          "name_hash": 2934713516,
+          "qualified_hash": 468090095,
+          "internal_hash": 227213873,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8330,
+          "name": "BuffTypeCollectionResource",
+          "qualified_name": "keen::ds::BuffTypeCollectionResource",
+          "name_hash": 2934713516,
+          "qualified_hash": 2286083386,
+          "internal_hash": 227213873,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "BuildingMaterialBlendingResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 5485,
+          "name": "BuildingMaterialBlendingResource",
+          "qualified_name": "keen::BuildingMaterialBlendingResource",
+          "name_hash": 3743757933,
+          "qualified_hash": 3198709898,
+          "internal_hash": 1200830063,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "BuildingMaterialParametersResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 5475,
+          "name": "BuildingMaterialParametersResource",
+          "qualified_name": "keen::BuildingMaterialParametersResource",
+          "name_hash": 3483428984,
+          "qualified_hash": 4148505451,
+          "internal_hash": 2498666286,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "CameraStatesManager",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2150,
+          "name": "CameraStatesManager",
+          "qualified_name": "keen::CameraStatesManager",
+          "name_hash": 1577374783,
+          "qualified_hash": 2476228470,
+          "internal_hash": 3799561824,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8391,
+          "name": "CameraStatesManager",
+          "qualified_name": "keen::ds::CameraStatesManager",
+          "name_hash": 1577374783,
+          "qualified_hash": 2804691113,
+          "internal_hash": 3799561824,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "CameraStatesOverrideConfig",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2152,
+          "name": "CameraStatesOverrideConfig",
+          "qualified_name": "keen::CameraStatesOverrideConfig",
+          "name_hash": 3749158014,
+          "qualified_hash": 4010076957,
+          "internal_hash": 2765883581,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8393,
+          "name": "CameraStatesOverrideConfig",
+          "qualified_name": "keen::ds::CameraStatesOverrideConfig",
+          "name_hash": 3749158014,
+          "qualified_hash": 4157257796,
+          "internal_hash": 2765883581,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "CardClusterResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 5504,
+          "name": "CardClusterResource",
+          "qualified_name": "keen::CardClusterResource",
+          "name_hash": 3213234155,
+          "qualified_hash": 254577302,
+          "internal_hash": 437436599,
+          "field_count": 9,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "CharacterPresetCollection",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2199,
+          "name": "CharacterPresetCollection",
+          "qualified_name": "keen::CharacterPresetCollection",
+          "name_hash": 1537723903,
+          "qualified_hash": 2590808546,
+          "internal_hash": 3513517191,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8439,
+          "name": "CharacterPresetCollection",
+          "qualified_name": "keen::ds::CharacterPresetCollection",
+          "name_hash": 1537723903,
+          "qualified_hash": 2354715569,
+          "internal_hash": 3513517191,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "CharacterScenePostProcessingResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2221,
+          "name": "CharacterScenePostProcessingResource",
+          "qualified_name": "keen::CharacterScenePostProcessingResource",
+          "name_hash": 3285335657,
+          "qualified_hash": 63352538,
+          "internal_hash": 1604179912,
+          "field_count": 13,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8461,
+          "name": "CharacterScenePostProcessingResource",
+          "qualified_name": "keen::ds::CharacterScenePostProcessingResource",
+          "name_hash": 3285335657,
+          "qualified_hash": 309095335,
+          "internal_hash": 1604179912,
+          "field_count": 13,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "CommerceProductCollection",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 700,
+          "name": "CommerceProductCollection",
+          "qualified_name": "keen::CommerceProductCollection",
+          "name_hash": 2513419701,
+          "qualified_hash": 1526697484,
+          "internal_hash": 2967006734,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11853,
+          "name": "CommerceProductCollection",
+          "qualified_name": "keen::ds::CommerceProductCollection",
+          "name_hash": 2513419701,
+          "qualified_hash": 2355314811,
+          "internal_hash": 2967006734,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "DefaultInventoryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 3990,
+          "name": "DefaultInventoryResource",
+          "qualified_name": "keen::ecs::DefaultInventoryResource",
+          "name_hash": 265262786,
+          "qualified_hash": 1051835464,
+          "internal_hash": 3062723597,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10232,
+          "name": "DefaultInventoryResource",
+          "qualified_name": "keen::ds::ecs::DefaultInventoryResource",
+          "name_hash": 265262786,
+          "qualified_hash": 3763501291,
+          "internal_hash": 3062723597,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "DefaultLootLabelCollectionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4315,
+          "name": "DefaultLootLabelCollectionResource",
+          "qualified_name": "keen::DefaultLootLabelCollectionResource",
+          "name_hash": 3353970246,
+          "qualified_hash": 1792578505,
+          "internal_hash": 2171784749,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10559,
+          "name": "DefaultLootLabelCollectionResource",
+          "qualified_name": "keen::ds::DefaultLootLabelCollectionResource",
+          "name_hash": 3353970246,
+          "qualified_hash": 2006445976,
+          "internal_hash": 2171784749,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "DetailScatterResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 5608,
+          "name": "DetailScatterResource",
+          "qualified_name": "keen::DetailScatterResource",
+          "name_hash": 4249190442,
+          "qualified_hash": 2907528183,
+          "internal_hash": 4140453215,
+          "field_count": 6,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "DevEnemyArsenalRegistryResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 1499,
+          "name": "DevEnemyArsenalRegistryResource",
+          "qualified_name": "keen::enemy::DevEnemyArsenalRegistryResource",
+          "name_hash": 920141261,
+          "qualified_hash": 1957946420,
+          "internal_hash": 1424627839,
+          "field_count": 0,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "DevJournalRegistryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4235,
+          "name": "DevJournalRegistryResource",
+          "qualified_name": "keen::DevJournalRegistryResource",
+          "name_hash": 880400384,
+          "qualified_hash": 992559219,
+          "internal_hash": 1253611333,
+          "field_count": 0,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10479,
+          "name": "DevJournalRegistryResource",
+          "qualified_name": "keen::ds::DevJournalRegistryResource",
+          "name_hash": 880400384,
+          "qualified_hash": 1727435778,
+          "internal_hash": 1253611333,
+          "field_count": 0,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "EmoteResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2451,
+          "name": "EmoteResource",
+          "qualified_name": "keen::EmoteResource",
+          "name_hash": 3235166351,
+          "qualified_hash": 587854398,
+          "internal_hash": 3888774527,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8681,
+          "name": "EmoteResource",
+          "qualified_name": "keen::ds::EmoteResource",
+          "name_hash": 3235166351,
+          "qualified_hash": 3487424357,
+          "internal_hash": 3888774527,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "EnemyArsenalRegistryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 1498,
+          "name": "EnemyArsenalRegistryResource",
+          "qualified_name": "keen::enemy::EnemyArsenalRegistryResource",
+          "name_hash": 167919428,
+          "qualified_hash": 4135415747,
+          "internal_hash": 2990255085,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11847,
+          "name": "EnemyArsenalRegistryResource",
+          "qualified_name": "keen::ds::enemy::EnemyArsenalRegistryResource",
+          "name_hash": 167919428,
+          "qualified_hash": 2110033692,
+          "internal_hash": 2990255085,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "EnemyDebugMenu",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2282,
+          "name": "EnemyDebugMenu",
+          "qualified_name": "keen::debug::EnemyDebugMenu",
+          "name_hash": 2670780933,
+          "qualified_hash": 3373227409,
+          "internal_hash": 2680407571,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8516,
+          "name": "EnemyDebugMenu",
+          "qualified_name": "keen::ds::debug::EnemyDebugMenu",
+          "name_hash": 2670780933,
+          "qualified_hash": 628909182,
+          "internal_hash": 2680407571,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "EntityProxyModelSetResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 1085,
+          "name": "EntityProxyModelSetResource",
+          "qualified_name": "keen::ecs::EntityProxyModelSetResource",
+          "name_hash": 250416705,
+          "qualified_hash": 3114535783,
+          "internal_hash": 304034008,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11861,
+          "name": "EntityProxyModelSetResource",
+          "qualified_name": "keen::ds::ecs::EntityProxyModelSetResource",
+          "name_hash": 250416705,
+          "qualified_hash": 2625070058,
+          "internal_hash": 304034008,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "FbUiBundle",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4919,
+          "name": "FbUiBundle",
+          "qualified_name": "keen::FbUiBundle",
+          "name_hash": 1706745367,
+          "qualified_hash": 4277737656,
+          "internal_hash": 2627102916,
+          "field_count": 46,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11107,
+          "name": "FbUiBundle",
+          "qualified_name": "keen::ds::FbUiBundle",
+          "name_hash": 1706745367,
+          "qualified_hash": 3477236001,
+          "internal_hash": 2627102916,
+          "field_count": 46,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "FeetIKSettings",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 292,
+          "name": "FeetIKSettings",
+          "qualified_name": "keen::anim_graph::tool_graph::FeetIKSettings",
+          "name_hash": 2766594608,
+          "qualified_hash": 1692685672,
+          "internal_hash": 439094617,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "FishingEffectResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2427,
+          "name": "FishingEffectResource",
+          "qualified_name": "keen::FishingEffectResource",
+          "name_hash": 2622104312,
+          "qualified_hash": 1702731945,
+          "internal_hash": 1674717284,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8657,
+          "name": "FishingEffectResource",
+          "qualified_name": "keen::ds::FishingEffectResource",
+          "name_hash": 2622104312,
+          "qualified_hash": 2695782694,
+          "internal_hash": 1674717284,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "FishSpawnTableResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2396,
+          "name": "FishSpawnTableResource",
+          "qualified_name": "keen::fishing::FishSpawnTableResource",
+          "name_hash": 714188978,
+          "qualified_hash": 3983021499,
+          "internal_hash": 2524420797,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8627,
+          "name": "FishSpawnTableResource",
+          "qualified_name": "keen::ds::fishing::FishSpawnTableResource",
+          "name_hash": 714188978,
+          "qualified_hash": 401511532,
+          "internal_hash": 2524420797,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "FogVoxelMappingResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 1683,
+          "name": "FogVoxelMappingResource",
+          "qualified_name": "keen::FogVoxelMappingResource",
+          "name_hash": 2191262789,
+          "qualified_hash": 3825548388,
+          "internal_hash": 3741894621,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "Game38ClientResources",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2550,
+          "name": "Game38ClientResources",
+          "qualified_name": "keen::Game38ClientResources",
+          "name_hash": 516013084,
+          "qualified_hash": 3483826245,
+          "internal_hash": 2096985126,
+          "field_count": 46,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8788,
+          "name": "Game38ClientResources",
+          "qualified_name": "keen::ds::Game38ClientResources",
+          "name_hash": 516013084,
+          "qualified_hash": 1905664538,
+          "internal_hash": 2096985126,
+          "field_count": 46,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "Game38ServerResources",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2553,
+          "name": "Game38ServerResources",
+          "qualified_name": "keen::Game38ServerResources",
+          "name_hash": 2789508968,
+          "qualified_hash": 3895836273,
+          "internal_hash": 3251953876,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8791,
+          "name": "Game38ServerResources",
+          "qualified_name": "keen::ds::Game38ServerResources",
+          "name_hash": 2789508968,
+          "qualified_hash": 3549388446,
+          "internal_hash": 3251953876,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "GameKnowledgeQueryResourceDb",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5240,
+          "name": "GameKnowledgeQueryResourceDb",
+          "qualified_name": "keen::GameKnowledgeQueryResourceDb",
+          "name_hash": 168369449,
+          "qualified_hash": 3860047882,
+          "internal_hash": 3002917457,
+          "field_count": 8,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11158,
+          "name": "GameKnowledgeQueryResourceDb",
+          "qualified_name": "keen::ds::GameKnowledgeQueryResourceDb",
+          "name_hash": 168369449,
+          "qualified_hash": 1286808527,
+          "internal_hash": 3002917457,
+          "field_count": 8,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "GameKnowledgeQueryTriggerResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5246,
+          "name": "GameKnowledgeQueryTriggerResource",
+          "qualified_name": "keen::GameKnowledgeQueryTriggerResource",
+          "name_hash": 1293709037,
+          "qualified_hash": 2585851220,
+          "internal_hash": 2913545816,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11162,
+          "name": "GameKnowledgeQueryTriggerResource",
+          "qualified_name": "keen::ds::GameKnowledgeQueryTriggerResource",
+          "name_hash": 1293709037,
+          "qualified_hash": 3905929243,
+          "internal_hash": 2913545816,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "GameKnowledgeResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5207,
+          "name": "GameKnowledgeResource",
+          "qualified_name": "keen::GameKnowledgeResource",
+          "name_hash": 4096026005,
+          "qualified_hash": 3158790428,
+          "internal_hash": 1936405309,
+          "field_count": 5,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11151,
+          "name": "GameKnowledgeResource",
+          "qualified_name": "keen::ds::GameKnowledgeResource",
+          "name_hash": 4096026005,
+          "qualified_hash": 2988376647,
+          "internal_hash": 1936405309,
+          "field_count": 5,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "GameSettingsPresetsResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4575,
+          "name": "GameSettingsPresetsResource",
+          "qualified_name": "keen::GameSettingsPresetsResource",
+          "name_hash": 3480837374,
+          "qualified_hash": 1878728351,
+          "internal_hash": 559366863,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10826,
+          "name": "GameSettingsPresetsResource",
+          "qualified_name": "keen::ds::GameSettingsPresetsResource",
+          "name_hash": 3480837374,
+          "qualified_hash": 3713411024,
+          "internal_hash": 559366863,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "GiVoxelBuildingMaterialResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 6151,
+          "name": "GiVoxelBuildingMaterialResource",
+          "qualified_name": "keen::GiVoxelBuildingMaterialResource",
+          "name_hash": 2201254026,
+          "qualified_hash": 869152171,
+          "internal_hash": 590229849,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "GpcResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 5046,
+          "name": "GpcResource",
+          "qualified_name": "keen::GpcResource",
+          "name_hash": 1235127359,
+          "qualified_hash": 1685465302,
+          "internal_hash": 1050698446,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "GuidRegistryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 3653,
+          "name": "GuidRegistryResource",
+          "qualified_name": "keen::GuidRegistryResource",
+          "name_hash": 2065903447,
+          "qualified_hash": 4038895580,
+          "internal_hash": 1678264409,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 9890,
+          "name": "GuidRegistryResource",
+          "qualified_name": "keen::ds::GuidRegistryResource",
+          "name_hash": 2065903447,
+          "qualified_hash": 704371857,
+          "internal_hash": 1678264409,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "IblResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5791,
+          "name": "IblResource",
+          "qualified_name": "keen::IblResource",
+          "name_hash": 751945330,
+          "qualified_hash": 3333185343,
+          "internal_hash": 3867319941,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11199,
+          "name": "IblResource",
+          "qualified_name": "keen::ds::IblResource",
+          "name_hash": 751945330,
+          "qualified_hash": 2427857480,
+          "internal_hash": 3867319941,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "ImpactProgram",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 3901,
+          "name": "ImpactProgram",
+          "qualified_name": "keen::ImpactProgram",
+          "name_hash": 2259173209,
+          "qualified_hash": 3566349704,
+          "internal_hash": 1303344009,
+          "field_count": 9,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10142,
+          "name": "ImpactProgram",
+          "qualified_name": "keen::ds::ImpactProgram",
+          "name_hash": 2259173209,
+          "qualified_hash": 541400123,
+          "internal_hash": 1303344009,
+          "field_count": 9,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "ImpactRegistryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 3913,
+          "name": "ImpactRegistryResource",
+          "qualified_name": "keen::ImpactRegistryResource",
+          "name_hash": 1765036900,
+          "qualified_hash": 1687520087,
+          "internal_hash": 1731272921,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10154,
+          "name": "ImpactRegistryResource",
+          "qualified_name": "keen::ds::ImpactRegistryResource",
+          "name_hash": 1765036900,
+          "qualified_hash": 248966822,
+          "internal_hash": 1731272921,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "IngameTimeConfig",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 3917,
+          "name": "IngameTimeConfig",
+          "qualified_name": "keen::IngameTimeConfig",
+          "name_hash": 1877449687,
+          "qualified_hash": 2741983892,
+          "internal_hash": 626567616,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10158,
+          "name": "IngameTimeConfig",
+          "qualified_name": "keen::ds::IngameTimeConfig",
+          "name_hash": 1877449687,
+          "qualified_hash": 2712739317,
+          "internal_hash": 626567616,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "ItemInfo",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4109,
+          "name": "ItemInfo",
+          "qualified_name": "keen::ItemInfo",
+          "name_hash": 4122571990,
+          "qualified_hash": 3050211173,
+          "internal_hash": 1001562052,
+          "field_count": 64,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10355,
+          "name": "ItemInfo",
+          "qualified_name": "keen::ds::ItemInfo",
+          "name_hash": 4122571990,
+          "qualified_hash": 1263968628,
+          "internal_hash": 1001562052,
+          "field_count": 64,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "ItemKnowledgeResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4134,
+          "name": "ItemKnowledgeResource",
+          "qualified_name": "keen::ItemKnowledgeResource",
+          "name_hash": 1744313418,
+          "qualified_hash": 3396158631,
+          "internal_hash": 3133307684,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10381,
+          "name": "ItemKnowledgeResource",
+          "qualified_name": "keen::ds::ItemKnowledgeResource",
+          "name_hash": 1744313418,
+          "qualified_hash": 2135305648,
+          "internal_hash": 3133307684,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "ItemRegistryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4129,
+          "name": "ItemRegistryResource",
+          "qualified_name": "keen::ItemRegistryResource",
+          "name_hash": 3444683637,
+          "qualified_hash": 1923824054,
+          "internal_hash": 3728623397,
+          "field_count": 9,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10376,
+          "name": "ItemRegistryResource",
+          "qualified_name": "keen::ds::ItemRegistryResource",
+          "name_hash": 3444683637,
+          "qualified_hash": 3328267147,
+          "internal_hash": 3728623397,
+          "field_count": 9,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "JointAnimation",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 571,
+          "name": "JointAnimation",
+          "qualified_name": "keen::JointAnimation",
+          "name_hash": 2458460991,
+          "qualified_hash": 3416059840,
+          "internal_hash": 1869078236,
+          "field_count": 10,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11876,
+          "name": "JointAnimation",
+          "qualified_name": "keen::ds::JointAnimation",
+          "name_hash": 2458460991,
+          "qualified_hash": 2382562217,
+          "internal_hash": 1869078236,
+          "field_count": 10,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "JournalRegistryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4234,
+          "name": "JournalRegistryResource",
+          "qualified_name": "keen::JournalRegistryResource",
+          "name_hash": 3377175387,
+          "qualified_hash": 1622535562,
+          "internal_hash": 2140636573,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10478,
+          "name": "JournalRegistryResource",
+          "qualified_name": "keen::ds::JournalRegistryResource",
+          "name_hash": 3377175387,
+          "qualified_hash": 2044092117,
+          "internal_hash": 2140636573,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "LocaTagCollectionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5276,
+          "name": "LocaTagCollectionResource",
+          "qualified_name": "keen::LocaTagCollectionResource",
+          "name_hash": 4258454164,
+          "qualified_hash": 1058275125,
+          "internal_hash": 1298408302,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11168,
+          "name": "LocaTagCollectionResource",
+          "qualified_name": "keen::ds::LocaTagCollectionResource",
+          "name_hash": 4258454164,
+          "qualified_hash": 1779581158,
+          "internal_hash": 1298408302,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "LogicSystemResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5334,
+          "name": "LogicSystemResource",
+          "qualified_name": "keen::LogicSystemResource",
+          "name_hash": 3069788644,
+          "qualified_hash": 3722222285,
+          "internal_hash": 3179709058,
+          "field_count": 7,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11182,
+          "name": "LogicSystemResource",
+          "qualified_name": "keen::ds::LogicSystemResource",
+          "name_hash": 3069788644,
+          "qualified_hash": 3759999730,
+          "internal_hash": 3179709058,
+          "field_count": 7,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "LootableItemsResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4312,
+          "name": "LootableItemsResource",
+          "qualified_name": "keen::LootableItemsResource",
+          "name_hash": 778526549,
+          "qualified_hash": 735589216,
+          "internal_hash": 2959772812,
+          "field_count": 6,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10556,
+          "name": "LootableItemsResource",
+          "qualified_name": "keen::ds::LootableItemsResource",
+          "name_hash": 778526549,
+          "qualified_hash": 2944927919,
+          "internal_hash": 2959772812,
+          "field_count": 6,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "LveAnimation",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 579,
+          "name": "LveAnimation",
+          "qualified_name": "keen::LveAnimation",
+          "name_hash": 98606628,
+          "qualified_hash": 3031192943,
+          "internal_hash": 1511775400,
+          "field_count": 7,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "MapMarkerRegistryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4344,
+          "name": "MapMarkerRegistryResource",
+          "qualified_name": "keen::MapMarkerRegistryResource",
+          "name_hash": 1077460488,
+          "qualified_hash": 829155057,
+          "internal_hash": 2315870960,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10588,
+          "name": "MapMarkerRegistryResource",
+          "qualified_name": "keen::ds::MapMarkerRegistryResource",
+          "name_hash": 1077460488,
+          "qualified_hash": 820729710,
+          "internal_hash": 2315870960,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "MaterialFeedback",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 1658,
+          "name": "MaterialFeedback",
+          "qualified_name": "keen::MaterialFeedback",
+          "name_hash": 625313495,
+          "qualified_hash": 3636079216,
+          "internal_hash": 3653972737,
+          "field_count": 14,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12117,
+          "name": "MaterialFeedback",
+          "qualified_name": "keen::ds::MaterialFeedback",
+          "name_hash": 625313495,
+          "qualified_hash": 2128776493,
+          "internal_hash": 3653972737,
+          "field_count": 14,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "MaterialFeedbackCollectionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 1668,
+          "name": "MaterialFeedbackCollectionResource",
+          "qualified_name": "keen::MaterialFeedbackCollectionResource",
+          "name_hash": 941572707,
+          "qualified_hash": 1170291536,
+          "internal_hash": 1120779310,
+          "field_count": 11,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11860,
+          "name": "MaterialFeedbackCollectionResource",
+          "qualified_name": "keen::ds::MaterialFeedbackCollectionResource",
+          "name_hash": 941572707,
+          "qualified_hash": 1714579977,
+          "internal_hash": 1120779310,
+          "field_count": 11,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "MidiResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 5360,
+          "name": "MidiResource",
+          "qualified_name": "keen::MidiResource",
+          "name_hash": 3787818136,
+          "qualified_hash": 3821060259,
+          "internal_hash": 636141793,
+          "field_count": 6,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "MidiSongCollection",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2564,
+          "name": "MidiSongCollection",
+          "qualified_name": "keen::MidiSongCollection",
+          "name_hash": 2349679953,
+          "qualified_hash": 176063118,
+          "internal_hash": 1385049573,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8802,
+          "name": "MidiSongCollection",
+          "qualified_name": "keen::ds::MidiSongCollection",
+          "name_hash": 2349679953,
+          "qualified_hash": 546669479,
+          "internal_hash": 1385049573,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "MidiSongResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2560,
+          "name": "MidiSongResource",
+          "qualified_name": "keen::MidiSongResource",
+          "name_hash": 1012435125,
+          "qualified_hash": 3871003886,
+          "internal_hash": 1203221715,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8798,
+          "name": "MidiSongResource",
+          "qualified_name": "keen::ds::MidiSongResource",
+          "name_hash": 1012435125,
+          "qualified_hash": 331288339,
+          "internal_hash": 1203221715,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "ModelHierarchyResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4996,
+          "name": "ModelHierarchyResource",
+          "qualified_name": "keen::ModelHierarchyResource",
+          "name_hash": 500910157,
+          "qualified_hash": 897872094,
+          "internal_hash": 1236218749,
+          "field_count": 8,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11121,
+          "name": "ModelHierarchyResource",
+          "qualified_name": "keen::ds::ModelHierarchyResource",
+          "name_hash": 500910157,
+          "qualified_hash": 1830871243,
+          "internal_hash": 1236218749,
+          "field_count": 8,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "NotifierResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5374,
+          "name": "NotifierResource",
+          "qualified_name": "keen::NotifierResource",
+          "name_hash": 1415447351,
+          "qualified_hash": 2295772468,
+          "internal_hash": 1753585385,
+          "field_count": 6,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11194,
+          "name": "NotifierResource",
+          "qualified_name": "keen::ds::NotifierResource",
+          "name_hash": 1415447351,
+          "qualified_hash": 2603780173,
+          "internal_hash": 1753585385,
+          "field_count": 6,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "NpcCollection",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4429,
+          "name": "NpcCollection",
+          "qualified_name": "keen::NpcCollection",
+          "name_hash": 2455524044,
+          "qualified_hash": 1135487733,
+          "internal_hash": 150676198,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10669,
+          "name": "NpcCollection",
+          "qualified_name": "keen::ds::NpcCollection",
+          "name_hash": 2455524044,
+          "qualified_hash": 1336862054,
+          "internal_hash": 150676198,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "Perk",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4454,
+          "name": "Perk",
+          "qualified_name": "keen::Perk",
+          "name_hash": 500159485,
+          "qualified_hash": 1619284314,
+          "internal_hash": 3942706930,
+          "field_count": 11,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10704,
+          "name": "Perk",
+          "qualified_name": "keen::ds::Perk",
+          "name_hash": 500159485,
+          "qualified_hash": 1615600431,
+          "internal_hash": 3942706930,
+          "field_count": 11,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "PerkCollectionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4458,
+          "name": "PerkCollectionResource",
+          "qualified_name": "keen::PerkCollectionResource",
+          "name_hash": 1627722937,
+          "qualified_hash": 3876415042,
+          "internal_hash": 50285120,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10708,
+          "name": "PerkCollectionResource",
+          "qualified_name": "keen::ds::PerkCollectionResource",
+          "name_hash": 1627722937,
+          "qualified_hash": 631288395,
+          "internal_hash": 50285120,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "Ps5ActivityCollection",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4468,
+          "name": "Ps5ActivityCollection",
+          "qualified_name": "keen::Ps5ActivityCollection",
+          "name_hash": 784949946,
+          "qualified_hash": 1167844031,
+          "internal_hash": 2715852930,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10721,
+          "name": "Ps5ActivityCollection",
+          "qualified_name": "keen::ds::Ps5ActivityCollection",
+          "name_hash": 784949946,
+          "qualified_hash": 1220322520,
+          "internal_hash": 2715852930,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RecipeRegistryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4491,
+          "name": "RecipeRegistryResource",
+          "qualified_name": "keen::RecipeRegistryResource",
+          "name_hash": 1483877580,
+          "qualified_hash": 1599308495,
+          "internal_hash": 4282344012,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10744,
+          "name": "RecipeRegistryResource",
+          "qualified_name": "keen::ds::RecipeRegistryResource",
+          "name_hash": 1483877580,
+          "qualified_hash": 2507233074,
+          "internal_hash": 4282344012,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RenderClothColliderResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 6013,
+          "name": "RenderClothColliderResource",
+          "qualified_name": "keen::RenderClothColliderResource",
+          "name_hash": 3422779851,
+          "qualified_hash": 95846066,
+          "internal_hash": 3021269314,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11236,
+          "name": "RenderClothColliderResource",
+          "qualified_name": "keen::ds::RenderClothColliderResource",
+          "name_hash": 3422779851,
+          "qualified_hash": 1448331373,
+          "internal_hash": 3021269314,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RenderDecal",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5571,
+          "name": "RenderDecal",
+          "qualified_name": "keen::RenderDecal",
+          "name_hash": 1795514198,
+          "qualified_hash": 1369374583,
+          "internal_hash": 1034029525,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12156,
+          "name": "RenderDecal",
+          "qualified_name": "keen::ds::RenderDecal",
+          "name_hash": 1795514198,
+          "qualified_hash": 2744889516,
+          "internal_hash": 1034029525,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RenderMaterialResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5972,
+          "name": "RenderMaterialResource",
+          "qualified_name": "keen::RenderMaterialResource",
+          "name_hash": 228697308,
+          "qualified_hash": 2934016331,
+          "internal_hash": 2013576280,
+          "field_count": 7,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12147,
+          "name": "RenderMaterialResource",
+          "qualified_name": "keen::ds::RenderMaterialResource",
+          "name_hash": 228697308,
+          "qualified_hash": 1383650738,
+          "internal_hash": 2013576280,
+          "field_count": 7,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RenderModel",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5999,
+          "name": "RenderModel",
+          "qualified_name": "keen::RenderModel",
+          "name_hash": 1497973154,
+          "qualified_hash": 393450695,
+          "internal_hash": 172864544,
+          "field_count": 31,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11229,
+          "name": "RenderModel",
+          "qualified_name": "keen::ds::RenderModel",
+          "name_hash": 1497973154,
+          "qualified_hash": 946561408,
+          "internal_hash": 172864544,
+          "field_count": 31,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RenderModelChunkModelResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 6027,
+          "name": "RenderModelChunkModelResource",
+          "qualified_name": "keen::RenderModelChunkModelResource",
+          "name_hash": 4179038456,
+          "qualified_hash": 1048078217,
+          "internal_hash": 4111040935,
+          "field_count": 5,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RenderResources",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 6040,
+          "name": "RenderResources",
+          "qualified_name": "keen::RenderResources",
+          "name_hash": 2169238618,
+          "qualified_hash": 1611228611,
+          "internal_hash": 2914035100,
+          "field_count": 11,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RenderSettingsGpuPresetsResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 6091,
+          "name": "RenderSettingsGpuPresetsResource",
+          "qualified_name": "keen::RenderSettingsGpuPresetsResource",
+          "name_hash": 3754216594,
+          "qualified_hash": 509329753,
+          "internal_hash": 2104237749,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11245,
+          "name": "RenderSettingsGpuPresetsResource",
+          "qualified_name": "keen::ds::RenderSettingsGpuPresetsResource",
+          "name_hash": 3754216594,
+          "qualified_hash": 826543780,
+          "internal_hash": 2104237749,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RenderSystemResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 6143,
+          "name": "RenderSystemResource",
+          "qualified_name": "keen::RenderSystemResource",
+          "name_hash": 3474535032,
+          "qualified_hash": 3095915039,
+          "internal_hash": 1880937327,
+          "field_count": 16,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11277,
+          "name": "RenderSystemResource",
+          "qualified_name": "keen::ds::RenderSystemResource",
+          "name_hash": 3474535032,
+          "qualified_hash": 3290162530,
+          "internal_hash": 1880937327,
+          "field_count": 16,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RenderTextureResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 6097,
+          "name": "RenderTextureResource",
+          "qualified_name": "keen::RenderTextureResource",
+          "name_hash": 1413163776,
+          "qualified_hash": 805491613,
+          "internal_hash": 4010930108,
+          "field_count": 13,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11271,
+          "name": "RenderTextureResource",
+          "qualified_name": "keen::ds::RenderTextureResource",
+          "name_hash": 1413163776,
+          "qualified_hash": 1707606170,
+          "internal_hash": 4010930108,
+          "field_count": 13,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RenderWaterResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 6526,
+          "name": "RenderWaterResource",
+          "qualified_name": "keen::RenderWaterResource",
+          "name_hash": 2457904140,
+          "qualified_hash": 1027774325,
+          "internal_hash": 1904976724,
+          "field_count": 10,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11307,
+          "name": "RenderWaterResource",
+          "qualified_name": "keen::ds::RenderWaterResource",
+          "name_hash": 2457904140,
+          "qualified_hash": 174230762,
+          "internal_hash": 1904976724,
+          "field_count": 10,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RenderWeatherResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 6099,
+          "name": "RenderWeatherResource",
+          "qualified_name": "keen::RenderWeatherResource",
+          "name_hash": 1163451255,
+          "qualified_hash": 1937517570,
+          "internal_hash": 3261353977,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RetargetDataResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 265,
+          "name": "RetargetDataResource",
+          "qualified_name": "keen::anim_graph::RetargetDataResource",
+          "name_hash": 894212313,
+          "qualified_hash": 1054281880,
+          "internal_hash": 3943885380,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "RootMotionAnimation",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 582,
+          "name": "RootMotionAnimation",
+          "qualified_name": "keen::RootMotionAnimation",
+          "name_hash": 1974256463,
+          "qualified_hash": 2520500118,
+          "internal_hash": 3866879764,
+          "field_count": 5,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SamplerInstrumentResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5353,
+          "name": "SamplerInstrumentResource",
+          "qualified_name": "keen::SamplerInstrumentResource",
+          "name_hash": 2546219354,
+          "qualified_hash": 3609986743,
+          "internal_hash": 4218435564,
+          "field_count": 6,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11187,
+          "name": "SamplerInstrumentResource",
+          "qualified_name": "keen::ds::SamplerInstrumentResource",
+          "name_hash": 2546219354,
+          "qualified_hash": 312007340,
+          "internal_hash": 4218435564,
+          "field_count": 6,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SceneEntityChunkResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 7000,
+          "name": "SceneEntityChunkResource",
+          "qualified_name": "keen::SceneEntityChunkResource",
+          "name_hash": 1149988081,
+          "qualified_hash": 3741887066,
+          "internal_hash": 1834456473,
+          "field_count": 6,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SceneRandomLootResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4275,
+          "name": "SceneRandomLootResource",
+          "qualified_name": "keen::SceneRandomLootResource",
+          "name_hash": 3326184998,
+          "qualified_hash": 823674767,
+          "internal_hash": 2261740754,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10519,
+          "name": "SceneRandomLootResource",
+          "qualified_name": "keen::ds::SceneRandomLootResource",
+          "name_hash": 3326184998,
+          "qualified_hash": 3695022248,
+          "internal_hash": 2261740754,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SceneResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 6975,
+          "name": "SceneResource",
+          "qualified_name": "keen::SceneResource",
+          "name_hash": 98688415,
+          "qualified_hash": 734432958,
+          "internal_hash": 2314456402,
+          "field_count": 18,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11339,
+          "name": "SceneResource",
+          "qualified_name": "keen::ds::SceneResource",
+          "name_hash": 98688415,
+          "qualified_hash": 2829497389,
+          "internal_hash": 2314456402,
+          "field_count": 18,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SceneWaterEntityResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 7020,
+          "name": "SceneWaterEntityResource",
+          "qualified_name": "keen::SceneWaterEntityResource",
+          "name_hash": 1317141425,
+          "qualified_hash": 1079591134,
+          "internal_hash": 1320588130,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SceneWhiteboxLabelResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 6976,
+          "name": "SceneWhiteboxLabelResource",
+          "qualified_name": "keen::SceneWhiteboxLabelResource",
+          "name_hash": 3302892109,
+          "qualified_hash": 627692586,
+          "internal_hash": 3038308620,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SequenceResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 1750,
+          "name": "SequenceResource",
+          "qualified_name": "keen::SequenceResource",
+          "name_hash": 1896362988,
+          "qualified_hash": 4171163923,
+          "internal_hash": 1533490793,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 7957,
+          "name": "SequenceResource",
+          "qualified_name": "keen::ds::SequenceResource",
+          "name_hash": 1896362988,
+          "qualified_hash": 3392625486,
+          "internal_hash": 1533490793,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SimpleWorldMaterialResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 6229,
+          "name": "SimpleWorldMaterialResource",
+          "qualified_name": "keen::SimpleWorldMaterialResource",
+          "name_hash": 1820705612,
+          "qualified_hash": 3957028593,
+          "internal_hash": 1806610428,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SkillTreeResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4513,
+          "name": "SkillTreeResource",
+          "qualified_name": "keen::SkillTreeResource",
+          "name_hash": 1528663378,
+          "qualified_hash": 3837172047,
+          "internal_hash": 3294100896,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10766,
+          "name": "SkillTreeResource",
+          "qualified_name": "keen::ds::SkillTreeResource",
+          "name_hash": 1528663378,
+          "qualified_hash": 2777683880,
+          "internal_hash": 3294100896,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SlopeDefinition",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 3197,
+          "name": "SlopeDefinition",
+          "qualified_name": "keen::SlopeDefinition",
+          "name_hash": 708104425,
+          "qualified_hash": 2437673868,
+          "internal_hash": 3678271062,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 9422,
+          "name": "SlopeDefinition",
+          "qualified_name": "keen::ds::SlopeDefinition",
+          "name_hash": 708104425,
+          "qualified_hash": 613970007,
+          "internal_hash": 3678271062,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SoundContainerResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 7195,
+          "name": "SoundContainerResource",
+          "qualified_name": "keen::SoundContainerResource",
+          "name_hash": 2063186359,
+          "qualified_hash": 4065813516,
+          "internal_hash": 407228481,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11351,
+          "name": "SoundContainerResource",
+          "qualified_name": "keen::ds::SoundContainerResource",
+          "name_hash": 2063186359,
+          "qualified_hash": 492961605,
+          "internal_hash": 407228481,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SoundResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 7214,
+          "name": "SoundResource",
+          "qualified_name": "keen::SoundResource",
+          "name_hash": 1035341384,
+          "qualified_hash": 3748979845,
+          "internal_hash": 1832310052,
+          "field_count": 8,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11359,
+          "name": "SoundResource",
+          "qualified_name": "keen::ds::SoundResource",
+          "name_hash": 1035341384,
+          "qualified_hash": 4053690094,
+          "internal_hash": 1832310052,
+          "field_count": 8,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SoundReverbCollectionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 7238,
+          "name": "SoundReverbCollectionResource",
+          "qualified_name": "keen::SoundReverbCollectionResource",
+          "name_hash": 1762174800,
+          "qualified_hash": 1216887009,
+          "internal_hash": 2710512556,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11367,
+          "name": "SoundReverbCollectionResource",
+          "qualified_name": "keen::ds::SoundReverbCollectionResource",
+          "name_hash": 1762174800,
+          "qualified_hash": 767884866,
+          "internal_hash": 2710512556,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SoundReverbEarlyReflectionsResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 7225,
+          "name": "SoundReverbEarlyReflectionsResource",
+          "qualified_name": "keen::SoundReverbEarlyReflectionsResource",
+          "name_hash": 1880310311,
+          "qualified_hash": 3979332702,
+          "internal_hash": 4199377268,
+          "field_count": 0,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12031,
+          "name": "SoundReverbEarlyReflectionsResource",
+          "qualified_name": "keen::ds::SoundReverbEarlyReflectionsResource",
+          "name_hash": 1880310311,
+          "qualified_hash": 3007565689,
+          "internal_hash": 4199377268,
+          "field_count": 0,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SoundReverbLateReflectionsResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 7228,
+          "name": "SoundReverbLateReflectionsResource",
+          "qualified_name": "keen::SoundReverbLateReflectionsResource",
+          "name_hash": 3181310558,
+          "qualified_hash": 183982273,
+          "internal_hash": 2885667382,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12035,
+          "name": "SoundReverbLateReflectionsResource",
+          "qualified_name": "keen::ds::SoundReverbLateReflectionsResource",
+          "name_hash": 3181310558,
+          "qualified_hash": 246602584,
+          "internal_hash": 2885667382,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SoundReverbPresetResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 7218,
+          "name": "SoundReverbPresetResource",
+          "qualified_name": "keen::SoundReverbPresetResource",
+          "name_hash": 1426543995,
+          "qualified_hash": 2310065398,
+          "internal_hash": 1977196192,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12169,
+          "name": "SoundReverbPresetResource",
+          "qualified_name": "keen::ds::SoundReverbPresetResource",
+          "name_hash": 1426543995,
+          "qualified_hash": 3893670737,
+          "internal_hash": 1977196192,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SoundReverbPresetsResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 7223,
+          "name": "SoundReverbPresetsResource",
+          "qualified_name": "keen::SoundReverbPresetsResource",
+          "name_hash": 2249831704,
+          "qualified_hash": 1283390867,
+          "internal_hash": 3149131810,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12030,
+          "name": "SoundReverbPresetsResource",
+          "qualified_name": "keen::ds::SoundReverbPresetsResource",
+          "name_hash": 2249831704,
+          "qualified_hash": 1954664574,
+          "internal_hash": 3149131810,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SoundWaterCollectionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 7261,
+          "name": "SoundWaterCollectionResource",
+          "qualified_name": "keen::SoundWaterCollectionResource",
+          "name_hash": 193265879,
+          "qualified_hash": 1434250912,
+          "internal_hash": 2513875919,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11373,
+          "name": "SoundWaterCollectionResource",
+          "qualified_name": "keen::ds::SoundWaterCollectionResource",
+          "name_hash": 193265879,
+          "qualified_hash": 1173113653,
+          "internal_hash": 2513875919,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SoundWaterfallParametersResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 7246,
+          "name": "SoundWaterfallParametersResource",
+          "qualified_name": "keen::SoundWaterfallParametersResource",
+          "name_hash": 2382515106,
+          "qualified_hash": 74044941,
+          "internal_hash": 3895170933,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12041,
+          "name": "SoundWaterfallParametersResource",
+          "qualified_name": "keen::ds::SoundWaterfallParametersResource",
+          "name_hash": 2382515106,
+          "qualified_hash": 2629497948,
+          "internal_hash": 3895170933,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "SoundWaterFlowScenariosResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 7254,
+          "name": "SoundWaterFlowScenariosResource",
+          "qualified_name": "keen::SoundWaterFlowScenariosResource",
+          "name_hash": 436279026,
+          "qualified_hash": 2757406575,
+          "internal_hash": 87385013,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12043,
+          "name": "SoundWaterFlowScenariosResource",
+          "qualified_name": "keen::ds::SoundWaterFlowScenariosResource",
+          "name_hash": 436279026,
+          "qualified_hash": 2097501620,
+          "internal_hash": 87385013,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "TargetSelectionSettings",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 3149,
+          "name": "TargetSelectionSettings",
+          "qualified_name": "keen::ecs::TargetSelectionSettings",
+          "name_hash": 868676659,
+          "qualified_hash": 160833969,
+          "internal_hash": 306604617,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 9374,
+          "name": "TargetSelectionSettings",
+          "qualified_name": "keen::ds::ecs::TargetSelectionSettings",
+          "name_hash": 868676659,
+          "qualified_hash": 1364608388,
+          "internal_hash": 306604617,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "TemplateCollectionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 1092,
+          "name": "TemplateCollectionResource",
+          "qualified_name": "keen::ecs::TemplateCollectionResource",
+          "name_hash": 769305871,
+          "qualified_hash": 3624919921,
+          "internal_hash": 3307692909,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11849,
+          "name": "TemplateCollectionResource",
+          "qualified_name": "keen::ds::ecs::TemplateCollectionResource",
+          "name_hash": 769305871,
+          "qualified_hash": 2704456762,
+          "internal_hash": 3307692909,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "TemplateResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 1084,
+          "name": "TemplateResource",
+          "qualified_name": "keen::ecs::TemplateResource",
+          "name_hash": 540543687,
+          "qualified_hash": 964069237,
+          "internal_hash": 2249826477,
+          "field_count": 7,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12104,
+          "name": "TemplateResource",
+          "qualified_name": "keen::ds::ecs::TemplateResource",
+          "name_hash": 540543687,
+          "qualified_hash": 4177384586,
+          "internal_hash": 2249826477,
+          "field_count": 7,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "TerraformingEfficiencyRegistryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4542,
+          "name": "TerraformingEfficiencyRegistryResource",
+          "qualified_name": "keen::TerraformingEfficiencyRegistryResource",
+          "name_hash": 277052903,
+          "qualified_hash": 3385744260,
+          "internal_hash": 1652066435,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10795,
+          "name": "TerraformingEfficiencyRegistryResource",
+          "qualified_name": "keen::ds::TerraformingEfficiencyRegistryResource",
+          "name_hash": 277052903,
+          "qualified_hash": 865081181,
+          "internal_hash": 1652066435,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "TrashLootTableResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2398,
+          "name": "TrashLootTableResource",
+          "qualified_name": "keen::fishing::TrashLootTableResource",
+          "name_hash": 4055433721,
+          "qualified_hash": 2338890880,
+          "internal_hash": 3576789303,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8629,
+          "name": "TrashLootTableResource",
+          "qualified_name": "keen::ds::fishing::TrashLootTableResource",
+          "name_hash": 4055433721,
+          "qualified_hash": 2912635479,
+          "internal_hash": 3576789303,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "TwitchDropCollection",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4551,
+          "name": "TwitchDropCollection",
+          "qualified_name": "keen::TwitchDropCollection",
+          "name_hash": 3830918351,
+          "qualified_hash": 1271431752,
+          "internal_hash": 1781119557,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10804,
+          "name": "TwitchDropCollection",
+          "qualified_name": "keen::ds::TwitchDropCollection",
+          "name_hash": 3830918351,
+          "qualified_hash": 69313237,
+          "internal_hash": 1781119557,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "UiFontResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4979,
+          "name": "UiFontResource",
+          "qualified_name": "keen::UiFontResource",
+          "name_hash": 2187555658,
+          "qualified_hash": 2274010541,
+          "internal_hash": 3012972864,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11113,
+          "name": "UiFontResource",
+          "qualified_name": "keen::ds::UiFontResource",
+          "name_hash": 2187555658,
+          "qualified_hash": 4144618436,
+          "internal_hash": 3012972864,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "UiMapResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4922,
+          "name": "UiMapResource",
+          "qualified_name": "keen::UiMapResource",
+          "name_hash": 2074756231,
+          "qualified_hash": 3775288814,
+          "internal_hash": 2780318264,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11109,
+          "name": "UiMapResource",
+          "qualified_name": "keen::ds::UiMapResource",
+          "name_hash": 2074756231,
+          "qualified_hash": 2498956369,
+          "internal_hash": 2780318264,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "UiTextureResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 4982,
+          "name": "UiTextureResource",
+          "qualified_name": "keen::UiTextureResource",
+          "name_hash": 222640706,
+          "qualified_hash": 4192758167,
+          "internal_hash": 1017033722,
+          "field_count": 7,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "UiWorldEventTriggerCollection",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5271,
+          "name": "UiWorldEventTriggerCollection",
+          "qualified_name": "keen::UiWorldEventTriggerCollection",
+          "name_hash": 45981697,
+          "qualified_hash": 1221228284,
+          "internal_hash": 4211317838,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11165,
+          "name": "UiWorldEventTriggerCollection",
+          "qualified_name": "keen::ds::UiWorldEventTriggerCollection",
+          "name_hash": 45981697,
+          "qualified_hash": 1603369543,
+          "internal_hash": 4211317838,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VfxCurveResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 6295,
+          "name": "VfxCurveResource",
+          "qualified_name": "keen::VfxCurveResource",
+          "name_hash": 964524694,
+          "qualified_hash": 282314625,
+          "internal_hash": 963162300,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12151,
+          "name": "VfxCurveResource",
+          "qualified_name": "keen::ds::VfxCurveResource",
+          "name_hash": 964524694,
+          "qualified_hash": 2311868688,
+          "internal_hash": 963162300,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VfxJointCollectionResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 6420,
+          "name": "VfxJointCollectionResource",
+          "qualified_name": "keen::VfxJointCollectionResource",
+          "name_hash": 3925359221,
+          "qualified_hash": 2540963986,
+          "internal_hash": 1996819018,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11300,
+          "name": "VfxJointCollectionResource",
+          "qualified_name": "keen::ds::VfxJointCollectionResource",
+          "name_hash": 3925359221,
+          "qualified_hash": 2513214443,
+          "internal_hash": 1996819018,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VfxMeshResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 6294,
+          "name": "VfxMeshResource",
+          "qualified_name": "keen::VfxMeshResource",
+          "name_hash": 3874517946,
+          "qualified_hash": 2385255939,
+          "internal_hash": 3885808648,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11285,
+          "name": "VfxMeshResource",
+          "qualified_name": "keen::ds::VfxMeshResource",
+          "name_hash": 3874517946,
+          "qualified_hash": 1638118584,
+          "internal_hash": 3885808648,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VfxResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 6325,
+          "name": "VfxResource",
+          "qualified_name": "keen::VfxResource",
+          "name_hash": 3777593755,
+          "qualified_hash": 3863928886,
+          "internal_hash": 4128408871,
+          "field_count": 21,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11298,
+          "name": "VfxResource",
+          "qualified_name": "keen::ds::VfxResource",
+          "name_hash": 3777593755,
+          "qualified_hash": 198644077,
+          "internal_hash": 4128408871,
+          "field_count": 21,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VfxSystemResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 6288,
+          "name": "VfxSystemResource",
+          "qualified_name": "keen::VfxSystemResource",
+          "name_hash": 2439302726,
+          "qualified_hash": 972980427,
+          "internal_hash": 2407031387,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VoiceoverResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 7327,
+          "name": "VoiceoverResource",
+          "qualified_name": "keen::VoiceoverResource",
+          "name_hash": 738189703,
+          "qualified_hash": 1407831946,
+          "internal_hash": 1658460154,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11400,
+          "name": "VoiceoverResource",
+          "qualified_name": "keen::ds::VoiceoverResource",
+          "name_hash": 738189703,
+          "qualified_hash": 2365529361,
+          "internal_hash": 1658460154,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VoicePackDirectoryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5372,
+          "name": "VoicePackDirectoryResource",
+          "qualified_name": "keen::VoicePackDirectoryResource",
+          "name_hash": 2692888395,
+          "qualified_hash": 1745806008,
+          "internal_hash": 1062260745,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11192,
+          "name": "VoicePackDirectoryResource",
+          "qualified_name": "keen::ds::VoicePackDirectoryResource",
+          "name_hash": 2692888395,
+          "qualified_hash": 3205822501,
+          "internal_hash": 1062260745,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VoicePackResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 5366,
+          "name": "VoicePackResource",
+          "qualified_name": "keen::VoicePackResource",
+          "name_hash": 2253868856,
+          "qualified_hash": 3700412153,
+          "internal_hash": 2456744355,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11945,
+          "name": "VoicePackResource",
+          "qualified_name": "keen::ds::VoicePackResource",
+          "name_hash": 2253868856,
+          "qualified_hash": 1132523094,
+          "internal_hash": 2456744355,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VolumetricFog3ModelResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 6468,
+          "name": "VolumetricFog3ModelResource",
+          "qualified_name": "keen::VolumetricFog3ModelResource",
+          "name_hash": 4074794317,
+          "qualified_hash": 1605026728,
+          "internal_hash": 2146681227,
+          "field_count": 8,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VolumetricFog3Resource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 6466,
+          "name": "VolumetricFog3Resource",
+          "qualified_name": "keen::VolumetricFog3Resource",
+          "name_hash": 3570574740,
+          "qualified_hash": 349162787,
+          "internal_hash": 3068948680,
+          "field_count": 26,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VoxelBlueprintConfig",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4563,
+          "name": "VoxelBlueprintConfig",
+          "qualified_name": "keen::VoxelBlueprintConfig",
+          "name_hash": 1025374204,
+          "qualified_hash": 1977365611,
+          "internal_hash": 3786899110,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10816,
+          "name": "VoxelBlueprintConfig",
+          "qualified_name": "keen::ds::VoxelBlueprintConfig",
+          "name_hash": 1025374204,
+          "qualified_hash": 2048182830,
+          "internal_hash": 3786899110,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VoxelBlueprintItemRegistryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4144,
+          "name": "VoxelBlueprintItemRegistryResource",
+          "qualified_name": "keen::VoxelBlueprintItemRegistryResource",
+          "name_hash": 45117746,
+          "qualified_hash": 234670745,
+          "internal_hash": 2006459794,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10391,
+          "name": "VoxelBlueprintItemRegistryResource",
+          "qualified_name": "keen::ds::VoxelBlueprintItemRegistryResource",
+          "name_hash": 45117746,
+          "qualified_hash": 438817164,
+          "internal_hash": 2006459794,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VoxelBlueprintMaterialPoolRegistryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 4567,
+          "name": "VoxelBlueprintMaterialPoolRegistryResource",
+          "qualified_name": "keen::VoxelBlueprintMaterialPoolRegistryResource",
+          "name_hash": 455514190,
+          "qualified_hash": 2586722561,
+          "internal_hash": 4282071111,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 10820,
+          "name": "VoxelBlueprintMaterialPoolRegistryResource",
+          "qualified_name": "keen::ds::VoxelBlueprintMaterialPoolRegistryResource",
+          "name_hash": 455514190,
+          "qualified_hash": 710631916,
+          "internal_hash": 4282071111,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VoxelMaterialVfxDataResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 6404,
+          "name": "VoxelMaterialVfxDataResource",
+          "qualified_name": "keen::VoxelMaterialVfxDataResource",
+          "name_hash": 2281957678,
+          "qualified_hash": 691299489,
+          "internal_hash": 3792486764,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VoxelModelResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 7375,
+          "name": "VoxelModelResource",
+          "qualified_name": "keen::VoxelModelResource",
+          "name_hash": 2863154632,
+          "qualified_hash": 3845847983,
+          "internal_hash": 2592438267,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12641,
+          "name": "VoxelModelResource",
+          "qualified_name": "keen::ds::VoxelModelResource",
+          "name_hash": 2863154632,
+          "qualified_hash": 1307083474,
+          "internal_hash": 2592438267,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VoxelTemperatureResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 7333,
+          "name": "VoxelTemperatureResource",
+          "qualified_name": "keen::VoxelTemperatureResource",
+          "name_hash": 1446510591,
+          "qualified_hash": 565354640,
+          "internal_hash": 4181114305,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VoxelWorldFog3Resource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 7332,
+          "name": "VoxelWorldFog3Resource",
+          "qualified_name": "keen::VoxelWorldFog3Resource",
+          "name_hash": 2744215576,
+          "qualified_hash": 1734958879,
+          "internal_hash": 334529487,
+          "field_count": 2,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "VoxelWorldResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 7341,
+          "name": "VoxelWorldResource",
+          "qualified_name": "keen::VoxelWorldResource",
+          "name_hash": 713776277,
+          "qualified_hash": 1978957938,
+          "internal_hash": 3459921199,
+          "field_count": 8,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "WaterChunkResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 7347,
+          "name": "WaterChunkResource",
+          "qualified_name": "keen::WaterChunkResource",
+          "name_hash": 498566797,
+          "qualified_hash": 387709102,
+          "internal_hash": 3781148906,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "WaterDisplacingResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 7350,
+          "name": "WaterDisplacingResource",
+          "qualified_name": "keen::WaterDisplacingResource",
+          "name_hash": 1610106620,
+          "qualified_hash": 1436832765,
+          "internal_hash": 2077939367,
+          "field_count": 1,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "WaterSurfaceEffectMaterialResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 1646,
+          "name": "WaterSurfaceEffectMaterialResource",
+          "qualified_name": "keen::WaterSurfaceEffectMaterialResource",
+          "name_hash": 4087937679,
+          "qualified_hash": 4209617080,
+          "internal_hash": 3152376977,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 12120,
+          "name": "WaterSurfaceEffectMaterialResource",
+          "qualified_name": "keen::ds::WaterSurfaceEffectMaterialResource",
+          "name_hash": 4087937679,
+          "qualified_hash": 3304902725,
+          "internal_hash": 3152376977,
+          "field_count": 4,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "WaterWorldResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 7345,
+          "name": "WaterWorldResource",
+          "qualified_name": "keen::WaterWorldResource",
+          "name_hash": 40955080,
+          "qualified_hash": 1467635075,
+          "internal_hash": 1552631026,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "WeatherSystemResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 7436,
+          "name": "WeatherSystemResource",
+          "qualified_name": "keen::WeatherSystemResource",
+          "name_hash": 2204896786,
+          "qualified_hash": 3289817451,
+          "internal_hash": 3462121082,
+          "field_count": 12,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 11418,
+          "name": "WeatherSystemResource",
+          "qualified_name": "keen::ds::WeatherSystemResource",
+          "name_hash": 2204896786,
+          "qualified_hash": 1439794412,
+          "internal_hash": 3462121082,
+          "field_count": 12,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "WorkshopRegistryResource",
+      "status": "ambiguous",
+      "cache_candidates": [
+        {
+          "index": 2271,
+          "name": "WorkshopRegistryResource",
+          "qualified_name": "keen::WorkshopRegistryResource",
+          "name_hash": 755593303,
+          "qualified_hash": 2833930532,
+          "internal_hash": 3345986567,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        },
+        {
+          "index": 8505,
+          "name": "WorkshopRegistryResource",
+          "qualified_name": "keen::ds::WorkshopRegistryResource",
+          "name_hash": 755593303,
+          "qualified_hash": 393851333,
+          "internal_hash": 3345986567,
+          "field_count": 3,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "WorldMaterialBlending2Resource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 6612,
+          "name": "WorldMaterialBlending2Resource",
+          "qualified_name": "keen::WorldMaterialBlending2Resource",
+          "name_hash": 614455539,
+          "qualified_hash": 3690731052,
+          "internal_hash": 893257656,
+          "field_count": 5,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    },
+    {
+      "kfc_resource_folder": "ZoneVisualizationResource",
+      "status": "matched",
+      "cache_candidates": [
+        {
+          "index": 6658,
+          "name": "ZoneVisualizationResource",
+          "qualified_name": "keen::ZoneVisualizationResource",
+          "name_hash": 2930206529,
+          "qualified_hash": 916662080,
+          "internal_hash": 2956625476,
+          "field_count": 14,
+          "primitive_type": "STRUCT"
+        }
+      ],
+      "evidence": "current game .cache/types.json joined to local KFC resource folder name"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_fork_local_player_probe_sf",
+  "name": "EmberVault fork local player accessor probe",
+  "version": "1.0.7",
+  "description": "Read-only validation of the private ShroudForge fork local-player accessor.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

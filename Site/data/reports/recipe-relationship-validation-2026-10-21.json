@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "adapter_id": "embervault-recipe-relationships",
+  "game_scope": "Enshrouded 1.0",
+  "source": "I:\\My Drive\\Enshrouded Mods\\EmberVault_Research\\Embervault_Researcher\\1.0\\catalogs\\item-recipe-adapter-v1.json",
+  "evidence_state": "observed",
+  "promotion_state": "research-only",
+  "item_count": 4262,
+  "recipe_count": 2536,
+  "missing_input_reference_count": 0,
+  "missing_output_reference_count": 0,
+  "zero_input_reference_count": 125,
+  "zero_output_reference_count": 0,
+  "recipes_by_cooking_flag": [
+    {
+      "value": "False",
+      "count": 2468
+    },
+    {
+      "value": "True",
+      "count": 68
+    }
+  ],
+  "recipes_by_upgrade_flag": [
+    {
+      "value": "False",
+      "count": 2522
+    },
+    {
+      "value": "True",
+      "count": 14
+    }
+  ],
+  "missing_inputs": [],
+  "missing_outputs": [],
+  "limitations": [
+    "Zero item IDs may represent category-only requirements.",
+    "Static relationships do not prove live crafting behavior or writability."
+  ]
+}

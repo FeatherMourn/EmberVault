@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Static Balance Adapter 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Static Balance Adapter 2026 10 21</p><h1>Static Balance Adapter 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/static-balance-adapter-2026-10-21.md</code></p><section><pre class="report-source"># Static balance adapter
+
+Implemented `adapters/static-balance-catalog.ps1` from the verified ItemInfo and recipe-targeting catalogs.
+
+The adapter joins recipe inputs and outputs to ItemInfo debug names when an item ID resolves, while preserving category-only inputs, workshop identifiers, durations, cooking and upgrade flags, source files, and `observed/static` evidence labels. It also emits the balance-relevant ItemInfo fields: category, rarity, stack size, equipment slot, item class, flags, and source file.
+
+The generated catalog is stored outside the Git repository at `EmberVault_Research/balance-catalogs/static-balance-catalog-v1.json` so raw and generated data do not inflate the repository. The generated result contains 4,262 items and 2,536 recipes.
+
+No game files, saves, runtime memory, or live settings were modified.
+</pre></section></main></body></html>
+

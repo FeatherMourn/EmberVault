@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EmberVault Library</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dark.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html">EMBER<span>VAULT</span></a><nav><a href="index.html">Welcome</a><a href="library.html">Library</a><a href="javascript:history.back()">← Back</a></nav></header>
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Enshrouded research library · build 1.0</p>
+      <h1>Understand what the game can do.</h1>
+      <p class="lede">A build-aware map of mods, runtime capabilities, evidence, and limitations—grounded in reproducible research.</p>
+      <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search mods, capabilities, or systems..." aria-label="Search library"></label>
+      <div class="hero-links"><a href="#mods">Browse mods</a><a href="#capabilities">Explore capabilities</a></div>
+    </section>
+    <section class="archive-nav" aria-label="Archive navigation">
+      <a href="#all-research"><span>01</span><strong>All research</strong><small>Browse the archive</small></a>
+      <a href="#capabilities"><span>02</span><strong>Capability registry</strong><small>Canonical records</small></a>
+      <a href="#browse"><span>03</span><strong>Research records</strong><small>Probes and tools</small></a>
+      <a href="#archive-guidance"><span>04</span><strong>Evidence guidance</strong><small>How the archive works</small></a>
+    </section>
+    <section class="stats" aria-label="Archive summary">
+      <div><strong id="mod-count">—</strong><span>documented mods</span></div><div><strong id="capability-count">—</strong><span>mapped capabilities</span></div><div><strong>1.0</strong><span>current snapshot</span></div><div><strong>5</strong><span>evidence levels</span></div>
+    </section>
+    <section id="browse" class="archive-browser">
+      <aside class="filter-rail"><p class="eyebrow">Archive filters</p><h2>Browse records</h2><label>Search<input id="archive-search" type="search" placeholder="Search archive..."></label><label>Record type<select id="type-filter"><option value="all">All records</option><option value="capability">Capabilities</option><option value="mod">Probes & tools</option><option value="experiment">Experiments</option><option value="finding">Findings</option></select></label><label>Evidence<select id="evidence-filter"><option value="all">Any evidence</option><option value="verified">Verified</option><option value="observed">Observed</option><option value="experimental">Experimental</option><option value="blocked">Blocked</option></select></label><a href="#archive-guidance">About the evidence model →</a></aside>
+      <div class="record-column"><div class="section-heading"><div><p class="eyebrow">Indexed records</p><h2>Research archive</h2></div><span id="result-count" class="result-count"></span></div><div id="archive-records" class="archive-records"></div></div>
+      <aside id="archive-inspector" class="archive-inspector"><p class="eyebrow">Record inspector</p><h2>Select a record</h2><p>Choose an entry to view its build, runtime, evidence, source, and limitations.</p></aside>
+    </section>
+    <section id="archive-guidance" class="archive-notes"><div><p class="eyebrow">Archive guidance</p><h2>Evidence before assumptions.</h2><p>Every record distinguishes what might be possible from what has actually been demonstrated. Select a record to inspect its provenance, build, runtime, and limitations.</p><p class="archive-links"><a href="../docs/adapter-records.md">Adapters</a><a href="../docs/catalog-records.md">Catalogs</a><a href="../docs/probe-source-behavior.md">Probes</a><a href="../docs/report-index.md">Reports</a><a href="../docs/tool-records.md">Tools</a></p></div><div class="legend"><span><i class="dot verified"></i>Verified</span><span><i class="dot observed"></i>Observed</span><span><i class="dot experimental"></i>Experimental</span><span><i class="dot partial"></i>Partial</span></div></section>
+  </main>
+  <footer><span>EMBERVAULT / RESEARCH LIBRARY</span><span>Read-only research · build-aware · evidence-led</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+

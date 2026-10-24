@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Resource Type Mapping Summary · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Resource Type Mapping Summary</p><h1>Resource Type Mapping Summary</h1><p class="lead">Original staged source: <code>data/reports/resource-type-mapping-summary.md</code></p><section><pre class="report-source"># Resource Type Mapping Summary
+
+## Scope
+
+This record covers the Enshrouded 1.0 build used by EmberVault Researcher. It
+joins the read-only EML resource-type export, the local KFC 4 export, and the
+current game `.cache/types.json` file.
+
+## Identifier sources
+
+1. EML enumerated 146 visible runtime resource-type identifiers.
+2. The KFC export contains 146 resource folders and 91,812 resource files.
+3. Each KFC resource payload includes `$type`, `$guid`, and `$part` metadata.
+4. The current `.cache/types.json` contains the corresponding qualified type
+   names and hash metadata for the active 1.0 build.
+
+## Bridge result
+
+The payload-level adapter matched all 146 KFC resource folders to current
+`.cache/types.json` definitions:
+
+| Result | Count |
+| --- | ---: |
+| Matched | 146 |
+| Ambiguous | 0 |
+| Unmatched | 0 |
+
+The payload `$type` field is therefore the strongest verified static bridge
+between the KFC resource folders and current in-game type names.
+
+## Evidence and limits
+
+- This is static same-build evidence, not proof of live EML resource access.
+- It does not establish that a type is writable or safe to mutate.
+- Runtime capability must still be tested with a separate read-only probe.
+- The raw KFC export remains local and is not copied into this repository.
+
+## Reproduction
+
+Run `adapters/kfc-payload-type-bridge.ps1` with the local `.cache/types.json`,
+KFC export root, and an output report path. The generated report preserves the
+cache version, source paths, candidate hashes, and per-folder evidence.
+</pre></section></main></body></html>
+

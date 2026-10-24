@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 4 Scheduler Hot Reload Audit 2026 10 23 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Stage 4 Scheduler Hot Reload Audit 2026 10 23</p><h1>Stage 4 Scheduler Hot Reload Audit 2026 10 23</h1><p class="lead">Original staged source: <code>data/reports/stage-4-scheduler-hot-reload-audit-2026-10-23.md</code></p><section><pre class="report-source"># Stage 4 Scheduler and Hot Reload Audit
+
+Date: 2026-10-23
+
+## Result
+
+Stage 4 is offline-complete and awaiting one controlled private-world smoke run. The fork has a working scheduler, shared read-only snapshot/cache, bounded scan modes, cancellation/deadline infrastructure, lifecycle states, a ShroudForge runtime reload path, independent contracts for every declared census domain, and explicit reload classification. Lua-only source changes can reload in-world when the module graph is unchanged. Native binaries, ABI/profile changes, manifest identity changes, and module-graph changes remain restart-required.
+
+## Verified
+
+- Independent worker scheduling and bounded budgets exist in the fork and the packaged census worker covers player context, inventory links, inventory reads, and equipment.
+- Shared snapshot/cache and world-generation invalidation are implemented for the current worker package.
+- Fast, balanced, deep, and offline-replay modes are represented by explicit budgets.
+- Reload requests produce a matching result and runtime package replacement has rollback behavior on activation failure.
+- Lifecycle tests distinguish live settings from restart-required changes.
+- Cancellation, deadlines, stale-data rejection, and no-partial-export behavior are covered by existing runtime tests.
+
+## Gaps
+
+- Live evidence is still required; the package has not yet been validated in a fresh private-world run after the current worker-contract correction.
+- Runtime checkpoint and differential behavior is contract-tested offline but still needs one smoke-run observation.
+
+## Required completion work
+
+1. Run the 34-check EmberVault worker-contract suite and the broader workspace tests.
+2. Confirm a fresh v1.4.6 export in a private world with independent terminal worker statuses.
+3. Confirm the active package emits the reload classification and stale-export markers.
+
+## Safety boundary
+
+This audit changed no live game files, saves, worlds, or runtime binaries. Stage 4 remains read-only; editor and write work stay downstream.
+</pre></section></main></body></html>
+

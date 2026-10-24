@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 4 Smoke Test 2026 10 23 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Stage 4 Smoke Test 2026 10 23</p><h1>Stage 4 Smoke Test 2026 10 23</h1><p class="lead">Original staged source: <code>data/reports/stage-4-smoke-test-2026-10-23.md</code></p><section><pre class="report-source"># Stage 4 Smoke-Test Result
+
+Date: 2026-10-23
+
+## Result
+
+Rejected as stale evidence. ShroudForge executed the prior 1.4.4 worker package, while the corrected 1.4.5 package was not the active runtime package for this session.
+
+## Evidence
+
+- The observed export identifies probe version 1.4.4 and worker graph version 1.4.4.
+- The observed export has no 1.4.5 run token and no unique per-run 1.4.5 artifact.
+- The reload result reports success, but that only proves a runtime reload operation completed; it does not prove the intended package version became active.
+- The old export reports player, inventory, equipment, and related workers timing out. Those results are not promoted because the package identity is stale.
+- No save or world mutation was observed.
+
+## Interpretation
+
+The test correctly exercised the stale-export rejection rule. Stage 4’s new export and worker corrections remain unverified in the live session. The next run must first confirm the active package version in the ShroudForge package inventory or startup log, then collect a 1.4.5 per-run export. Do not interpret the old timeout results as a failure of the corrected worker.
+
+## Safety
+
+No live files were changed during this read-only evidence check.
+</pre></section></main></body></html>
+

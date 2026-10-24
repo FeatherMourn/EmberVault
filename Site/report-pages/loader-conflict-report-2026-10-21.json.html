@@ -1,0 +1,134 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Loader Conflict Report 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Loader Conflict Report 2026 10 21</p><h1>Loader Conflict Report 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/loader-conflict-report-2026-10-21.json</code></p><section><pre class="report-source">{
+  &quot;schemaVersion&quot;: &quot;1.0&quot;,
+  &quot;game&quot;: &quot;Enshrouded&quot;,
+  &quot;gameBuild&quot;: &quot;unknown&quot;,
+  &quot;evidence&quot;: [
+    &quot;static-inventory-correlation&quot;,
+    &quot;runtime-log-import&quot;
+  ],
+  &quot;summary&quot;: {
+    &quot;artifactCount&quot;: 29,
+    &quot;runtimeEventCount&quot;: 284,
+    &quot;entryPointCollisionCount&quot;: 7,
+    &quot;repeatedLoadEventCount&quot;: 22,
+    &quot;activationAttemptCount&quot;: 119,
+    &quot;activationSkipCount&quot;: 119
+  },
+  &quot;entryPointCollisions&quot;: {
+    &quot;dbghelp.dll&quot;: [
+      &quot;dbghelp.dll&quot;,
+      &quot;shroudforge/updates/pending/dbghelp.dll&quot;
+    ],
+    &quot;dinput8.dll&quot;: [
+      &quot;dinput8.dll&quot;,
+      &quot;EnshroudedMultiDLLInstaller/Backups/20261021-134750.093606200/dinput8.dll&quot;,
+      &quot;EnshroudedMultiDLLInstaller/Backups/20261021-141524.640182800/dinput8.dll&quot;,
+      &quot;shroudforge/updates/pending/dinput8.dll&quot;,
+      &quot;shroudforge-original/dinput8.dll&quot;
+    ],
+    &quot;kfc-runtime.dll&quot;: [
+      &quot;shroudforge/kfc-runtime.dll&quot;,
+      &quot;shroudforge/updates/pending/shroudforge/kfc-runtime.dll&quot;
+    ],
+    &quot;shroudforge-runtime.dll&quot;: [
+      &quot;shroudforge/shroudforge-runtime.dll&quot;,
+      &quot;shroudforge/updates/pending/shroudforge/shroudforge-runtime.dll&quot;
+    ],
+    &quot;microsoft.cognitiveservices.speech.core.dll&quot;: [
+      &quot;shroudforge/ui/webview2-profile/debug-console/EBWebView/Speech Recognition/1.15.0.1/Microsoft.CognitiveServices.Speech.core.dll&quot;,
+      &quot;shroudforge/ui/webview2-profile/modloader-ui/EBWebView/Speech Recognition/1.15.0.1/Microsoft.CognitiveServices.Speech.core.dll&quot;,
+      &quot;shroudforge/ui/webview2-profile/world-editor/EBWebView/Speech Recognition/1.15.0.1/Microsoft.CognitiveServices.Speech.core.dll&quot;,
+      &quot;shroudforge/updates/webview-profile/EBWebView/Speech Recognition/1.15.0.1/Microsoft.CognitiveServices.Speech.core.dll&quot;
+    ],
+    &quot;widevinecdm.dll&quot;: [
+      &quot;shroudforge/ui/webview2-profile/debug-console/EBWebView/WidevineCdm/4.10.3112.0/_platform_specific/win_x64/widevinecdm.dll&quot;,
+      &quot;shroudforge/ui/webview2-profile/modloader-ui/EBWebView/WidevineCdm/4.10.3112.0/_platform_specific/win_x64/widevinecdm.dll&quot;,
+      &quot;shroudforge/ui/webview2-profile/world-editor/EBWebView/WidevineCdm/4.10.3112.0/_platform_specific/win_x64/widevinecdm.dll&quot;,
+      &quot;shroudforge/updates/webview-profile/EBWebView/WidevineCdm/4.10.3112.0/_platform_specific/win_x64/widevinecdm.dll&quot;
+    ],
+    &quot;winmm.dll&quot;: [
+      &quot;shroudforge/updates/pending/winmm.dll&quot;,
+      &quot;winmm.dll&quot;
+    ]
+  },
+  &quot;repeatedLoadEvents&quot;: {
+    &quot;Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\creative\\creative.dll&quot;: 9,
+    &quot;Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\minimap_mod\\minimap_mod.dll&quot;: 4,
+    &quot;Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\XHL-Area-Harvest\\XHL-Area-Harvest.dll&quot;: 4,
+    &quot;Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods\\XHL-Enemy-Difficulty-Limits\\XHL-Enemy-Difficulty-Limits.dll&quot;: 4,
+    &quot;Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\M182_Client\\M182_Panel.dll&quot;: 4,
+    &quot;Loaded H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\auto-loot-plus.dll&quot;: 3
+  },
+  &quot;repeatedActivationAttempts&quot;: {
+    &quot;[2026-10-21T22:29:30Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:31Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:32Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:33Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:34Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:35Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:36Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:37Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:38Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:39Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:40Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:41Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:42Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:43Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:44Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:45Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:46Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:47Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:48Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:49Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:50Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:51Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:52Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:53Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:54Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:55Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:56Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:57Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 1,
+    &quot;[2026-10-21T22:29:58Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:29:59Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:00Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:01Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:02Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:03Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:04Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:05Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:06Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:07Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:08Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:09Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:10Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:11Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:12Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:13Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:14Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:15Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:16Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:17Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:18Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:19Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:20Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:21Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:22Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:23Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:24Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:25Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:26Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:27Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:28Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2,
+    &quot;[2026-10-21T22:30:29Z][shroudtopia][INFO] Activating: minimap_mod&quot;: 2
+  },
+  &quot;activationSkips&quot;: {
+    &quot;[Sparkweave Minimap] activation skipped: unsupported or incomplete client profile&quot;: 119
+  },
+  &quot;observations&quot;: [
+    &quot;Inventory includes active candidates, archived copies, and pending updates.&quot;,
+    &quot;Runtime log evidence does not prove feature behavior.&quot;,
+    &quot;Repeated activation attempts require lifecycle or profile investigation.&quot;
+  ]
+}
+</pre></section></main></body></html>
+

@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Entry Point Classification 2026 10 21 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Entry Point Classification 2026 10 21</p><h1>Entry Point Classification 2026 10 21</h1><p class="lead">Original staged source: <code>data/reports/entry-point-classification-2026-10-21.md</code></p><section><pre class="report-source"># Entry-Point DLL Classification
+
+Date: 2026-10-21
+
+## `dinput8.dll`
+
+**Classification: active intentional forwarding chain.**
+
+- Active root `dinput8.dll` is classified as the ModLoader Proxy.
+- The proxy log records forwarding to `shroudforge-original/dinput8.dll`.
+- The Shroud Forge copy is therefore an active forwarded target, not an
+  independent competing bootstrap.
+- Two additional copies are archived backups.
+- One additional copy is a pending update.
+
+This is the primary loader chain to preserve during future experiments.
+
+## `dbghelp.dll`
+
+**Classification: active EML candidate plus pending update.**
+
+- Root `dbghelp.dll` is the active EML candidate.
+- `shroudforge/updates/pending/dbghelp.dll` is not active and should not be
+  treated as a second live EML loader.
+- Same-process EML initialization with the active Shroud Forge chain remains
+  unverified.
+
+## `winmm.dll`
+
+**Classification: active proxy candidate plus pending update.**
+
+- Root `winmm.dll` is an active candidate and is not listed in the current
+  `chainloader.ini` load list.
+- `shroudforge/updates/pending/winmm.dll` is a pending copy.
+- No current evidence proves that root `winmm.dll` is participating in the
+  active Shroud Forge/ModLoader Proxy chain.
+
+It should be investigated separately rather than assumed to be a conflict.
+
+## Conclusion
+
+The inventory currently supports one confirmed intentional `dinput8.dll`
+forwarding chain. `dbghelp.dll` and `winmm.dll` are active candidates, but
+their relationship to the running chain needs runtime evidence. Archived and
+pending copies are excluded from active-collision decisions.
+</pre></section></main></body></html>
+

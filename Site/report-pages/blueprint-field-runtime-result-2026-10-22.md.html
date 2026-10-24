@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Blueprint Field Runtime Result 2026 10 22 · EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../reports.html">Reports</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="../report-library.html">← Report library</a><p class="eyebrow">Source report · Blueprint Field Runtime Result 2026 10 22</p><h1>Blueprint Field Runtime Result 2026 10 22</h1><p class="lead">Original staged source: <code>data/reports/blueprint-field-runtime-result-2026-10-22.md</code></p><section><pre class="report-source"># Blueprint field runtime result
+
+## Session result
+
+The bounded read-only blueprint-field probe exported successfully after the private world loaded.
+
+Observed:
+
+- One `VoxelBlueprintItemRegistryResource` was readable.
+- Seven `VoxelBlueprintConfig` resources were readable.
+- Blueprint item collections, item IDs, sizes, data payloads, and compression flags were present as opaque userdata or typed values.
+- All seven blueprint configs exposed a string `debugName` and present `snappingConfig` and `snappingConfig.rules` values.
+- The tested material-pool registry resource was present, but the candidate `pools` and `elements` paths were not exposed under those names.
+- No writes, entity enumeration, native calls, or save access occurred.
+
+## Classification
+
+| Capability | Result |
+|---|---|
+| Blueprint schema represented | Verified statically |
+| Blueprint resources readable | Verified at runtime |
+| Named blueprint fields readable | Verified for debug names and field presence |
+| Nested payload semantics | Not decoded; userdata only |
+| Blueprint or terrain writes | Not attempted |
+| Persistence | Not tested |
+
+## Enablement note
+
+The probe was copied into the active mods directory and ShroudForge recorded it in its active runtime state. Its export proves it executed in this session; no separate claim is made that every installed probe is enabled merely because its files exist.
+
+## Conclusion
+
+Blueprint resources are a confirmed readable runtime surface. Their nested payloads remain opaque through the current Lua field interface, so this result does not establish a supported path for editing blueprint data or placing terrain.
+</pre></section></main></body></html>
+

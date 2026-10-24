@@ -1,0 +1,34 @@
+{
+  "manifestVersion": 1,
+  "project": "EmberVault private ShroudForge fork",
+  "upstream": {
+    "repository": "https://github.com/bonsaibauer/shroudforge",
+    "baseRef": "1.7.5",
+    "baseCommit": "2f8631504a736eb7ea8160473a6d580b5e677072"
+  },
+  "fork": {
+    "branch": "embervault/player-accessor",
+    "commit": "9f8d3a5c9deb1e44762e679379411e134325205a",
+    "version": "1.7.5-embervault",
+    "policy": "dev/policies/embervault-read-only.json"
+  },
+  "profile": {
+    "id": "enshrouded-client-26082781",
+    "path": "modules/game-runtime/profiles/enshrouded/client/26082781.json",
+    "gameImageSha256": "d64966e23b1a458ee6f147bcbceac0b577fa7e39a212f371287d8cc119817882",
+    "kfcFormat": 4
+  },
+  "artifacts": [
+    {"path":"build/x64/shroudforge-runtime.dll","sha256":"e9e58c61d3e54470a72b35402003c5564fe7b6e9c7fb912df261a03bfad7a5ea","bytes":21106176},
+    {"path":"build/x64/shroudforge.exe","sha256":"012009d88c3f5b1fabef142e151c82e107e5f898e289e01821229f767bd8a17f","bytes":36955136},
+    {"path":"build/x64/shroudforge-updater.exe","sha256":"9729b51cb42eac12c47a4c385950b2b5a73a141e5dad64cca05add69c92d4429","bytes":15605248},
+    {"path":"build/x64/dinput8.dll","sha256":"2e3badb47d6be866cf817c342baf262a62cf88a20b152d7f45b9033ccf2dd1fc","bytes":10688512},
+    {"path":"build/x64/dbghelp.dll","sha256":"ca831551055b558d383d25841eeab0656e674b8d5516a1311c5b9ea9d1ea248b","bytes":10705920}
+  ],
+  "safety": {
+    "writesEnabled": false,
+    "liveInstall": "not performed by this manifest generation",
+    "rollbackRequired": true,
+    "duplicatePackageRejectionRequired": true
+  }
+}
