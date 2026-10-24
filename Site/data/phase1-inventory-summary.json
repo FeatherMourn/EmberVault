@@ -1,0 +1,98 @@
+﻿[
+    {
+        "category":  "Adapter",
+        "files":  13,
+        "bytes":  61342,
+        "curated":  13,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "category":  "Catalog",
+        "files":  11,
+        "bytes":  23541402,
+        "curated":  11,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "category":  "Generated or internal support",
+        "files":  567,
+        "bytes":  97245271,
+        "curated":  0,
+        "review":  0,
+        "excluded":  567
+    },
+    {
+        "category":  "Loader",
+        "files":  3,
+        "bytes":  4850,
+        "curated":  3,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "category":  "Method",
+        "files":  16,
+        "bytes":  98637,
+        "curated":  16,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "category":  "Mod analysis",
+        "files":  27,
+        "bytes":  76413,
+        "curated":  27,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "category":  "Probe",
+        "files":  121,
+        "bytes":  219672,
+        "curated":  121,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "category":  "Project documentation",
+        "files":  7,
+        "bytes":  26997,
+        "curated":  7,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "category":  "Project metadata",
+        "files":  2,
+        "bytes":  3250,
+        "curated":  2,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "category":  "Provenance",
+        "files":  1,
+        "bytes":  3702,
+        "curated":  1,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "category":  "Report",
+        "files":  130,
+        "bytes":  24145403,
+        "curated":  130,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "category":  "Tooling",
+        "files":  34,
+        "bytes":  269445,
+        "curated":  0,
+        "review":  34,
+        "excluded":  0
+    }
+]

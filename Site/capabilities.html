@@ -1,5 +1,55 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capabilities · EmberVault</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="dark.css"></head><body><header class="topbar"><a class="brand" href="index.html">EMBER<span>VAULT</span></a><nav><a href="index.html">Welcome</a><a href="library.html">Library</a><a href="javascript:history.back()">← Back</a></nav></header><main class="case-file"><a class="text-link" href="library.html">← Library index</a><p class="eyebrow">Library category · Systems</p><h1>Capabilities</h1><p class="lead">A subject index for what Enshrouded data and the ShroudForge runtime may expose. Each capability is separated into static evidence, runtime observation, verified behavior, limitations, and unresolved questions.</p><section><h2>Capability groups</h2><div class="category-grid"><a class="category-card" href="research/inventory-runtime-access.html"><h2>Inventory and item state</h2><p>Inventory schemas, equipment links, item instances, and the unresolved player-ownership bridge.</p></a><a class="category-card" href="research/api-sweep.html"><h2>Runtime API surfaces</h2><p>Observed services, resource types, fields, references, and the boundary between API presence and usable backend access.</p></a><a class="category-card" href="research/blueprint-field-runtime.html"><h2>Blueprint and building data</h2><p>Readable blueprint resources and configuration fields, without a claim of live voxel writes or persistence.</p></a><a class="category-card" href="research/localization-export-blocked.html"><h2>Localization</h2><p>Localization tags and the blocked EML export path, clearly marked as an environment limitation.</p></a></div></section><section><h2>Evidence boundary</h2><p>Static catalogs prove that a type or relationship exists in captured data. Runtime reports prove only what was observed in a particular build and environment. A capability is not promoted to verified behavior merely because a field, API name, or probe exists.</p><p><a class="text-link" href="glossary.html#browse">Browse all capability records →</a></p></section></main><footer><span>EMBERVAULT / CAPABILITIES</span><span>Evidence before assumptions</span></footer></body></html>
-
-
-
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Capabilities · EmberVault</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="dark.css">
+  <style>
+    .capability-page{max-width:1280px;margin:0 auto;padding:2rem 2rem 5rem;color:#c9d2ce}.capability-hero{max-width:850px;margin:1rem 0 2.5rem}.capability-hero h1{margin:.35rem 0 1rem;color:#e8dcc8}.capability-hero p{max-width:760px;color:#b9c7c2}.version-notice{border:1px solid rgba(220,170,80,.35);background:rgba(70,51,25,.22);padding:1rem 1.2rem;margin:1.5rem 0;color:#d1c5ad}.capability-toolbar{display:flex;gap:1rem;flex-wrap:wrap;align-items:end;border:1px solid rgba(180,210,205,.18);background:rgba(11,27,28,.72);padding:1rem;margin:1.5rem 0 2rem}.capability-toolbar label{display:grid;gap:.4rem;color:#aabcb8;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em}.capability-toolbar input,.capability-toolbar select{min-width:220px;background:#0b1b1c;color:#d5d9d1;border:1px solid rgba(180,210,205,.28);padding:.7rem}.capability-toolbar .count{margin-left:auto;color:#aebfbb;padding-bottom:.7rem}.capability-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1rem}.capability-card{border:1px solid rgba(180,210,205,.2);background:linear-gradient(145deg,rgba(24,48,48,.9),rgba(10,25,26,.94));padding:1.25rem;min-height:220px;display:flex;flex-direction:column}.capability-card h2{margin:.2rem 0 .7rem;color:#e3d7c3}.capability-card p{color:#b5c3bf}.capability-card .domain{color:#c7a66d;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase}.capability-card .trail{margin-top:auto;padding-top:1rem;display:flex;justify-content:space-between;gap:.5rem;color:#b9c3b9;font-size:.85rem}.capability-card a{color:#c9ad78}.evidence-guide{display:grid;grid-template-columns:1.5fr 1fr;gap:1rem;margin:3rem 0}.evidence-guide section{border:1px solid rgba(180,210,205,.18);background:rgba(11,27,28,.72);padding:1.3rem}.evidence-guide h2{color:#e0d5c2}.evidence-guide p,.evidence-guide li{color:#b9c7c2}.evidence-guide ul{padding-left:1.2rem}.capability-results{margin-top:1.5rem}.capability-results h2{color:#e0d5c2}.result-list{display:grid;gap:.7rem}.result{display:grid;grid-template-columns:1fr auto;gap:.5rem 1rem;border:1px solid rgba(180,210,205,.16);padding:1rem;background:rgba(13,29,30,.75)}.result h3{margin:0;color:#ddd3c2}.result p{margin:.25rem 0;color:#b3c1bd}.result small{color:#92a7a3}.tag{display:inline-block;border:1px solid rgba(220,170,80,.35);padding:.2rem .45rem;color:#d0b98b;font-size:.75rem}.muted{color:#9eafab}@media(max-width:700px){.capability-page{padding:1rem}.evidence-guide{grid-template-columns:1fr}.capability-toolbar .count{margin-left:0}.result{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html">EMBER<span>VAULT</span></a><nav><a href="index.html">Welcome</a><a href="library.html">Library</a><a href="javascript:history.back()">← Back</a></nav></header>
+  <main class="capability-page">
+    <a class="text-link" href="library.html">← Library index</a>
+    <section class="capability-hero">
+      <p class="eyebrow">Library category · Capability map</p>
+      <h1>What can be observed, understood, and tested?</h1>
+      <p class="lead">This page organizes EmberVault research by capability domain. A capability is not a promise that the game can be changed; it is a question about what the captured data, runtime, probes, or tools can demonstrate.</p>
+      <div class="version-notice"><strong>Version boundary:</strong> Unless a record says otherwise, this research applies to Enshrouded <strong>1.0.0.3</strong> and source build <strong>39026384728</strong>. Results may change after game or loader updates.</div>
+    </section>
+    <section class="capability-toolbar" aria-label="Capability filters">
+      <label>Keyword search<input id="capability-search" type="search" placeholder="Search inventory, API, recipes..."></label>
+      <label>Evidence<select id="capability-evidence"><option value="all">All evidence</option><option value="verified">Verified signals</option><option value="observed">Observed signals</option><option value="static">Static evidence</option><option value="blocked">Blocked</option><option value="unclassified">Unclassified</option></select></label>
+      <span class="count" id="capability-count">Loading capability records…</span>
+    </section>
+    <section><p class="eyebrow">Capability domains</p><div id="capability-domains" class="capability-grid"></div></section>
+    <section class="evidence-guide"><section><p class="eyebrow">How to read this map</p><h2>Evidence before assumptions.</h2><p>Static catalogs show that a resource, field, or relationship exists in captured data. Probes and runtime reports show what was observed in a specific environment. A capability becomes stronger only when multiple records agree and the limits are documented.</p><p><a class="text-link" href="methods.html">Read the research methods →</a> <a class="text-link" href="glossary.html">Search the full index →</a></p></section><section><p class="eyebrow">Evidence levels</p><ul><li><strong>Verified:</strong> explicitly supported by the source record.</li><li><strong>Observed:</strong> seen in a particular build or run.</li><li><strong>Static:</strong> present in catalog or schema data.</li><li><strong>Blocked:</strong> the test could not establish the result.</li><li><strong>Unclassified:</strong> requires further interpretation.</li></ul></section></section>
+    <section id="supporting-records" class="capability-results"><p class="eyebrow">Supporting records</p><h2>Research behind the domains</h2><div id="capability-results" class="result-list"><p class="muted">Loading records…</p></div></section>
+  </main>
+  <footer><span>EMBERVAULT / CAPABILITY MAP</span><span>Evidence before assumptions</span></footer>
+  <script src="data/capability-index.js"></script>
+  <script>
+    const domains=[
+      {name:'Runtime and API surfaces',key:'api runtime resource type field reference probe',desc:'Observed services, resource types, fields, references, and the boundary between API presence and usable runtime access.'},
+      {name:'Player, inventory, and item state',key:'inventory item player ownership equipment iteminfo',desc:'Inventory schemas, item instances, equipment relationships, and the unresolved bridge between static records and player-owned state.'},
+      {name:'Items, recipes, and crafting',key:'item recipe workshop recipe crafting material',desc:'Cataloged item and recipe relationships, workshop groups, joins, and the limits of what static data proves about live crafting.'},
+      {name:'Appearance and localization',key:'appearance character localization loca tag name',desc:'Character customization records, appearance schemas, localization tags, name resolution, and blocked export paths.'},
+      {name:'World, blueprints, and building',key:'blueprint world building tuning voxel field',desc:'Readable world and blueprint data, tuning fields, building references, and the distinction between readable data and live writes.'},
+      {name:'Loaders, mods, and adapters',key:'loader mod adapter shroudforge compatibility',desc:'The tools and compatibility layer used to collect evidence, including loader behavior, adapters, safety limits, and rollback state.'}
+    ];
+    const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    let records=[];
+    function evidenceMatch(r,filter){return filter==='all'||r.evidence===filter}
+    function render(){
+      const q=document.querySelector('#capability-search').value.trim().toLowerCase();const filter=document.querySelector('#capability-evidence').value;
+      const matches=records.filter(r=>evidenceMatch(r,filter)&&(!q||[r.title,r.category,r.record_type,r.keywords,r.summary].join(' ').toLowerCase().includes(q)));
+      document.querySelector('#capability-count').textContent=`${matches.length} supporting records`;
+      document.querySelector('#capability-domains').innerHTML=domains.map(d=>{const hay=d.key+' '+d.name;const count=matches.filter(r=>(r.keywords+' '+r.title+' '+r.category).toLowerCase().split(/\s+/).some(w=>w.length>3&&hay.includes(w))).length;return `<article class="capability-card"><span class="domain">Capability domain</span><h2>${esc(d.name)}</h2><p>${esc(d.desc)}</p><div class="trail"><span>${count} related records</span><a href="#supporting-records" onclick="document.querySelector('#capability-search').value='${esc(d.key.split(' ')[0])}';render()">Explore records →</a></div></article>`}).join('');
+      const shown=matches.slice(0,80);document.querySelector('#capability-results').innerHTML=shown.map(r=>`<a class="result" href="${esc(r.url)}"><div><span class="tag">${esc(r.evidence)}</span><h3>${esc(r.title)}</h3><p>${esc(r.summary)}</p></div><span class="text-link">Open record →</span></a>`).join('')||'<p class="muted">No supporting records match those filters.</p>';
+    }
+    const useRecords=data=>{records=data;render();document.querySelector('#capability-search').addEventListener('input',render);document.querySelector('#capability-evidence').addEventListener('change',render)};
+    if(Array.isArray(window.EMBERVAULT_SITE_INDEX)){useRecords(window.EMBERVAULT_SITE_INDEX)}else{fetch('data/site-index.json').then(r=>r.json()).then(useRecords).catch(()=>{document.querySelector('#capability-count').textContent='Index unavailable';document.querySelector('#capability-results').innerHTML='<p class="muted">The capability index could not be loaded. Open this site through a local web server or refresh the page.</p>'})}
+  </script>
+</body>
+</html>

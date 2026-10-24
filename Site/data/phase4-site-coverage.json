@@ -1,0 +1,12 @@
+﻿{
+    "normalized_records":  365,
+    "public_index_records":  365,
+    "excluded_records":  0,
+    "report_records":  130,
+    "report_pages":  131,
+    "records_with_dedicated_report_page":  128,
+    "records_using_category_page":  237,
+    "game":  "Enshrouded",
+    "game_version":  "1.0.0.3",
+    "source_build":  "39026384728"
+}

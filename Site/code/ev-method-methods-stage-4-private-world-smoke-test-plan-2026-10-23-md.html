@@ -1,0 +1,43 @@
+﻿<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 4 Private World Smoke Test Plan 2026 10 23 Â· Source Â· EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"><style>body{background:#0a1718;color:#cbd2ce}.source-page{max-width:1250px;margin:0 auto;padding:2rem}.source-page h1{color:#e8dcc8}.source-path{color:#aebdb8}.editor{border:1px solid rgba(180,210,205,.25);border-radius:8px;overflow:hidden;background:#071113;box-shadow:0 18px 50px rgba(0,0,0,.25)}.editor-bar{background:#183133;border-bottom:1px solid rgba(180,210,205,.25);padding:.75rem 1rem;display:flex;gap:.55rem;align-items:center;font:12px Consolas,monospace;color:#adc3be}.dot{width:10px;height:10px;border-radius:50%;display:inline-block}.red{background:#d76e68}.yellow{background:#d7ad62}.green{background:#82b58b}.readonly{margin-left:auto;text-transform:uppercase;letter-spacing:.14em;font-size:10px}.code-wrap{overflow:auto;max-height:72vh}.code-lines{min-width:760px;padding:1rem 0;font:14px/1.65 Consolas,'Cascadia Code',monospace;white-space:pre}.line{display:block}.ln{display:inline-block;width:5.5em;text-align:right;padding-right:1.3em;color:#4e7370;user-select:none}.code{color:#d9e3df}.source-meta{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0;color:#aebdb8}.source-meta span{border:1px solid rgba(180,210,205,.2);padding:.5rem .7rem}@media(max-width:700px){.source-page{padding:1rem}.code-lines{font-size:12px}}</style></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../records/ev-method-methods-stage-4-private-world-smoke-test-plan-2026-10-23-md.html">Record</a><a href="javascript:history.back()">â† Back</a></nav></header><main class="source-page"><a class="text-link" href="../records/ev-method-methods-stage-4-private-world-smoke-test-plan-2026-10-23-md.html">â† Record summary</a><p class="eyebrow">Read-only source view Â· method</p><h1>Stage 4 Private World Smoke Test Plan 2026 10 23</h1><p class="source-path">Original source: <code>methods\stage-4-private-world-smoke-test-plan-2026-10-23.md</code></p><div class="source-meta"><span>Enshrouded 1.0.0.3</span><span>Build 39026384728</span><span>Format .md</span></div><section class="editor"><div class="editor-bar"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i><span>methods\stage-4-private-world-smoke-test-plan-2026-10-23.md</span><span class="readonly">Read only</span></div><div class="code-wrap"><div class="code-lines"><span class="line"><span class="ln">0001</span><span class="code"># Stage 4 Private-World Smoke Test Plan</span></span>
+<span class="line"><span class="ln">0002</span><span class="code"></span></span>
+<span class="line"><span class="ln">0003</span><span class="code">## Purpose</span></span>
+<span class="line"><span class="ln">0004</span><span class="code"></span></span>
+<span class="line"><span class="ln">0005</span><span class="code">Validate the corrected ShroudForge census worker package without changing saves, worlds, or unrelated mods. This is a read-only behavior test, not a native rebuild or ownership test.</span></span>
+<span class="line"><span class="ln">0006</span><span class="code"></span></span>
+<span class="line"><span class="ln">0007</span><span class="code">## Preconditions</span></span>
+<span class="line"><span class="ln">0008</span><span class="code"></span></span>
+<span class="line"><span class="ln">0009</span><span class="code">1. Enshrouded and ShroudForge are fully closed.</span></span>
+<span class="line"><span class="ln">0010</span><span class="code">2. The active package is `EmberVault Census Workers`, version 1.4.5, classified as a ShroudForge client mod.</span></span>
+<span class="line"><span class="ln">0011</span><span class="code">3. The package manifest, root entry point, `src` entry point, and runtime worker source have passed offline validation.</span></span>
+<span class="line"><span class="ln">0012</span><span class="code">4. The current loader/runtime files have a timestamped rollback backup.</span></span>
+<span class="line"><span class="ln">0013</span><span class="code">5. The private-world boundary is confirmed; no write-capable probe is enabled.</span></span>
+<span class="line"><span class="ln">0014</span><span class="code"></span></span>
+<span class="line"><span class="ln">0015</span><span class="code">## Run sequence</span></span>
+<span class="line"><span class="ln">0016</span><span class="code"></span></span>
+<span class="line"><span class="ln">0017</span><span class="code">1. Record the pre-run loader and package inventory, including hashes and enabled state.</span></span>
+<span class="line"><span class="ln">0018</span><span class="code">2. Launch through ShroudForge and load the private world.</span></span>
+<span class="line"><span class="ln">0019</span><span class="code">3. Remain in-world for up to 90 seconds. Do not restart during the observation window.</span></span>
+<span class="line"><span class="ln">0020</span><span class="code">4. Collect the newest `census-workers-v146-run-*.tsv`, the latest convenience export, reload result, and ShroudForge log.</span></span>
+<span class="line"><span class="ln">0021</span><span class="code">5. Match the export to the current run using `probe_version`, `worker_graph_version`, `run_count`, `snapshot_generation`, and `export_run_token`.</span></span>
+<span class="line"><span class="ln">0022</span><span class="code">6. If the identity does not match the current session, mark the run stale and stop interpretation; do not retry by guessing.</span></span>
+<span class="line"><span class="ln">0023</span><span class="code"></span></span>
+<span class="line"><span class="ln">0024</span><span class="code">## Pass criteria</span></span>
+<span class="line"><span class="ln">0025</span><span class="code"></span></span>
+<span class="line"><span class="ln">0026</span><span class="code">- A fresh per-run export is produced.</span></span>
+<span class="line"><span class="ln">0027</span><span class="code">- The export contains a current run token and snapshot generation.</span></span>
+<span class="line"><span class="ln">0028</span><span class="code">- Player, inventory-link, inventory-scan, and equipment workers each have an independent terminal status.</span></span>
+<span class="line"><span class="ln">0029</span><span class="code">- Unsupported domains are listed explicitly rather than omitted.</span></span>
+<span class="line"><span class="ln">0030</span><span class="code">- A slow or unsupported worker does not prevent other workers from exporting.</span></span>
+<span class="line"><span class="ln">0031</span><span class="code">- No save/world files or unrelated package files change.</span></span>
+<span class="line"><span class="ln">0032</span><span class="code"></span></span>
+<span class="line"><span class="ln">0033</span><span class="code">## Failure handling</span></span>
+<span class="line"><span class="ln">0034</span><span class="code"></span></span>
+<span class="line"><span class="ln">0035</span><span class="code">- No export: classify as execution or package failure, not a data failure.</span></span>
+<span class="line"><span class="ln">0036</span><span class="code">- Old export only: classify as stale-export rejection and stop.</span></span>
+<span class="line"><span class="ln">0037</span><span class="code">- Crash or hang: stop immediately, restore the backed-up runtime, and preserve logs.</span></span>
+<span class="line"><span class="ln">0038</span><span class="code">- Any unexpected write: stop, preserve evidence, and do not repeat until reviewed.</span></span>
+<span class="line"><span class="ln">0039</span><span class="code"></span></span>
+<span class="line"><span class="ln">0040</span><span class="code">## Exit</span></span>
+<span class="line"><span class="ln">0041</span><span class="code"></span></span>
+<span class="line"><span class="ln">0042</span><span class="code">The result is a Stage 4 smoke-test evidence report. Passing this plan closes the export-identity and worker-isolation gates; it does not prove the unsupported domain workers or enable any writes.</span></span>
+<span class="line"><span class="ln">0043</span><span class="code"></span></span></div></div></section></main><footer><span>EMBERVAULT / SOURCE VIEW</span><span>Read-only research</span></footer></body></html>

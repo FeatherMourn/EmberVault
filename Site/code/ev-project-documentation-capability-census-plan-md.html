@@ -1,0 +1,72 @@
+﻿<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capability Census Plan Â· Source Â· EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"><style>body{background:#0a1718;color:#cbd2ce}.source-page{max-width:1250px;margin:0 auto;padding:2rem}.source-page h1{color:#e8dcc8}.source-path{color:#aebdb8}.editor{border:1px solid rgba(180,210,205,.25);border-radius:8px;overflow:hidden;background:#071113;box-shadow:0 18px 50px rgba(0,0,0,.25)}.editor-bar{background:#183133;border-bottom:1px solid rgba(180,210,205,.25);padding:.75rem 1rem;display:flex;gap:.55rem;align-items:center;font:12px Consolas,monospace;color:#adc3be}.dot{width:10px;height:10px;border-radius:50%;display:inline-block}.red{background:#d76e68}.yellow{background:#d7ad62}.green{background:#82b58b}.readonly{margin-left:auto;text-transform:uppercase;letter-spacing:.14em;font-size:10px}.code-wrap{overflow:auto;max-height:72vh}.code-lines{min-width:760px;padding:1rem 0;font:14px/1.65 Consolas,'Cascadia Code',monospace;white-space:pre}.line{display:block}.ln{display:inline-block;width:5.5em;text-align:right;padding-right:1.3em;color:#4e7370;user-select:none}.code{color:#d9e3df}.source-meta{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0;color:#aebdb8}.source-meta span{border:1px solid rgba(180,210,205,.2);padding:.5rem .7rem}@media(max-width:700px){.source-page{padding:1rem}.code-lines{font-size:12px}}</style></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../records/ev-project-documentation-capability-census-plan-md.html">Record</a><a href="javascript:history.back()">â† Back</a></nav></header><main class="source-page"><a class="text-link" href="../records/ev-project-documentation-capability-census-plan-md.html">â† Record summary</a><p class="eyebrow">Read-only source view Â· project-documentation</p><h1>Capability Census Plan</h1><p class="source-path">Original source: <code>capability-census-plan.md</code></p><div class="source-meta"><span>Enshrouded 1.0.0.3</span><span>Build 39026384728</span><span>Format .md</span></div><section class="editor"><div class="editor-bar"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i><span>capability-census-plan.md</span><span class="readonly">Read only</span></div><div class="code-wrap"><div class="code-lines"><span class="line"><span class="ln">0001</span><span class="code"># Enshrouded 1.0 Capability Census</span></span>
+<span class="line"><span class="ln">0002</span><span class="code"></span></span>
+<span class="line"><span class="ln">0003</span><span class="code">Status: planned read-only census  </span></span>
+<span class="line"><span class="ln">0004</span><span class="code">Scope: ShroudForge live evidence plus static/historical EML, KFC, reflection,</span></span>
+<span class="line"><span class="ln">0005</span><span class="code">save-copy, and loader evidence. EML is not a live target for the EmberVault</span></span>
+<span class="line"><span class="ln">0006</span><span class="code">fork.</span></span>
+<span class="line"><span class="ln">0007</span><span class="code"></span></span>
+<span class="line"><span class="ln">0008</span><span class="code">## Goal</span></span>
+<span class="line"><span class="ln">0009</span><span class="code"></span></span>
+<span class="line"><span class="ln">0010</span><span class="code">Build a build-scoped catalog of what the current modding environment can identify, read, export, query, or safely test. &#226;€œPresent in reflection&#226;€ is recorded separately from &#226;€œavailable at runtime,&#226;€ and runtime availability is recorded separately from writability or persistence.</span></span>
+<span class="line"><span class="ln">0011</span><span class="code"></span></span>
+<span class="line"><span class="ln">0012</span><span class="code">## Census layers</span></span>
+<span class="line"><span class="ln">0013</span><span class="code"></span></span>
+<span class="line"><span class="ln">0014</span><span class="code">1. **Static schema layer** &#226;€” reflected types, fields, enums, references, offsets, and editor metadata.</span></span>
+<span class="line"><span class="ln">0015</span><span class="code">2. **KFC resource layer** &#226;€” resource families, record identities, payload fields, relationships, and provenance.</span></span>
+<span class="line"><span class="ln">0016</span><span class="code">3. **EML historical/static layer** &#226;€” package conventions, prior lifecycle/logging,</span></span>
+<span class="line"><span class="ln">0017</span><span class="code">asset lookup, field access, localization references, and export evidence. No</span></span>
+<span class="line"><span class="ln">0018</span><span class="code">new live EML probes are authorized by the master roadmap.</span></span>
+<span class="line"><span class="ln">0019</span><span class="code">4. **ShroudForge layer** &#226;€” runtime readiness, world context, ECS registry, bounded queries, entity resolution, component reads, resource services, and guarded capability flags.</span></span>
+<span class="line"><span class="ln">0020</span><span class="code">5. **Domain layer** &#226;€” settings, items, recipes, loot, workshops, appearance, building, world, entities, inventory, and pickup actions.</span></span>
+<span class="line"><span class="ln">0021</span><span class="code">6. **Persistence layer** &#226;€” copy-only save-container structure, tagged sections, round-trip evidence, and known integrity boundaries.</span></span>
+<span class="line"><span class="ln">0022</span><span class="code">7. **Integration layer** &#226;€” loader ordering, proxy state, package conflicts, version identity, and crash evidence.</span></span>
+<span class="line"><span class="ln">0023</span><span class="code"></span></span>
+<span class="line"><span class="ln">0024</span><span class="code">## Record contract</span></span>
+<span class="line"><span class="ln">0025</span><span class="code"></span></span>
+<span class="line"><span class="ln">0026</span><span class="code">Every census record should contain:</span></span>
+<span class="line"><span class="ln">0027</span><span class="code"></span></span>
+<span class="line"><span class="ln">0028</span><span class="code">- domain and capability name;</span></span>
+<span class="line"><span class="ln">0029</span><span class="code">- source layer and exact evidence reference;</span></span>
+<span class="line"><span class="ln">0030</span><span class="code">- build and loader context;</span></span>
+<span class="line"><span class="ln">0031</span><span class="code">- access method;</span></span>
+<span class="line"><span class="ln">0032</span><span class="code">- status: static, observed, verified, guarded, unsupported, or unknown;</span></span>
+<span class="line"><span class="ln">0033</span><span class="code">- readable fields or operations, if any;</span></span>
+<span class="line"><span class="ln">0034</span><span class="code">- write and persistence status, never inferred from reflection alone;</span></span>
+<span class="line"><span class="ln">0035</span><span class="code">- safety boundary and next test;</span></span>
+<span class="line"><span class="ln">0036</span><span class="code">- provenance and confidence.</span></span>
+<span class="line"><span class="ln">0037</span><span class="code"></span></span>
+<span class="line"><span class="ln">0038</span><span class="code">## Scan order</span></span>
+<span class="line"><span class="ln">0039</span><span class="code"></span></span>
+<span class="line"><span class="ln">0040</span><span class="code">1. Reconcile existing KFC, reflection, EML, ShroudForge, save, and loader inventories.</span></span>
+<span class="line"><span class="ln">0041</span><span class="code">2. Run the existing read-only API and resource probes with one world session.</span></span>
+<span class="line"><span class="ln">0042</span><span class="code">3. Add bounded domain probes only where a service is ready; no unrestricted entity dump.</span></span>
+<span class="line"><span class="ln">0043</span><span class="code">4. Compare runtime results to static catalogs and mark mismatches explicitly.</span></span>
+<span class="line"><span class="ln">0044</span><span class="code">5. Promote only reproducible current-build results.</span></span>
+<span class="line"><span class="ln">0045</span><span class="code">6. Keep write, save, native-hook, and multiplayer-authority paths closed unless a separate guarded test is approved.</span></span>
+<span class="line"><span class="ln">0046</span><span class="code"></span></span>
+<span class="line"><span class="ln">0047</span><span class="code">## Initial 1.0 coverage</span></span>
+<span class="line"><span class="ln">0048</span><span class="code"></span></span>
+<span class="line"><span class="ln">0049</span><span class="code">Already documented: resource types, ItemInfo, recipes, workshops, categories, game settings, BalancingTable fields, appearance schemas, ECS readiness, runtime scalar reads, loader inventory, and the missing local-player bridge.</span></span>
+<span class="line"><span class="ln">0050</span><span class="code"></span></span>
+<span class="line"><span class="ln">0051</span><span class="code">Loot and pickup static representation is now documented in `reports/loot-pickup-static-census-2026-10-22.md`, and a bounded read-only runtime probe is prepared under `probes/embervault_loot_pickup_census_sf`. Building and voxel static representation is documented in `reports/building-voxel-static-census-2026-10-22.md`. The loot/pickup runtime test is intentionally paused pending explicit launch confirmation. Remaining high-value domains are player/inventory ownership, building/voxel runtime reads, entity component families, localization resolution, and save-copy structure.</span></span>
+<span class="line"><span class="ln">0052</span><span class="code"></span></span>
+<span class="line"><span class="ln">0053</span><span class="code">The consolidated status matrix is in `reports/capability-census-matrix-2026-10-22.md`.</span></span>
+<span class="line"><span class="ln">0054</span><span class="code"></span></span>
+<span class="line"><span class="ln">0055</span><span class="code">The first loot/pickup runtime result is documented in `reports/loot-pickup-runtime-result-2026-10-22.md`. The probe exported, but targeted component queries returned no results and the session included unrelated resource-mutating loot tweaks, so the result is classified as partial and confounded rather than as proof of unsupported schemas.</span></span>
+<span class="line"><span class="ln">0056</span><span class="code"></span></span>
+<span class="line"><span class="ln">0057</span><span class="code">The building/voxel runtime result is documented in `reports/building-voxel-runtime-result-2026-10-22.md`. Blueprint resources were readable, while live voxel and no-build-zone components were not observed; no placement or terrain writes were attempted.</span></span>
+<span class="line"><span class="ln">0058</span><span class="code"></span></span>
+<span class="line"><span class="ln">0059</span><span class="code">The blueprint field runtime result is documented in `reports/blueprint-field-runtime-result-2026-10-22.md`. One registry and seven configurations were readable with named and nested field presence, but nested payloads remained opaque and no writes were attempted.</span></span>
+<span class="line"><span class="ln">0060</span><span class="code"></span></span>
+<span class="line"><span class="ln">0061</span><span class="code">## Interpretation rules</span></span>
+<span class="line"><span class="ln">0062</span><span class="code"></span></span>
+<span class="line"><span class="ln">0063</span><span class="code">- Reflection proves representation, not availability.</span></span>
+<span class="line"><span class="ln">0064</span><span class="code">- Static KFC data proves authored content, not live ownership.</span></span>
+<span class="line"><span class="ln">0065</span><span class="code">- A callable Lua function proves an API surface, not successful backend access.</span></span>
+<span class="line"><span class="ln">0066</span><span class="code">- A successful no-op write proves only that specific resource path accepted the same value; it does not prove player-instance editing.</span></span>
+<span class="line"><span class="ln">0067</span><span class="code">- Historical or pre-1.0 evidence supplies hypotheses and regression clues, not current-build proof.</span></span>
+<span class="line"><span class="ln">0068</span><span class="code"></span></span>
+<span class="line"><span class="ln">0069</span><span class="code">## Safety boundary</span></span>
+<span class="line"><span class="ln">0070</span><span class="code"></span></span>
+<span class="line"><span class="ln">0071</span><span class="code">The census is read-only by default. It excludes process-memory hooks, injection, anti-cheat bypass, unrestricted entity dumping, multiplayer advantage testing, and blind save modification. Any future local write test requires a disposable private world, a backup, expected-value checks, readback, and exact restoration.</span></span>
+<span class="line"><span class="ln">0072</span><span class="code"></span></span></div></div></section></main><footer><span>EMBERVAULT / SOURCE VIEW</span><span>Read-only research</span></footer></body></html>

@@ -1,0 +1,75 @@
+﻿<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capability Matrix Â· Source Â· EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"><style>body{background:#0a1718;color:#cbd2ce}.source-page{max-width:1250px;margin:0 auto;padding:2rem}.source-page h1{color:#e8dcc8}.source-path{color:#aebdb8}.editor{border:1px solid rgba(180,210,205,.25);border-radius:8px;overflow:hidden;background:#071113;box-shadow:0 18px 50px rgba(0,0,0,.25)}.editor-bar{background:#183133;border-bottom:1px solid rgba(180,210,205,.25);padding:.75rem 1rem;display:flex;gap:.55rem;align-items:center;font:12px Consolas,monospace;color:#adc3be}.dot{width:10px;height:10px;border-radius:50%;display:inline-block}.red{background:#d76e68}.yellow{background:#d7ad62}.green{background:#82b58b}.readonly{margin-left:auto;text-transform:uppercase;letter-spacing:.14em;font-size:10px}.code-wrap{overflow:auto;max-height:72vh}.code-lines{min-width:760px;padding:1rem 0;font:14px/1.65 Consolas,'Cascadia Code',monospace;white-space:pre}.line{display:block}.ln{display:inline-block;width:5.5em;text-align:right;padding-right:1.3em;color:#4e7370;user-select:none}.code{color:#d9e3df}.source-meta{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0;color:#aebdb8}.source-meta span{border:1px solid rgba(180,210,205,.2);padding:.5rem .7rem}@media(max-width:700px){.source-page{padding:1rem}.code-lines{font-size:12px}}</style></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../records/ev-project-documentation-capability-matrix-md.html">Record</a><a href="javascript:history.back()">â† Back</a></nav></header><main class="source-page"><a class="text-link" href="../records/ev-project-documentation-capability-matrix-md.html">â† Record summary</a><p class="eyebrow">Read-only source view Â· project-documentation</p><h1>Capability Matrix</h1><p class="source-path">Original source: <code>capability-matrix.md</code></p><div class="source-meta"><span>Enshrouded 1.0.0.3</span><span>Build 39026384728</span><span>Format .md</span></div><section class="editor"><div class="editor-bar"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i><span>capability-matrix.md</span><span class="readonly">Read only</span></div><div class="code-wrap"><div class="code-lines"><span class="line"><span class="ln">0001</span><span class="code"># Capability Matrix</span></span>
+<span class="line"><span class="ln">0002</span><span class="code"></span></span>
+<span class="line"><span class="ln">0003</span><span class="code">Snapshot: `1.0`  </span></span>
+<span class="line"><span class="ln">0004</span><span class="code">Scope: ShroudForge, EmberVault tooling, static catalogs, and content-generation workflows; EML is historical/static corroboration only</span></span>
+<span class="line"><span class="ln">0005</span><span class="code">Status: living record</span></span>
+<span class="line"><span class="ln">0006</span><span class="code"></span></span>
+<span class="line"><span class="ln">0007</span><span class="code">## Guiding scope</span></span>
+<span class="line"><span class="ln">0008</span><span class="code"></span></span>
+<span class="line"><span class="ln">0009</span><span class="code">The project maps Enshrouded through ShroudForge-native Lua and the private</span></span>
+<span class="line"><span class="ln">0010</span><span class="code">EmberVault fork. Adapters, read-only probes, offline catalogs, structured logs,</span></span>
+<span class="line"><span class="ln">0011</span><span class="code">exports, and build-matched evidence are the primary methods. Every capability</span></span>
+<span class="line"><span class="ln">0012</span><span class="code">claim is recorded here with its evidence level and limitations before its</span></span>
+<span class="line"><span class="ln">0013</span><span class="code">status changes. ShroudForge is the supported live baseline for this snapshot.</span></span>
+<span class="line"><span class="ln">0014</span><span class="code">EML artifacts are historical/static only. The EML 2.0 bridge and mutation</span></span>
+<span class="line"><span class="ln">0015</span><span class="code">paths remain outside the 1.0 live scope.</span></span>
+<span class="line"><span class="ln">0016</span><span class="code"></span></span>
+<span class="line"><span class="ln">0017</span><span class="code">## Evidence levels</span></span>
+<span class="line"><span class="ln">0018</span><span class="code"></span></span>
+<span class="line"><span class="ln">0019</span><span class="code">| Level | Meaning |</span></span>
+<span class="line"><span class="ln">0020</span><span class="code">|---|---|</span></span>
+<span class="line"><span class="ln">0021</span><span class="code">| Static | Source, schema, documentation, or offline catalog evidence |</span></span>
+<span class="line"><span class="ln">0022</span><span class="code">| Synthetic | Staged fixture or local simulation |</span></span>
+<span class="line"><span class="ln">0023</span><span class="code">| Observed | Behavior seen in a running game session |</span></span>
+<span class="line"><span class="ln">0024</span><span class="code">| Verified | Reproducible current-build result with matching provenance |</span></span>
+<span class="line"><span class="ln">0025</span><span class="code">| Guarded | Controlled operation with permission, backup, readback, and rollback |</span></span>
+<span class="line"><span class="ln">0026</span><span class="code"></span></span>
+<span class="line"><span class="ln">0027</span><span class="code">## Current matrix</span></span>
+<span class="line"><span class="ln">0028</span><span class="code"></span></span>
+<span class="line"><span class="ln">0029</span><span class="code">| Area | Capability | Status | Evidence | Limits and next test |</span></span>
+<span class="line"><span class="ln">0030</span><span class="code">|---|---|---|---|---|</span></span>
+<span class="line"><span class="ln">0031</span><span class="code">| Loading | ShroudForge package discovery | Confirmed | Observed | Recheck after loader/game updates |</span></span>
+<span class="line"><span class="ln">0032</span><span class="code">| Lua | ShroudForge-native Lua execution | Confirmed | Observed | Only exercised APIs are claimed |</span></span>
+<span class="line"><span class="ln">0033</span><span class="code">| Assets | Read resource records by type | Confirmed | Verified | Current probe covered item resources |</span></span>
+<span class="line"><span class="ln">0034</span><span class="code">| Export | Export generated data to CSV | Confirmed | Verified | `eml-item-list.csv` was produced live |</span></span>
+<span class="line"><span class="ln">0035</span><span class="code">| Logging | ShroudForge log output | Confirmed | Observed | Marker format may vary by runtime |</span></span>
+<span class="line"><span class="ln">0036</span><span class="code">| Lifecycle | Package startup and enable status | Confirmed | Observed | Only the standard EML lifecycle is in scope |</span></span>
+<span class="line"><span class="ln">0037</span><span class="code">| Bridge extensions | EML 2.0 bridge metadata | Out of scope | Staged/static | Not part of the 1.0 live mapping baseline |</span></span>
+<span class="line"><span class="ln">0038</span><span class="code">| Bridge extensions | Full EML 2.0 runner inside ShroudForge | Out of scope | None | Future project; standard EML mapping does not depend on it |</span></span>
+<span class="line"><span class="ln">0039</span><span class="code">| Catalogs | KFC/resource normalization | Confirmed offline | Static/Synthetic | Catalog identity must match the build |</span></span>
+<span class="line"><span class="ln">0040</span><span class="code">| Schemas | Typed fields, dependencies, provenance | Confirmed offline | Static/Synthetic | Not proof of live writability |</span></span>
+<span class="line"><span class="ln">0041</span><span class="code">| EmberVault fork | Validated local-player handle from client context | Confirmed read-only | Verified | Fork build and private-world runtime required after updates |</span></span>
+<span class="line"><span class="ln">0042</span><span class="code">| Inventory ownership | Related inventory/equipment entities and relationship schemas | Partial | Static + Observed | Player handle, `linksEntities`, 32 linked generic containers, and the eight-slot schema are live-readable; populated ownership is not reproducible |</span></span>
+<span class="line"><span class="ln">0043</span><span class="code">| Item instances | Item IDs and item-state component population | Partial | Observed/Unknown | `ItemStack`/`ItemData` schema is live-resolved, but stable captures have zero item IDs and PIDE IDs; levels, perks, gems, and ownership remain unresolved |</span></span>
+<span class="line"><span class="ln">0044</span><span class="code">| Appearance | Preset resource read and no-op guarded write | Guarded narrow path | Verified/Guarded | Preset write is not proof of live player appearance ownership |</span></span>
+<span class="line"><span class="ln">0045</span><span class="code">| Player level | `Level.dataStorage` on local-player handle | Confirmed read-only | Verified | Storage payload interpretation remains schema-gated |</span></span>
+<span class="line"><span class="ln">0046</span><span class="code">| Special ability | `SpecialAbility.dataStorage` on local-player handle | Confirmed read-only | Verified | No write path promoted |</span></span>
+<span class="line"><span class="ln">0047</span><span class="code">| Damage modifier | `DamageModSkillShot.dataStorage` on local-player handle | Confirmed read-only | Verified | One component only; broader stats remain unverified |</span></span>
+<span class="line"><span class="ln">0048</span><span class="code">| Attributes and buffs | Direct player-handle reads | Unverified | Observed unavailable | Related-entity query still needs readiness and ownership mapping |</span></span>
+<span class="line"><span class="ln">0049</span><span class="code">| Durability and progression | Direct player-handle reads | Unverified | Observed unavailable | Related-entity or service path not established |</span></span>
+<span class="line"><span class="ln">0050</span><span class="code">| UI | Native actions and mod status | Confirmed | Observed | Custom fields must use accepted schema |</span></span>
+<span class="line"><span class="ln">0051</span><span class="code">| Blueprint metadata | Offline preview and generation | Confirmed offline | Synthetic | Live-world capture is not established |</span></span>
+<span class="line"><span class="ln">0052</span><span class="code">| Blueprint export | Export an existing verified snapshot | Conditional | Synthetic | Requires a valid snapshot source |</span></span>
+<span class="line"><span class="ln">0053</span><span class="code">| World reads | Live voxel/entity/prop reads | Unverified | Failed/blocked provider attempts | Needs current-build provider evidence |</span></span>
+<span class="line"><span class="ln">0054</span><span class="code">| Placement | Live blueprint placement | Unsupported for now | None | Keep disabled until safety gates pass |</span></span>
+<span class="line"><span class="ln">0055</span><span class="code">| Writes | Game or save mutation | Unsupported for now | None | No write path is promoted |</span></span>
+<span class="line"><span class="ln">0056</span><span class="code">| Multiplayer | Authority-aware edits | Unsupported for now | None | Requires authority and rollback evidence |</span></span>
+<span class="line"><span class="ln">0057</span><span class="code">| Content generation | Manifests, Lua modules, catalogs, exports | Supported | Static/Observed/Verified by area | Generated packages need loader validation |</span></span>
+<span class="line"><span class="ln">0058</span><span class="code">| Content generation | New native game assets | Unverified | None | Needs an exposed asset pipeline |</span></span>
+<span class="line"><span class="ln">0059</span><span class="code">| Guarded operations | Backup/readback/rollback workflow | Designed | Static/Synthetic | No live write capability is enabled |</span></span>
+<span class="line"><span class="ln">0060</span><span class="code"></span></span>
+<span class="line"><span class="ln">0061</span><span class="code">## Current live-scope decision</span></span>
+<span class="line"><span class="ln">0062</span><span class="code"></span></span>
+<span class="line"><span class="ln">0063</span><span class="code">The EML 2.0 bridge is out of scope for snapshot 1.0. Standard EML packages</span></span>
+<span class="line"><span class="ln">0064</span><span class="code">and ShroudForge-native Lua probes are the supported compatibility baseline.</span></span>
+<span class="line"><span class="ln">0065</span><span class="code">The mapping work does not depend on the bridge.</span></span>
+<span class="line"><span class="ln">0066</span><span class="code"></span></span>
+<span class="line"><span class="ln">0067</span><span class="code">## Rules</span></span>
+<span class="line"><span class="ln">0068</span><span class="code"></span></span>
+<span class="line"><span class="ln">0069</span><span class="code">1. A catalog record is not proof that a value is writable.</span></span>
+<span class="line"><span class="ln">0070</span><span class="code">2. Package discovery is not proof that the package executed.</span></span>
+<span class="line"><span class="ln">0071</span><span class="code">3. Older-build evidence cannot establish current-build support.</span></span>
+<span class="line"><span class="ln">0072</span><span class="code">4. Unsupported and unverified capabilities remain visible.</span></span>
+<span class="line"><span class="ln">0073</span><span class="code">5. Every promotion adds a history entry naming the probe, build context,</span></span>
+<span class="line"><span class="ln">0074</span><span class="code">   result, and remaining limitations.</span></span>
+<span class="line"><span class="ln">0075</span><span class="code"></span></span></div></div></section></main><footer><span>EMBERVAULT / SOURCE VIEW</span><span>Read-only research</span></footer></body></html>

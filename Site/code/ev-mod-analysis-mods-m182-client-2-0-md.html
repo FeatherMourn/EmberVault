@@ -1,0 +1,49 @@
+﻿<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>M182 Client 2.0 Â· Source Â· EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"><style>body{background:#0a1718;color:#cbd2ce}.source-page{max-width:1250px;margin:0 auto;padding:2rem}.source-page h1{color:#e8dcc8}.source-path{color:#aebdb8}.editor{border:1px solid rgba(180,210,205,.25);border-radius:8px;overflow:hidden;background:#071113;box-shadow:0 18px 50px rgba(0,0,0,.25)}.editor-bar{background:#183133;border-bottom:1px solid rgba(180,210,205,.25);padding:.75rem 1rem;display:flex;gap:.55rem;align-items:center;font:12px Consolas,monospace;color:#adc3be}.dot{width:10px;height:10px;border-radius:50%;display:inline-block}.red{background:#d76e68}.yellow{background:#d7ad62}.green{background:#82b58b}.readonly{margin-left:auto;text-transform:uppercase;letter-spacing:.14em;font-size:10px}.code-wrap{overflow:auto;max-height:72vh}.code-lines{min-width:760px;padding:1rem 0;font:14px/1.65 Consolas,'Cascadia Code',monospace;white-space:pre}.line{display:block}.ln{display:inline-block;width:5.5em;text-align:right;padding-right:1.3em;color:#4e7370;user-select:none}.code{color:#d9e3df}.source-meta{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0;color:#aebdb8}.source-meta span{border:1px solid rgba(180,210,205,.2);padding:.5rem .7rem}@media(max-width:700px){.source-page{padding:1rem}.code-lines{font-size:12px}}</style></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../records/ev-mod-analysis-mods-m182-client-2-0-md.html">Record</a><a href="javascript:history.back()">â† Back</a></nav></header><main class="source-page"><a class="text-link" href="../records/ev-mod-analysis-mods-m182-client-2-0-md.html">â† Record summary</a><p class="eyebrow">Read-only source view Â· mod-analysis</p><h1>M182 Client 2.0</h1><p class="source-path">Original source: <code>mods\m182-client-2.0.md</code></p><div class="source-meta"><span>Enshrouded 1.0.0.3</span><span>Build 39026384728</span><span>Format .md</span></div><section class="editor"><div class="editor-bar"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i><span>mods\m182-client-2.0.md</span><span class="readonly">Read only</span></div><div class="code-wrap"><div class="code-lines"><span class="line"><span class="ln">0001</span><span class="code"># M182 Client 2.0</span></span>
+<span class="line"><span class="ln">0002</span><span class="code"></span></span>
+<span class="line"><span class="ln">0003</span><span class="code">## Short summary</span></span>
+<span class="line"><span class="ln">0004</span><span class="code"></span></span>
+<span class="line"><span class="ln">0005</span><span class="code">M182 Client is an EML/native administrator panel for creature spawning, item/stat editing, zones, bases, teams, PvP, and player utilities. It combines `M182_Panel.dll`, EML configuration, two Lua patch mods, and a separate `dbghelp.dll` dependency.</span></span>
+<span class="line"><span class="ln">0006</span><span class="code"></span></span>
+<span class="line"><span class="ln">0007</span><span class="code">## How it is built</span></span>
+<span class="line"><span class="ln">0008</span><span class="code"></span></span>
+<span class="line"><span class="ln">0009</span><span class="code">- `M182_Panel.dll`: native panel and client/server communication layer.</span></span>
+<span class="line"><span class="ln">0010</span><span class="code">- `dbghelp.dll`: EML/native support dependency.</span></span>
+<span class="line"><span class="ln">0011</span><span class="code">- `eml.json`: EML runtime options.</span></span>
+<span class="line"><span class="ln">0012</span><span class="code">- `m182_native.json`: native feature and hotkey configuration.</span></span>
+<span class="line"><span class="ln">0013</span><span class="code">- `m182_panel.json`: panel limits.</span></span>
+<span class="line"><span class="ln">0014</span><span class="code">- `mods/m182_spawn_variants`: Lua patch/export package for stronger creature variants and enemy-list export.</span></span>
+<span class="line"><span class="ln">0015</span><span class="code">- `mods/zz_m182_item_stats`: Lua patch package applying item and balance values selected in the panel.</span></span>
+<span class="line"><span class="ln">0016</span><span class="code"></span></span>
+<span class="line"><span class="ln">0017</span><span class="code">The panel writes or updates the Lua data used by the item-stat mod, and it can communicate with a server through hidden chat commands described in the README.</span></span>
+<span class="line"><span class="ln">0018</span><span class="code"></span></span>
+<span class="line"><span class="ln">0019</span><span class="code">## Documented features</span></span>
+<span class="line"><span class="ln">0020</span><span class="code"></span></span>
+<span class="line"><span class="ln">0021</span><span class="code">- Insert opens the panel.</span></span>
+<span class="line"><span class="ln">0022</span><span class="code">- F8 opens the creature spawner; F7/F6/F5 are diagnostic or watch functions.</span></span>
+<span class="line"><span class="ln">0023</span><span class="code">- Creature spawns can respawn near players and remain idle when nobody is nearby.</span></span>
+<span class="line"><span class="ln">0024</span><span class="code">- Items can be granted with level, rarity, amount, and custom stats.</span></span>
+<span class="line"><span class="ln">0025</span><span class="code">- Includes admin powers, PvP controls, zones, protected bases, teams, and server settings.</span></span>
+<span class="line"><span class="ln">0026</span><span class="code">- Local play applies changes directly; dedicated-server use requires the separate server package.</span></span>
+<span class="line"><span class="ln">0027</span><span class="code">- Borderless window mode is required for the overlay panel to appear reliably.</span></span>
+<span class="line"><span class="ln">0028</span><span class="code"></span></span>
+<span class="line"><span class="ln">0029</span><span class="code">## Loader compatibility</span></span>
+<span class="line"><span class="ln">0030</span><span class="code"></span></span>
+<span class="line"><span class="ln">0031</span><span class="code">The package README expects its files to be copied into the game root, which means it is not a simple Lua-only mod. Its native DLL and `dbghelp.dll` must be considered part of the loader chain. The current setup already loads `M182_Panel.dll` through the proxy chain, but the archive&#39;s standalone installation instructions should not be applied over the working ShroudForge files without a backup and compatibility check.</span></span>
+<span class="line"><span class="ln">0032</span><span class="code"></span></span>
+<span class="line"><span class="ln">0033</span><span class="code">## Risks and limitations</span></span>
+<span class="line"><span class="ln">0034</span><span class="code"></span></span>
+<span class="line"><span class="ln">0035</span><span class="code">- It can change persistent item, player, world, and server state; it is not a read-only tool.</span></span>
+<span class="line"><span class="ln">0036</span><span class="code">- Server chat transport can expose administrative actions to server logs or other players if the server-side package is not configured correctly.</span></span>
+<span class="line"><span class="ln">0037</span><span class="code">- Spawn counts and server requests can create load, especially with many active spawns.</span></span>
+<span class="line"><span class="ln">0038</span><span class="code">- The archive includes `m182_spawn_variants`, but that folder was previously removed from the active setup and preserved separately.</span></span>
+<span class="line"><span class="ln">0039</span><span class="code"></span></span>
+<span class="line"><span class="ln">0040</span><span class="code">## Evidence level</span></span>
+<span class="line"><span class="ln">0041</span><span class="code"></span></span>
+<span class="line"><span class="ln">0042</span><span class="code">**Verified from archive:** package contents, manifests, configuration keys, hotkeys, feature descriptions, local/server distinction, overlay requirement, and uninstall list.</span></span>
+<span class="line"><span class="ln">0043</span><span class="code"></span></span>
+<span class="line"><span class="ln">0044</span><span class="code">**Not verified in this audit:** current server-package compatibility, every panel feature on the present game build, and whether the standalone archive loader can coexist directly with the current proxy chain.</span></span>
+<span class="line"><span class="ln">0045</span><span class="code"></span></span>
+<span class="line"><span class="ln">0046</span><span class="code">## Current compatibility status</span></span>
+<span class="line"><span class="ln">0047</span><span class="code"></span></span>
+<span class="line"><span class="ln">0048</span><span class="code">The user reports that M182 does not currently work in the active ShroudForge setup. It is therefore a failed integration at present, not a confirmed working proxy plugin. The next investigation should inspect the M182 log and proxy load result separately to distinguish DLL loading, EML dependency, overlay-window, and panel-configuration failures.</span></span>
+<span class="line"><span class="ln">0049</span><span class="code"></span></span></div></div></section></main><footer><span>EMBERVAULT / SOURCE VIEW</span><span>Read-only research</span></footer></body></html>

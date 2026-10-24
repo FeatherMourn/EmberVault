@@ -1,0 +1,209 @@
+﻿<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Unified Loader Builder Blueprint Â· Source Â· EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"><style>body{background:#0a1718;color:#cbd2ce}.source-page{max-width:1250px;margin:0 auto;padding:2rem}.source-page h1{color:#e8dcc8}.source-path{color:#aebdb8}.editor{border:1px solid rgba(180,210,205,.25);border-radius:8px;overflow:hidden;background:#071113;box-shadow:0 18px 50px rgba(0,0,0,.25)}.editor-bar{background:#183133;border-bottom:1px solid rgba(180,210,205,.25);padding:.75rem 1rem;display:flex;gap:.55rem;align-items:center;font:12px Consolas,monospace;color:#adc3be}.dot{width:10px;height:10px;border-radius:50%;display:inline-block}.red{background:#d76e68}.yellow{background:#d7ad62}.green{background:#82b58b}.readonly{margin-left:auto;text-transform:uppercase;letter-spacing:.14em;font-size:10px}.code-wrap{overflow:auto;max-height:72vh}.code-lines{min-width:760px;padding:1rem 0;font:14px/1.65 Consolas,'Cascadia Code',monospace;white-space:pre}.line{display:block}.ln{display:inline-block;width:5.5em;text-align:right;padding-right:1.3em;color:#4e7370;user-select:none}.code{color:#d9e3df}.source-meta{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0;color:#aebdb8}.source-meta span{border:1px solid rgba(180,210,205,.2);padding:.5rem .7rem}@media(max-width:700px){.source-page{padding:1rem}.code-lines{font-size:12px}}</style></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../records/ev-mod-analysis-mods-unified-loader-builder-blueprint-md.html">Record</a><a href="javascript:history.back()">â† Back</a></nav></header><main class="source-page"><a class="text-link" href="../records/ev-mod-analysis-mods-unified-loader-builder-blueprint-md.html">â† Record summary</a><p class="eyebrow">Read-only source view Â· mod-analysis</p><h1>Unified Loader Builder Blueprint</h1><p class="source-path">Original source: <code>mods\unified-loader-builder-blueprint.md</code></p><div class="source-meta"><span>Enshrouded 1.0.0.3</span><span>Build 39026384728</span><span>Format .md</span></div><section class="editor"><div class="editor-bar"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i><span>mods\unified-loader-builder-blueprint.md</span><span class="readonly">Read only</span></div><div class="code-wrap"><div class="code-lines"><span class="line"><span class="ln">0001</span><span class="code"># Unified Proxy and Multi-DLL Loader &#226;€” Builder&#39;s Blueprint</span></span>
+<span class="line"><span class="ln">0002</span><span class="code"></span></span>
+<span class="line"><span class="ln">0003</span><span class="code">## Objective</span></span>
+<span class="line"><span class="ln">0004</span><span class="code"></span></span>
+<span class="line"><span class="ln">0005</span><span class="code">Build one management tool that combines the useful parts of ModLoader Proxy and MultiDLL Installer while preserving ShroudForge&#39;s working DLL and loader path. The tool must provide ordered native-DLL loading, backups, configuration, validation, and reliable rollback.</span></span>
+<span class="line"><span class="ln">0006</span><span class="code"></span></span>
+<span class="line"><span class="ln">0007</span><span class="code">The tool should also install ordinary non-DLL mods, such as Lua, EML, configuration, and asset packages, using the same staging, preview, backup, and rollback process.</span></span>
+<span class="line"><span class="ln">0008</span><span class="code"></span></span>
+<span class="line"><span class="ln">0009</span><span class="code">## Primary requirement: preserve ShroudForge</span></span>
+<span class="line"><span class="ln">0010</span><span class="code"></span></span>
+<span class="line"><span class="ln">0011</span><span class="code">ShroudForge remains the primary loader in its profile. The tool must not replace or rename ShroudForge&#39;s DLL merely to add compatible native mods. Instead, it should load approved plugin DLLs beneath the existing ShroudForge/proxy chain and make the order visible before activation.</span></span>
+<span class="line"><span class="ln">0012</span><span class="code"></span></span>
+<span class="line"><span class="ln">0013</span><span class="code">The tool must classify every native DLL as one of:</span></span>
+<span class="line"><span class="ln">0014</span><span class="code"></span></span>
+<span class="line"><span class="ln">0015</span><span class="code">- **Compatible plugin:** can be loaded by the existing chain.</span></span>
+<span class="line"><span class="ln">0016</span><span class="code">- **Chainable proxy:** may be forwarded through a controlled proxy route after export and dependency validation.</span></span>
+<span class="line"><span class="ln">0017</span><span class="code">- **Standalone root loader:** wants to own the game&#39;s entry point and must be isolated in a separate profile unless a verified forwarding route exists.</span></span>
+<span class="line"><span class="ln">0018</span><span class="code">- **Unknown:** blocked until inspected.</span></span>
+<span class="line"><span class="ln">0019</span><span class="code"></span></span>
+<span class="line"><span class="ln">0020</span><span class="code">Non-native packages receive a separate deployment classification:</span></span>
+<span class="line"><span class="ln">0021</span><span class="code"></span></span>
+<span class="line"><span class="ln">0022</span><span class="code">- **Regular mod:** contains Lua, EML, configuration, or asset files and no root-loader DLL. It can be staged and copied to its declared game subfolder after path validation.</span></span>
+<span class="line"><span class="ln">0023</span><span class="code">- **Mixed package:** contains both regular mod files and native or root-loader files. It must be split into components and reviewed before deployment.</span></span>
+<span class="line"><span class="ln">0024</span><span class="code"></span></span>
+<span class="line"><span class="ln">0025</span><span class="code">### Category flow</span></span>
+<span class="line"><span class="ln">0026</span><span class="code"></span></span>
+<span class="line"><span class="ln">0027</span><span class="code">```mermaid</span></span>
+<span class="line"><span class="ln">0028</span><span class="code">flowchart TD</span></span>
+<span class="line"><span class="ln">0029</span><span class="code">    A[Native DLL] --&gt; B{Can it load under the current chain?}</span></span>
+<span class="line"><span class="ln">0030</span><span class="code">    B --&gt;|Yes, ordinary plugin| C[Compatible plugin\nLoad under ShroudForge]</span></span>
+<span class="line"><span class="ln">0031</span><span class="code">    B --&gt;|It forwards another DLL| D[Chainable proxy\nValidate exports and target]</span></span>
+<span class="line"><span class="ln">0032</span><span class="code">    B --&gt;|It wants the root entry point| E[Standalone root loader\nUse isolated profile]</span></span>
+<span class="line"><span class="ln">0033</span><span class="code">    B --&gt;|Cannot determine safely| F[Unknown\nBlock until inspected]</span></span>
+<span class="line"><span class="ln">0034</span><span class="code">```</span></span>
+<span class="line"><span class="ln">0035</span><span class="code"></span></span>
+<span class="line"><span class="ln">0036</span><span class="code">In practical terms:</span></span>
+<span class="line"><span class="ln">0037</span><span class="code"></span></span>
+<span class="line"><span class="ln">0038</span><span class="code">- **Compatible plugin** means the DLL is designed to be loaded by a loader and does not need to replace the game&#39;s root DLL. Creative, XHL plugins, and the M182 panel are examples in the current setup.</span></span>
+<span class="line"><span class="ln">0039</span><span class="code">- **Chainable proxy** means the DLL is itself a forwarding layer. It may be usable, but only after checking exports, forwarding targets, and load order.</span></span>
+<span class="line"><span class="ln">0040</span><span class="code">- **Standalone root loader** means the DLL expects to be the game&#39;s `dinput8.dll`, `winmm.dll`, or similar entry point. Shroudtopia and Stat Sliders are examples that should use isolated profiles.</span></span>
+<span class="line"><span class="ln">0041</span><span class="code">- **Unknown** means the package lacks enough evidence. The tool should refuse to activate it automatically rather than guess.</span></span>
+<span class="line"><span class="ln">0042</span><span class="code"></span></span>
+<span class="line"><span class="ln">0043</span><span class="code">## Recommended scope for version one</span></span>
+<span class="line"><span class="ln">0044</span><span class="code"></span></span>
+<span class="line"><span class="ln">0045</span><span class="code">Version one should manage native Windows DLL mods for single-player or private testing. It should not rewrite ShroudForge or EML configuration, inject Lua, or attempt to make incompatible standalone loaders chain automatically.</span></span>
+<span class="line"><span class="ln">0046</span><span class="code"></span></span>
+<span class="line"><span class="ln">0047</span><span class="code">## Core design</span></span>
+<span class="line"><span class="ln">0048</span><span class="code"></span></span>
+<span class="line"><span class="ln">0049</span><span class="code">1. **Root proxy** &#226;€” one supported game DLL name owns the game entry point and forwards all original exports; in the ShroudForge profile, this path must preserve ShroudForge.</span></span>
+<span class="line"><span class="ln">0050</span><span class="code">2. **Manifest-based mod list** &#226;€” each mod declares its DLL path, load order, dependencies, proxy status, and compatibility notes.</span></span>
+<span class="line"><span class="ln">0051</span><span class="code">3. **Ordered loader** &#226;€” explicit entries load first; dependency order is validated before launch and shown in a preview.</span></span>
+<span class="line"><span class="ln">0052</span><span class="code">4. **Standalone-loader detection** &#226;€” identify DLLs that expect to own the root entry point and require explicit confirmation or isolation.</span></span>
+<span class="line"><span class="ln">0053</span><span class="code">5. **Backup manager** &#226;€” create a timestamped backup of every root DLL and configuration file before changes, including the untouched ShroudForge files.</span></span>
+<span class="line"><span class="ln">0054</span><span class="code">6. **Health check** &#226;€” validate PE architecture, required exports, file presence, duplicate entries, and target paths before installation.</span></span>
+<span class="line"><span class="ln">0055</span><span class="code">7. **Recovery mode** &#226;€” restore the last known-good backup if launch fails or the user selects rollback.</span></span>
+<span class="line"><span class="ln">0056</span><span class="code">8. **Logging** &#226;€” record the selected profile, load order, forwarded target, DLL failures, and rollback actions.</span></span>
+<span class="line"><span class="ln">0057</span><span class="code">9. **Regular package deployment** &#226;€” copy validated non-DLL files into their declared destination, reject path traversal, and preserve the package&#39;s folder structure.</span></span>
+<span class="line"><span class="ln">0058</span><span class="code"></span></span>
+<span class="line"><span class="ln">0059</span><span class="code">## Profiles</span></span>
+<span class="line"><span class="ln">0060</span><span class="code"></span></span>
+<span class="line"><span class="ln">0061</span><span class="code">Use separate profiles instead of stacking incompatible loaders:</span></span>
+<span class="line"><span class="ln">0062</span><span class="code"></span></span>
+<span class="line"><span class="ln">0063</span><span class="code">- **ShroudForge profile:** current working proxy plus ShroudForge forwarding and approved native plugins. ShroudForge remains present and is never silently replaced.</span></span>
+<span class="line"><span class="ln">0064</span><span class="code">- **Standalone-loader profile:** an isolated profile for Shroudtopia, Stat Sliders, or another root-owning loader.</span></span>
+<span class="line"><span class="ln">0065</span><span class="code">- **Clean profile:** no mod proxy, used to verify the unmodified game.</span></span>
+<span class="line"><span class="ln">0066</span><span class="code"></span></span>
+<span class="line"><span class="ln">0067</span><span class="code">Only one profile should be active at a time.</span></span>
+<span class="line"><span class="ln">0068</span><span class="code"></span></span>
+<span class="line"><span class="ln">0069</span><span class="code">## Installation flow</span></span>
+<span class="line"><span class="ln">0070</span><span class="code"></span></span>
+<span class="line"><span class="ln">0071</span><span class="code">```mermaid</span></span>
+<span class="line"><span class="ln">0072</span><span class="code">flowchart TD</span></span>
+<span class="line"><span class="ln">0073</span><span class="code">    A[Research library] --&gt; B[Scan package]</span></span>
+<span class="line"><span class="ln">0074</span><span class="code">    B --&gt; C{Package type}</span></span>
+<span class="line"><span class="ln">0075</span><span class="code">    C --&gt;|Regular Lua/EML/assets| D[Validate destination paths]</span></span>
+<span class="line"><span class="ln">0076</span><span class="code">    C --&gt;|Compatible native plugin| E[Validate architecture, exports, and order]</span></span>
+<span class="line"><span class="ln">0077</span><span class="code">    C --&gt;|Root loader or mixed package| F[Quarantine for review]</span></span>
+<span class="line"><span class="ln">0078</span><span class="code">    D --&gt; G[Stage files]</span></span>
+<span class="line"><span class="ln">0079</span><span class="code">    E --&gt; G</span></span>
+<span class="line"><span class="ln">0080</span><span class="code">    F --&gt; H[Require separate profile or manual decision]</span></span>
+<span class="line"><span class="ln">0081</span><span class="code">    G --&gt; I[Show install preview]</span></span>
+<span class="line"><span class="ln">0082</span><span class="code">    I --&gt; J[Back up active game files]</span></span>
+<span class="line"><span class="ln">0083</span><span class="code">    J --&gt; K[Deploy selected profile]</span></span>
+<span class="line"><span class="ln">0084</span><span class="code">    K --&gt; L[Write logs and transaction record]</span></span>
+<span class="line"><span class="ln">0085</span><span class="code">    L --&gt; M{Launch succeeds?}</span></span>
+<span class="line"><span class="ln">0086</span><span class="code">    M --&gt;|Yes| N[Keep profile active]</span></span>
+<span class="line"><span class="ln">0087</span><span class="code">    M --&gt;|No| O[Restore previous backup]</span></span>
+<span class="line"><span class="ln">0088</span><span class="code">```</span></span>
+<span class="line"><span class="ln">0089</span><span class="code"></span></span>
+<span class="line"><span class="ln">0090</span><span class="code">In plain language:</span></span>
+<span class="line"><span class="ln">0091</span><span class="code"></span></span>
+<span class="line"><span class="ln">0092</span><span class="code">1. The tool treats the research folder as a library and never installs directly from an archive.</span></span>
+<span class="line"><span class="ln">0093</span><span class="code">2. It scans the package and classifies regular files, compatible plugins, root loaders, and mixed content.</span></span>
+<span class="line"><span class="ln">0094</span><span class="code">3. It stages only the selected files in a temporary profile.</span></span>
+<span class="line"><span class="ln">0095</span><span class="code">4. It validates destinations, architecture, exports, dependencies, and load order.</span></span>
+<span class="line"><span class="ln">0096</span><span class="code">5. It shows exactly what will be copied, replaced, or left untouched.</span></span>
+<span class="line"><span class="ln">0097</span><span class="code">6. After confirmation, it backs up the active game files and deploys the profile.</span></span>
+<span class="line"><span class="ln">0098</span><span class="code">7. It records the transaction and loader output.</span></span>
+<span class="line"><span class="ln">0099</span><span class="code">8. If launch validation fails, it restores the previous profile.</span></span>
+<span class="line"><span class="ln">0100</span><span class="code"></span></span>
+<span class="line"><span class="ln">0101</span><span class="code">## Detailed architecture walkthrough</span></span>
+<span class="line"><span class="ln">0102</span><span class="code"></span></span>
+<span class="line"><span class="ln">0103</span><span class="code">### 1. Three storage areas</span></span>
+<span class="line"><span class="ln">0104</span><span class="code"></span></span>
+<span class="line"><span class="ln">0105</span><span class="code">```mermaid</span></span>
+<span class="line"><span class="ln">0106</span><span class="code">flowchart LR</span></span>
+<span class="line"><span class="ln">0107</span><span class="code">    A[Research library\nZIPs, extracted mods, reports] --&gt; B[Staging area\nselected profile under review]</span></span>
+<span class="line"><span class="ln">0108</span><span class="code">    B --&gt; C[Active game installation\nonly validated files]</span></span>
+<span class="line"><span class="ln">0109</span><span class="code">    C --&gt; D[Backup store\nprevious active state]</span></span>
+<span class="line"><span class="ln">0110</span><span class="code">```</span></span>
+<span class="line"><span class="ln">0111</span><span class="code"></span></span>
+<span class="line"><span class="ln">0112</span><span class="code">The research library is never treated as the live installation. The staging area is disposable and lets the tool inspect and assemble a profile before touching the game. The backup store preserves the previous active state for rollback.</span></span>
+<span class="line"><span class="ln">0113</span><span class="code"></span></span>
+<span class="line"><span class="ln">0114</span><span class="code">### 2. Package classification</span></span>
+<span class="line"><span class="ln">0115</span><span class="code"></span></span>
+<span class="line"><span class="ln">0116</span><span class="code">```mermaid</span></span>
+<span class="line"><span class="ln">0117</span><span class="code">flowchart TD</span></span>
+<span class="line"><span class="ln">0118</span><span class="code">    A[Package] --&gt; B[Read archive entries and manifests]</span></span>
+<span class="line"><span class="ln">0119</span><span class="code">    B --&gt; C{Contains root DLL?}</span></span>
+<span class="line"><span class="ln">0120</span><span class="code">    C --&gt;|Yes| D[Standalone or mixed loader package]</span></span>
+<span class="line"><span class="ln">0121</span><span class="code">    C --&gt;|No| E{Contains native plugin DLL?}</span></span>
+<span class="line"><span class="ln">0122</span><span class="code">    E --&gt;|Yes| F[Native plugin candidate]</span></span>
+<span class="line"><span class="ln">0123</span><span class="code">    E --&gt;|No| G[Regular Lua/EML/config/asset mod]</span></span>
+<span class="line"><span class="ln">0124</span><span class="code">    D --&gt; H[Isolate or require explicit review]</span></span>
+<span class="line"><span class="ln">0125</span><span class="code">    F --&gt; I[Check architecture, exports, dependencies]</span></span>
+<span class="line"><span class="ln">0126</span><span class="code">    G --&gt; J[Check destination paths and manifest]</span></span>
+<span class="line"><span class="ln">0127</span><span class="code">```</span></span>
+<span class="line"><span class="ln">0128</span><span class="code"></span></span>
+<span class="line"><span class="ln">0129</span><span class="code">### 3. ShroudForge-preserving load chain</span></span>
+<span class="line"><span class="ln">0130</span><span class="code"></span></span>
+<span class="line"><span class="ln">0131</span><span class="code">```mermaid</span></span>
+<span class="line"><span class="ln">0132</span><span class="code">flowchart LR</span></span>
+<span class="line"><span class="ln">0133</span><span class="code">    A[Enshrouded] --&gt; B[Root proxy]</span></span>
+<span class="line"><span class="ln">0134</span><span class="code">    B --&gt; C[ShroudForge DLL]</span></span>
+<span class="line"><span class="ln">0135</span><span class="code">    C --&gt; D[Approved native plugins]</span></span>
+<span class="line"><span class="ln">0136</span><span class="code">    C --&gt; E[EML/Lua mods in game mods folder]</span></span>
+<span class="line"><span class="ln">0137</span><span class="code">    B --&gt; F[Forwarded system DLL exports]</span></span>
+<span class="line"><span class="ln">0138</span><span class="code">    G[Standalone loader] -. separate profile only .-&gt; H[Alternate root]</span></span>
+<span class="line"><span class="ln">0139</span><span class="code">```</span></span>
+<span class="line"><span class="ln">0140</span><span class="code"></span></span>
+<span class="line"><span class="ln">0141</span><span class="code">The normal profile keeps ShroudForge in the chain. A standalone loader is not inserted as an ordinary child plugin; it belongs to a separate profile unless a verified forwarding arrangement exists.</span></span>
+<span class="line"><span class="ln">0142</span><span class="code"></span></span>
+<span class="line"><span class="ln">0143</span><span class="code">### 4. Preview and deployment transaction</span></span>
+<span class="line"><span class="ln">0144</span><span class="code"></span></span>
+<span class="line"><span class="ln">0145</span><span class="code">```mermaid</span></span>
+<span class="line"><span class="ln">0146</span><span class="code">sequenceDiagram</span></span>
+<span class="line"><span class="ln">0147</span><span class="code">    participant U as User</span></span>
+<span class="line"><span class="ln">0148</span><span class="code">    participant T as Manager</span></span>
+<span class="line"><span class="ln">0149</span><span class="code">    participant S as Staging</span></span>
+<span class="line"><span class="ln">0150</span><span class="code">    participant G as Game folder</span></span>
+<span class="line"><span class="ln">0151</span><span class="code">    U-&gt;&gt;T: Select profile and mods</span></span>
+<span class="line"><span class="ln">0152</span><span class="code">    T-&gt;&gt;S: Assemble validated files</span></span>
+<span class="line"><span class="ln">0153</span><span class="code">    T-&gt;&gt;U: Show copy, replace, skip, and blocked items</span></span>
+<span class="line"><span class="ln">0154</span><span class="code">    U-&gt;&gt;T: Confirm</span></span>
+<span class="line"><span class="ln">0155</span><span class="code">    T-&gt;&gt;G: Create backup transaction</span></span>
+<span class="line"><span class="ln">0156</span><span class="code">    T-&gt;&gt;G: Deploy regular files and approved plugins</span></span>
+<span class="line"><span class="ln">0157</span><span class="code">    T-&gt;&gt;G: Write loader configuration</span></span>
+<span class="line"><span class="ln">0158</span><span class="code">    T-&gt;&gt;U: Report profile and log location</span></span>
+<span class="line"><span class="ln">0159</span><span class="code">    U-&gt;&gt;T: Report launch result</span></span>
+<span class="line"><span class="ln">0160</span><span class="code">    alt Launch succeeds</span></span>
+<span class="line"><span class="ln">0161</span><span class="code">        T-&gt;&gt;T: Mark transaction known-good</span></span>
+<span class="line"><span class="ln">0162</span><span class="code">    else Launch fails</span></span>
+<span class="line"><span class="ln">0163</span><span class="code">        T-&gt;&gt;G: Restore previous transaction</span></span>
+<span class="line"><span class="ln">0164</span><span class="code">        T-&gt;&gt;U: Report rollback</span></span>
+<span class="line"><span class="ln">0165</span><span class="code">    end</span></span>
+<span class="line"><span class="ln">0166</span><span class="code">```</span></span>
+<span class="line"><span class="ln">0167</span><span class="code"></span></span>
+<span class="line"><span class="ln">0168</span><span class="code">## Milestones</span></span>
+<span class="line"><span class="ln">0169</span><span class="code"></span></span>
+<span class="line"><span class="ln">0170</span><span class="code">### Milestone 1 &#226;€” Read-only scanner</span></span>
+<span class="line"><span class="ln">0171</span><span class="code"></span></span>
+<span class="line"><span class="ln">0172</span><span class="code">Inventory the game root and mod folders. Report DLL architecture, exports, likely proxy behavior, manifests, duplicates, and missing dependencies. Make no changes.</span></span>
+<span class="line"><span class="ln">0173</span><span class="code"></span></span>
+<span class="line"><span class="ln">0174</span><span class="code">### Milestone 2 &#226;€” Configuration generator</span></span>
+<span class="line"><span class="ln">0175</span><span class="code"></span></span>
+<span class="line"><span class="ln">0176</span><span class="code">Generate a proxy configuration and ordered DLL list from a validated manifest. Display a preview and require explicit confirmation before writing.</span></span>
+<span class="line"><span class="ln">0177</span><span class="code"></span></span>
+<span class="line"><span class="ln">0178</span><span class="code">### Milestone 3 &#226;€” Backup and rollback</span></span>
+<span class="line"><span class="ln">0179</span><span class="code"></span></span>
+<span class="line"><span class="ln">0180</span><span class="code">Create recoverable backups, write a transaction record, and restore the previous state if validation or launch checks fail.</span></span>
+<span class="line"><span class="ln">0181</span><span class="code"></span></span>
+<span class="line"><span class="ln">0182</span><span class="code">### Milestone 4 &#226;€” Profile switching</span></span>
+<span class="line"><span class="ln">0183</span><span class="code"></span></span>
+<span class="line"><span class="ln">0184</span><span class="code">Add ShroudForge, standalone-loader, and clean profiles. Switching profiles must close the game, back up the current state, and verify the new root files.</span></span>
+<span class="line"><span class="ln">0185</span><span class="code"></span></span>
+<span class="line"><span class="ln">0186</span><span class="code">### Milestone 5 &#226;€” Launch diagnostics</span></span>
+<span class="line"><span class="ln">0187</span><span class="code"></span></span>
+<span class="line"><span class="ln">0188</span><span class="code">Capture loader logs, identify the first failed DLL, and provide a one-click rollback without attempting unsafe automatic repairs.</span></span>
+<span class="line"><span class="ln">0189</span><span class="code"></span></span>
+<span class="line"><span class="ln">0190</span><span class="code">## Major risks</span></span>
+<span class="line"><span class="ln">0191</span><span class="code"></span></span>
+<span class="line"><span class="ln">0192</span><span class="code">- Incorrect export forwarding can prevent the game from starting.</span></span>
+<span class="line"><span class="ln">0193</span><span class="code">- Loading a standalone `dinput8.dll`, `winmm.dll`, or similar as an ordinary plugin can crash or silently fail.</span></span>
+<span class="line"><span class="ln">0194</span><span class="code">- DLL load order may affect hooks and shared dependencies.</span></span>
+<span class="line"><span class="ln">0195</span><span class="code">- Game updates can invalidate native signatures even when the loader itself still works.</span></span>
+<span class="line"><span class="ln">0196</span><span class="code">- Multiplayer and anti-cheat compatibility must remain out of scope unless separately verified.</span></span>
+<span class="line"><span class="ln">0197</span><span class="code"></span></span>
+<span class="line"><span class="ln">0198</span><span class="code">## Success criteria</span></span>
+<span class="line"><span class="ln">0199</span><span class="code"></span></span>
+<span class="line"><span class="ln">0200</span><span class="code">The first useful release should be able to scan the installation, produce a clear load plan, create a backup, activate one validated native-mod profile, write a complete log, and restore the previous profile without deleting user files.</span></span>
+<span class="line"><span class="ln">0201</span><span class="code"></span></span>
+<span class="line"><span class="ln">0202</span><span class="code">## Implementation note</span></span>
+<span class="line"><span class="ln">0203</span><span class="code"></span></span>
+<span class="line"><span class="ln">0204</span><span class="code">The existing ModLoader Proxy and MultiDLL Installer research is sufficient to define the behavior and safety boundaries, but not enough to claim binary compatibility with every loader. The new tool should begin as a profile manager around the proven proxy behavior, then add features only after each one is tested in an isolated profile.</span></span>
+<span class="line"><span class="ln">0205</span><span class="code"></span></span>
+<span class="line"><span class="ln">0206</span><span class="code">## Client import finding</span></span>
+<span class="line"><span class="ln">0207</span><span class="code"></span></span>
+<span class="line"><span class="ln">0208</span><span class="code">The current Enshrouded client executable imports `winmm.dll` and `dbghelp.dll`, but the inspected executable does not import `powrprof.dll`. Therefore `powrprof.dll` should remain a dedicated-server or alternate-profile option for this installation. The working client profile should continue using its existing `dinput8.dll` arrangement unless a separate `winmm.dll` or `dbghelp.dll` profile is deliberately tested.</span></span>
+<span class="line"><span class="ln">0209</span><span class="code"></span></span></div></div></section></main><footer><span>EMBERVAULT / SOURCE VIEW</span><span>Read-only research</span></footer></body></html>

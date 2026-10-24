@@ -1,0 +1,107 @@
+﻿[
+    {
+        "record_type":  "adapter",
+        "records":  13,
+        "curated":  13,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "record_type":  "catalog",
+        "records":  11,
+        "curated":  11,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "record_type":  "loader",
+        "records":  3,
+        "curated":  3,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "record_type":  "method",
+        "records":  16,
+        "curated":  16,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "record_type":  "mod-analysis",
+        "records":  27,
+        "curated":  27,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "record_type":  "probe-documentation",
+        "records":  7,
+        "curated":  7,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "record_type":  "probe-manifest",
+        "records":  64,
+        "curated":  64,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "record_type":  "probe-source",
+        "records":  50,
+        "curated":  50,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "record_type":  "project-documentation",
+        "records":  7,
+        "curated":  7,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "record_type":  "project-metadata",
+        "records":  2,
+        "curated":  2,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "record_type":  "provenance",
+        "records":  1,
+        "curated":  1,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "record_type":  "report",
+        "records":  103,
+        "curated":  103,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "record_type":  "report-data",
+        "records":  27,
+        "curated":  27,
+        "review":  0,
+        "excluded":  0
+    },
+    {
+        "record_type":  "tool",
+        "records":  34,
+        "curated":  0,
+        "review":  34,
+        "excluded":  0
+    },
+    {
+        "record_type":  "unclassified",
+        "records":  567,
+        "curated":  0,
+        "review":  0,
+        "excluded":  567
+    }
+]

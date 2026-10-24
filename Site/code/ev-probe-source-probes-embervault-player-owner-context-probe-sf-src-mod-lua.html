@@ -1,0 +1,63 @@
+﻿<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mod Â· Source Â· EmberVault</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../dark.css"><style>body{background:#0a1718;color:#cbd2ce}.source-page{max-width:1250px;margin:0 auto;padding:2rem}.source-page h1{color:#e8dcc8}.source-path{color:#aebdb8}.editor{border:1px solid rgba(180,210,205,.25);border-radius:8px;overflow:hidden;background:#071113;box-shadow:0 18px 50px rgba(0,0,0,.25)}.editor-bar{background:#183133;border-bottom:1px solid rgba(180,210,205,.25);padding:.75rem 1rem;display:flex;gap:.55rem;align-items:center;font:12px Consolas,monospace;color:#adc3be}.dot{width:10px;height:10px;border-radius:50%;display:inline-block}.red{background:#d76e68}.yellow{background:#d7ad62}.green{background:#82b58b}.readonly{margin-left:auto;text-transform:uppercase;letter-spacing:.14em;font-size:10px}.code-wrap{overflow:auto;max-height:72vh}.code-lines{min-width:760px;padding:1rem 0;font:14px/1.65 Consolas,'Cascadia Code',monospace;white-space:pre}.line{display:block}.ln{display:inline-block;width:5.5em;text-align:right;padding-right:1.3em;color:#4e7370;user-select:none}.code{color:#d9e3df}.source-meta{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0;color:#aebdb8}.source-meta span{border:1px solid rgba(180,210,205,.2);padding:.5rem .7rem}@media(max-width:700px){.source-page{padding:1rem}.code-lines{font-size:12px}}</style></head><body><header class="topbar"><a class="brand" href="../index.html">EMBER<span>VAULT</span></a><nav><a href="../index.html">Welcome</a><a href="../library.html">Library</a><a href="../records/ev-probe-source-probes-embervault-player-owner-context-probe-sf-src-mod-lua.html">Record</a><a href="javascript:history.back()">â† Back</a></nav></header><main class="source-page"><a class="text-link" href="../records/ev-probe-source-probes-embervault-player-owner-context-probe-sf-src-mod-lua.html">â† Record summary</a><p class="eyebrow">Read-only source view Â· probe-source</p><h1>Mod</h1><p class="source-path">Original source: <code>probes\embervault_player_owner_context_probe_sf\src\mod.lua</code></p><div class="source-meta"><span>Enshrouded 1.0.0.3</span><span>Build 39026384728</span><span>Format .lua</span></div><section class="editor"><div class="editor-bar"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i><span>probes\embervault_player_owner_context_probe_sf\src\mod.lua</span><span class="readonly">Read only</span></div><div class="code-wrap"><div class="code-lines"><span class="line"><span class="ln">0001</span><span class="code">local done = false</span></span>
+<span class="line"><span class="ln">0002</span><span class="code">local attempts = 0</span></span>
+<span class="line"><span class="ln">0003</span><span class="code">local max_attempts = 90</span></span>
+<span class="line"><span class="ln">0004</span><span class="code"></span></span>
+<span class="line"><span class="ln">0005</span><span class="code">local function query(lines, label, component)</span></span>
+<span class="line"><span class="ln">0006</span><span class="code">  local ok, entities, reason = pcall(function()</span></span>
+<span class="line"><span class="ln">0007</span><span class="code">    return runtime.ecs.query(component)</span></span>
+<span class="line"><span class="ln">0008</span><span class="code">  end)</span></span>
+<span class="line"><span class="ln">0009</span><span class="code">  if not ok then</span></span>
+<span class="line"><span class="ln">0010</span><span class="code">    lines[#lines + 1] = label .. &quot;\tquery_error=&quot; .. tostring(entities)</span></span>
+<span class="line"><span class="ln">0011</span><span class="code">    return false</span></span>
+<span class="line"><span class="ln">0012</span><span class="code">  end</span></span>
+<span class="line"><span class="ln">0013</span><span class="code">  if entities == nil then</span></span>
+<span class="line"><span class="ln">0014</span><span class="code">    lines[#lines + 1] = label .. &quot;\tquery_unavailable=&quot; .. tostring(reason)</span></span>
+<span class="line"><span class="ln">0015</span><span class="code">    return true</span></span>
+<span class="line"><span class="ln">0016</span><span class="code">  end</span></span>
+<span class="line"><span class="ln">0017</span><span class="code">  lines[#lines + 1] = label .. &quot;\tcount=&quot; .. tostring(#entities)</span></span>
+<span class="line"><span class="ln">0018</span><span class="code">  for i = 1, math.min(#entities, 8) do</span></span>
+<span class="line"><span class="ln">0019</span><span class="code">    local entity = entities[i]</span></span>
+<span class="line"><span class="ln">0020</span><span class="code">    lines[#lines + 1] = label .. &quot;\tentity=&quot; .. tostring(entity)</span></span>
+<span class="line"><span class="ln">0021</span><span class="code">    local ok_fields, values, field_reason = pcall(function()</span></span>
+<span class="line"><span class="ln">0022</span><span class="code">      return runtime.ecs.read_fields(entity, component, {&quot;playerEntityId&quot;, &quot;ownerEntityId&quot;})</span></span>
+<span class="line"><span class="ln">0023</span><span class="code">    end)</span></span>
+<span class="line"><span class="ln">0024</span><span class="code">    if not ok_fields then</span></span>
+<span class="line"><span class="ln">0025</span><span class="code">      lines[#lines + 1] = label .. &quot;\tfields_error=&quot; .. tostring(values)</span></span>
+<span class="line"><span class="ln">0026</span><span class="code">    elseif values == nil then</span></span>
+<span class="line"><span class="ln">0027</span><span class="code">      lines[#lines + 1] = label .. &quot;\tfields_unavailable=&quot; .. tostring(field_reason)</span></span>
+<span class="line"><span class="ln">0028</span><span class="code">    else</span></span>
+<span class="line"><span class="ln">0029</span><span class="code">      lines[#lines + 1] = label .. &quot;\tplayerEntityId=&quot; .. tostring(values.playerEntityId)</span></span>
+<span class="line"><span class="ln">0030</span><span class="code">      lines[#lines + 1] = label .. &quot;\townerEntityId=&quot; .. tostring(values.ownerEntityId)</span></span>
+<span class="line"><span class="ln">0031</span><span class="code">    end</span></span>
+<span class="line"><span class="ln">0032</span><span class="code">  end</span></span>
+<span class="line"><span class="ln">0033</span><span class="code">  return false</span></span>
+<span class="line"><span class="ln">0034</span><span class="code">end</span></span>
+<span class="line"><span class="ln">0035</span><span class="code"></span></span>
+<span class="line"><span class="ln">0036</span><span class="code">return {</span></span>
+<span class="line"><span class="ln">0037</span><span class="code">  update_interval_ms = 1000,</span></span>
+<span class="line"><span class="ln">0038</span><span class="code">  on_update = function()</span></span>
+<span class="line"><span class="ln">0039</span><span class="code">    if done then return end</span></span>
+<span class="line"><span class="ln">0040</span><span class="code">    attempts = attempts + 1</span></span>
+<span class="line"><span class="ln">0041</span><span class="code">    local ok, registry = pcall(function() return runtime.ecs.get_registry() end)</span></span>
+<span class="line"><span class="ln">0042</span><span class="code">    if (not ok or registry == nil) and attempts &lt; max_attempts then return end</span></span>
+<span class="line"><span class="ln">0043</span><span class="code">    local lines = {</span></span>
+<span class="line"><span class="ln">0044</span><span class="code">      &quot;schema_version=1&quot;,</span></span>
+<span class="line"><span class="ln">0045</span><span class="code">      &quot;probe_id=player-owner-context&quot;,</span></span>
+<span class="line"><span class="ln">0046</span><span class="code">      &quot;probe_version=1.0.1&quot;,</span></span>
+<span class="line"><span class="ln">0047</span><span class="code">      &quot;evidence_state=observed&quot;,</span></span>
+<span class="line"><span class="ln">0048</span><span class="code">      &quot;limitations=bounded read-only owner-context query; no entity dump, writes, saves, or native calls&quot;</span></span>
+<span class="line"><span class="ln">0049</span><span class="code">    }</span></span>
+<span class="line"><span class="ln">0050</span><span class="code">    local pending = false</span></span>
+<span class="line"><span class="ln">0051</span><span class="code">    pending = query(lines, &quot;player_input&quot;, &quot;keen::ecs::PlayerInput&quot;) or pending</span></span>
+<span class="line"><span class="ln">0052</span><span class="code">    pending = query(lines, &quot;client_player_input&quot;, &quot;keen::ecs::ClientPlayerInput&quot;) or pending</span></span>
+<span class="line"><span class="ln">0053</span><span class="code">    pending = query(lines, &quot;local_player_mask&quot;, &quot;keen::ecs::LocalPlayerMask&quot;) or pending</span></span>
+<span class="line"><span class="ln">0054</span><span class="code">    pending = query(lines, &quot;client_player_state&quot;, &quot;keen::ecs::ClientPlayerState&quot;) or pending</span></span>
+<span class="line"><span class="ln">0055</span><span class="code">    if pending and attempts &lt; max_attempts then return end</span></span>
+<span class="line"><span class="ln">0056</span><span class="code">    lines[#lines + 1] = &quot;writes\tnot_attempted&quot;</span></span>
+<span class="line"><span class="ln">0057</span><span class="code">    lines[#lines + 1] = &quot;saves\tnot_accessed&quot;</span></span>
+<span class="line"><span class="ln">0058</span><span class="code">    lines[#lines + 1] = &quot;native_calls\tnot_attempted&quot;</span></span>
+<span class="line"><span class="ln">0059</span><span class="code">    pcall(function() io.export(&quot;embervault/player-owner-context-v1.tsv&quot;, table.concat(lines, &quot;\n&quot;) .. &quot;\n&quot;) end)</span></span>
+<span class="line"><span class="ln">0060</span><span class="code">    done = true</span></span>
+<span class="line"><span class="ln">0061</span><span class="code">  end,</span></span>
+<span class="line"><span class="ln">0062</span><span class="code">}</span></span>
+<span class="line"><span class="ln">0063</span><span class="code"></span></span></div></div></section></main><footer><span>EMBERVAULT / SOURCE VIEW</span><span>Read-only research</span></footer></body></html>

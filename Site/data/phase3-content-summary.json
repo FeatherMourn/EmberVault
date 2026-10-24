@@ -1,0 +1,114 @@
+﻿[
+    {
+        "record_type":  "adapter",
+        "records":  13,
+        "audited":  13,
+        "manual_review":  0,
+        "verified_signals":  3,
+        "blocked_signals":  0
+    },
+    {
+        "record_type":  "catalog",
+        "records":  11,
+        "audited":  11,
+        "manual_review":  0,
+        "verified_signals":  0,
+        "blocked_signals":  0
+    },
+    {
+        "record_type":  "loader",
+        "records":  3,
+        "audited":  3,
+        "manual_review":  0,
+        "verified_signals":  3,
+        "blocked_signals":  0
+    },
+    {
+        "record_type":  "method",
+        "records":  16,
+        "audited":  16,
+        "manual_review":  0,
+        "verified_signals":  11,
+        "blocked_signals":  0
+    },
+    {
+        "record_type":  "mod-analysis",
+        "records":  27,
+        "audited":  27,
+        "manual_review":  0,
+        "verified_signals":  12,
+        "blocked_signals":  0
+    },
+    {
+        "record_type":  "probe-documentation",
+        "records":  7,
+        "audited":  7,
+        "manual_review":  0,
+        "verified_signals":  1,
+        "blocked_signals":  0
+    },
+    {
+        "record_type":  "probe-manifest",
+        "records":  64,
+        "audited":  64,
+        "manual_review":  0,
+        "verified_signals":  0,
+        "blocked_signals":  0
+    },
+    {
+        "record_type":  "probe-source",
+        "records":  50,
+        "audited":  50,
+        "manual_review":  0,
+        "verified_signals":  2,
+        "blocked_signals":  0
+    },
+    {
+        "record_type":  "project-documentation",
+        "records":  7,
+        "audited":  7,
+        "manual_review":  0,
+        "verified_signals":  6,
+        "blocked_signals":  0
+    },
+    {
+        "record_type":  "project-metadata",
+        "records":  2,
+        "audited":  2,
+        "manual_review":  0,
+        "verified_signals":  0,
+        "blocked_signals":  0
+    },
+    {
+        "record_type":  "provenance",
+        "records":  1,
+        "audited":  1,
+        "manual_review":  0,
+        "verified_signals":  1,
+        "blocked_signals":  0
+    },
+    {
+        "record_type":  "report",
+        "records":  103,
+        "audited":  103,
+        "manual_review":  0,
+        "verified_signals":  34,
+        "blocked_signals":  5
+    },
+    {
+        "record_type":  "report-data",
+        "records":  27,
+        "audited":  27,
+        "manual_review":  0,
+        "verified_signals":  6,
+        "blocked_signals":  1
+    },
+    {
+        "record_type":  "tool",
+        "records":  34,
+        "audited":  34,
+        "manual_review":  0,
+        "verified_signals":  0,
+        "blocked_signals":  6
+    }
+]
