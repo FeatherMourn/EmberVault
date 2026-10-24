@@ -28,5 +28,5 @@ Observed results:
 ## Performance conclusion
 
 The consolidated worker reduced the process to one world session and one export, but the broad inventory registry still required ECS readiness polling. The next optimization is to split the current worker into player-context, inventory-links, inventory-scan, and item-state workers backed by a shared read scheduler. The scheduler should deduplicate registry scans and let unrelated workers export independently.
-</pre></section></main></body></html>
+</pre></section></main><script src="../report-viewer.js"></script></body></html>
 

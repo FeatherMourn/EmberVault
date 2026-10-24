@@ -40,5 +40,5 @@ The first bounded ECS query completed after retrying the scan. No candidate comp
 Reflection identifies the strongest relationship-bearing fields as `keen::ecs::InventorySetup.linksEntities` and `keen::ecs::Inventory.slots`. Additional structured fields include `DefaultInventory.defaultInventory`, `Equipment.equipmentVisuals`, and `WeaponGemSlot.weaponGem`. The owner-link probe now samples those fields, plus conservative fallback names such as `ownerEntityId` and `playerEntityId`, from at most eight entities per component. The latest clean export read `ItemState.itemId` on eight samples but found no player matches; no ownership conclusion is made until the relationship-bearing fields are read successfully.
 
 The reflection schema resolves `InventorySetup.linksEntities` to a fixed array of `keen::ecs::EntityId`, whose scalar member is `id`. It resolves `Inventory.slots` to a fixed array of `keen::ItemStack`; each stack has an `id` and `ItemData` containing `count` and `pide`. The probe now checks bounded array members so an ownership match can be detected without exporting entity identifiers.
-</pre></section></main></body></html>
+</pre></section></main><script src="../report-viewer.js"></script></body></html>
 
