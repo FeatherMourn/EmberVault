@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_player_owner_context_retry_sf",
+  "name": "EmberVault player owner context probe",
+  "version": "1.0.1",
+  "description": "Bounded read-only probe for documented player input contexts and player-entity references.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_local_client_attributes_probe_sf",
+  "name": "EmberVault local client attributes probe",
+  "version": "1.0.1",
+  "description": "Read-only validation of the EmberVault fork local client attributes accessor.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

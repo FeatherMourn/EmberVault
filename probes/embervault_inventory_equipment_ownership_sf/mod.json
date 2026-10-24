@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_inventory_equipment_ownership_sf",
+  "name": "EmberVault inventory equipment ownership probe",
+  "version": "1.4.8",
+  "description": "Bounded ShroudForge-only read-only ownership probe.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

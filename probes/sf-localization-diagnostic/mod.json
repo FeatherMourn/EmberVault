@@ -1,0 +1,11 @@
+{
+  "$schema": "../../modules/modloader/manifest/manifest.schema.json",
+  "id": "sf-localization-diagnostic",
+  "name": "EmberVault Localization Diagnostic",
+  "version": "1.0.0",
+  "description": "Read-only ShroudForge diagnostic for localization probe activation.",
+  "authors": ["EmberVault"],
+  "license": null,
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

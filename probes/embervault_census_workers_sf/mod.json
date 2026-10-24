@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_census_workers_sf",
+  "name": "EmberVault Census Workers",
+  "version": "1.4.6",
+  "description": "Bounded read-only census workers for player context, inventory links, inventories, and equipment.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

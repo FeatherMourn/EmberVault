@@ -1,0 +1,8 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/extended.mod.schema.json",
+  "schemaVersion": 1,
+  "enabled": true,
+  "targets": ["client"],
+  "launcher": "SF",
+  "changelog": ["Guarded no-op write/readback/restore test; no visible value change."]
+}

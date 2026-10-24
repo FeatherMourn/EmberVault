@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_blueprint_field_probe_sf",
+  "name": "EmberVault blueprint field probe",
+  "version": "1.0.0",
+  "description": "Bounded read-only inspection of confirmed voxel blueprint resource fields.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

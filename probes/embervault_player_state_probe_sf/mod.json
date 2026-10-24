@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_player_state_probe_sf",
+  "name": "EmberVault player state probe",
+  "version": "1.0.0",
+  "description": "Read-only probe for player attributes, buffs, level, durability, abilities, and progression.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}
