@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "adapter_id": "embervault-resource-type",
+  "purpose": "Join EML-visible runtime resource type identifiers with local KFC resource metadata.",
+  "inputs": ["EML resource-type TSV export", "same-build KFC type and resource indexes"],
+  "outputs": ["runtime_type", "normalized_runtime_id", "status", "kfc_candidates", "evidence"],
+  "statuses": ["matched", "ambiguous", "unmatched"],
+  "matching_policy": {
+    "direct_name_match": "allowed only when namespaces are explicitly identical",
+    "hash_or_id_match": "requires a documented same-build mapping",
+    "unmatched": "retain as boundary evidence; do not infer absence"
+  },
+  "safety": {"read_only": true, "live_game_mutation": false, "raw_kfc_upload": false},
+  "limitations": ["EML Type identifiers may use a namespace different from KFC folder names.", "A zero direct-match result is not evidence that runtime types are absent from KFC.", "Bridge records require same-build provenance and an independently verified mapping."]
+}
