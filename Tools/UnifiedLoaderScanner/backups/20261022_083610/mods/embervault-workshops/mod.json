@@ -1,0 +1,10 @@
+{
+  "id": "embervault-workshops",
+  "name": "EmberVault Workshop Probe",
+  "version": "1.0.0",
+  "description": "Read-only EML probe for workshop and station registry data.",
+  "authors": ["EmberVault"],
+  "license": null,
+  "dependencies": [],
+  "capabilities": ["export"]
+}

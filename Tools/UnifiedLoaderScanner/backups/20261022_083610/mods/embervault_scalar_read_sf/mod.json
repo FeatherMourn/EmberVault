@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_scalar_read_sf",
+  "name": "EmberVault Scalar Read (read-only)",
+  "version": "1.0.0",
+  "description": "Reads selected live balance scalars and reports field paths without writing.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

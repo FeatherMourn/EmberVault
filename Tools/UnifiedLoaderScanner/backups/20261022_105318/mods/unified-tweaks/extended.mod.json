@@ -1,0 +1,1383 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/extended.mod.schema.json",
+  "schemaVersion": 1,
+  "enabled": true,
+  "targets": [
+    "client",
+    "server"
+  ],
+  "settings": {
+    "Enable_NoIntroVideo": {
+      "value": false,
+      "label": "Skip Intro Video",
+      "control": "toggle",
+      "description": "Skips the startup logo videos (Default: false)"
+    },
+    "Enable_PlayerItemLevelTweaks": {
+      "value": true,
+      "label": "Player / Item Level Tweaks",
+      "control": "toggle",
+      "description": "Master toggle for level caps (Default: false)"
+    },
+    "Enable_ItemLevelCapSync": {
+      "value": true,
+      "label": "Sync Item Level Cap",
+      "control": "toggle",
+      "description": "Syncs global item cap with individual item cap limits (Default: false)"
+    },
+    "PlayerLevelCap": {
+      "value": 100,
+      "label": "Player XP Cap Level",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Level at which the player stops earning XP (Default: 50)"
+    },
+    "ItemLevelCap": {
+      "value": 100,
+      "label": "Item Level Cap",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Maximum allowed item level (Default: 50)"
+    },
+    "SkillPointsPerLevel": {
+      "value": 6,
+      "label": "Skill Points Per Level",
+      "control": "number",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "description": "Amount of skill points acquired per level up (Default: 2)"
+    },
+    "Enable_ItemLevelMinimums": {
+      "value": true,
+      "label": "Item Level Minimums",
+      "control": "toggle",
+      "description": "Master switch to force dropped items to a minimum level (Default: false)"
+    },
+    "Enable_ItemLevelMin_Weapon": {
+      "value": true,
+      "label": "Min Level: Weapon",
+      "control": "toggle",
+      "description": "Force dropped weapons to a minimum level. Suggest 5 levels under max for in-game upgrades (Default: false)"
+    },
+    "ItemLevelMin_Weapon": {
+      "value": 55,
+      "label": "Weapon Min Level",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Min level for dropped weapons. Suggest 5 under max for upgrades (Default: varies)"
+    },
+    "Enable_ItemLevelMin_Armor": {
+      "value": true,
+      "label": "Min Level: Armor",
+      "control": "toggle",
+      "description": "Force dropped armor to a minimum level. Suggest 5 levels under max for in-game upgrades (Default: false)"
+    },
+    "ItemLevelMin_Armor": {
+      "value": 45,
+      "label": "Armor Min Level",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Min level for armor. Suggest 5 under max for upgrades (Default: varies)"
+    },
+    "Enable_ItemLevelMin_Shield": {
+      "value": true,
+      "label": "Min Level: Shield",
+      "control": "toggle",
+      "description": "Force dropped shields to a minimum level. Suggest 5 levels under max for in-game upgrades (Default: false)"
+    },
+    "ItemLevelMin_Shield": {
+      "value": 46,
+      "label": "Shield Min Level",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Min level for shields. Suggest 5 under max for upgrades (Default: varies)"
+    },
+    "Enable_ItemLevelMin_Gem": {
+      "value": true,
+      "label": "Min Level: Gem",
+      "control": "toggle",
+      "description": "Force dropped gems to a minimum level (Default: false)"
+    },
+    "ItemLevelMin_Gem": {
+      "value": 60,
+      "label": "Gem Min Level",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Min level for dropped gems (Default: varies)"
+    },
+    "Enable_ItemLevelMin_Ring": {
+      "value": false,
+      "label": "Min Level: Ring",
+      "control": "toggle",
+      "description": "Force dropped rings to a minimum level. Suggest 5 levels under max for in-game upgrades (Default: false)"
+    },
+    "ItemLevelMin_Ring": {
+      "value": 45,
+      "label": "Ring Min Level",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Min level for rings. Suggest 5 under max for upgrades (Default: varies)"
+    },
+    "Enable_ItemLevelMin_Spell": {
+      "value": false,
+      "label": "Min Level: Spell",
+      "control": "toggle",
+      "description": "Force dropped spells to a minimum level (Default: false)"
+    },
+    "ItemLevelMin_Spell": {
+      "value": 50,
+      "label": "Spell Min Level",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Min level for spells (Default: varies)"
+    },
+    "Enable_ItemLevelMin_Arrow": {
+      "value": false,
+      "label": "Min Level: Arrow",
+      "control": "toggle",
+      "description": "Force dropped arrows to a minimum level (Default: false)"
+    },
+    "ItemLevelMin_Arrow": {
+      "value": 50,
+      "label": "Arrow Min Level",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Min level for arrows (Default: varies)"
+    },
+    "Enable_ItemLevelMin_Tool": {
+      "value": false,
+      "label": "Min Level: Tool",
+      "control": "toggle",
+      "description": "Force dropped tools to a minimum level (Default: false)"
+    },
+    "ItemLevelMin_Tool": {
+      "value": 50,
+      "label": "Tool Min Level",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Min level for tools (Default: varies)"
+    },
+    "Enable_ItemLevelMin_Misc": {
+      "value": false,
+      "label": "Min Level: Misc",
+      "control": "toggle",
+      "description": "Force other leveled items to a minimum level (Default: false)"
+    },
+    "ItemLevelMin_Misc": {
+      "value": 50,
+      "label": "Misc Min Level",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Min level for miscellaneous items (Default: varies)"
+    },
+    "Enable_AttributeScaling": {
+      "value": true,
+      "label": "Attribute Scaling",
+      "control": "toggle",
+      "description": "Master switch for Attribute Scaling changes (Default: false)"
+    },
+    "AttributeScaling_HealthPerCon": {
+      "value": 100,
+      "label": "Health per Con",
+      "control": "number",
+      "min": 1,
+      "max": 500,
+      "step": 1,
+      "description": "Health per Constitution point (Default: 50)"
+    },
+    "AttributeScaling_ManaPerSpi": {
+      "value": 25,
+      "label": "Mana per Spirit",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Mana per Spirit point (Default: 20)"
+    },
+    "AttributeScaling_StaminaPerEnd": {
+      "value": 20,
+      "label": "Stamina per End",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Stamina per Endurance point (Default: 10)"
+    },
+    "AttributeScaling_DamagePerAttr": {
+      "value": "0.1",
+      "label": "Damage per Attr",
+      "control": "text",
+      "description": "Damage bonus per attribute point, 0.10 = 10% (Default: 0.05)"
+    },
+    "Enable_PlayerBaseStats": {
+      "value": true,
+      "label": "Player Base Stats",
+      "control": "toggle",
+      "description": "Master switch for base player stats (Default: false)"
+    },
+    "PlayerBase_Health": {
+      "value": 100,
+      "label": "Base Health",
+      "control": "number",
+      "min": 1,
+      "max": 10000,
+      "step": 1,
+      "description": "Base health before attributes (Default: 100)"
+    },
+    "PlayerBase_Mana": {
+      "value": 100,
+      "label": "Base Mana",
+      "control": "number",
+      "min": 1,
+      "max": 10000,
+      "step": 1,
+      "description": "Base mana before attributes (Default: 100)"
+    },
+    "PlayerBase_Stamina": {
+      "value": 100,
+      "label": "Base Stamina",
+      "control": "number",
+      "min": 1,
+      "max": 10000,
+      "step": 1,
+      "description": "Base stamina before attributes (Default: 100)"
+    },
+    "PlayerBase_Oxygen": {
+      "value": 30,
+      "label": "Base Oxygen",
+      "control": "number",
+      "min": 1,
+      "max": 300,
+      "step": 1,
+      "description": "Base underwater breath in seconds (Default: 30)"
+    },
+    "PlayerBase_FogResistance": {
+      "value": 240,
+      "label": "Base Shroud Time",
+      "control": "number",
+      "min": 1,
+      "max": 3600,
+      "step": 1,
+      "description": "Base shroud timer in seconds (Default: 240)"
+    },
+    "PlayerFog_PerFlameLevel": {
+      "value": 60,
+      "label": "Shroud Time per Flame",
+      "control": "number",
+      "min": 0,
+      "max": 600,
+      "step": 1,
+      "description": "Extra shroud time per flame level in seconds (Default: 60)"
+    },
+    "Enable_DamageTweaks": {
+      "value": false,
+      "label": "Weapon Damage Multipliers",
+      "control": "toggle",
+      "description": "Master switch for player damage multipliers (Default: false)"
+    },
+    "DamageMult_Melee1H": {
+      "value": "3.0",
+      "label": "Melee 1H Multiplier",
+      "control": "text",
+      "description": "Multiplies One-Handed Melee damage (Default: 1.0)"
+    },
+    "DamageMult_Melee2H": {
+      "value": "2.0",
+      "label": "Melee 2H Multiplier",
+      "control": "text",
+      "description": "Multiplies Two-Handed Melee damage (Default: 1.0)"
+    },
+    "DamageMult_Range": {
+      "value": "1.5",
+      "label": "Ranged Multiplier",
+      "control": "text",
+      "description": "Multiplies Bow/Ranged damage (Default: 1.0)"
+    },
+    "DamageMult_Wand": {
+      "value": "2.0",
+      "label": "Wand Multiplier",
+      "control": "text",
+      "description": "Multiplies Wand damage (Default: 1.0)"
+    },
+    "DamageMult_Arrow": {
+      "value": "1.5",
+      "label": "Arrow Damage Multiplier",
+      "control": "text",
+      "description": "Multiplies Arrow ammo damage (Default: 1.0)"
+    },
+    "DamageMult_Spell": {
+      "value": "2.0",
+      "label": "Spell Multiplier",
+      "control": "text",
+      "description": "Multiplies Magic Spell ammo damage (Default: 1.0)"
+    },
+    "Enable_ToolTweaks": {
+      "value": true,
+      "label": "Tool Damage Multipliers",
+      "control": "toggle",
+      "description": "Master switch for tool damage multipliers (Default: false)"
+    },
+    "ToolMult_Axe": {
+      "value": "2.0",
+      "label": "Axe Multiplier",
+      "control": "text",
+      "description": "Multiplies Wood damage specifically for Axes (Default: 1.0)"
+    },
+    "ToolMult_Pickaxe": {
+      "value": "1.0",
+      "label": "Pickaxe Multiplier",
+      "control": "text",
+      "description": "Multiplies Stone/Terrain damage specifically for Pickaxes (Default: 1.0)"
+    },
+    "Enable_SpellTweaks": {
+      "value": true,
+      "label": "Spell Tweaks",
+      "control": "toggle",
+      "description": "Master switch for spell casting adjustments (Default: false)"
+    },
+    "SpellCastTime_Multiplier": {
+      "value": "0.1",
+      "label": "Spell Cast Time Multiplier",
+      "control": "text",
+      "description": "Multiplies spell cast time, lower is faster (Default: 1.0) (enter decimal, e.g. 0.03)"
+    },
+    "RegenMult_Health": {
+      "value": "1.0",
+      "label": "Health Regen Multiplier",
+      "control": "text",
+      "description": "Multiplies health regeneration rate from gear (Default: 1.0)"
+    },
+    "RegenMult_Mana": {
+      "value": "1.0",
+      "label": "Mana Regen Multiplier",
+      "control": "text",
+      "description": "Multiplies mana regeneration rate from gear (Default: 1.0)"
+    },
+    "RegenMult_Stamina": {
+      "value": "1.0",
+      "label": "Stamina Regen Multiplier",
+      "control": "text",
+      "description": "Multiplies stamina regeneration rate from gear (Default: 1.0)"
+    },
+    "SpellManaCost_Multiplier": {
+      "value": "0.25",
+      "label": "Spell Mana Cost Multiplier",
+      "control": "text",
+      "description": "Multiplies spell mana cost, lower is cheaper (Default: 1.0) (enter decimal, e.g. 0.03)"
+    },
+    "Enable_BackpackTweaks": {
+      "value": true,
+      "label": "Backpack Tweaks",
+      "control": "toggle",
+      "description": "Master switch for overriding backpack slot sizes (Default: false)"
+    },
+    "Backpack_MaxSlots": {
+      "value": 60,
+      "label": "Backpack Max Slots",
+      "control": "number",
+      "min": 1,
+      "max": 200,
+      "step": 1,
+      "description": "Max slots for the backpack (Default: Varies by backpack)"
+    },
+    "Enable_StackSizeTweaks": {
+      "value": true,
+      "label": "Stack Size Tweaks",
+      "control": "toggle",
+      "description": "Master switch for overriding max stack limits (Default: false)"
+    },
+    "StackSize_MaxStack": {
+      "value": 65535,
+      "label": "Max Stack Size",
+      "control": "number",
+      "min": 1,
+      "max": 65535,
+      "step": 1,
+      "description": "Maximum possible item stack size across the board (Default: Varies by item)"
+    },
+    "Enable_ChestSizeTweaks": {
+      "value": true,
+      "label": "Chest Size Tweaks",
+      "control": "toggle",
+      "description": "Master switch for overriding chest storage capacity (Default: false)"
+    },
+    "Chest_MaxSlots": {
+      "value": 96,
+      "label": "Chest Max Slots",
+      "control": "number",
+      "min": 1,
+      "max": 500,
+      "step": 1,
+      "description": "Max slots for storage chests and factories (Default: Varies by chest)"
+    },
+    "Enable_MagicFurniture": {
+      "value": false,
+      "label": "Magic Furniture",
+      "control": "toggle",
+      "description": "Enables magic storage on standard decorative furniture (Default: false)"
+    },
+    "Enable_MagicFactories": {
+      "value": false,
+      "label": "Magic Factories",
+      "control": "toggle",
+      "description": "Enables magic storage on production buildings (Default: false)"
+    },
+    "Enable_LootTweaks": {
+      "value": true,
+      "label": "Loot Drop Multipliers",
+      "control": "toggle",
+      "description": "Master switch for loot drop multipliers (Default: false)"
+    },
+    "Loot_EquipmentDropMultiplier": {
+      "value": "1.0",
+      "label": "Equipment Drop Multiplier",
+      "control": "text",
+      "description": "Multiplier for duplicate weapons, armor, and shields. Base range varies (Default: 1.0)"
+    },
+    "Loot_ConsumableDropMultiplier": {
+      "value": "3.0",
+      "label": "Consumable Drop Multiplier",
+      "control": "text",
+      "description": "Multiplier for potions, spells, and food. Base range varies (Default: 1.0)"
+    },
+    "Loot_ArrowDropMultiplier": {
+      "value": "2.0",
+      "label": "Arrow Drop Multiplier",
+      "control": "text",
+      "description": "Multiplier for arrows and ammo. Base range varies (Default: 1.0)"
+    },
+    "Loot_GemDropMultiplier": {
+      "value": "1.0",
+      "label": "Gem Drop Multiplier",
+      "control": "text",
+      "description": "Multiplier for socketable gems. Base range varies (Default: 1.0)"
+    },
+    "Loot_ExplosiveDropMultiplier": {
+      "value": "1.0",
+      "label": "Explosive Drop Multiplier",
+      "control": "text",
+      "description": "Multiplier for grenades and explosives. Base range varies (e.g. 2-4) (Default: 1.0)"
+    },
+    "Loot_MaxStackSize": {
+      "value": 65535,
+      "label": "Loot Max Stack",
+      "control": "number",
+      "min": 1,
+      "max": 65535,
+      "step": 1,
+      "description": "Max stack size that can appear directly in loot tables (Default: 65535)"
+    },
+    "Enable_GemTweaks": {
+      "value": true,
+      "label": "Gem Tweaks",
+      "control": "toggle",
+      "description": "Master switch for gem probability and salvage tweaks (Default: false)"
+    },
+    "GemTweaks_SalvageRate": {
+      "value": "1.0",
+      "label": "Gem Salvage Rate",
+      "control": "text",
+      "description": "Ratio of material returned when salvaging gems (Default: 0.5)"
+    },
+    "GemTweaks_Probability_Common": {
+      "value": "1.0",
+      "label": "Gem Prob (Common)",
+      "control": "text",
+      "description": "Probability of a gem slot on common rarity items (Default: 0.0)"
+    },
+    "GemTweaks_Probability_Uncommon": {
+      "value": "1.0",
+      "label": "Gem Prob (Uncommon)",
+      "control": "text",
+      "description": "Probability of a gem slot on uncommon rarity items (Default: 0.05)"
+    },
+    "GemTweaks_Probability_Rare": {
+      "value": "1.0",
+      "label": "Gem Prob (Rare)",
+      "control": "text",
+      "description": "Probability of a gem slot on rare rarity items (Default: 0.25)"
+    },
+    "GemTweaks_Probability_Epic": {
+      "value": "1.0",
+      "label": "Gem Prob (Epic)",
+      "control": "text",
+      "description": "Probability of a gem slot on epic rarity items (Default: 0.5)"
+    },
+    "GemTweaks_Probability_Legendary": {
+      "value": "1.0",
+      "label": "Gem Prob (Legendary)",
+      "control": "text",
+      "description": "Probability of a gem slot on legendary rarity items (Default: 1.0)"
+    },
+    "Enable_CraftingTweaks": {
+      "value": true,
+      "label": "Crafting Tweaks",
+      "control": "toggle",
+      "description": "Master switch for crafting modifications (Default: false)"
+    },
+    "CraftingTweaks_UnlockAllRecipes": {
+      "value": false,
+      "label": "Unlock All Recipes",
+      "control": "toggle",
+      "description": "Temporarily unlocks all crafting recipes without requiring discovery (Default: false)"
+    },
+    "CraftingTweaks_CreativeMode": {
+      "value": false,
+      "label": "Creative Mode",
+      "control": "toggle",
+      "description": "Removes crafting material costs completely, making crafts free (Default: false)"
+    },
+    "CraftingTweaks_FreeFactories": {
+      "value": false,
+      "label": "Free Factories",
+      "control": "toggle",
+      "description": "Makes factory recipes free, independent of Creative Mode (Default: false)"
+    },
+    "CraftingTweaks_OutputMultiplier": {
+      "value": 2,
+      "label": "Crafting Output Multiplier",
+      "control": "number",
+      "description": "Increases crafted quantity yield, 2.0 = double output (Default: 1.0)",
+      "min": 1,
+      "max": 100,
+      "step": 1
+    },
+    "Enable_FastTravelTweaks": {
+      "value": true,
+      "label": "Fast Travel Tweaks",
+      "control": "toggle",
+      "description": "Master switch for adding fast travel points (Default: false)"
+    },
+    "FastTravel_FlameMarkers": {
+      "value": true,
+      "label": "Flame Markers",
+      "control": "toggle",
+      "description": "Enable fast travel to Flame Sanctums and Shrines (Default: false)"
+    },
+    "FastTravel_DungeonMarkers": {
+      "value": true,
+      "label": "Dungeon Markers",
+      "control": "toggle",
+      "description": "Enable fast travel to Dungeons and Hollow Halls (Default: false)"
+    },
+    "FastTravel_LocationMarkers": {
+      "value": true,
+      "label": "Location Markers",
+      "control": "toggle",
+      "description": "Enable fast travel to Towns, Mines, and Farms (Default: false)"
+    },
+    "FastTravel_None": {
+      "value": true,
+      "label": "Quest Markers",
+      "control": "toggle",
+      "description": "Enable fast travel to discovered Quest markers (Default: false)"
+    },
+    "Enable_FogOfWarTweaks": {
+      "value": true,
+      "label": "Fog of War Tweaks",
+      "control": "toggle",
+      "description": "Master switch for map discovery range (Default: false)"
+    },
+    "FogOfWar_Range": {
+      "value": 950,
+      "label": "Fog of War Range",
+      "control": "number",
+      "min": 50,
+      "max": 5000,
+      "step": 1,
+      "description": "Fog of war clearing radius on the map (Default: 300)"
+    },
+    "Enable_SkillTweaks_Updraft": {
+      "value": true,
+      "label": "Updraft Tweaks",
+      "control": "toggle",
+      "description": "Master switch for updraft skill edits (Default: false)"
+    },
+    "Updraft_IgnoreManaCost": {
+      "value": true,
+      "label": "Ignore Updraft Mana Cost",
+      "control": "toggle",
+      "description": "Disable Updraft mana cost completely (Default: false)"
+    },
+    "GroundRelative_Y": {
+      "value": "",
+      "label": "Ground Relative Y",
+      "description": "Absolute Y/Upwards thrust (Default: 22)",
+      "control": "text"
+    },
+    "Enable_SlopeTweaks": {
+      "value": false,
+      "label": "Slope Tweaks",
+      "control": "toggle",
+      "description": "Master switch for slope climbing and sliding angles (Default: false)"
+    },
+    "steepFloorAngle": {
+      "value": "89.0",
+      "label": "Steep Floor Angle",
+      "control": "text",
+      "description": "Angle at which terrain becomes difficult to walk up (Default: 45.0)"
+    },
+    "slidingAngle": {
+      "value": "89.0",
+      "label": "Sliding Angle",
+      "control": "text",
+      "description": "Angle at which you start sliding off terrain (Default: 55.0)"
+    },
+    "fallDamageAngle": {
+      "value": "89.0",
+      "label": "Fall Damage Angle",
+      "control": "text",
+      "description": "Angle at which fall damage calculation triggers when sliding (Default: 65.0)"
+    },
+    "Enable_FlameAltarTweaks": {
+      "value": true,
+      "label": "Flame Altar Tweaks",
+      "control": "toggle",
+      "description": "Master switch for flame altar capacity limits (Default: false)"
+    },
+    "MaxFlameAltars_Multiplier": {
+      "value": "2.0",
+      "label": "Flame Altar Multiplier",
+      "control": "text",
+      "description": "Multiplies buildable Flame Altars per flame level (Default: 1.0)"
+    },
+    "MaxFlameAltars_Cap": {
+      "value": 20,
+      "label": "Flame Altar Cap",
+      "control": "number",
+      "min": 1,
+      "max": 50,
+      "step": 1,
+      "description": "Hard cap for maximum Flame Altars possible (Default: 16)"
+    },
+    "Enable_BaseSizeTweaks": {
+      "value": false,
+      "label": "Base Size Tweaks",
+      "control": "toggle",
+      "description": "Master switch for build zone boundaries (Default: false)"
+    },
+    "BaseSize_Multiplier": {
+      "value": "2.0",
+      "label": "Base Size Multiplier",
+      "control": "text",
+      "description": "Multiplies X, Y, Z dimensions of Flame Altar build zones (Default: 1.0)"
+    },
+    "Enable_PlacementTweaks": {
+      "value": true,
+      "label": "Placement Tweaks",
+      "control": "toggle",
+      "description": "Master switch for building placement rules (Default: false)"
+    },
+    "Enable_BuildingTweaks": {
+      "value": true,
+      "label": "Remove No-Build Zones",
+      "control": "toggle",
+      "description": "Removes all \"No Build Zones\" from the game world (Default: false)"
+    },
+    "PlacementTweaks_BuildInFog": {
+      "value": true,
+      "label": "Build in Fog",
+      "control": "toggle",
+      "description": "Allows building placement directly inside Shroud fog (Default: false)"
+    },
+    "PlacementTweaks_NoBuildZoneNeeded": {
+      "value": true,
+      "label": "No Build Zone Needed",
+      "control": "toggle",
+      "description": "Allows placement anywhere outside Flame Altar zones (Default: false)"
+    },
+    "Enable_FogTweaks": {
+      "value": true,
+      "label": "Fog & Weather Tweaks",
+      "control": "toggle",
+      "description": "Master switch for fog visual density edits (Default: false)"
+    },
+    "Rain_Opacity": {
+      "value": "0.01",
+      "label": "Rain Opacity",
+      "control": "text",
+      "description": "Light penetration during rain (Default: 0.01)"
+    },
+    "Snow_Opacity": {
+      "value": "0.01",
+      "label": "Snow Opacity",
+      "control": "text",
+      "description": "Light penetration during snow (Default: 0.01)"
+    },
+    "Blizzard_Opacity": {
+      "value": "0.01",
+      "label": "Blizzard Opacity",
+      "control": "text",
+      "description": "Light penetration during blizzards (Default: 0.01)"
+    },
+    "Ambient_Fog_Density": {
+      "value": "6.0",
+      "label": "Ambient Fog Density",
+      "control": "text",
+      "description": "General environmental fog thickness (Default: 8.0)"
+    },
+    "Fog_M1_Density": {
+      "value": "0.3",
+      "label": "Fog Density",
+      "control": "text",
+      "description": "Standard fog density (Default: 0.3)"
+    },
+    "Fog_M1_Opacity": {
+      "value": "0.1",
+      "label": "Fog Opacity",
+      "control": "text",
+      "description": "Standard fog opacity (Default: 0.1)"
+    },
+    "HeightFog_Density": {
+      "value": "0.0012",
+      "label": "Height Fog Density",
+      "control": "text",
+      "description": "Fog density when looking down from high altitude (Default: 0.0012)"
+    },
+    "HeightFog_Opacity": {
+      "value": "0.15",
+      "label": "Height Fog Opacity",
+      "control": "text",
+      "description": "Light penetration when looking down from high altitude (Default: 0.15)"
+    },
+    "Shroud_Fog_Dangerous_Density": {
+      "value": "0.64",
+      "label": "Blue Shroud Density",
+      "control": "text",
+      "description": "Blue shroud thickness (Default: 1.0)"
+    },
+    "Shroud_Fog_Dangerous_Opacity": {
+      "value": "0.23",
+      "label": "Blue Shroud Opacity",
+      "control": "text",
+      "description": "Blue shroud light penetration (Default: 0.35)"
+    },
+    "Dangerous_Fog_Barrier_Exposed_Emissive_Intensity": {
+      "value": "0.1",
+      "label": "Blue Barrier Exposed",
+      "control": "text",
+      "description": "Brightness of outer edge of blue shroud (Default: 0.1)"
+    },
+    "Dangerous_Fog_Barrier_Emissive_Intensity": {
+      "value": "0.0",
+      "label": "Blue Barrier Emissive",
+      "control": "text",
+      "description": "Brightness of inner edge of blue shroud (Default: 0.0)"
+    },
+    "Dangerous_Fog_Barrier_Opacity": {
+      "value": "0.3",
+      "label": "Blue Barrier Opacity",
+      "control": "text",
+      "description": "Light penetration at blue shroud edge (Default: 0.3)"
+    },
+    "Dangerous_Fog_Barrier_Scatter_Boost": {
+      "value": "2.0",
+      "label": "Blue Barrier Scatter",
+      "control": "text",
+      "description": "Light diffusion at blue shroud edge (Default: 2.0)"
+    },
+    "Shroud_Fog_Deadly_Density": {
+      "value": "0.64",
+      "label": "Red Shroud Density",
+      "control": "text",
+      "description": "Red shroud thickness (Default: 1.0)"
+    },
+    "Shroud_Fog_Deadly_Opacity": {
+      "value": "0.23",
+      "label": "Red Shroud Opacity",
+      "control": "text",
+      "description": "Red shroud light penetration (Default: 0.5)"
+    },
+    "Deadly_Fog_Barrier_Exposed_Emissive_Intensity": {
+      "value": "0.2",
+      "label": "Red Barrier Exposed",
+      "control": "text",
+      "description": "Brightness of outer edge of red shroud (Default: 0.2)"
+    },
+    "Deadly_Fog_Barrier_Emissive_Intensity": {
+      "value": "0.0",
+      "label": "Red Barrier Emissive",
+      "control": "text",
+      "description": "Brightness of inner edge of red shroud (Default: 0.0)"
+    },
+    "Deadly_Fog_Barrier_Opacity": {
+      "value": "0.5",
+      "label": "Red Barrier Opacity",
+      "control": "text",
+      "description": "Light penetration at red shroud edge (Default: 0.5)"
+    },
+    "Deadly_Fog_Barrier_Scatter_Boost": {
+      "value": "2.0",
+      "label": "Red Barrier Scatter",
+      "control": "text",
+      "description": "Light diffusion at red shroud edge (Default: 2.0)"
+    },
+    "Enable_GliderTuning": {
+      "value": false,
+      "label": "Glider Tuning",
+      "control": "toggle",
+      "description": "Master switch for tuning glider physics (Default: false)"
+    },
+    "Glider_T1_accelerationForward": {
+      "value": "0.85",
+      "label": "T1 Acceleration",
+      "control": "text",
+      "description": "Forward acceleration (Higher = faster max speed) (Default: 0.8)"
+    },
+    "Glider_T1_airResistanceLongitudinal": {
+      "value": "0.32",
+      "label": "T1 Forward Friction",
+      "control": "text",
+      "description": "Forward air resistance (Higher = slower) (Default: 0.39)"
+    },
+    "Glider_T1_airResistanceLateral": {
+      "value": "2.0",
+      "label": "T1 Side Friction",
+      "control": "text",
+      "description": "Horizontal air resistance (Lower = more sliding) (Default: 1.8)"
+    },
+    "Glider_T1_airResistanceVertical": {
+      "value": "0.85",
+      "label": "T1 Vertical Resistance",
+      "control": "text",
+      "description": "Vertical resistance (Higher = lose altitude slower) (Default: 0.71)"
+    },
+    "Glider_T1_yawAngleSpeed": {
+      "value": "80.0",
+      "label": "T1 Turn Rate",
+      "control": "text",
+      "description": "Yaw turn speed (Higher = turn faster) (Default: 70.0)"
+    },
+    "Glider_T1_pitchAngleSpeed": {
+      "value": "90.0",
+      "label": "T1 Pitch Rate",
+      "control": "text",
+      "description": "Pitch up/down speed (Higher = pitch faster) (Default: 85.0)"
+    },
+    "Glider_T1_rollAngleSpeed": {
+      "value": "160.0",
+      "label": "T1 Roll Rate",
+      "control": "text",
+      "description": "Bank angle speed (Higher = steeper banks) (Default: 160.0)"
+    },
+    "Glider_T2_accelerationForward": {
+      "value": "0.95",
+      "label": "T2 Acceleration",
+      "control": "text",
+      "description": "Forward acceleration (Higher = faster max speed) (Default: 0.9)"
+    },
+    "Glider_T2_airResistanceLongitudinal": {
+      "value": "0.24",
+      "label": "T2 Forward Friction",
+      "control": "text",
+      "description": "Forward air resistance (Higher = slower) (Default: 0.26)"
+    },
+    "Glider_T2_airResistanceLateral": {
+      "value": "1.75",
+      "label": "T2 Side Friction",
+      "control": "text",
+      "description": "Horizontal air resistance (Lower = more sliding) (Default: 1.7)"
+    },
+    "Glider_T2_airResistanceVertical": {
+      "value": "1.35",
+      "label": "T2 Vertical Resistance",
+      "control": "text",
+      "description": "Vertical resistance (Higher = lose altitude slower) (Default: 0.95)"
+    },
+    "Glider_T2_yawAngleSpeed": {
+      "value": "70.0",
+      "label": "T2 Turn Rate",
+      "control": "text",
+      "description": "Yaw turn speed (Higher = turn faster) (Default: 65.0)"
+    },
+    "Glider_T2_pitchAngleSpeed": {
+      "value": "85.0",
+      "label": "T2 Pitch Rate",
+      "control": "text",
+      "description": "Pitch up/down speed (Higher = pitch faster) (Default: 80.0)"
+    },
+    "Glider_T2_rollAngleSpeed": {
+      "value": "165.0",
+      "label": "T2 Roll Rate",
+      "control": "text",
+      "description": "Bank angle speed (Higher = steeper banks) (Default: 155.0)"
+    },
+    "Glider_T3_accelerationForward": {
+      "value": "1.0",
+      "label": "T3 Acceleration",
+      "control": "text",
+      "description": "Forward acceleration (Higher = faster max speed) (Default: 1.0)"
+    },
+    "Glider_T3_airResistanceLongitudinal": {
+      "value": "0.16",
+      "label": "T3 Forward Friction",
+      "control": "text",
+      "description": "Forward air resistance (Higher = slower) (Default: 0.215)"
+    },
+    "Glider_T3_airResistanceLateral": {
+      "value": "1.5",
+      "label": "T3 Side Friction",
+      "control": "text",
+      "description": "Horizontal air resistance (Lower = more sliding) (Default: 1.6)"
+    },
+    "Glider_T3_airResistanceVertical": {
+      "value": "1.85",
+      "label": "T3 Vertical Resistance",
+      "control": "text",
+      "description": "Vertical resistance (Higher = lose altitude slower) (Default: 1.6)"
+    },
+    "Glider_T3_yawAngleSpeed": {
+      "value": "60.0",
+      "label": "T3 Turn Rate",
+      "control": "text",
+      "description": "Yaw turn speed (Higher = turn faster) (Default: 60.0)"
+    },
+    "Glider_T3_pitchAngleSpeed": {
+      "value": "80.0",
+      "label": "T3 Pitch Rate",
+      "control": "text",
+      "description": "Pitch up/down speed (Higher = pitch faster) (Default: 75.0)"
+    },
+    "Glider_T3_rollAngleSpeed": {
+      "value": "150.0",
+      "label": "T3 Roll Rate",
+      "control": "text",
+      "description": "Bank angle speed (Higher = steeper banks) (Default: 150.0)"
+    },
+    "Glider_T4_REWARD_accelerationForward": {
+      "value": "1.0",
+      "label": "T4 Acceleration",
+      "control": "text",
+      "description": "Forward acceleration (Higher = faster max speed) (Default: 1.0)"
+    },
+    "Glider_T4_REWARD_airResistanceLongitudinal": {
+      "value": "0.08",
+      "label": "T4 Forward Friction",
+      "control": "text",
+      "description": "Forward air resistance (Higher = slower) (Default: 0.155)"
+    },
+    "Glider_T4_REWARD_airResistanceLateral": {
+      "value": "1.25",
+      "label": "T4 Side Friction",
+      "control": "text",
+      "description": "Horizontal air resistance (Lower = more sliding) (Default: 1.5)"
+    },
+    "Glider_T4_REWARD_airResistanceVertical": {
+      "value": "2.35",
+      "label": "T4 Vertical Resistance",
+      "control": "text",
+      "description": "Vertical resistance (Higher = lose altitude slower) (Default: 3.0)"
+    },
+    "Glider_T4_REWARD_yawAngleSpeed": {
+      "value": "50.0",
+      "label": "T4 Turn Rate",
+      "control": "text",
+      "description": "Yaw turn speed (Higher = turn faster) (Default: 55.0)"
+    },
+    "Glider_T4_REWARD_pitchAngleSpeed": {
+      "value": "75.0",
+      "label": "T4 Pitch Rate",
+      "control": "text",
+      "description": "Pitch up/down speed (Higher = pitch faster) (Default: 70.0)"
+    },
+    "Glider_T4_REWARD_rollAngleSpeed": {
+      "value": "145.0",
+      "label": "T4 Roll Rate",
+      "control": "text",
+      "description": "Bank angle speed (Higher = steeper banks) (Default: 100.0)"
+    },
+    "MakeUnbreakableBreakable": {
+      "value": true,
+      "label": "Make Unbreakable Materials Breakable",
+      "control": "toggle",
+      "description": "Changes Unbreakable terrain materials to Hard so they can be broken (Default: false)"
+    },
+    "Enable_TerrainDropTweaks": {
+      "value": true,
+      "label": "Terrain Drop Tweaks",
+      "control": "toggle",
+      "description": "Enables terrain item drop modification per voxel (Default: false)"
+    },
+    "TerrainDrop_ExchangeRate": {
+      "value": "1.0",
+      "label": "Terrain Drop Rate",
+      "control": "text",
+      "description": "1.0 = Full drop rate per voxel. 0.5 = half drop rate. Max 1.0 (Default: 0.2)"
+    },
+    "Enable_ExpandedGameSettings": {
+      "value": false,
+      "label": "Expanded Difficulty Sliders",
+      "control": "toggle",
+      "description": "Master switch for detailed difficulty sliders (Default: false)"
+    },
+    "EGS_Standard": {
+      "value": "0.10, 0.25, 0.50, 0.75, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0",
+      "label": "Standard Array",
+      "control": "text",
+      "description": "Comma-separated difficulty multipliers (e.g. 0.1, 0.5, 1.0, 2.0)"
+    },
+    "EGS_XP": {
+      "value": "0.00, 0.10, 0.25, 0.50, 0.75, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0",
+      "label": "XP Array",
+      "control": "text",
+      "description": "Comma-separated XP multipliers (e.g. 0.0, 0.5, 1.0, 2.0)"
+    },
+    "EGS_Time": {
+      "value": "1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 20.0, 30.0, 45.0, 60.0, 120.0, 180.0, 240.0, 360.0, 480.0",
+      "label": "Time Array",
+      "control": "text",
+      "description": "Comma-separated time values in minutes (e.g. 1.0, 5.0, 10.0, 30.0)"
+    },
+    "GroundRelative_X": {
+      "value": "",
+      "label": "Ground Relative X",
+      "description": "Absolute X direction thrust (Default: nil)",
+      "control": "text"
+    },
+    "GroundRelative_Z": {
+      "value": "",
+      "label": "Ground Relative Z",
+      "description": "Absolute Z/Forward thrust (Default: nil)",
+      "control": "text"
+    },
+    "PlayerRelative_X": {
+      "value": "",
+      "label": "Player Relative X",
+      "description": "Right/Left thrust relative to player yaw/roll (Default: nil)",
+      "control": "text"
+    },
+    "PlayerRelative_Y": {
+      "value": "",
+      "label": "Player Relative Y",
+      "description": "Up/Down thrust relative to player pitch/yaw (Default: 0)",
+      "control": "text"
+    },
+    "PlayerRelative_Z": {
+      "value": "",
+      "label": "Player Relative Z",
+      "description": "Forward/Backward thrust relative to player pitch/yaw (Default: nil)",
+      "control": "text"
+    },
+    "Boost_Duration": {
+      "value": "",
+      "label": "Boost Duration",
+      "description": "Duration of the updraft boost in seconds (Default: 2.25)",
+      "control": "text"
+    },
+    "Updraft_ManaCost_Value": {
+      "value": "",
+      "label": "Updraft Mana Cost",
+      "description": "Manually override Updraft mana cost value (Default: nil)",
+      "control": "text"
+    },
+    "CraftingTweaks_FreeFlameAltar": {
+      "value": false,
+      "label": "Free Flame Altar Upgrades",
+      "control": "toggle",
+      "description": "Makes Flame Altar upgrades free, independent of Creative Mode (Default: false)"
+    },
+    "CraftingTweaks_FreeFood": {
+      "value": true,
+      "label": "Free Food Crafting",
+      "control": "toggle",
+      "description": "Makes food and fish recipes free, independent of Creative Mode (Default: false)"
+    },
+    "Enable_GearStatTweaks": {
+      "value": true,
+      "label": "Gear Stat Tweaks",
+      "control": "toggle",
+      "description": "Master toggle for gear stat multipliers (Default: false)"
+    },
+    "GearMult_HealthBonus": {
+      "value": "1.0",
+      "label": "Health Bonus Multiplier",
+      "control": "text",
+      "description": "Multiplier for health bonuses on gear (Default: 1.0)"
+    },
+    "GearMult_StaminaBonus": {
+      "value": "1.0",
+      "label": "Stamina Bonus Multiplier",
+      "control": "text",
+      "description": "Multiplier for stamina bonuses on gear (Default: 1.0)"
+    },
+    "GearMult_ManaBonus": {
+      "value": "1.0",
+      "label": "Mana Bonus Multiplier",
+      "control": "text",
+      "description": "Multiplier for mana bonuses on gear (Default: 1.0)"
+    }
+  },
+  "groups": [
+    {
+      "label": "Cinematics",
+      "settings": [
+        "Enable_NoIntroVideo"
+      ]
+    },
+    {
+      "label": "Levels & Progression",
+      "settings": [
+        "Enable_PlayerItemLevelTweaks",
+        "Enable_ItemLevelCapSync",
+        "PlayerLevelCap",
+        "ItemLevelCap",
+        "SkillPointsPerLevel",
+        "Enable_AttributeScaling",
+        "AttributeScaling_HealthPerCon",
+        "AttributeScaling_ManaPerSpi",
+        "AttributeScaling_StaminaPerEnd",
+        "AttributeScaling_DamagePerAttr"
+      ]
+    },
+    {
+      "label": "Player Base Stats",
+      "settings": [
+        "Enable_PlayerBaseStats",
+        "PlayerBase_Health",
+        "PlayerBase_Mana",
+        "PlayerBase_Stamina",
+        "PlayerBase_Oxygen",
+        "PlayerBase_FogResistance",
+        "PlayerFog_PerFlameLevel"
+      ]
+    },
+    {
+      "label": "Item Level Minimums",
+      "settings": [
+        "Enable_ItemLevelMinimums",
+        "Enable_ItemLevelMin_Weapon",
+        "ItemLevelMin_Weapon",
+        "Enable_ItemLevelMin_Armor",
+        "ItemLevelMin_Armor",
+        "Enable_ItemLevelMin_Shield",
+        "ItemLevelMin_Shield",
+        "Enable_ItemLevelMin_Gem",
+        "ItemLevelMin_Gem",
+        "Enable_ItemLevelMin_Ring",
+        "ItemLevelMin_Ring",
+        "Enable_ItemLevelMin_Spell",
+        "ItemLevelMin_Spell",
+        "Enable_ItemLevelMin_Arrow",
+        "ItemLevelMin_Arrow",
+        "Enable_ItemLevelMin_Tool",
+        "ItemLevelMin_Tool",
+        "Enable_ItemLevelMin_Misc",
+        "ItemLevelMin_Misc"
+      ]
+    },
+    {
+      "label": "Combat & Tools",
+      "settings": [
+        "Enable_DamageTweaks",
+        "DamageMult_Melee1H",
+        "DamageMult_Melee2H",
+        "DamageMult_Range",
+        "DamageMult_Wand",
+        "DamageMult_Arrow",
+        "DamageMult_Spell",
+        "Enable_ToolTweaks",
+        "ToolMult_Axe",
+        "ToolMult_Pickaxe"
+      ]
+    },
+    {
+      "label": "Gear Stats",
+      "settings": [
+        "Enable_GearStatTweaks",
+        "RegenMult_Health",
+        "RegenMult_Mana",
+        "RegenMult_Stamina",
+        "GearMult_HealthBonus",
+        "GearMult_StaminaBonus",
+        "GearMult_ManaBonus"
+      ]
+    },
+    {
+      "label": "Spells",
+      "settings": [
+        "Enable_SpellTweaks",
+        "SpellCastTime_Multiplier",
+        "SpellManaCost_Multiplier"
+      ]
+    },
+    {
+      "label": "Inventory & Loot",
+      "settings": [
+        "Enable_BackpackTweaks",
+        "Backpack_MaxSlots",
+        "Enable_StackSizeTweaks",
+        "StackSize_MaxStack",
+        "Enable_ChestSizeTweaks",
+        "Chest_MaxSlots",
+        "Enable_MagicFurniture",
+        "Enable_MagicFactories",
+        "Enable_LootTweaks",
+        "Loot_EquipmentDropMultiplier",
+        "Loot_ConsumableDropMultiplier",
+        "Loot_ArrowDropMultiplier",
+        "Loot_GemDropMultiplier",
+        "Loot_ExplosiveDropMultiplier",
+        "Loot_MaxStackSize",
+        "Enable_GemTweaks",
+        "GemTweaks_SalvageRate",
+        "GemTweaks_Probability_Common",
+        "GemTweaks_Probability_Uncommon",
+        "GemTweaks_Probability_Rare",
+        "GemTweaks_Probability_Epic",
+        "GemTweaks_Probability_Legendary"
+      ]
+    },
+    {
+      "label": "Crafting",
+      "settings": [
+        "Enable_CraftingTweaks",
+        "CraftingTweaks_CreativeMode",
+        "CraftingTweaks_UnlockAllRecipes",
+        "CraftingTweaks_FreeFlameAltar",
+        "CraftingTweaks_FreeFood",
+        "CraftingTweaks_FreeFactories",
+        "CraftingTweaks_OutputMultiplier"
+      ]
+    },
+    {
+      "label": "Exploration",
+      "settings": [
+        "Enable_FastTravelTweaks",
+        "FastTravel_FlameMarkers",
+        "FastTravel_DungeonMarkers",
+        "FastTravel_LocationMarkers",
+        "FastTravel_None",
+        "Enable_FogOfWarTweaks",
+        "FogOfWar_Range",
+        "Enable_SkillTweaks_Updraft",
+        "Updraft_IgnoreManaCost",
+        "GroundRelative_Y",
+        "GroundRelative_X",
+        "GroundRelative_Z",
+        "PlayerRelative_X",
+        "PlayerRelative_Y",
+        "PlayerRelative_Z",
+        "Boost_Duration",
+        "Updraft_ManaCost_Value",
+        "Enable_SlopeTweaks",
+        "steepFloorAngle",
+        "slidingAngle",
+        "fallDamageAngle"
+      ]
+    },
+    {
+      "label": "Building",
+      "settings": [
+        "Enable_FlameAltarTweaks",
+        "MaxFlameAltars_Multiplier",
+        "MaxFlameAltars_Cap",
+        "Enable_BaseSizeTweaks",
+        "BaseSize_Multiplier",
+        "Enable_PlacementTweaks",
+        "Enable_BuildingTweaks",
+        "PlacementTweaks_BuildInFog",
+        "PlacementTweaks_NoBuildZoneNeeded"
+      ]
+    },
+    {
+      "label": "Fog & Weather",
+      "settings": [
+        "Enable_FogTweaks",
+        "Rain_Opacity",
+        "Snow_Opacity",
+        "Blizzard_Opacity",
+        "Ambient_Fog_Density",
+        "Fog_M1_Density",
+        "Fog_M1_Opacity",
+        "HeightFog_Density",
+        "HeightFog_Opacity",
+        "Shroud_Fog_Dangerous_Density",
+        "Shroud_Fog_Dangerous_Opacity",
+        "Dangerous_Fog_Barrier_Exposed_Emissive_Intensity",
+        "Dangerous_Fog_Barrier_Emissive_Intensity",
+        "Dangerous_Fog_Barrier_Opacity",
+        "Dangerous_Fog_Barrier_Scatter_Boost",
+        "Shroud_Fog_Deadly_Density",
+        "Shroud_Fog_Deadly_Opacity",
+        "Deadly_Fog_Barrier_Exposed_Emissive_Intensity",
+        "Deadly_Fog_Barrier_Emissive_Intensity",
+        "Deadly_Fog_Barrier_Opacity",
+        "Deadly_Fog_Barrier_Scatter_Boost"
+      ]
+    },
+    {
+      "label": "Glider Physics",
+      "settings": [
+        "Enable_GliderTuning",
+        "Glider_T1_accelerationForward",
+        "Glider_T1_airResistanceLongitudinal",
+        "Glider_T1_airResistanceLateral",
+        "Glider_T1_airResistanceVertical",
+        "Glider_T1_yawAngleSpeed",
+        "Glider_T1_pitchAngleSpeed",
+        "Glider_T1_rollAngleSpeed",
+        "Glider_T2_accelerationForward",
+        "Glider_T2_airResistanceLongitudinal",
+        "Glider_T2_airResistanceLateral",
+        "Glider_T2_airResistanceVertical",
+        "Glider_T2_yawAngleSpeed",
+        "Glider_T2_pitchAngleSpeed",
+        "Glider_T2_rollAngleSpeed",
+        "Glider_T3_accelerationForward",
+        "Glider_T3_airResistanceLongitudinal",
+        "Glider_T3_airResistanceLateral",
+        "Glider_T3_airResistanceVertical",
+        "Glider_T3_yawAngleSpeed",
+        "Glider_T3_pitchAngleSpeed",
+        "Glider_T3_rollAngleSpeed",
+        "Glider_T4_REWARD_accelerationForward",
+        "Glider_T4_REWARD_airResistanceLongitudinal",
+        "Glider_T4_REWARD_airResistanceLateral",
+        "Glider_T4_REWARD_airResistanceVertical",
+        "Glider_T4_REWARD_yawAngleSpeed",
+        "Glider_T4_REWARD_pitchAngleSpeed",
+        "Glider_T4_REWARD_rollAngleSpeed"
+      ]
+    },
+    {
+      "label": "Terraforming",
+      "settings": [
+        "MakeUnbreakableBreakable",
+        "Enable_TerrainDropTweaks",
+        "TerrainDrop_ExchangeRate"
+      ]
+    },
+    {
+      "label": "Expanded Difficulty",
+      "settings": [
+        "Enable_ExpandedGameSettings",
+        "EGS_Standard",
+        "EGS_XP",
+        "EGS_Time"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_character_schema_probe_sf",
+  "name": "EmberVault character schema probe",
+  "version": "1.0.0",
+  "description": "Read-only inventory of reflected character customization and scale resource schemas.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

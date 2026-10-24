@@ -1,0 +1,16 @@
+{
+  "offsets": {
+    "locomotionState.buildingFlying": {
+      "enum": "keen::ecs::LocomotionState",
+      "name": "BuildingFlying"
+    },
+    "locomotionState.falling": {
+      "enum": "keen::ecs::LocomotionState",
+      "name": "Falling"
+    },
+    "locomotionState.flying": {
+      "enum": "keen::ecs::LocomotionState",
+      "name": "Flying"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "aldrich-more-colors",
+  "name": "More Character Colors",
+  "version": "1.1.0",
+  "description": "Unlocks the hidden vanilla colors and adds 40 new skin, eye and eyebrow colors (incl. fantasy races: elves, orcs, Warhammer) and 9 hair colors to character creation and the barber.",
+  "authors": ["Aldrich"],
+  "capabilities": ["patch", "export"]
+}

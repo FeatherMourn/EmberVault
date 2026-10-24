@@ -1,0 +1,57 @@
+{
+  "offsets": {
+    "playerInput.frame.actor": {
+      "value": "-0x38"
+    },
+    "playerInput.input.digital": {
+      "field": "keen::ecs::PlayerInput",
+      "path": "fromClient.digitalInput"
+    }
+  },
+  "symbols": {
+    "playerInput.digitalWritten": {
+      "exe": "client",
+      "find": {
+        "at": 8,
+        "pattern": "40 0F B6 C7 48 0F B3 C1 48 89 8E A8 03 00 00 48 FF C7"
+      },
+      "site": {
+        "action": {
+          "doc": "the keen::ecs::PlayerInputType being written",
+          "register": "rdi",
+          "type": "u8"
+        },
+        "mask": {
+          "doc": "the digital input with that action set or cleared, about to be stored",
+          "register": "rcx",
+          "type": "u64"
+        }
+      }
+    },
+    "playerInput.localInputWritten": {
+      "find": {
+        "at": 16,
+        "pattern": "F2 0F 11 87 8C 01 00 00 F3 0F 11 97 94 01 00 00 48 8B 4D F0 48 85 C9"
+      },
+      "site": {
+        "actor": {
+          "doc": "the player's actor",
+          "frame": "rbp",
+          "offset": "playerInput.frame.actor",
+          "type": "pointer"
+        },
+        "input": {
+          "doc": "the player's keen::ecs::PlayerInput for this tick",
+          "register": "rbx",
+          "type": "pointer"
+        },
+        "systemContext": {
+          "doc": "the system context (the call's rcx, kept in r13)",
+          "register": "r13",
+          "type": "pointer"
+        }
+      },
+      "doc": "player_control_locomotion right after the stick became the local movement input (1.0: 0x2DBFC5)"
+    }
+  }
+}

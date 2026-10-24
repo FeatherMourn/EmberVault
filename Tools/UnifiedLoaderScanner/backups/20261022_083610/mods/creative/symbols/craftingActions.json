@@ -1,0 +1,13 @@
+{
+  "offsets": {
+    "craftingActions.query.context": {
+      "value": "0x0"
+    },
+    "craftingActions.query.eventWriter": {
+      "value": "0xC8"
+    },
+    "craftingActions.querySize": {
+      "value": "0xE0"
+    }
+  }
+}

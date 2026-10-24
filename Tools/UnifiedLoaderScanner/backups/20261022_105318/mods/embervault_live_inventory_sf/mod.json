@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_live_inventory_sf",
+  "name": "EmberVault Live Inventory (read-only)",
+  "version": "1.0.0",
+  "description": "Reads bounded runtime registry and resource counts for mapping.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0",
+  "evaluationOrder": [
+    "file",
+    "bootstrap",
+    "framework",
+    "runtime",
+    "feature"
+  ],
+  "states": [
+    "unknown",
+    "found",
+    "validated",
+    "loaded",
+    "initialized",
+    "behavior-verified",
+    "skipped",
+    "failed"
+  ],
+  "rules": [
+    {"id": "file-architecture", "requires": ["path", "architecture"], "failure": "failed"},
+    {"id": "entry-point-exports", "requires": ["entryPointDll"], "failure": "failed"},
+    {"id": "dependencies-present", "requires": ["dependencies"], "failure": "skipped"},
+    {"id": "declared-conflicts", "requires": ["conflicts"], "failure": "skipped"},
+    {"id": "runtime-initialization", "requires": ["log-evidence"], "failure": "failed"},
+    {"id": "feature-behavior", "requires": ["reproducible-test"], "failure": "unknown"}
+  ],
+  "promotionRules": [
+    "Do not promote static metadata to runtime evidence.",
+    "Do not promote loaded to initialized without initialization evidence.",
+    "Do not promote initialized to behavior-verified without a reproducible test.",
+    "A failed or skipped dependency blocks downstream promotion."
+  ]
+}

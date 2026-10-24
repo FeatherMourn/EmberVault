@@ -1,0 +1,24 @@
+{
+  "offsets": {
+    "playerInputType.glider": {
+      "enum": "keen::ecs::PlayerInputType",
+      "name": "Glider"
+    },
+    "playerInputType.headDive": {
+      "enum": "keen::ecs::PlayerInputType",
+      "name": "HeadDive"
+    },
+    "playerInputType.jump": {
+      "enum": "keen::ecs::PlayerInputType",
+      "name": "Jump"
+    },
+    "playerInputType.sneak": {
+      "enum": "keen::ecs::PlayerInputType",
+      "name": "Sneak"
+    },
+    "playerInputType.sprint": {
+      "enum": "keen::ecs::PlayerInputType",
+      "name": "Sprint"
+    }
+  }
+}

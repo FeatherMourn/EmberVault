@@ -1,0 +1,10 @@
+{
+  "id": "embervault-recipe-categories",
+  "name": "EmberVault Recipe Category Probe",
+  "version": "1.0.0",
+  "description": "Read-only EML probe for recipe registry and category references.",
+  "authors": ["EmberVault"],
+  "license": null,
+  "dependencies": [],
+  "capabilities": ["export"]
+}

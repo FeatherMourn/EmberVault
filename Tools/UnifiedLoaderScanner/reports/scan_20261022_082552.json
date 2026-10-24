@@ -1,0 +1,200 @@
+[
+  {
+    "Name": "Aldrich More Colors 1.1.0 161 1.1.0 2026-10-20T04-57Z lYm8GvuE9.zip",
+    "Kind": "Archive",
+    "Classification": "Regular Lua/EML/config/asset mod",
+    "Path": "H:\\enshroudedresearch\\Mods\\Aldrich More Colors 1.1.0 161 1.1.0 2026-10-20T04-57Z lYm8GvuE9.zip",
+    "FileCount": 3,
+    "DLLs": "",
+    "HasManifest": true,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "AutoLootPlus 1.1.3 170 1.1.3 2026-10-21T21-58Z YGcZsz9Ly.zip",
+    "Kind": "Archive",
+    "Classification": "Standalone or mixed loader",
+    "Path": "H:\\enshroudedresearch\\Mods\\AutoLootPlus 1.1.3 170 1.1.3 2026-10-21T21-58Z YGcZsz9Ly.zip",
+    "FileCount": 12,
+    "DLLs": "dinput8.dll",
+    "HasManifest": true,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "Compatibility Patcher for Windows 148 2.0 2026-10-13T14-26Z V06lte33S.zip",
+    "Kind": "Archive",
+    "Classification": "Native plugin candidate",
+    "Path": "H:\\enshroudedresearch\\Mods\\Compatibility Patcher for Windows 148 2.0 2026-10-13T14-26Z V06lte33S.zip",
+    "FileCount": 4,
+    "DLLs": "creative_chainloader.dll",
+    "HasManifest": false,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "Creative Mode 146 3.0.0 2026-10-21T15-02Z lYm8GvuhF.zip",
+    "Kind": "Archive",
+    "Classification": "Standalone or mixed loader",
+    "Path": "H:\\enshroudedresearch\\Mods\\Creative Mode 146 3.0.0 2026-10-21T15-02Z lYm8GvuhF.zip",
+    "FileCount": 54,
+    "DLLs": "dinput8.dll; mods/creative/creative.dll",
+    "HasManifest": true,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "EnshroudedMultiDLLInstaller 163 3.3 2026-10-21T19-30Z AXKrTkHZC.zip",
+    "Kind": "Archive",
+    "Classification": "Regular Lua/EML/config/asset mod",
+    "Path": "H:\\enshroudedresearch\\Mods\\EnshroudedMultiDLLInstaller 163 3.3 2026-10-21T19-30Z AXKrTkHZC.zip",
+    "FileCount": 1,
+    "DLLs": "",
+    "HasManifest": false,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "HoardersHelper EML included 136 4 2026-10-19T00-22Z AXKrTkHXy (1).zip",
+    "Kind": "Archive",
+    "Classification": "Standalone or mixed loader",
+    "Path": "H:\\enshroudedresearch\\Mods\\HoardersHelper EML included 136 4 2026-10-19T00-22Z AXKrTkHXy (1).zip",
+    "FileCount": 6,
+    "DLLs": "dbghelp.dll; dinput8.dll",
+    "HasManifest": true,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "M182 Client EN 2.0 168 1 2026-10-21T01-51Z 8ZQS75XMQ.zip",
+    "Kind": "Archive",
+    "Classification": "Standalone or mixed loader",
+    "Path": "H:\\enshroudedresearch\\Mods\\M182 Client EN 2.0 168 1 2026-10-21T01-51Z 8ZQS75XMQ.zip",
+    "FileCount": 11,
+    "DLLs": "M182_Client/dbghelp.dll; M182_Client/M182_Panel.dll",
+    "HasManifest": true,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "Minimap and Weather Clock 0.5.12 143 0.5.12 2026-10-19T19-27Z toOG24mlr.zip",
+    "Kind": "Archive",
+    "Classification": "Native plugin candidate",
+    "Path": "H:\\enshroudedresearch\\Mods\\Minimap and Weather Clock 0.5.12 143 0.5.12 2026-10-19T19-27Z toOG24mlr.zip",
+    "FileCount": 22,
+    "DLLs": "mods/minimap_mod/minimap_mod.dll",
+    "HasManifest": true,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "modloader-proxy-1.1.0-x64.zip",
+    "Kind": "Archive",
+    "Classification": "Native plugin candidate",
+    "Path": "H:\\enshroudedresearch\\Mods\\modloader-proxy-1.1.0-x64.zip",
+    "FileCount": 5,
+    "DLLs": "modloader-proxy-1.1.0-x64/modloader-proxy.dll",
+    "HasManifest": true,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "ShroudHud 1.7 - Standalone (GV 1.0.0.3) 154 1.7 2026-10-21T12-51Z INrKjyDcu.zip",
+    "Kind": "Archive",
+    "Classification": "Standalone or mixed loader",
+    "Path": "H:\\enshroudedresearch\\Mods\\ShroudHud 1.7 - Standalone (GV 1.0.0.3) 154 1.7 2026-10-21T12-51Z INrKjyDcu.zip",
+    "FileCount": 4,
+    "DLLs": "dinput8.dll",
+    "HasManifest": false,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "Shroudtopia - Enshrouded 1.0 compatibility 143 0.2.1-shroudweave.1 2026-10-21T20-48Z Gsf7bwQRI.zip",
+    "Kind": "Archive",
+    "Classification": "Standalone or mixed loader",
+    "Path": "H:\\enshroudedresearch\\Mods\\Shroudtopia - Enshrouded 1.0 compatibility 143 0.2.1-shroudweave.1 2026-10-21T20-48Z Gsf7bwQRI.zip",
+    "FileCount": 10,
+    "DLLs": "shroudtopia.dll; winmm.dll",
+    "HasManifest": false,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "StatSliders 0.1.2 150 3 2026-10-17T03-21Z SPykBtiDo.zip",
+    "Kind": "Archive",
+    "Classification": "Standalone or mixed loader",
+    "Path": "H:\\enshroudedresearch\\Mods\\StatSliders 0.1.2 150 3 2026-10-17T03-21Z SPykBtiDo.zip",
+    "FileCount": 2,
+    "DLLs": "dinput8.dll; Alternative_powrprof/powrprof.dll",
+    "HasManifest": false,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "Unified Tweaks (EML) 185 1.4.1 2026-10-22T12-05Z qOZcvbdtW.zip",
+    "Kind": "Archive",
+    "Classification": "Regular Lua/EML/config/asset mod",
+    "Path": "H:\\enshroudedresearch\\Mods\\Unified Tweaks (EML) 185 1.4.1 2026-10-22T12-05Z qOZcvbdtW.zip",
+    "FileCount": 3,
+    "DLLs": "",
+    "HasManifest": true,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "XHL-Area-Harvest (1.0 Ready) 128 1.0.1 2026-10-19T13-28Z DhoeLxYhO.zip",
+    "Kind": "Archive",
+    "Classification": "Standalone or mixed loader",
+    "Path": "H:\\enshroudedresearch\\Mods\\XHL-Area-Harvest (1.0 Ready) 128 1.0.1 2026-10-19T13-28Z DhoeLxYhO.zip",
+    "FileCount": 7,
+    "DLLs": "dbghelp.dll; dinput8.dll; mods/XHL-Area-Harvest/XHL-Area-Harvest.dll",
+    "HasManifest": true,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "XHL-Enemy-Difficulty-Limits 188 1.0.1 2026-10-20T17-16Z CDtphalPX.zip",
+    "Kind": "Archive",
+    "Classification": "Standalone or mixed loader",
+    "Path": "H:\\enshroudedresearch\\Mods\\XHL-Enemy-Difficulty-Limits 188 1.0.1 2026-10-20T17-16Z CDtphalPX.zip",
+    "FileCount": 6,
+    "DLLs": "dbghelp.dll; dinput8.dll; mods/XHL-Enemy-Difficulty-Limits/XHL-Enemy-Difficulty-Limits.dll",
+    "HasManifest": true,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "statsliders_incompatible_proxy_backup_20261022_0705",
+    "Kind": "Directory",
+    "Classification": "Standalone or mixed loader",
+    "Path": "H:\\enshroudedresearch\\Mods\\statsliders_incompatible_proxy_backup_20261022_0705",
+    "FileCount": 2,
+    "DLLs": "statsliders_incompatible_proxy_backup_20261022_0705\\statsliders.dll; statsliders_incompatible_proxy_backup_20261022_0705\\Alternative_powrprof\\powrprof.dll",
+    "HasManifest": false,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "statsliders_install_backup_20261022_0700",
+    "Kind": "Directory",
+    "Classification": "Regular Lua/EML/config/asset mod",
+    "Path": "H:\\enshroudedresearch\\Mods\\statsliders_install_backup_20261022_0700",
+    "FileCount": 0,
+    "DLLs": "",
+    "HasManifest": false,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  },
+  {
+    "Name": "Enshrouded",
+    "Kind": "Directory",
+    "Classification": "Standalone or mixed loader",
+    "Path": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded",
+    "FileCount": 1859,
+    "DLLs": "creative_chainloader.dll; dbghelp.dll; dinput8.dll; GFSDK_Aftermath_Lib.x64.dll; nvngx_dlss.dll; steam_api64.dll; winmm.dll; creative\\creative.dll; EnshroudedMultiDLLInstaller\\Backups\\20261021-134750.093606200\\dinput8.dll; EnshroudedMultiDLLInstaller\\Backups\\20261021-141524.640182800\\dinput8.dll; EnshroudedMultiDLLInstaller\\Backups\\20261022-070700.642159700\\dinput8.dll; M182_Client\\M182_Panel.dll; mods\\StatSliders\\dinput8.dll; mods\\StatSliders\\Alternative_powrprof\\powrprof.dll; mods\\XHL-Area-Harvest\\XHL-Area-Harvest.dll; mods\\XHL-Enemy-Difficulty-Limits\\XHL-Enemy-Difficulty-Limits.dll; shroudforge\\kfc-runtime.dll; shroudforge\\shroudforge-runtime.dll; shroudforge\\ui\\webview2-profile\\debug-console\\EBWebView\\Speech Recognition\\1.15.0.1\\Microsoft.CognitiveServices.Speech.core.dll; shroudforge\\ui\\webview2-profile\\debug-console\\EBWebView\\WidevineCdm\\4.10.3112.0\\_platform_specific\\win_x64\\widevinecdm.dll; shroudforge\\ui\\webview2-profile\\modloader-ui\\EBWebView\\Speech Recognition\\1.15.0.1\\Microsoft.CognitiveServices.Speech.core.dll; shroudforge\\ui\\webview2-profile\\modloader-ui\\EBWebView\\WidevineCdm\\4.10.3112.0\\_platform_specific\\win_x64\\widevinecdm.dll; shroudforge\\ui\\webview2-profile\\world-editor\\EBWebView\\Speech Recognition\\1.15.0.1\\Microsoft.CognitiveServices.Speech.core.dll; shroudforge\\ui\\webview2-profile\\world-editor\\EBWebView\\WidevineCdm\\4.10.3112.0\\_platform_specific\\win_x64\\widevinecdm.dll; shroudforge\\updates\\pending\\dbghelp.dll; shroudforge\\updates\\pending\\dinput8.dll; shroudforge\\updates\\pending\\winmm.dll; shroudforge\\updates\\pending\\shroudforge\\kfc-runtime.dll; shroudforge\\updates\\pending\\shroudforge\\shroudforge-runtime.dll; shroudforge\\updates\\webview-profile\\EBWebView\\Speech Recognition\\1.15.0.1\\Microsoft.CognitiveServices.Speech.core.dll; shroudforge\\updates\\webview-profile\\EBWebView\\WidevineCdm\\4.10.3112.0\\_platform_specific\\win_x64\\widevinecdm.dll; shroudforge-original\\dinput8.dll",
+    "HasManifest": true,
+    "UnsafeEntries": "",
+    "Status": "Reviewable"
+  }
+]

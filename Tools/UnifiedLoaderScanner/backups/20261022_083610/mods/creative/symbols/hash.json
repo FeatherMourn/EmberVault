@@ -1,0 +1,14 @@
+{
+  "include": ["core/guid.hpp"],
+  "symbols": {
+    "hash.guid32": {
+      "signature": "std::uint32_t(const flame::core::Guid* guid)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "operand": true,
+        "pattern": "E8 ?? ?? ?? ?? 89 44 3B 78 48 8D 4C 24 60 0F 57 C0"
+      }
+    }
+  }
+}

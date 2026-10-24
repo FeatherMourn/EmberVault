@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://embervault.local/schemas/dll-inventory.schema.json",
+  "title": "EmberVault Native Loader Inventory",
+  "type": "object",
+  "required": ["schemaVersion", "snapshot", "game", "gameBuild", "artifacts"],
+  "properties": {
+    "schemaVersion": {"type": "string"},
+    "snapshot": {"type": "string"},
+    "game": {"const": "Enshrouded"},
+    "gameBuild": {"type": "string"},
+    "artifacts": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/artifact"}
+    }
+  },
+  "$defs": {
+    "artifact": {
+      "type": "object",
+      "required": ["id", "path", "framework", "architecture", "status"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+        "architecture": {"enum": ["x64", "x86", "unknown"]},
+        "framework": {"enum": ["proxy", "shroudforge", "eml", "shroudtopia", "generic", "unknown"]},
+        "entryPointDll": {"type": "string"},
+        "forwardedExports": {"type": "array", "items": {"type": "string"}},
+        "loadPhase": {"enum": ["early", "deferred", "runtime", "unknown"]},
+        "dependencies": {"type": "array", "items": {"type": "string"}},
+        "conflicts": {"type": "array", "items": {"type": "string"}},
+        "targets": {"type": "array", "items": {"enum": ["client", "dedicated-server"]}},
+        "status": {"enum": ["found", "validated", "loaded", "initialized", "behavior-verified", "skipped", "failed", "unknown"]},
+        "artifactState": {"enum": ["active-candidate", "archived", "pending-update"]},
+        "evidence": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

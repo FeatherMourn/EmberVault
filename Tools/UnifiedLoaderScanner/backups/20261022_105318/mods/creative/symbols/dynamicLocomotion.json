@@ -1,0 +1,8 @@
+{
+  "offsets": {
+    "dynamicLocomotion.state": {
+      "field": "keen::ecs::DynamicLocomotion",
+      "path": "state"
+    }
+  }
+}

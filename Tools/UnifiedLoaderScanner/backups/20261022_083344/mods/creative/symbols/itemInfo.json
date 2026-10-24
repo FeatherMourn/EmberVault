@@ -1,0 +1,81 @@
+{
+  "offsets": {
+    "itemInfo.category": {
+      "field": "keen::ItemInfo",
+      "path": "category"
+    },
+    "itemInfo.cursorAutoCenterPivot": {
+      "field": "keen::ItemInfo",
+      "path": "equipment.cursorConfig.autoCenterPivot"
+    },
+    "itemInfo.cursorPivotOffset": {
+      "field": "keen::ItemInfo",
+      "path": "equipment.cursorConfig.pivotOffset"
+    },
+    "itemInfo.cursorRotationZ": {
+      "field": "keen::ItemInfo",
+      "path": "equipment.cursorConfig.axisRotationZ"
+    },
+    "itemInfo.damageFactor": {
+      "field": "keen::ItemInfo",
+      "path": "damageSetup.speedMod"
+    },
+    "itemInfo.damageScale": {
+      "field": "keen::ItemInfo",
+      "path": "damageSetup.dmgMod"
+    },
+    "itemInfo.description": {
+      "field": "keen::ItemInfo",
+      "path": "description"
+    },
+    "itemInfo.generateRarity": {
+      "field": "keen::ItemInfo",
+      "path": "generateRarity"
+    },
+    "itemInfo.guid": {
+      "field": "keen::ItemInfo",
+      "path": "objectId"
+    },
+    "itemInfo.hasDamage": {
+      "field": "keen::ItemInfo",
+      "path": "damageSetup.isSet"
+    },
+    "itemInfo.maxStack": {
+      "field": "keen::ItemInfo",
+      "path": "maxStackSize"
+    },
+    "itemInfo.name": {
+      "field": "keen::ItemInfo",
+      "path": "name"
+    },
+    "itemInfo.pidEntity": {
+      "field": "keen::ItemInfo",
+      "path": "pidEntity",
+      "doc": "the item's entity template: an item's creation spawns from it (its address is the spawn's prefab, re/items.md)"
+    },
+    "itemInfo.placedEntity": {
+      "field": "keen::ItemInfo",
+      "path": "equipment.placedEntity"
+    },
+    "itemInfo.placementBox": {
+      "field": "keen::ItemInfo",
+      "path": "equipment.placementAABBmin"
+    },
+    "itemInfo.placementColliders": {
+      "field": "keen::ItemInfo",
+      "path": "equipment.placementColliders"
+    },
+    "itemInfo.previewModel": {
+      "field": "keen::ItemInfo",
+      "path": "equipment.cursorModel"
+    },
+    "itemInfo.rarity": {
+      "field": "keen::ItemInfo",
+      "path": "rarity"
+    },
+    "itemInfo.weapons": {
+      "enum": "keen::ItemCategory",
+      "name": "Weapons"
+    }
+  }
+}

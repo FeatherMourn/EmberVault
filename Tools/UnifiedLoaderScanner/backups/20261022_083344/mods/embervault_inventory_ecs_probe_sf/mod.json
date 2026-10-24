@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_inventory_ecs_probe_sf",
+  "name": "EmberVault inventory ECS probe",
+  "version": "1.0.0",
+  "description": "Read-only ECS capability and component metadata probe for player inventory and equipment research.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

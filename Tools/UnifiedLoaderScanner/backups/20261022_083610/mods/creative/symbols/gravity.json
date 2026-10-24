@@ -1,0 +1,28 @@
+{
+  "offsets": {
+    "gravity.frame.actor": {
+      "value": "-0x51"
+    }
+  },
+  "symbols": {
+    "gravity.strengthLoaded": {
+      "find": {
+        "at": 7,
+        "pattern": "EB 05 F3 0F 10 72 40 48 8D 55 6F 48 8B CF"
+      },
+      "site": {
+        "actor": {
+          "doc": "the actor gravity pulls",
+          "frame": "rbp",
+          "offset": "gravity.frame.actor",
+          "type": "pointer"
+        },
+        "strength": {
+          "doc": "the gravity's strength, as the system will apply it (Gravity::value, or 1.0's up/down override)",
+          "register": "xmm6",
+          "type": "f32"
+        }
+      }
+    }
+  }
+}

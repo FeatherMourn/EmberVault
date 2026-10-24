@@ -1,0 +1,16 @@
+{
+  "symbols": {
+    "consumables.firedRemoval": {
+      "find": {
+        "at": 8,
+        "pattern": "44 8B 00 E8 ?? ?? ?? ?? 80 BD E0 00 00 00 00 0F 85 ?? ?? ?? ??"
+      }
+    },
+    "consumables.usedRemoval": {
+      "find": {
+        "at": 0,
+        "pattern": "40 38 74 24 68 75 52 39 74 24 70 75 4C"
+      }
+    }
+  }
+}

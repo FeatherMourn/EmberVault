@@ -1,0 +1,34 @@
+[06:38:04.580] [info] [t25720] Creative Mode 3.0.0 (build v2.1.4-77-gdb16817f6e) loaded
+[06:38:04.580] [info] [t25720] Game: enshrouded.exe 1.0.0.3 (Build version 1273043), build key 6AD77F0C-2A1E000, at 0x7FF732C70000
+[06:38:04.580] [info] [t25720] Mod directory: H:\SteamLibrary\steamapps\common\Enshrouded\mods\creative
+[06:38:04.585] [warning] [t25720] Could not remove 2.x's folder H:\SteamLibrary\steamapps\common\Enshrouded\creative: Access is denied.
+[06:38:04.590] [info] [t25720] Loaded 182 symbols and 373 offsets from H:\SteamLibrary\steamapps\common\Enshrouded\mods\creative\sigs\6AD77F0C-2A1E000.json
+[06:38:04.591] [info] [t25720] InputInterceptor: hooked the input dispatch
+[06:38:04.656] [info] [t25720] Item catalogue: 3342 items (346 hidden, 359 redundant, 160 folded variants, 6 mod items) from H:\SteamLibrary\steamapps\common\Enshrouded\mods\creative\items.json
+[06:38:04.665] [info] [t25720] KnowledgeTriggers: hooked the server's knowledge system
+[06:38:04.665] [info] [t25720] CraftChannel: hooked the server's crafting path
+[06:38:04.665] [info] [t25720] Daytime: hooked the server's daytime tick and speed
+[06:38:04.666] [info] [t25720] ItemGiver: hooked the item spawn
+[06:38:04.666] [info] [t25720] BuildZones: hooked the build zone setter and query
+[06:38:04.666] [info] [t25720] Locomotion: hooked the locomotion state, the movers and gravity
+[06:38:04.666] [info] [t25720] PlayerInput: hooked the player input system and the client's input
+[06:38:04.666] [info] [t25720] FallDamage: hooked the fall damage system
+[06:38:04.666] [info] [t25720] ResourceCost: hooked the recipe, building, storage upgrade and consumable payments and the build preview's material check
+[06:38:04.668] [info] [t25720] PlayerLevel: hooked the experience system
+[06:38:04.668] [info] [t25720] ItemStatsFix: hooked the item details' stat collector
+[06:38:04.669] [info] [t25720] Settings: the creative menu opens with Insert, flight with G ("menuKey", "flightKey" in H:\SteamLibrary\steamapps\common\Enshrouded\mods\creative\settings.json)
+[06:38:04.715] [info] [t25720] Creative screen: hooked the HUD builder
+[06:38:04.715] [info] [t25720] Texts: hooked the text lookup
+[06:38:04.716] [info] [t25720] Ready: time of day, creative menu, flight, free building, gem forges, server rules
+[06:39:02.771] [info] [t3512] Player 1 is 'FeatherMourn'
+[06:39:22.396] [info] [t30900] Session: own world
+[06:39:22.486] [info] [t30900] Local player: 1 (0: anyone, joined to a server elsewhere)
+[06:39:23.563] [info] [t30900] CustomItems: Springlands Gem Forge on item 0x29EB1846 (its data at 0x2001d91b100)
+[06:39:23.564] [info] [t30900] CustomItems: Revelwood Gem Forge on item 0x1587C0E3 (its data at 0x2001d210e10)
+[06:39:23.564] [info] [t30900] CustomItems: Nomad Highlands Gem Forge on item 0x7A250F3E (its data at 0x2001d7a76f0)
+[06:39:23.564] [info] [t30900] CustomItems: Kindlewastes Gem Forge on item 0x632DFC2B (its data at 0x2001d2a0e70)
+[06:39:23.564] [info] [t30900] CustomItems: Albaneve Summits Gem Forge on item 0x93479A1D (its data at 0x2001d825490)
+[06:39:23.564] [info] [t30900] CustomItems: Veilwater Basin Gem Forge on item 0xF8BBB5D2 (its data at 0x2001d116670)
+[06:40:42.916] [info] [t30900] Session: no world
+[06:40:42.916] [info] [t30900] Local player: 0 (0: anyone, joined to a server elsewhere)
+[06:42:40.570] [info] [t3512] Player 1 left

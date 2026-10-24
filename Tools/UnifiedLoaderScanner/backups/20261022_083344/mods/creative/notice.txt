@@ -1,0 +1,9 @@
+This version of Enshrouded is new to these mods, so they have switched themselves off until they are updated:
+
+    (none found in mods/)
+
+The game runs as usual without them. Watch their pages on Nexus Mods for the update; there's no need to report it.
+
+Game build found: 1.0.0.3 (Build version 1273043), 6AD77F0C-2A1E000. Known: up to 1.0.0.3.
+
+This message shows once for this game build.

@@ -1,0 +1,25 @@
+{
+  "offsets": {
+    "mover.context.config": {
+      "value": "0x10"
+    },
+    "mover.context.target": {
+      "value": "0xF8"
+    },
+    "mover.frame.actor": {
+      "value": "-0x38"
+    },
+    "mover.frame.argument": {
+      "value": "0x298"
+    },
+    "mover.frame.context": {
+      "value": "0x60"
+    },
+    "mover.frame.locomotion": {
+      "value": "0x58"
+    },
+    "mover.frame.transform": {
+      "value": "-0x80"
+    }
+  }
+}

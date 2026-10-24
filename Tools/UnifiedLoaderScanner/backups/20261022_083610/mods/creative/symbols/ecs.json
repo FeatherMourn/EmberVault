@@ -1,0 +1,59 @@
+{
+  "include": ["game/types.hpp"],
+  "offsets": {
+    "ecs.system.cursor": {
+      "value": "0x8"
+    }
+  },
+  "symbols": {
+    "ecs.eventPartition": {
+      "signature": "std::uint16_t(void* writer)",
+      "find": {
+        "at": 0,
+        "pattern": "0F B7 81 B8 00 00 00 C3 CC CC"
+      }
+    },
+    "ecs.eventQueue": {
+      "signature": "void*(void* writer)",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B 81 B8 01 00 00 C3 CC CC CC CC CC CC CC CC 48 8B C4 55"
+      }
+    },
+    "ecs.ownerEntity": {
+      "signature": "std::uint32_t*(void* context, std::uint32_t* out)",
+      "find": {
+        "at": 0,
+        "pattern": "8B 41 08 4C 8B C2 85 C0 75 06 89 02 48 8B C2 C3 8D 50 FF 48 8B 01 48 03 D2 48 8B 88 28 08 00 00 8B 04 D1"
+      }
+    },
+    "ecs.pushEvent": {
+      "signature": "void*(void* queue, std::uint32_t typeHash, std::uint32_t size, std::uint16_t partition)",
+      "find": {
+        "at": 0,
+        "pattern": "48 83 EC 28 4C 8B D9 41 81 F8 00 01 00 00 73 64"
+      }
+    },
+    "ecs.queryBegin": {
+      "signature": "void(void* system, void* query, std::uint32_t size)",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 10 55 56 57 41 54 41 55 41 56 41 57 48 83 EC 60 4C 8B 09 48 8B D9 48 8B FA"
+      }
+    },
+    "ecs.queryNext": {
+      "signature": "bool(void* system, void* query, std::uint32_t size)",
+      "find": {
+        "at": 0,
+        "pattern": "40 57 48 83 EC 20 4C 8B 01 48 8B FA"
+      }
+    },
+    "ecs.spawn": {
+      "signature": "void*(void* world, void* out, std::uint32_t owner, std::uint32_t flags, const void* prefab, const flame::game::SpawnOverrides* overrides, const std::uint8_t* options, std::uint8_t extra)",
+      "find": {
+        "at": 0,
+        "pattern": "40 53 48 83 EC 60 33 C0 44 89 4C 24 30"
+      }
+    }
+  }
+}

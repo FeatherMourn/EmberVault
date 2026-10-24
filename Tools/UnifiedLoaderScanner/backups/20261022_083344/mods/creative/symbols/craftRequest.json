@@ -1,0 +1,10 @@
+{
+  "offsets": {
+    "craftRequest.config": {
+      "value": "0x10"
+    },
+    "craftRequest.spare": {
+      "value": "0x148"
+    }
+  }
+}

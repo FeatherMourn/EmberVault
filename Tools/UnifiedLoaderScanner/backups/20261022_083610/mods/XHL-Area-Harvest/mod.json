@@ -1,0 +1,14 @@
+{
+  "id": "xhl-area-harvest",
+  "name": "XHL-Area-Harvest (1.0 Ready)",
+  "version": "1.0.1",
+  "capabilities": [
+    "export"
+  ],
+  "description": "Harvest one mature crop to also harvest nearby supported mature crops within a 5-meter x 5-meter area. No extra hotkey is needed.",
+  "authors": [
+    "XHL"
+  ],
+  "license": "MIT",
+  "nativeCompatibility": "Runtime feature and call-chain resolution; validated game builds 1267041 and 1269579, no exclusive build gate"
+}

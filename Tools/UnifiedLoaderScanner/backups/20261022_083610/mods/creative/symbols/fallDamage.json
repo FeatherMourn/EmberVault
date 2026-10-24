@@ -1,0 +1,28 @@
+{
+  "offsets": {
+    "fallDamage.frame.locomotion": {
+      "value": "0x48"
+    }
+  },
+  "symbols": {
+    "fallDamage.fallingDecided": {
+      "find": {
+        "at": 5,
+        "pattern": "EB 03 40 B6 01 40 0F B6 FE 40 80 F7 01"
+      },
+      "site": {
+        "falling": {
+          "doc": "whether the actor counts as falling (sil)",
+          "register": "rsi",
+          "type": "u8"
+        },
+        "locomotion": {
+          "doc": "the actor's DynamicLocomotion",
+          "frame": "rsp",
+          "offset": "fallDamage.frame.locomotion",
+          "type": "pointer"
+        }
+      }
+    }
+  }
+}

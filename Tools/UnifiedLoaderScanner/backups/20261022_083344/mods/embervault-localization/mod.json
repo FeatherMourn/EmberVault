@@ -1,0 +1,10 @@
+{
+  "id": "embervault-localization",
+  "name": "EmberVault Localization Probe",
+  "version": "1.0.0",
+  "description": "Read-only EML probe for localization resources used by workshop name IDs.",
+  "authors": ["EmberVault"],
+  "license": null,
+  "dependencies": [],
+  "capabilities": ["export"]
+}

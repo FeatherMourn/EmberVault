@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0",
+  "snapshot": "1.0",
+  "game": "Enshrouded",
+  "gameBuild": "39026384728",
+  "records": [
+    {
+      "id": "modloader-proxy",
+      "displayName": "ModLoader Proxy",
+      "kind": "bootstrap",
+      "framework": "proxy",
+      "entryPointDll": "dinput8.dll",
+      "loadPhase": "early",
+      "targets": ["client", "dedicated-server"],
+      "status": "observed",
+      "evidence": ["live-install-inventory", "proxy-log"]
+    },
+    {
+      "id": "shroudforge",
+      "displayName": "ShroudForge",
+      "kind": "framework",
+      "framework": "shroudforge",
+      "entryPointDll": "dinput8.dll",
+      "loadedBy": "modloader-proxy",
+      "loadPhase": "early",
+      "targets": ["client"],
+      "status": "observed",
+      "evidence": ["live-install-inventory", "proxy-log"]
+    },
+    {
+      "id": "eml",
+      "displayName": "Enshrouded Mod Loader",
+      "kind": "framework",
+      "framework": "eml",
+      "entryPointDll": "dbghelp.dll",
+      "config": "eml.json",
+      "loadPhase": "early",
+      "targets": ["client", "dedicated-server"],
+      "status": "installed-unverified",
+      "evidence": ["live-install-inventory", "eml-runtime-research"]
+    },
+    {
+      "id": "shroudtopia",
+      "displayName": "Shroudtopia",
+      "kind": "framework",
+      "framework": "shroudtopia",
+      "config": "shroudtopia.json",
+      "modDirectory": "mods",
+      "loadPhase": "early",
+      "targets": ["client", "dedicated-server"],
+      "status": "present-unverified",
+      "evidence": ["live-install-inventory", "shroudtopia-log"]
+    },
+    {
+      "id": "generic-native-dll",
+      "displayName": "Generic native DLL mod",
+      "kind": "generic",
+      "framework": "generic",
+      "status": "manifest-required",
+      "evidence": []
+    }
+  ]
+}

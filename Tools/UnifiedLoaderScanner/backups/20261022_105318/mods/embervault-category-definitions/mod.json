@@ -1,0 +1,10 @@
+{
+  "id": "embervault-category-definitions",
+  "name": "EmberVault Category Definitions Probe",
+  "version": "1.0.0",
+  "description": "Read-only EML probe for recipe input category definitions.",
+  "authors": ["EmberVault"],
+  "license": null,
+  "dependencies": [],
+  "capabilities": ["export"]
+}

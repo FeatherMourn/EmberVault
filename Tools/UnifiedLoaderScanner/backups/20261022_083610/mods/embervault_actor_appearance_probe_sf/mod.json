@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_actor_appearance_probe_sf",
+  "name": "EmberVault actor appearance probe",
+  "version": "1.0.0",
+  "description": "Read-only inventory of actor, appearance, model, and cosmetic reference surfaces.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

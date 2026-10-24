@@ -1,0 +1,51 @@
+{
+  "offsets": {
+    "knowledge.store": {
+      "value": "0x8"
+    },
+    "knowledge.pickupTrigger": {
+      "enum": "keen::ItemKnowledgeTrigger",
+      "name": "Pickup",
+      "exe": "client",
+      "doc": "re/knowledge.md: an item's knowledge bit 1 << this is set when the player picks it up or crafts it"
+    }
+  },
+  "symbols": {
+    "knowledge.playerValue": {
+      "signature": "std::uint64_t(const void* store, const std::uint32_t* id, std::uint32_t player)",
+      "exe": "client",
+      "doc": "re/knowledge.md: a player's knowledge value (store, &id, player number from 1; one map on a joined client)",
+      "find": {
+        "at": 0,
+        "pattern": "40 53 48 83 EC 20 80 B9 ?? ?? 00 00 00 48 8B 99 ?? ?? 00 00 75"
+      }
+    },
+    "knowledge.applyTriggers": {
+      "signature": "void(void* knowledge, void* queue, void* context)",
+      "doc": "re/knowledge.md, \"The trigger queue (1.0)\": the server applies the tick's KnowledgeTriggerQueue to the world's and the addressed players' knowledge",
+      "find": {
+        "in": {
+          "system": "update_knowledge_system_server"
+        },
+        "call": 12,
+        "target": true
+      }
+    },
+    "knowledge.pushTrigger": {
+      "signature": "bool(void* queue, const void* trigger)",
+      "doc": "re/knowledge.md: appends a 16-byte trigger {KnowledgeUnlockOperation, target} to the queue; false when full (0x800)",
+      "find": {
+        "at": 0,
+        "pattern": "4C 8B C1 B8 01 00 00 00 F0 0F C1 41 08 FF C0 3D 00 08 00 00 77 ?? 0F 10 02"
+      }
+    },
+    "knowledge.playerTarget": {
+      "signature": "std::uint32_t(std::uint32_t player)",
+      "doc": "re/knowledge.md: a trigger's target for one player (from 1); 0 gives the default target",
+      "find": {
+        "at": 0,
+        "pattern": "85 C9 75 07 8B 05 ?? ?? ?? ?? C3 C6 44 24 08 01 66 89 4C 24 0A 8B 44 24 08 C3"
+      }
+    }
+  }
+}

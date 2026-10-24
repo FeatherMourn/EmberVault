@@ -1,0 +1,339 @@
+{
+  "offsets": {
+    "bundle.fontSizes.caps_large": {
+      "field": "keen::FbUiBundle",
+      "path": "fontSizes.caps_large",
+      "exe": "client"
+    },
+    "bundle.fontSizes.caps_medium": {
+      "field": "keen::FbUiBundle",
+      "path": "fontSizes.caps_medium",
+      "exe": "client"
+    },
+    "bundle.fontSizes.caps_small": {
+      "field": "keen::FbUiBundle",
+      "path": "fontSizes.caps_small",
+      "exe": "client"
+    },
+    "bundle.fontSizes.large": {
+      "field": "keen::FbUiBundle",
+      "path": "fontSizes.large",
+      "exe": "client"
+    },
+    "bundle.fontSizes.medium": {
+      "field": "keen::FbUiBundle",
+      "path": "fontSizes.medium",
+      "exe": "client"
+    },
+    "bundle.fontSizes.small": {
+      "field": "keen::FbUiBundle",
+      "path": "fontSizes.small",
+      "exe": "client"
+    },
+    "bundle.globalColors.rarity.common": {
+      "field": "keen::FbUiBundle",
+      "path": "globalColors.rarity.common",
+      "exe": "client"
+    },
+    "bundle.globalColors.softWarningColor": {
+      "field": "keen::FbUiBundle",
+      "path": "globalColors.softWarningColor",
+      "exe": "client"
+    },
+    "bundle.itemSlot.backgroundColor": {
+      "field": "keen::FbUiBundle",
+      "path": "itemSlot.backgroundColor",
+      "exe": "client"
+    },
+    "bundle.itemSlot.backgroundColorBright": {
+      "field": "keen::FbUiBundle",
+      "path": "itemSlot.backgroundColorBright",
+      "exe": "client"
+    },
+    "bundle.itemSlot.backpack.outline": {
+      "field": "keen::FbUiBundle",
+      "path": "itemSlot.backpack.outline",
+      "exe": "client"
+    },
+    "bundle.itemSlot.backpack.shapeBase": {
+      "field": "keen::FbUiBundle",
+      "path": "itemSlot.backpack.shapeBase",
+      "exe": "client"
+    },
+    "bundle.menu.backgroundDarkenerColor": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.backgroundDarkenerColor",
+      "exe": "client"
+    },
+    "bundle.menu.basicWidgetBackground": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.basicWidgetBackground",
+      "exe": "client"
+    },
+    "bundle.menu.basicWidgetColor": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.basicWidgetColor",
+      "exe": "client"
+    },
+    "bundle.menu.basicWidgetColorHighlighted": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.basicWidgetColorHighlighted",
+      "exe": "client"
+    },
+    "bundle.menu.basicWidgetHighlightOutline": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.basicWidgetHighlightOutline",
+      "exe": "client"
+    },
+    "bundle.menu.button.inGroupLeft.background": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.button.inGroupLeft.background",
+      "exe": "client"
+    },
+    "bundle.menu.button.inGroupLeft.ornament": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.button.inGroupLeft.ornament",
+      "exe": "client"
+    },
+    "bundle.menu.button.inGroupMiddle.background": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.button.inGroupMiddle.background",
+      "exe": "client"
+    },
+    "bundle.menu.button.inGroupMiddle.ornament": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.button.inGroupMiddle.ornament",
+      "exe": "client"
+    },
+    "bundle.menu.button.inGroupRight.background": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.button.inGroupRight.background",
+      "exe": "client"
+    },
+    "bundle.menu.button.inGroupRight.ornament": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.button.inGroupRight.ornament",
+      "exe": "client"
+    },
+    "bundle.menu.button.labelStyle": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.button.labelStyle",
+      "exe": "client"
+    },
+    "bundle.menu.button.ornamentTint": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.button.ornamentTint",
+      "exe": "client"
+    },
+    "bundle.menu.crafting.insufficientIngredientColor": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.crafting.insufficientIngredientColor",
+      "exe": "client"
+    },
+    "bundle.menu.crafting.successFlashColor": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.crafting.successFlashColor",
+      "exe": "client"
+    },
+    "bundle.menu.crafting.sufficientIngredientColor": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.crafting.sufficientIngredientColor",
+      "exe": "client"
+    },
+    "bundle.menu.fancyBox.backgroundColor": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.fancyBox.backgroundColor",
+      "exe": "client"
+    },
+    "bundle.menu.fancyBox.backgroundPattern": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.fancyBox.backgroundPattern",
+      "exe": "client"
+    },
+    "bundle.menu.fancyBox.backgroundPatternColor": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.fancyBox.backgroundPatternColor",
+      "exe": "client"
+    },
+    "bundle.menu.fancyBox.backgroundShapeFrameFull": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.fancyBox.backgroundShapeFrameFull",
+      "exe": "client"
+    },
+    "bundle.menu.fancyBox.backgroundShapeGradientToTop": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.fancyBox.backgroundShapeGradientToTop",
+      "exe": "client"
+    },
+    "bundle.menu.fancyBox.frameColor": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.fancyBox.frameColor",
+      "exe": "client"
+    },
+    "bundle.menu.fancyBox.frameFull": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.fancyBox.frameFull",
+      "exe": "client"
+    },
+    "bundle.menu.scrollbar.range": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.scrollbar.range",
+      "exe": "client"
+    },
+    "bundle.menu.scrollbar.rangeTint": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.scrollbar.rangeTint",
+      "exe": "client"
+    },
+    "bundle.menu.scrollbar.slider": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.scrollbar.slider",
+      "exe": "client"
+    },
+    "bundle.menu.tabHighlight": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.tabHighlight",
+      "exe": "client"
+    },
+    "bundle.menu.tabHighlightColor": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.tabHighlightColor",
+      "exe": "client"
+    },
+    "bundle.menu.tabLabelHighlightColor": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.tabLabelHighlightColor",
+      "exe": "client"
+    },
+    "bundle.menu.tabLabelIdleColor": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.tabLabelIdleColor",
+      "exe": "client"
+    },
+    "bundle.menu.tileBackgroundColor": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.tileBackgroundColor",
+      "exe": "client"
+    },
+    "bundle.menu.tileHighlightOutlineColor": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.tileHighlightOutlineColor",
+      "exe": "client"
+    },
+    "bundle.menu.toggle.toggleOff": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.toggle.toggleOff",
+      "exe": "client"
+    },
+    "bundle.menu.toggle.toggleOn": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.toggle.toggleOn",
+      "exe": "client"
+    },
+    "bundle.menu.topTabBackground": {
+      "field": "keen::FbUiBundle",
+      "path": "menu.topTabBackground",
+      "exe": "client"
+    },
+    "bundle.namedStyles.defaultStyle": {
+      "field": "keen::FbUiBundle",
+      "path": "namedStyles.defaultStyle",
+      "exe": "client"
+    },
+    "bundle.namedStyles.menu.buttonHint": {
+      "field": "keen::FbUiBundle",
+      "path": "namedStyles.menu.buttonHint",
+      "exe": "client"
+    },
+    "bundle.namedStyles.menu.header1": {
+      "field": "keen::FbUiBundle",
+      "path": "namedStyles.menu.header1",
+      "exe": "client"
+    },
+    "bundle.namedStyles.menu.header2": {
+      "field": "keen::FbUiBundle",
+      "path": "namedStyles.menu.header2",
+      "exe": "client"
+    },
+    "bundle.namedStyles.menu.header3": {
+      "field": "keen::FbUiBundle",
+      "path": "namedStyles.menu.header3",
+      "exe": "client"
+    },
+    "bundle.namedStyles.menu.textfieldEmptyHint": {
+      "field": "keen::FbUiBundle",
+      "path": "namedStyles.menu.textfieldEmptyHint",
+      "exe": "client"
+    },
+    "bundle.namedStyles.menu.topTab": {
+      "field": "keen::FbUiBundle",
+      "path": "namedStyles.menu.topTab",
+      "exe": "client"
+    },
+    "bundle.namedStyles.secondaryText": {
+      "field": "keen::FbUiBundle",
+      "path": "namedStyles.secondaryText",
+      "exe": "client"
+    },
+    "bundle.primitives.diamond": {
+      "field": "keen::FbUiBundle",
+      "path": "primitives.diamond",
+      "exe": "client"
+    },
+    "bundle.primitives.separatorLineHorizontalLeftHeavy": {
+      "field": "keen::FbUiBundle",
+      "path": "primitives.separatorLineHorizontalLeftHeavy",
+      "exe": "client"
+    },
+    "bundle.primitives.triangle": {
+      "field": "keen::FbUiBundle",
+      "path": "primitives.triangle",
+      "exe": "client"
+    },
+    "bundle.sounds.backpack.deleteItem": {
+      "field": "keen::FbUiBundle",
+      "path": "sounds.backpack.deleteItem",
+      "exe": "client"
+    },
+    "bundle.sounds.crafting.craftingSuccessful": {
+      "field": "keen::FbUiBundle",
+      "path": "sounds.crafting.craftingSuccessful",
+      "exe": "client"
+    },
+    "bundle.sounds.crafting.highlightChange": {
+      "field": "keen::FbUiBundle",
+      "path": "sounds.crafting.highlightChange",
+      "exe": "client"
+    },
+    "bundle.sounds.menu.clickNeutral": {
+      "field": "keen::FbUiBundle",
+      "path": "sounds.menu.clickNeutral",
+      "exe": "client"
+    },
+    "bundle.sounds.menu.close": {
+      "field": "keen::FbUiBundle",
+      "path": "sounds.menu.close",
+      "exe": "client"
+    },
+    "bundle.sounds.menu.entryCancel": {
+      "field": "keen::FbUiBundle",
+      "path": "sounds.menu.entryCancel",
+      "exe": "client"
+    },
+    "bundle.sounds.menu.open": {
+      "field": "keen::FbUiBundle",
+      "path": "sounds.menu.open",
+      "exe": "client"
+    },
+    "bundle.sounds.menu.highlightChange": {
+      "field": "keen::FbUiBundle",
+      "path": "sounds.menu.highlightChange",
+      "exe": "client"
+    },
+    "bundle.sounds.menu.tabChange": {
+      "field": "keen::FbUiBundle",
+      "path": "sounds.menu.tabChange",
+      "exe": "client"
+    }
+  }
+}

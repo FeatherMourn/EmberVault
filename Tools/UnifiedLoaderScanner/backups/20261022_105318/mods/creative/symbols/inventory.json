@@ -1,0 +1,89 @@
+{
+  "offsets": {
+    "inventory.removeResult.leftOver": {
+      "value": "0x8"
+    },
+    "inventory.transaction.flags": {
+      "value": "0xB0"
+    },
+    "inventory.transactionFlags.free": {
+      "value": "0x10"
+    },
+    "inventory.transactionSize": {
+      "value": "0x7400"
+    }
+  },
+  "symbols": {
+    "inventory.addItem": {
+      "signature": "void*(void* result, void* transaction, std::uint32_t inventory, std::uint64_t slot, std::uint32_t itemId, std::uint32_t count, const void* level, const void* variant, const void* fill)",
+      "find": {
+        "at": 0,
+        "pattern": "4C 89 4C 24 20 48 89 54 24 10 48 89 4C 24 08 55 53 56 57 41 54 41 55 41 56 48 8D AC 24 60 FF FF FF 48 81 EC A0 01 00 00"
+      }
+    },
+    "inventory.anySlot": {
+      "find": {
+        "at": 0,
+        "operand": true,
+        "pattern": "4C 8B 0D ?? ?? ?? ?? 41 8B CE 0F AF 0F 44 8B C3"
+      }
+    },
+    "inventory.commit": {
+      "signature": "void(void* transaction)",
+      "find": {
+        "at": 0,
+        "pattern": "40 55 53 41 55 48 8D AC 24 30 FC FF FF"
+      }
+    },
+    "inventory.moveToInventory": {
+      "signature": "void*(void* result, void* transaction, std::uint64_t source, std::uint32_t inventory, std::uint32_t mode, std::uint32_t, std::uint8_t, std::uint8_t)",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 48 89 6C 24 10 48 89 74 24 18 57 48 83 EC 60 0F B6 84 24 A8 00 00 00 41 8B F9 44 8B 8C 24 90 00 00 00"
+      }
+    },
+    "inventory.payCost": {
+      "signature": "std::uint32_t(void* transaction, const void* costs, std::uint32_t owner, std::uint32_t multiplier, void* e)",
+      "description": "Puts costs into an inventory transaction (0 when paid); building.payCosts and recipes.payIntoTransaction call it, and five other places directly, a storage chest's upgrade among them (2026-10-17, backlog U06)",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 10 44 89 4C 24 20 55 56 57 41 54 41 55 41 56 41 57 48 81 EC B0 00 00 00 45 33 ED"
+      }
+    },
+    "inventory.removeItems": {
+      "signature": "void*(void* result, void* transaction, std::uint32_t owner, std::uint32_t count, void* item, std::uint32_t flag)",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 48 89 74 24 18 48 89 7C 24 20 48 89 54 24 10 55 41 54 41 55 41 56 41 57 48 8D AC 24 20 FF FF FF 48 81 EC E0 01 00 00 44 8B BD 38 01 00 00"
+      }
+    },
+    "inventory.rollback": {
+      "signature": "void(void* transaction)",
+      "find": {
+        "at": 0,
+        "pattern": "4C 8B DC 55 56 41 55 41 56 41 57"
+      }
+    },
+    "inventory.transactionConstruct": {
+      "signature": "void(void* transaction)",
+      "find": {
+        "at": 0,
+        "pattern": "33 D2 33 C0 48 89 11 48 89 51 08 48 89 51 10 48 89 51 18 48 89 51 20 48 89 51 28 48 89 51 30 48 89 51 38 48 89 51 40 48 89 51 48 48 89 51 50 48 89 51 58 48 89 51 60 48 89 51 68 48 89 51 70 48 89 51 78 48 89 81 80 00 00 00 89 81 88 00 00 00 88 81 B0 00 00 00 48 8D 81 18 01 00 00 48 89 91 90 00 00 00 48 89 91 98 00 00 00"
+      }
+    },
+    "inventory.transactionDestruct": {
+      "signature": "void(void* transaction)",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 48 89 74 24 10 57 48 83 EC 20 48 8B F9 45 33 C0 48 81 C1 40 71 00 00 33 D2"
+      }
+    },
+    "inventory.transactionSetup": {
+      "signature": "void(void* transaction, const void* config)",
+      "find": {
+        "at": 0,
+        "pattern": "C6 81 A8 71 00 00 00 48 8B 42 08 48 89 01 48 8B 42 10"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "offsets": {
+    "buildZones.allowed": {
+      "value": "0x1CF6E68",
+      "doc": "world: the bases' build zones {data, count} of {float3 min, float3 max} (1.0; its setter logs \"[ecs] Build zones changed\")"
+    }
+  },
+  "symbols": {
+    "buildZones.query": {
+      "find": {
+        "at": 0,
+        "pattern": "48 83 EC 38 48 8B 82 88 9E CF 01 48 89 44 24 20 48 8B 82 90 9E CF 01"
+      },
+      "site": {
+        "world": {
+          "doc": "the world whose zones are queried (the query's first instruction)",
+          "register": "rdx",
+          "type": "pointer"
+        }
+      },
+      "doc": "a zone query the client calls ~90 times a second (1.0: the playable area's, 0x9B60D0), hooked for the world it is asked about; 1.0's build-zone check (0x9AF020) only runs while building"
+    },
+    "buildZones.set": {
+      "signature": "void(void* world, const void* zones)",
+      "doc": "the build zones' setter (world, zones), logging \"[ecs] Build zones changed\" (1.0: 0x9E5C70, server 0x6870A0)",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 48 89 74 24 10 48 89 7C 24 18 41 56 48 83 EC 40 48 8B 72 08 4C 8B F2 48 8B F9 B8 C5 9D 1C 81"
+      }
+    }
+  }
+}

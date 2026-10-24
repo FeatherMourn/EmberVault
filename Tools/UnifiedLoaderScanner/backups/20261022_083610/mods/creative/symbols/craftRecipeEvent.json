@@ -1,0 +1,33 @@
+{
+  "offsets": {
+    "craftRecipeEvent.amount": {
+      "field": "keen::ecs::CraftRecipeEvent",
+      "path": "recipeAmount"
+    },
+    "craftRecipeEvent.carrierRecipe": {
+      "value": "0xB90DCAA5"
+    },
+    "craftRecipeEvent.operator": {
+      "field": "keen::ecs::CraftRecipeEvent",
+      "path": "craftingOperatorId"
+    },
+    "craftRecipeEvent.recipe": {
+      "field": "keen::ecs::CraftRecipeEvent",
+      "path": "recipeId"
+    },
+    "craftRecipeEvent.size": {
+      "size": "keen::ecs::CraftRecipeEvent"
+    },
+    "craftRecipeEvent.spare": {
+      "field": "keen::ecs::CraftRecipeEvent",
+      "path": "inputCategorySelections"
+    },
+    "craftRecipeEvent.station": {
+      "field": "keen::ecs::CraftRecipeEvent",
+      "path": "craftingStationId"
+    },
+    "craftRecipeEvent.typeHash": {
+      "hash": "keen::ecs::CraftRecipeEvent"
+    }
+  }
+}

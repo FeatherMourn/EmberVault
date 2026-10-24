@@ -1,0 +1,12 @@
+{
+  "flightKey": "G",
+  "flightMode": "unlimited",
+  "gear": "everything",
+  "mapReveal": 1,
+  "mapRevealWarning": true,
+  "menuKey": "Insert",
+  "noBuildingCost": false,
+  "noCraftingCost": false,
+  "noFallDamage": false,
+  "pickerMode": "creative"
+}

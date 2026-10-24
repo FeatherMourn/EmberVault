@@ -1,0 +1,27 @@
+{
+  "symbols": {
+    "building.payCosts": {
+      "signature": "bool(void* context, void* costs, bool pay)",
+      "find": {
+        "at": 0,
+        "pattern": "40 55 56 48 83 EC 78 48 8B F2"
+      }
+    },
+    "building.missingMaterials": {
+      "description": "The build preview's material check on 1.0 (0x286440, its one caller 0x297452 in the cursor's update): true when the backpack and magic chests hold too few for the shape, which turns it red, 'Missing Materials', and greys out Build (cursor flag 0x1000). Client only (2026-10-18, backlog P16)",
+      "signature": "bool(void* cursor, void* selection, float scale)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 10 48 89 74 24 18 57 48 83 EC 70 48 8B 19 48 8B F2"
+      }
+    },
+    "building.storageUpgradePayment": {
+      "description": "Where upgrading or converting a storage chest in place (1.0's Carpenter) pays, in 0x3FD610: the return address of its own inventory.payCost call (2026-10-17, backlog U06)",
+      "find": {
+        "at": 17,
+        "pattern": "48 8D 8D ?? ?? 00 00 48 89 74 24 20 E8 ?? ?? ?? ?? 85 C0 48 8D 8D ?? ?? 00 00 40 0F 94 C7"
+      }
+    }
+  }
+}

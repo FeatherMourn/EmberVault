@@ -1,0 +1,11 @@
+{
+  "offsets": {
+    "answer.counterType": {
+      "enum": "keen::KnowledgeType",
+      "name": "Counter"
+    },
+    "answer.knowledgeId": {
+      "value": "0x57CF25F9"
+    }
+  }
+}

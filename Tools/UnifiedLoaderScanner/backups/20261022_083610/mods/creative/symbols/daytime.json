@@ -1,0 +1,96 @@
+{
+  "offsets": {
+    "daytime.dawn": {
+      "value": "0x28"
+    },
+    "daytime.dayLength": {
+      "value": "0x38"
+    },
+    "daytime.dusk": {
+      "value": "0x30"
+    },
+    "daytime.nightLength": {
+      "value": "0x40"
+    },
+    "daytime.syncAnchor": {
+      "value": "0x10"
+    },
+    "daytime.syncBase": {
+      "value": "0x18"
+    },
+    "daytime.syncScale": {
+      "value": "0x20"
+    },
+    "daytime.syncVersion": {
+      "value": "0x24"
+    },
+    "daytime.timeOfDay": {
+      "value": "0x48"
+    }
+  },
+  "symbols": {
+    "daytime.clientTick": {
+      "exe": "client",
+      "find": [
+        {
+          "in": {
+            "system": "client_update_daytime"
+          },
+          "call": 7
+        },
+        {
+          "at": 8,
+          "pattern": "48 8B 4C 24 30 48 8B 10 E8 ?? ?? ?? ?? 48 8B 5C 24 50 48 8B 74 24 60 48 83 C4 40 5F C3 CC CC CC CC CC CC CC CC CC CC 40 57 48 81 EC 90 00 00 00 41 B8 28 00 00 00 48 8D 54 24 30 48 8B F9 E8 ?? ?? ?? ??"
+        }
+      ],
+      "doc": "re/daytime.md",
+      "site": {
+        "daytime": {
+          "register": "rcx",
+          "type": "pointer",
+          "doc": "the client's copy of the daytime object"
+        }
+      }
+    },
+    "daytime.serverTick": {
+      "find": [
+        {
+          "in": {
+            "system": "server_update_daytime"
+          },
+          "call": 7
+        },
+        {
+          "at": 8,
+          "pattern": "48 8B 4C 24 30 48 8B 10 E8 ?? ?? ?? ?? 48 8B 5C 24 50 48 8B 74 24 60 48 83 C4 40 5F C3 CC CC CC CC CC CC CC CC CC CC 40 53 48 81 EC 90 00 00 00 41 B8 28 00 00 00 48 8D 54 24 30 48 8B D9 E8 ?? ?? ?? ??"
+        }
+      ],
+      "doc": "re/daytime.md",
+      "site": {
+        "daytime": {
+          "register": "rcx",
+          "type": "pointer",
+          "doc": "the server's daytime object"
+        },
+        "now": {
+          "register": "rdx",
+          "type": "i64",
+          "doc": "the engine's time (ns)"
+        }
+      }
+    },
+    "daytime.wantedScale": {
+      "find": {
+        "at": 0,
+        "pattern": "F3 0F 10 15 ?? ?? ?? ?? 0F 28 DF 48 8B 9C 24 90 00 00 00 F3 0F 5C DE"
+      },
+      "site": {
+        "scale": {
+          "register": "xmm6",
+          "type": "f32",
+          "doc": "the speed the sleep system wants: 1, or 60 shared by the sleepers"
+        }
+      }
+    }
+  }
+}

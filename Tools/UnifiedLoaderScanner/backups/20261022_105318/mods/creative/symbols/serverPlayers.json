@@ -1,0 +1,41 @@
+{
+  "offsets": {
+    "serverPlayers.groups": {
+      "value": "0x1830"
+    },
+    "serverPlayers.name": {
+      "value": "0x20"
+    },
+    "serverPlayers.permissions": {
+      "value": "0x10"
+    },
+    "serverPlayers.slots": {
+      "value": "0x1E0"
+    },
+    "serverPlayers.stride": {
+      "value": "0x148"
+    }
+  },
+  "symbols": {
+    "serverPlayers.update": {
+      "find": [
+        {
+          "string": "[server] Player '%k' logged in with Permissions:\n",
+          "function": true
+        },
+        {
+          "at": 0,
+          "pattern": "48 8B C4 55 53 56 41 55 41 56"
+        }
+      ],
+      "doc": "re/server.md#who-is-admin-the-sessions-player-slots-2026-10-14",
+      "site": {
+        "session": {
+          "register": "rcx",
+          "type": "pointer",
+          "doc": "the server session (the update's first instruction)"
+        }
+      }
+    }
+  }
+}

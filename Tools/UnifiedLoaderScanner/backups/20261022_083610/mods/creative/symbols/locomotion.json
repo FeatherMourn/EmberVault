@@ -1,0 +1,91 @@
+{
+  "offsets": {
+    "locomotion.jumpCount": {
+      "field": "keen::ecs::DynamicLocomotion",
+      "path": "jumpCount"
+    },
+    "locomotion.lastJumpTime": {
+      "field": "keen::ecs::DynamicLocomotion",
+      "path": "lastJumpTime"
+    },
+    "locomotion.takeOffTime": {
+      "field": "keen::ecs::DynamicLocomotion",
+      "path": "takeOffTime"
+    }
+  },
+  "symbols": {
+    "locomotion.airJumpGate": {
+      "find": {
+        "at": 7,
+        "pattern": "48 3B C1 48 0F 44 DA 80 BE 55 01 00 00 01 0F 87 ?? ?? ?? ??"
+      },
+      "site": {
+        "locomotion": {
+          "doc": "the actor's locomotion (its jump counts and times)",
+          "register": "rdx",
+          "type": "pointer"
+        },
+        "sinceTakeOff": {
+          "doc": "the time since the take-off (ns), which the gate wants within its window",
+          "register": "rbx",
+          "type": "i64"
+        }
+      }
+    },
+    "locomotion.decideState": {
+      "signature": "std::uint8_t(void* a, void* actor, void* locomotion, void* d, void* e, void* f, void* g, void* h)",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 10 48 89 6C 24 18 48 89 7C 24 20 41 56 48 83 EC 40 41 80 78 59 0B"
+      }
+    },
+    "locomotion.diveMover": {
+      "signature": "void(void* context, void* argument)",
+      "doc": "the Diving mover, found through its case in the movement system's dispatch (1.0: Swimming's is 0x42C6A0)",
+      "find": {
+        "at": 0,
+        "operand": true,
+        "pattern": "E8 ?? ?? ?? ?? EB 11 48 8D 95 98 02 00 00 48 8D 4C 24 60"
+      }
+    },
+    "locomotion.moverDispatch": {
+      "find": {
+        "at": 0,
+        "pattern": "48 8B 45 58 0F B6 48 59 74 2C 83 F9 0B"
+      },
+      "site": {
+        "actor": {
+          "doc": "the moving actor",
+          "frame": "rbp",
+          "offset": "mover.frame.actor",
+          "type": "pointer"
+        },
+        "locomotion": {
+          "doc": "its keen::ecs::DynamicLocomotion",
+          "frame": "rbp",
+          "offset": "mover.frame.locomotion",
+          "type": "pointer"
+        },
+        "moverArgument": {
+          "doc": "the movers' second argument, on the stack",
+          "frame": "rbp",
+          "offset": "mover.frame.argument",
+          "type": "address"
+        },
+        "moverContext": {
+          "doc": "the movers' first argument, on the stack",
+          "frame": "rsp",
+          "offset": "mover.frame.context",
+          "type": "address"
+        },
+        "transform": {
+          "doc": "its keen::ecs::Transform (a WorldPosition first)",
+          "frame": "rbp",
+          "offset": "mover.frame.transform",
+          "type": "pointer"
+        }
+      },
+      "doc": "the movement system (locomotion_execution) before its per-state mover switch (1.0: 0x43648B, two tables)"
+    }
+  }
+}

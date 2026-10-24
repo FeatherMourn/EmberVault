@@ -1,0 +1,42 @@
+{
+  "offsets": {
+    "hud.creativeScreenMode": {
+      "enum": "keen::HudScreenType",
+      "exe": "client",
+      "name": "YcPlayground"
+    }
+  },
+  "symbols": {
+    "hud.build": {
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "4C 8B DC 55 49 8D AB E8 FD FF FF 48 81 EC 10 03 00 00"
+      }
+    },
+    "hud.buildingAreaRows": {
+      "exe": "client",
+      "doc": "re/input-and-ui.md",
+      // In the Flame protected area box (0xB5BA00 in 1.0.0.2): right after its last row (Undo Build Action), before it
+      // closes; a mod's rows drawn here are the box's.
+      "find": {
+        "pattern": "0F 29 85 ?? ?? ?? ?? E8 ?? ?? ?? ?? 80 7D 36 00 44 0F 28 8C 24 ?? ?? ?? ??",
+        "at": 12
+      }
+    },
+    "hud.modeDispatch": {
+      "exe": "client",
+      "find": {
+        "at": 7,
+        "pattern": "48 8B 45 80 0F B6 08 83 E9 34 0F 84 ?? ?? ?? ??"
+      },
+      "site": {
+        "mode": {
+          "doc": "the screen mode the HUD dispatches",
+          "register": "rcx",
+          "type": "u64"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "embervault-resource-types",
+  "name": "EmberVault Resource Types Probe",
+  "version": "1.0.0",
+  "description": "Read-only EML probe that exports visible resource type names.",
+  "authors": ["EmberVault"],
+  "license": null,
+  "dependencies": [],
+  "capabilities": ["export"]
+}

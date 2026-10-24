@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_api_sweep_sf",
+  "name": "EmberVault API Sweep (read-only)",
+  "version": "1.0.0",
+  "description": "Inventories documented ShroudForge runtime API surfaces without reads that require a world and without writes.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

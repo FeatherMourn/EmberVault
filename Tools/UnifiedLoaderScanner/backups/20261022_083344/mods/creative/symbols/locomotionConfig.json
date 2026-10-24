@@ -1,0 +1,12 @@
+{
+  "offsets": {
+    "locomotionConfig.diveAcceleration": {
+      "field": "keen::ecs::Locomotion",
+      "path": "waterConfig.diveAcceleration"
+    },
+    "locomotionConfig.diveDeceleration": {
+      "field": "keen::ecs::Locomotion",
+      "path": "waterConfig.diveDeceleration"
+    }
+  }
+}

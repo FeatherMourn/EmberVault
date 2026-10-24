@@ -1,0 +1,16 @@
+{
+  "offsets": {
+    "balancing.table": {
+      "value": "0x20",
+      "doc": "the client's balancing object: its keen::BalancingTable (as items.weaponDamage reads it, 0xE5D880)"
+    },
+    "balancingTable.itemLevelCap": {
+      "field": "keen::BalancingTable",
+      "path": "itemLevelCap"
+    },
+    "balancingTable.playerLevelCap": {
+      "field": "keen::BalancingTable",
+      "path": "playerLevelCap"
+    }
+  }
+}

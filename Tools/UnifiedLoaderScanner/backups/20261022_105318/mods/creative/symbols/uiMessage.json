@@ -1,0 +1,16 @@
+{
+  "offsets": {
+    "uiMessage.move.inventory": {
+      "value": "0xC"
+    },
+    "uiMessage.move.kind": {
+      "value": "0x24"
+    },
+    "uiMessage.move.source": {
+      "value": "0x1C"
+    },
+    "uiMessage.move.target": {
+      "value": "0x10"
+    }
+  }
+}

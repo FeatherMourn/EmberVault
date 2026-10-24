@@ -1,0 +1,23 @@
+{
+  "offsets": {
+    // The fog map (re/map.md): the world's size in metres, x and z
+    "map.fog.width": { "exe": "client", "value": "0x0" },
+    "map.fog.depth": { "exe": "client", "value": "0x4" },
+    "map.fog.tiles": { "exe": "client", "value": "0x18", "doc": "its tiles, 32 x 32 bytes each: identifies a map" }
+  },
+  "symbols": {
+    "map.discover": {
+      "signature": "void(void* map, const float* xz, float range)",
+      "exe": "client",
+      "doc": "uncovers the map's fog in a circle of range / 2 metres around xz (the world position), called each frame by fog_of_war with the player's discoveryRange (re/map.md)",
+      // fog_of_war's call to it, and its call to the painter, lie in second unwind fragments, which "call" doesn't count
+      "find": { "at": 0, "pattern": "40 53 56 57 41 56 41 57 48 81 EC 80 00 00 00 48 8B 79 08 4C 8B F1 F3 0F 10 05 ?? ?? ?? ?? 44 8B CF" }
+    },
+    "map.paintCircle": {
+      "signature": "std::uint32_t(std::uint8_t* tile, std::uint32_t originX, std::uint32_t originZ, float x, float z, float radius, float hardness)",
+      "exe": "client",
+      "doc": "raises one 32 x 32 tile's bytes to a circle (map pixels of 8 m; 255 inside, fading to 0 over radius / hardness at its rim), non-zero when a byte rose; a dispatcher to the SSE, AVX2 or AVX-512 version (re/map.md)",
+      "find": { "at": 8, "operand": true, "pattern": "48 C1 E1 0A 49 03 4E 18 E8 ?? ?? ?? ?? 85 C0" }
+    }
+  }
+}

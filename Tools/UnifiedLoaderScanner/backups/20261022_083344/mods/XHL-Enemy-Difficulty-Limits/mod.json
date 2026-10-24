@@ -1,0 +1,9 @@
+{
+  "id": "xhl-enemy-difficulty-limits",
+  "name": "XHL-Enemy-Difficulty-Limits (1.0 Ready)",
+  "version": "1.0.1",
+  "capabilities": ["patch"],
+  "description": "Extends seven enemy difficulty settings to 10000% and repairs runtime enemy perception scaling.",
+  "authors": ["XHL"],
+  "license": "MIT"
+}

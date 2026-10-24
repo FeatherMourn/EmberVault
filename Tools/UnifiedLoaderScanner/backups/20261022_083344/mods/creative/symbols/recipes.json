@@ -1,0 +1,35 @@
+{
+  "symbols": {
+    "recipes.find": {
+      "signature": "const void*(std::uint32_t recipeId, const void* registry)",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 48 89 7C 24 10 8B C1 4C 8B D2 85 C9 74 60"
+      }
+    },
+    "recipes.isLocked": {
+      "signature": "bool(const void* recipe)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 83 EC 08 48 8B 05 ?? ?? ?? ?? 48 8B 90 D0 00 00 00 4C 8B 0A 4D 85 C9 0F 84 ?? ?? ?? ??"
+      }
+    },
+    "recipes.shown": {
+      "signature": "bool(const void* recipe)",
+      "description": "Crafting shows the recipe (as it builds its lists, 0xD50C90 on 1.0.0.2): not locked, its output exists, and it has a knowledge requirement or the player knows one of its inputs (2026-10-17, backlog U07)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 18 48 89 6C 24 20 56 57 41 57 48 83 EC 20 48 8B D9 48 85 C9 0F 84 ?? ?? ?? ?? 48 8B 05 ?? ?? ?? ?? 48 8B 90 D0 00 00 00 48 8B 3A"
+      }
+    },
+    "recipes.payIntoTransaction": {
+      "signature": "std::uint32_t(void* transaction, void* recipe, void* c, void* d, void* e, void* f, void* g, void* h)",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 20 55 56 41 56 48 81 EC 90 00 00 00 4C 8B F2"
+      }
+    }
+  }
+}

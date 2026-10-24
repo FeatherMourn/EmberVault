@@ -1,0 +1,1409 @@
+{
+  "include": ["gameui/types.hpp"],
+  "offsets": {
+    "gameui.bindingCombo.key": {
+      "value": "0x2"
+    },
+    "gameui.bindingRow.active": {
+      "value": "0x10D"
+    },
+    "gameui.bindingRow.data": {
+      "value": "0x30"
+    },
+    "gameui.bindingRow.onScreen": {
+      "value": "0x113"
+    },
+    "gameui.bindingRow.shown": {
+      "value": "0x48"
+    },
+    "gameui.bindingRow.takeFocus": {
+      "value": "0x114"
+    },
+    "gameui.bindingTable.entry": {
+      "value": "0x2"
+    },
+    "gameui.bindingWaiting": {
+      "value": "0x200"
+    },
+    "gameui.button.warning": {
+      // Measured 2026-10-20 (re/ui-framework.md, "The game's buttons in 1.0"): 0 on the Split Stack's Cancel and
+      // Confirm, set on the Backpack's red Delete; the 1.0 port had taken it for "enabled".
+      "value": "0xA"
+    },
+    "gameui.button.header": {
+      "doc": "re/port-1.0.md",
+      "exe": "client",
+      "value": "0x4"
+    },
+    "gameui.button.height": {
+      "value": "0x50"
+    },
+    "gameui.button.scale": {
+      "value": "0x54"
+    },
+    "gameui.button.size": {
+      "value": "0xA8"
+    },
+    "gameui.button.style": {
+      "value": "0x10"
+    },
+    "gameui.button.text": {
+      "value": "0x78"
+    },
+    "gameui.button.enabled": {
+      // The register that sets the warning on the Delete button sets this too; the Split Stack's buttons have 1.
+      "value": "0x58"
+    },
+    "gameui.button.width": {
+      "value": "0x4C"
+    },
+    "gameui.binding.activation": {
+      "exe": "client",
+      "value": "0xC2"
+    },
+    "gameui.binding.controller": {
+      "exe": "client",
+      "value": "0x60"
+    },
+    "gameui.binding.itemCode": {
+      "exe": "client",
+      "value": "0x8"
+    },
+    "gameui.binding.itemDevice": {
+      "exe": "client",
+      "value": "0x2"
+    },
+    "gameui.binding.itemSize": {
+      "exe": "client",
+      "value": "0xC"
+    },
+    "gameui.binding.size": {
+      "exe": "client",
+      "value": "0xC4"
+    },
+    "gameui.bindingHint.colour": {
+      "exe": "client",
+      "value": "0x70"
+    },
+    "gameui.bindingHint.hold": {
+      "exe": "client",
+      "value": "0x41"
+    },
+    "gameui.bindingHint.holdRing": {
+      "exe": "client",
+      "value": "0x4C"
+    },
+    "gameui.bindingHint.label": {
+      "exe": "client",
+      "value": "0x58"
+    },
+    "gameui.bindingHint.progress": {
+      "exe": "client",
+      "value": "0x48"
+    },
+    "gameui.bindingHint.size": {
+      "exe": "client",
+      "value": "0x78"
+    },
+    "gameui.categoryEntry.attention": {
+      "value": "0x2"
+    },
+    "gameui.categoryEntry.count": {
+      "value": "0x8"
+    },
+    "gameui.categoryEntry.headerStyle": {
+      "value": "0x3"
+    },
+    "gameui.categoryEntry.icon": {
+      "value": "0x40"
+    },
+    "gameui.categoryEntry.iconSize": {
+      "value": "0x3C"
+    },
+    "gameui.categoryEntry.newMarker": {
+      "value": "0x1"
+    },
+    "gameui.categoryEntry.size": {
+      "value": "0x48"
+    },
+    "gameui.categoryEntry.tint": {
+      "value": "0x30"
+    },
+    "gameui.characterStyle.color": {
+      "exe": "client",
+      "field": "keen::UiCharacterStyle",
+      "path": "color"
+    },
+    "gameui.context.bundle": {
+      "doc": "re/ui-framework.md",
+      "exe": "client",
+      "value": "0xC8"
+    },
+    "gameui.context.input": {
+      "exe": "client",
+      "value": "0x10"
+    },
+    "gameui.dragDropScope.size": {
+      "value": "0x4020"
+    },
+    "gameui.fancyBox.flash": {
+      "value": "0x10"
+    },
+    "gameui.fancyBox.flashActive": {
+      "value": "0x60"
+    },
+    "gameui.fancyBox.glass": {
+      "value": "0x8"
+    },
+    "gameui.fancyBox.scale": {
+      "doc": "re/port-1.0.md",
+      "exe": "client",
+      "value": "0x4"
+    },
+    "gameui.fancyBox.size": {
+      "value": "0xB8"
+    },
+    "gameui.fancyBox.style": {
+      "value": "0x0"
+    },
+    "gameui.hint.customLabel": {
+      "value": "0x1B"
+    },
+    "gameui.hint.kind": {
+      "value": "0x17"
+    },
+    "gameui.hint.label": {
+      "value": "0x20"
+    },
+    "gameui.hint.owner": {
+      "value": "0x40"
+    },
+    "gameui.hint.size": {
+      "value": "0x48"
+    },
+    "gameui.hint.switchValue": {
+      "value": "0x8",
+      "doc": "a bool* the hint shows as a switch after its label (Session Mode's Always ask); null from makeHint, no switch (re/ui-framework.md)"
+    },
+    "gameui.hintList.count": {
+      "value": "0x480"
+    },
+    "gameui.input.blocked": {
+      "exe": "client",
+      "value": "0x1"
+    },
+    "gameui.input.pointerPosition": {
+      "value": "0x6B38"
+    },
+    "gameui.itemDescription.count": {
+      "value": "0x10"
+    },
+    "gameui.itemDescription.damage": {
+      "value": "0x28"
+    },
+    "gameui.itemDescription.hasDamage": {
+      "value": "0x38"
+    },
+    "gameui.itemDescription.itemId": {
+      "value": "0x8"
+    },
+    "gameui.itemDescription.level": {
+      "value": "0x24"
+    },
+    "gameui.itemDescription.rarity": {
+      "value": "0x2C"
+    },
+    "gameui.itemDescription.unlocked": {
+      "value": "0x2E"
+    },
+    "gameui.itemDescription.upgrades": {
+      "value": "0x2D"
+    },
+    "gameui.itemDetails.flashStart": {
+      "value": "0x68"
+    },
+    "gameui.itemDetails.frame": {
+      "value": "0xC0"
+    },
+    "gameui.itemDetails.player": {
+      "value": "0x168"
+    },
+    "gameui.itemDetails.shown": {
+      "value": "0x60"
+    },
+    "gameui.itemDetails.tint": {
+      "value": "0xCC"
+    },
+    "gameui.itemSlot.background": {
+      "value": "0x10"
+    },
+    "gameui.itemSlot.culled": {
+      "value": "0x0"
+    },
+    "gameui.itemSlot.itemId": {
+      "value": "0x20"
+    },
+    "gameui.itemSlot.size": {
+      "value": "0x50"
+    },
+    "gameui.itemSlot.slotSize": {
+      "value": "0x4"
+    },
+    "gameui.itemSlot.takeFocus": {
+      "value": "0x2"
+    },
+    "gameui.itemSlot.tint": {
+      "value": "0x2C"
+    },
+    "gameui.localPlayer.count": {
+      "value": "0x3068"
+    },
+    "gameui.localPlayer.game": {
+      "value": "0x38"
+    },
+    "gameui.localPlayer.id": {
+      "value": "0x18"
+    },
+    "gameui.localPlayer.list": {
+      "value": "0x3060"
+    },
+    "gameui.localPlayer.players": {
+      "value": "0xD0"
+    },
+    "gameui.localPlayer.stride": {
+      "value": "0x8F70"
+    },
+    "gameui.menuTab.active": {
+      "value": "0x30"
+    },
+    "gameui.menuTab.hoverHighlight": {
+      "value": "0x31"
+    },
+    "gameui.menuTab.interactive": {
+      "value": "0x32"
+    },
+    "gameui.menuTab.label": {
+      "value": "0x18"
+    },
+    "gameui.menuTab.noShortcut": {
+      "doc": "re/port-1.0.md",
+      "exe": "client",
+      "value": "0x8B"
+    },
+    "gameui.menuTab.opacity": {
+      "value": "0x34"
+    },
+    "gameui.menuTab.shortcut": {
+      "value": "0x1"
+    },
+    "gameui.menuTab.size": {
+      "value": "0x40"
+    },
+    "gameui.menuTabList.capacity": {
+      "value": "0x10"
+    },
+    "gameui.node.pass": {
+      "value": "0x50"
+    },
+    "gameui.node.rect": {
+      "value": "0x114"
+    },
+    "gameui.pass.input": {
+      "value": "0x18"
+    },
+    "gameui.scrollbar.enabled": {
+      "exe": "client",
+      "field": "keen::GameUiScrollbarParameterData",
+      "path": "useInverseRangeRect"
+    },
+    "gameui.scrollbar.rangeColor": {
+      "exe": "client",
+      "field": "keen::GameUiScrollbarParameterData",
+      "path": "rangeRectColor"
+    },
+    "gameui.scrollbar.rangeTexture": {
+      "exe": "client",
+      "field": "keen::GameUiScrollbarParameterData",
+      "path": "rangeTexture"
+    },
+    "gameui.scrollbar.sliderStyle": {
+      "exe": "client",
+      "field": "keen::GameUiScrollbarParameterData",
+      "path": "sliderStyle"
+    },
+    "gameui.scrollbar.sliderTexture": {
+      "exe": "client",
+      "field": "keen::GameUiScrollbarParameterData",
+      "path": "sliderTexture"
+    },
+    "gameui.scrollbar.widths": {
+      "exe": "client",
+      "field": "keen::GameUiScrollbarParameterData",
+      "path": "sliderIdleWidth"
+    },
+    "gameui.scrolling.doScissorWhenScrolling": {
+      "exe": "client",
+      "field": "keen::GameUiScrollingLayoutParameterData",
+      "path": "doScissorWhenScrolling"
+    },
+    "gameui.scrolling.enableScrollbar": {
+      "exe": "client",
+      "field": "keen::GameUiScrollingLayoutParameterData",
+      "path": "enableScrollbar"
+    },
+    "gameui.scrolling.scrollbar": {
+      "exe": "client",
+      "field": "keen::GameUiScrollingLayoutParameterData",
+      "path": "scrollBar"
+    },
+    "gameui.sectionHeader.prefix": {
+      "value": "0x18"
+    },
+    "gameui.sectionHeader.size": {
+      "value": "0x48"
+    },
+    "gameui.sectionHeader.title": {
+      "value": "0x0"
+    },
+    "gameui.settingOption.arrows": {
+      "value": "0xC3A"
+    },
+    "gameui.settingOption.count": {
+      "value": "0xC00"
+    },
+    "gameui.settingOption.description": {
+      "value": "0xC20"
+    },
+    "gameui.settingOption.entryLabel": {
+      "value": "0x8"
+    },
+    "gameui.settingOption.entrySize": {
+      "value": "0x30"
+    },
+    "gameui.settingOption.interactive": {
+      "value": "0xC3C"
+    },
+    "gameui.settingOption.label": {
+      "value": "0xC08"
+    },
+    "gameui.settingOption.size": {
+      "value": "0xC48"
+    },
+    "gameui.settingDropdown.description": {
+      "value": "0xC28"
+    },
+    "gameui.settingDropdown.entryLabel": {
+      "value": "0x8"
+    },
+    "gameui.settingDropdown.size": {
+      "value": "0xC90",
+      "doc": "the parameters settingDropdownInit fills (to +0xC88)"
+    },
+    "gameui.settingSlider.description": {
+      "value": "0x18"
+    },
+    "gameui.settingSlider.format": {
+      "value": "0x4C"
+    },
+    "gameui.settingSlider.interactive": {
+      "value": "0x38"
+    },
+    "gameui.settingSlider.label": {
+      "value": "0x0"
+    },
+    "gameui.settingSlider.labelWidth": {
+      "doc": "re/port-1.0.md",
+      "exe": "client",
+      "value": "0x44"
+    },
+    "gameui.settingSlider.list": {
+      "value": "0x78"
+    },
+    "gameui.settingSlider.listCapacity": {
+      "value": "0x88"
+    },
+    "gameui.settingSlider.listGrow": {
+      "value": "0x90"
+    },
+    "gameui.settingSlider.max": {
+      "value": "0x34"
+    },
+    "gameui.settingSlider.min": {
+      "value": "0x30"
+    },
+    "gameui.settingSlider.size": {
+      "value": "0xA0"
+    },
+    "gameui.settingSlider.steps": {
+      "value": "0x40"
+    },
+    "gameui.settingSlider.text": {
+      "value": "0x58"
+    },
+    "gameui.slider.inclusive": {
+      "value": "0x1"
+    },
+    "gameui.slider.total": {
+      "value": "0x14"
+    },
+    "gameui.slider.value": {
+      "value": "0x4C"
+    },
+    "gameui.statusEntry.color": {
+      "value": "0x38"
+    },
+    "gameui.statusEntry.icon": {
+      "value": "0x28"
+    },
+    "gameui.statusEntry.iconSize": {
+      "value": "0x24"
+    },
+    "gameui.statusEntry.rotation": {
+      "value": "0x40"
+    },
+    "gameui.statusEntry.size": {
+      "value": "0x58"
+    },
+    "gameui.statusEntry.text": {
+      "value": "0x0"
+    },
+    "gameui.text.alignment": {
+      "value": "0x38"
+    },
+    "gameui.text.color": {
+      "value": "0xB0"
+    },
+    "gameui.text.enabled": {
+      "value": "0x3D"
+    },
+    "gameui.text.field94": {
+      "value": "0x92"
+    },
+    "gameui.text.flagsA": {
+      "value": "0xD4"
+    },
+    "gameui.text.flagsB": {
+      "value": "0x90"
+    },
+    "gameui.text.fontSize": {
+      "value": "0x7C"
+    },
+    "gameui.text.emphasis": {
+      // The Session Mode card's title and subtitle (0xC86D9C, 0xC86F18; 2026-10-20): 1 bold, 2 italic.
+      "value": "0x96"
+    },
+    "gameui.navigation.actions": {
+      "value": "0x34"
+    },
+    "gameui.navigation.columns": {
+      "value": "0x18"
+    },
+    "gameui.navigation.enabled": {
+      "value": "0x28"
+    },
+    "gameui.navigation.mode": {
+      "value": "0x0"
+    },
+    "gameui.navigation.size": {
+      "value": "0x58"
+    },
+    "gameui.navigation.sound": {
+      "value": "0x38"
+    },
+    "gameui.navigation.u04": {
+      "value": "0x4"
+    },
+    "gameui.navigation.u20": {
+      "value": "0x20"
+    },
+    "gameui.navigation.wrap": {
+      "value": "0x24"
+    },
+    "gameui.navigation.u29": {
+      "value": "0x29"
+    },
+    "gameui.navigation.u30": {
+      "value": "0x30"
+    },
+    "gameui.navigation.u48": {
+      "value": "0x48"
+    },
+    "gameui.text.node": {
+      "value": "0x8"
+    },
+    "gameui.text.opacity": {
+      "value": "0xB4"
+    },
+    "gameui.textField.caret": {
+      "value": "0x1980"
+    },
+    "gameui.textField.editing": {
+      "value": "0x1988"
+    },
+    "gameui.textField.maxLength": {
+      "value": "0x158"
+    },
+    "gameui.textField.mode": {
+      "value": "0x148"
+    },
+    "gameui.textField.size": {
+      "value": "0x280"
+    },
+    "gameui.textField.started": {
+      "value": "0x198B"
+    },
+    "gameui.textField.stateId": {
+      "value": "0x64D2790860D9C7F6"
+    },
+    "gameui.textField.text": {
+      "value": "0x10"
+    }
+  },
+  "symbols": {
+    "gameui.acceptDrop": {
+      "signature": "void(void* node, std::uint32_t player, std::int32_t)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 83 EC 28 33 C0 44 89 44 24 38 44 8B C2"
+      }
+    },
+    "gameui.allocateMove": {
+      "signature": "void*(void* uiSystem)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 10 57 48 83 EC 20 48 8B 81 D0 00 00 00 48 8B 98 C0 3C 03 00 4C 8D 43 18 8B 43 10 49 3B 00 75 0F 33 FF 8B C7 48 8B 5C 24 38 48 83 C4 20 5F C3 8B 53 40 8B C2 83 E0 0F 74 05 2B D0 83 C2 10 48 8B 7B 30 33 C0 8B CA 0F 57 C0 48 03 F9 0F 11 07 0F 11 47 10 48 89 47 20 8D 42 28 C6 07 2C 89 43 40"
+      }
+    },
+    "gameui.beginBox": {
+      "signature": "void(void* box, std::uintptr_t flags)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "40 53 48 83 EC 20 48 8B 05 ?? ?? ?? ?? 48 8B D9 45 33 C0 48 8B 48 18"
+      }
+    },
+    "gameui.beginDragDrop": {
+      "signature": "void(void* scope, std::int32_t inputMask, bool, bool)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "33 C0 66 89 81 00 20 00 00 66 89 81 08 40 00 00 48 8B 05 ?? ?? ?? ??"
+      }
+    },
+    "gameui.beginNamedBox": {
+      "signature": "void(void* box, const flame::gameui::TextString* name)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 57 48 83 EC 20 48 8B 05 ?? ?? ?? ?? 48 8B F9 48 8B DA"
+      }
+    },
+    "gameui.beginRoot": {
+      "signature": "void(void* box, void* context)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "40 53 48 83 EC 20 48 8B D9 48 C7 41 10 00 00 00 00 48 C7 01 00 00 00 00 48 89 51 08"
+      }
+    },
+    "gameui.beginScroll": {
+      "signature": "void(void* scroll, bool, float* offset, void*, const void* params)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 55 57 41 54 41 55 41 57 48 8D A8 C8 FD FF FF 48 81 EC 10 03 00 00"
+      }
+    },
+    "gameui.beginStack": {
+      "signature": "void(void* box, float spacing)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "40 53 48 83 EC 30 48 8B 05 ?? ?? ?? ?? 48 8B D9 0F 29 74 24 20 45 33 C0 33 D2 0F 28 F1 48 8B 48 18 48 89 0B 48 C7 43 08 00 00 00 00 48 C7 43 10 00 00 00 00 E8 ?? ?? ?? ?? 48 8B CB 48 89 43 08 C6 43 14 01 E8 ?? ?? ?? ?? 48 8B 4B 08 48 8D 54 24 40 45 33 C0 F3 0F 11 74 24 40 48 C7 43 18 00 00 00 00 C6 43 20 00 C6 43 22 00"
+      }
+    },
+    "gameui.beginText": {
+      "signature": "void(void* text, const flame::gameui::TextString* string, const void* style, std::uintptr_t flags)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 48 89 74 24 10 48 89 7C 24 18 41 56 48 83 EC 50 48 8B DA 41 0F B6 F9 33 D2"
+      }
+    },
+    "gameui.navigationInput": {
+      "signature": "void*(void* input, const void* params, std::uint8_t flags)",
+      "exe": "client",
+      "doc": "re/ui-framework.md",
+      "find": {
+        "in": {
+          "string": "gridColumn",
+          "nth": 1
+        },
+        "at": 23,
+        "operand": true,
+        "pattern": "48 8D 8D ?? ?? ?? ?? E8 ?? ?? ?? ?? 41 B0 01 48 8D 55 ?? 48 8D 4D ?? E8 ?? ?? ?? ?? 48 8D 54 24 ?? 48 8D 8D ?? ?? ?? ?? 0F 10 00 0F 29 44 24 ?? E8 ?? ?? ?? ??"
+      }
+    },
+    "gameui.beginNavigation": {
+      "signature": "void*(void* scope, const void* params)",
+      "exe": "client",
+      "doc": "re/ui-framework.md",
+      "find": {
+        "in": {
+          "string": "gridColumn",
+          "nth": 1
+        },
+        "at": 7,
+        "operand": true,
+        "pattern": "48 8D 8D ?? ?? ?? ?? E8 ?? ?? ?? ?? 41 B0 01 48 8D 55 ?? 48 8D 4D ?? E8 ?? ?? ?? ?? 48 8D 54 24 ?? 48 8D 8D ?? ?? ?? ?? 0F 10 00 0F 29 44 24 ?? E8 ?? ?? ?? ??"
+      }
+    },
+    "gameui.setNavigationInput": {
+      "signature": "void(void* scope, const void* input)",
+      "exe": "client",
+      "doc": "re/ui-framework.md",
+      "find": {
+        "in": {
+          "string": "gridColumn",
+          "nth": 1
+        },
+        "at": 48,
+        "operand": true,
+        "pattern": "48 8D 8D ?? ?? ?? ?? E8 ?? ?? ?? ?? 41 B0 01 48 8D 55 ?? 48 8D 4D ?? E8 ?? ?? ?? ?? 48 8D 54 24 ?? 48 8D 8D ?? ?? ?? ?? 0F 10 00 0F 29 44 24 ?? E8 ?? ?? ?? ??"
+      }
+    },
+    "gameui.endNavigation": {
+      "signature": "std::uint32_t(void* scope, std::uint64_t)",
+      "exe": "client",
+      "doc": "re/ui-framework.md",
+      "find": {
+        "in": {
+          "string": "viewerParent",
+          "nth": 1
+        },
+        "at": 9,
+        "operand": true,
+        "pattern": "33 D2 48 8D 8D ?? ?? ?? ?? E8 ?? ?? ?? ?? 48 8D 8D ?? ?? ?? ?? E8 ?? ?? ?? ?? 48 8D 8D ?? ?? ?? ?? E8 ?? ?? ?? ??"
+      }
+    },
+    "gameui.destroyNavigation": {
+      "signature": "void(void* scope)",
+      "exe": "client",
+      "doc": "re/ui-framework.md",
+      "find": {
+        "in": {
+          "string": "viewerParent",
+          "nth": 1
+        },
+        "at": 33,
+        "operand": true,
+        "pattern": "33 D2 48 8D 8D ?? ?? ?? ?? E8 ?? ?? ?? ?? 48 8D 8D ?? ?? ?? ?? E8 ?? ?? ?? ?? 48 8D 8D ?? ?? ?? ?? E8 ?? ?? ?? ??"
+      }
+    },
+    "gameui.bindingHint": {
+      "signature": "void(const void* binding, const void* params)",
+      "exe": "client",
+      "doc": "re/input-and-ui.md",
+      // doActionBindingInputHint: its start (its name is used in a later fragment).
+      "find": {
+        "at": 0,
+        "pattern": "40 55 56 57 48 8D AC 24 ?? ?? ?? ?? 48 81 EC ?? ?? ?? ?? 44 8B 0A 48 8B FA 4C 8B C1 C6 85 ?? ?? ?? ?? 00 48 8D 95"
+      }
+    },
+    "gameui.beginScrollNavigation": {
+      "signature": "void(void* scroll, const void* params)",
+      "exe": "client",
+      "doc": "re/ui-framework.md",
+      "find": {
+        "at": 0,
+        "pattern": "40 53 48 83 EC 20 48 8B D9 48 81 C1 80 01 00 00"
+      }
+    },
+    "gameui.setScrollNavigationInput": {
+      "signature": "void(void* scroll, const void* input)",
+      "exe": "client",
+      "doc": "re/ui-framework.md",
+      "find": {
+        "at": 0,
+        "pattern": "80 B9 90 01 00 00 00 0F 10 02 0F 11 81 80 01 00 00 75 07"
+      }
+    },
+    "gameui.setScrollNavigationExit": {
+      "signature": "void(void* scroll, std::uint32_t* exit)",
+      "exe": "client",
+      "doc": "re/ui-framework.md",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 91 78 01 00 00 C3 CC CC"
+      }
+    },
+    "gameui.beginTextField": {
+      "signature": "void(void* field, void* string, const void* style, std::uint8_t, std::uint8_t)",
+      "exe": "client",
+      "doc": "re/ui-framework.md",
+      "find": {
+        "at": 26,
+        "operand": true,
+        "pattern": "C6 44 24 20 01 48 8D 8D ?? ?? ?? ?? 4C 8B 80 C8 00 00 00 49 81 C0 0C 0A 01 00 E8 ?? ?? ?? ?? 66 0F 6F 05 ?? ?? ?? ?? 48 8D 54 24 30"
+      }
+    },
+    "gameui.beginWindow": {
+      "signature": "void(void* window, const flame::gameui::StringView* name, bool fullscreen, std::int32_t layer, std::int32_t inputMask, std::int32_t flags)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 48 89 74 24 10 57 48 83 EC 50 48 8B 05 ?? ?? ?? ?? 45 8B D9"
+      }
+    },
+    "gameui.blurBehind": {
+      "signature": "void(void* uiSystem, const flame::gameui::Rect* rect, std::uint64_t colorAndIntensity)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 6C 24 10 48 89 74 24 18 57 41 56 41 57 48 81 EC E0 00 00 00 49 8B F8 4C 8B FA"
+      }
+    },
+    "gameui.categoryEntry": {
+      "signature": "bool(const void* params, const void* box)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 55 53 56 57 41 56 48 8D A8 68 FE FF FF 48 81 EC 70 02 00 00 0F 29 70 C8 48 8B F2 44 0F 29 40 A8 0F 57 F6"
+      }
+    },
+    "gameui.descriptionSlot": {
+      "signature": "void(const void* description, std::uint8_t flag, std::uint8_t one)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 48 89 74 24 10 57 48 81 EC E0 00 00 00 48 8B D9 41 0F B6 F8"
+      }
+    },
+    "gameui.doButton": {
+      "signature": "bool(const void* params)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 48 81 EC C8 00 00 00 0F 10 41 78 48 8D 54 24 20"
+      }
+    },
+    "gameui.dragPayloads": {
+      "signature": "void*(void* uiSystem)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B 41 18 C3 CC CC CC CC CC CC CC CC CC CC CC 48 8B 49 18 E9 ?? ?? ?? ?? CC"
+      }
+    },
+    "gameui.dragStarted": {
+      "signature": "bool(const void* box, std::int32_t, std::uintptr_t, std::uintptr_t)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 83 EC 38 48 8B 05 ?? ?? ?? ?? 44 8B D2 48 8B 49 08"
+      }
+    },
+    "gameui.drawHints": {
+      "signature": "void(const void* list, std::uint16_t alignment, const float* padding, bool, bool)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 48 89 58 10 48 89 70 18 55 57 41 56 48 8D A8 A8 FA FF FF 48 81 EC 40 06 00 00"
+      }
+    },
+    "gameui.drawImage": {
+      "signature": "void(void* box, const std::uint32_t* handle, const void* colorAndIntensity)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "4D 8B 00 8B 12 E9 ?? ?? ?? ?? CC"
+      }
+    },
+    "gameui.dropped": {
+      "signature": "bool(void* node, std::uint32_t player, std::int32_t, std::uint32_t)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 48 89 6C 24 18 56 57 41 54 41 56 41 57 48 83 EC 20 4C 8B 71 50 44 8B D2 41 83 E2 0F 44 89 44 24 58"
+      }
+    },
+    "gameui.endBox": {
+      "signature": "void(void* box)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 18 48 89 74 24 20 57 48 83 EC 60 80 79 20 00 48 8B D9"
+      }
+    },
+    "gameui.endDragDrop": {
+      "signature": "void(void* scope)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B 05 ?? ?? ?? ?? 48 8B 91 18 40 00 00 48 89 10 C3"
+      }
+    },
+    "gameui.endScroll": {
+      "signature": "void(void* scroll)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 55 53 56 57 41 56 41 57 48 8D A8 D8 FC FF FF"
+      }
+    },
+    "gameui.endText": {
+      "signature": "void(void* text)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "40 55 56 57 48 8D 6C 24 B9 48 81 EC F0 00 00 00 0F 29 BC 24 B0 00 00 00"
+      }
+    },
+    "gameui.endTextField": {
+      "signature": "void(void* field, std::uint64_t* result, const flame::gameui::TextString* placeholder, std::uint8_t)",
+      "exe": "client",
+      "doc": "re/ui-framework.md",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 10 48 89 6C 24 18 56 57 41 56 48 81 EC F0 00 00 00 80 B9 ?? ?? 00 00 00 41 0F B6 E9 4D 8B F0"
+      }
+    },
+    "gameui.endWindow": {
+      "signature": "void(void* window)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "40 53 48 83 EC 20 48 89 74 24 38 48 8B D9"
+      }
+    },
+    "gameui.fancyBox": {
+      "signature": "void(const void* box, const void* params)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 55 41 56 48 8D A8 B8 FE FF FF"
+      }
+    },
+    "gameui.focus": {
+      "signature": "void(void* box)",
+      "exe": "client",
+      "doc": "re/ui-framework.md",
+      "find": {
+        "at": 11,
+        "operand": true,
+        "pattern": "84 C0 75 ?? 48 8D 8D ?? ?? ?? ?? E8 ?? ?? ?? ?? 0F 10 07 48 8D 8D ?? ?? ?? ?? 49 BF F6 C7 D9 60 08 79 D2 64"
+      }
+    },
+    "gameui.hintTriggered": {
+      "signature": "bool(void* hint, std::uintptr_t, std::uint16_t flags)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "40 53 41 57 48 81 EC C8 02 00 00 41 0F B7 D8"
+      }
+    },
+    "gameui.hudStatusListing": {
+      "signature": "void()",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "40 55 53 48 8D 6C 24 B1 48 81 EC A8 00 00 00 48 8B 05 ?? ?? ?? ?? 48 8B 88 D0 00 00 00"
+      }
+    },
+    "gameui.initNothing": {
+      "signature": "void()",
+      "exe": "client",
+      "find": {
+        "at": 7,
+        "operand": true,
+        "pattern": "33 C9 41 0F B6 47 60 4C 8D 0D ?? ?? ?? ?? 84 C0"
+      }
+    },
+    "gameui.isFocused": {
+      "signature": "bool(const void* box, bool withinChildren)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B 05 ?? ?? ?? ?? 44 0F B6 C2 48 8B 49 08 48 8B 50 10"
+      }
+    },
+    "gameui.itemDetails": {
+      "signature": "void(void* state, bool)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 48 89 7C 24 10 55 48 8D AC 24 00 FF FF FF"
+      }
+    },
+    "gameui.itemDetailsState": {
+      "signature": "void*(void* state, const void* item, const void* hintList)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 48 89 6C 24 10 48 89 74 24 18 57 48 83 EC 40 48 8B 05 ?? ?? ?? ??"
+      }
+    },
+    "gameui.itemSlot": {
+      "signature": "bool(const void* params, void** node)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 55 53 57 41 56 48 8D A8 78 FA FF FF"
+      }
+    },
+    "gameui.addNavigationTarget": {
+      "signature": "void(void* uiSystem, void* node)",
+      "description": "Adds a box's node to the current navigation scope (none: nothing), as the item slot registers its own box (0xBF6C72..0xBF6C8E, 2026-10-17)",
+      "exe": "client",
+      "find": {
+        "at": 28,
+        "operand": true,
+        "pattern": "48 8B 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? 48 85 C0 74 10 48 8B 55 10 48 8B 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? 41 80 3E 00"
+      }
+    },
+    "gameui.localPlayerId": {
+      "signature": "const std::uint32_t*(void* uiSystem, std::uint32_t* out)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B 41 10 8B 48 44 48 8B C2 89 0A"
+      }
+    },
+    "gameui.makeHint": {
+      "signature": "void(void* hint, std::uint8_t action, bool enabled)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "40 53 48 83 EC 40 45 33 D2 66 C7 01 5B 00"
+      }
+    },
+    "gameui.menuTabBar": {
+      "signature": "void(std::uint8_t menu, bool)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 48 89 58 08 55 56 57 41 54 41 55 41 56 41 57 48 8D A8 38 F8 FF FF 48 81 EC 90 08 00 00 0F 29 70 B8"
+      }
+    },
+    "gameui.menuTabList": {
+      "signature": "void*(std::uint8_t menu, void* list, void* state)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 48 89 58 08 48 89 50 10 55 56 57 41 54 41 55 41 56 41 57 48 8D 68 A1 48 81 EC F0 00 00 00"
+      }
+    },
+    "gameui.mouseInput": {
+      "signature": "std::uint32_t*(const void* box, std::uint32_t* result, std::uint8_t button, std::uint8_t buttonMask)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "40 53 48 83 EC 30 48 8B 05 ?? ?? ?? ?? 48 8B DA 48 8B 49 08 48 8B 50 10"
+      }
+    },
+    "gameui.nineSlice": {
+      "signature": "void(void* box, const void* rect, const void* uiNineSliceTexture, const float* borders, std::uint64_t colorAndIntensity)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 48 89 6C 24 10 48 89 74 24 20 57 48 83 EC 30 48 8B F2"
+      }
+    },
+    "gameui.nodeFocused": {
+      "signature": "bool(const void* node, bool withinChildren)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 57 48 83 EC 20 4C 8B 51 50"
+      }
+    },
+    "gameui.now": {
+      "signature": "const std::uint64_t*(void* context, std::uint64_t* out)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B 41 10 48 8B 48 08 48 8B C2 48 89 0A"
+      }
+    },
+    "gameui.persistentState": {
+      "signature": "std::uint32_t*(void* node, std::uint64_t id, std::uint32_t size, void (*init)(), std::uint32_t)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 10 4C 89 4C 24 20 55 56 57 41 54 41 55 41 56 41 57 48 83 EC 40 48 8B 41 50 48 8B EA"
+      }
+    },
+    "gameui.playSound": {
+      "signature": "void(void* context, const void* soundReference)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 48 89 78 10 4C 89 70 18 4C 89 78 20"
+      }
+    },
+    "gameui.popFontSize": {
+      "signature": "void()",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B 05 ?? ?? ?? ?? 48 FF 48 28 C3 CC"
+      }
+    },
+    "gameui.popOpacity": {
+      "signature": "void(void* scope)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B 0D ?? ?? ?? ?? 48 8B 49 18 E9 ?? ?? ?? ?? 40 53"
+      }
+    },
+    "gameui.pushFontSize": {
+      "signature": "void(void* scope, float size)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 57 48 83 EC 30 48 8B 1D ?? ?? ?? ??"
+      }
+    },
+    "gameui.pushOpacity": {
+      "signature": "void(void* scope, float opacity)",
+      "exe": "client",
+      "find": {
+        "at": 7,
+        "operand": true,
+        "pattern": "0F 28 CF 48 8D 4D 67 E8 ?? ?? ?? ?? 33 D2"
+      }
+    },
+    "gameui.queueCraft": {
+      "signature": "void(void* uiSystem, std::uint32_t recipe, std::uint32_t station, std::uint16_t amount, const void* selections)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 10 48 89 6C 24 18 56 57 41 56 48 83 EC 20 48 8B 81 D0 00 00 00 41 8B D8 41 0F B7 E9 8B FA 4C 8B B0 C0 3C 03 00 4D 8D 46 18 41 8B 46 10 49 3B 00 0F 84 ?? ?? ?? ?? 41 8B 56 40"
+      }
+    },
+    "gameui.registerDragSource": {
+      "signature": "void(void* uiSystem, void* node)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B 09 48 85 C9 0F 85 ?? ?? ?? ?? C3 CC CC CC 48 83 EC 58"
+      }
+    },
+    "gameui.registerDropTarget": {
+      "signature": "void(void* uiSystem, void* node)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B 09 48 85 C9 0F 85 ?? ?? ?? ?? C3 CC CC CC 40 53"
+      }
+    },
+    "gameui.remapSlot": {
+      "signature": "bool(void* row, std::uint32_t column, std::uint64_t flag, void* dirty)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "44 88 44 24 18 89 54 24 10 48 89 4C 24 08 55"
+      }
+    },
+    "gameui.resolveImage": {
+      "signature": "std::uint32_t*(void* context, std::uint32_t* handle, const void* uiTexture)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 48 89 74 24 10 57 48 83 EC 60 41 0F 10 10 33 C0 C7 44 24 30 97 69 E8 F9 48 89 44 24 34 48 8B D9 49 8B 48 08 48 8B FA 89 44 24 3C 66 48 0F 7E D0 48 0B C8 0F 10 44 24 30 0F 11 54 24 40 0F 11 44 24 50 75 06 48 83 C3 10 EB 50 48 8B 43 10 48 8D 54 24 40 48 83 C3 10 45 33 C0"
+      }
+    },
+    "gameui.rowFiller": {
+      "signature": "bool(std::uint64_t count, std::uint64_t columns, float size, void* focusTarget, float opacity)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 48 89 58 18 55 56 57 41 56 41 57 48 8D 68 B1"
+      }
+    },
+    "gameui.scrollToRect": {
+      "signature": "void(void* scroll, const flame::gameui::Rect* rect, bool)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 83 EC 38 0F 10 02 0F 11 81 68 01 00 00 45 84 C0"
+      }
+    },
+    "gameui.scrollbarParams": {
+      "signature": "void(void* params)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "C7 44 24 08 FF FF FF FF 0F 57 C0 C7 44 24 0C 00 00 80 3F 0F 57 C9"
+      }
+    },
+    "gameui.scrollingParams": {
+      "signature": "void(void* params)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 10 55 48 8D 6C 24 A9 48 81 EC E0 00 00 00 48 8B D9 E8 ?? ?? ?? ??"
+      }
+    },
+    "gameui.sectionHeader": {
+      "signature": "void(const void* params)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 55 53 56 48 8D A8 08 FD FF FF 48 81 EC E0 03 00 00"
+      }
+    },
+    "gameui.separator": {
+      "signature": "void(const void* params)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 10 48 89 7C 24 18 55 48 8B EC 48 81 EC 80 00 00 00 48 8B F9 0F 29 74 24 70 48 8D 4D C0"
+      }
+    },
+    "gameui.setBackground": {
+      "signature": "void(void* box, const void* colorAndOpacity)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 57 48 83 EC 60 48 8B 1A"
+      }
+    },
+    "gameui.setDragPayload": {
+      "signature": "void*(void* payloads, std::uint32_t size, std::uint32_t player)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 08 57 48 83 EC 30 4C 8B 09 33 C0 41 8B C8"
+      }
+    },
+    "gameui.setHeight": {
+      "signature": "void(void* node, float height)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "0F 57 C0 C7 81 94 00 00 00 00 00 00 00 F3 0F 5F C8 F3 0F 11 49 7C"
+      }
+    },
+    "gameui.setLayout": {
+      "signature": "void(void* node, const std::uint16_t* layout)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "0F B7 02 66 89 41 6E C3 CC"
+      }
+    },
+    "gameui.setMargin": {
+      "signature": "void(void* node, const float* leftTopRightBottom)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "0F 10 02 0F 11 81 98 00 00 00 C3 CC"
+      }
+    },
+    "gameui.setOffset": {
+      "signature": "void(void* node, flame::gameui::Vec2 offset)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 51 70 C3 CC CC CC CC CC CC CC CC CC CC CC 0F 10 02 0F 11 81 A8 00 00 00 C3"
+      }
+    },
+    "gameui.setPadding": {
+      "signature": "void(void* node, const float* leftTopRightBottom)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "0F 10 02 0F 11 81 A8 00 00 00 C3 CC"
+      }
+    },
+    "gameui.setSelfAlignment": {
+      "signature": "void(void* node, const std::uint16_t* alignment)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "0F B7 02 66 89 41 6C C3 CC"
+      }
+    },
+    "gameui.setSize": {
+      "signature": "void(void* node, flame::gameui::Vec2 size)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 54 24 08 0F 57 C0 F3 0F 10 54 24 08 33 C0"
+      }
+    },
+    "gameui.setSpacing": {
+      "signature": "void(void* node, const flame::gameui::Vec2* spacing, std::uintptr_t)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "C7 81 B8 00 00 00 02 00 00 00 44 0F B6 89 BC 00 00 00 41 0F B6 C1 41 80 C9 02"
+      }
+    },
+    "gameui.setStretch": {
+      "signature": "void(void* node, flame::gameui::Vec2 stretch)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 91 90 00 00 00 C3 CC CC CC CC CC CC CC CC 88 51 6D C3"
+      }
+    },
+    "gameui.setWidth": {
+      "signature": "void(void* node, float width)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "0F 57 C0 C7 81 90 00 00 00 00 00 00 00 F3 0F 5F C8 F3 0F 11 49 78"
+      }
+    },
+    "gameui.settingBand": {
+      "signature": "void(const void* params)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "40 53 48 81 EC A0 00 00 00 48 8B D9 48 8B 49 08"
+      }
+    },
+    "gameui.settingDescription": {
+      "signature": "void(const flame::gameui::TextString* text, std::uint64_t colorAndIntensity, bool open, bool)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 48 89 50 10 55 56 41 56 41 57"
+      }
+    },
+    "gameui.settingHeader": {
+      "signature": "void(const flame::gameui::TextString* title, float gap)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 81 EC A8 01 00 00 48 83 79 08 00 0F 29 B4 24 90 01 00 00 0F 28 F1"
+      }
+    },
+    "gameui.settingLabel": {
+      "signature": "void(const flame::gameui::TextString* text, bool, std::uint64_t colorAndIntensity)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 89 5C 24 20 55 56 57 48 8D AC 24 10 FF FF FF 48 81 EC F0 01 00 00"
+      }
+    },
+    "gameui.settingOption": {
+      "signature": "bool(const void* params, std::uint8_t* value)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "operand": true,
+        "pattern": "E8 ?? ?? ?? ?? 0F B6 8D 50 75 00 00 44 0A E8 8B C1"
+      }
+    },
+    "gameui.settingDropdown": {
+      "signature": "bool(void* params, std::uint32_t* value, std::uint8_t flags)",
+      "exe": "client",
+      "doc": "doSettingDropdown() for a u32 value (one of eight copies): the Game tab's Language row (re/ui-framework.md)",
+      "find": {
+        "at": 10,
+        "operand": true,
+        "pattern": "45 33 C0 48 8D 8D 80 00 00 00 E8 ?? ?? ?? ?? 44 0A F8"
+      }
+    },
+    "gameui.settingDropdownAdd": {
+      "signature": "void*(void* params)",
+      "exe": "client",
+      "doc": "appends an entry to a dropdown's parameters: {u32 value, TextString label at +0x8}",
+      "find": {
+        "at": 0,
+        "pattern": "48 83 EC 48 0F B6 81 00 0C 00 00 48 8B D1 3C 40"
+      }
+    },
+    "gameui.settingDropdownInit": {
+      "signature": "void*(void* params, const void* label)",
+      "exe": "client",
+      "doc": "fills a dropdown's parameters as the Game tab does, with the row's label (a TextString)",
+      "find": {
+        "at": 0,
+        "pattern": "48 83 EC 28 0F 10 0D ?? ?? ?? ?? C6 81 00 0C 00 00 00 4C 8D 04 24"
+      }
+    },
+    "gameui.settingSlider": {
+      "signature": "bool(const void* params, float* value, std::uint64_t flags)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "40 55 53 56 57 41 55 41 56 48 8D AC 24 D8 FA FF FF 48 81 EC 28 06 00 00"
+      }
+    },
+    "gameui.settingSlider.grow": {
+      "exe": "client",
+      "find": {
+        "at": 6,
+        "operand": true,
+        "pattern": "0F 10 02 48 8B F1 4C 8D 35 ?? ?? ?? ?? 48 8B FA"
+      }
+    },
+    "gameui.slider": {
+      "signature": "void(void* params, const void* ownerScope)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 55 53 56 57 41 54 41 55 41 56 41 57 48 8D A8 F8 F4 FF FF 48 81 EC C8 0B 00 00 0F 29 70 A8"
+      }
+    },
+    "gameui.setTextFieldText": {
+      "signature": "void(std::uint64_t* result, std::byte* text, const void* utf8)",
+      "exe": "client",
+      "doc": "re/ui-framework.md",
+      "find": {
+        "at": 10,
+        "operand": true,
+        "pattern": "48 8D 53 10 66 0F 7F 44 24 40 E8 ?? ?? ?? ?? 48 89 BB 80 19 00 00"
+      }
+    },
+    "gameui.statusEntry": {
+      "signature": "void(const void* params)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B C4 55 53 56 41 56 48 8D A8 48 FD FF FF"
+      }
+    },
+    "gameui.textFieldState": {
+      "signature": "std::byte*(void* field, std::uint64_t id, std::uint32_t)",
+      "exe": "client",
+      "doc": "re/ui-framework.md",
+      "find": {
+        "at": 35,
+        "operand": true,
+        "pattern": "49 BF F6 C7 D9 60 08 79 D2 64 F2 0F 10 4F 10 41 B8 01 00 00 00 49 8B D7 0F 29 44 24 ?? F2 0F 11 4C 24 ?? E8 ?? ?? ?? ??"
+      }
+    },
+    "gameui.uiContext": {
+      "exe": "client",
+      "find": {
+        "at": 5,
+        "operand": true,
+        "pattern": "57 48 83 EC 30 48 8B 1D ?? ?? ?? ?? 48 8B F9"
+      }
+    },
+    "gameui.uiSystem": {
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "operand": true,
+        "pattern": "48 8B 05 ?? ?? ?? ?? 48 8D 54 24 60 41 B1 01 0F 29 7C 24 60"
+      }
+    },
+    "gameui.windowContext": {
+      "signature": "void*(void* window)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "48 8B 41 10 C3 CC CC CC CC CC CC CC CC CC CC CC 48 8B 41 10 48 83 C0 20 C3"
+      }
+    }
+  }
+}

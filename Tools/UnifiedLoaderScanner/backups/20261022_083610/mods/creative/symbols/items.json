@@ -1,0 +1,49 @@
+{
+  "symbols": {
+    "items.collectStats": {
+      "signature": "void(void* info)",
+      "exe": "client",
+      "doc": "the item details' stat entries (1.0 0xD43800, called by the info builder 0xB0CA80): pushes 0xCB17623B entries with only their hash and value set (re/port-1.0.md)",
+      // 1.0.0.3 added a null check on the item registry (a push r15), 1.0 to 1.0.0.2 after it
+      "find": [
+        { "at": 0, "pattern": "40 53 57 41 57 48 81 EC A0 04 00 00 48 8B 05 ?? ?? ?? ?? 45 33 FF 48 8B D9 48 8B 09 48 8B 90 D0 00 00 00" },
+        { "at": 0, "pattern": "40 53 57 48 81 EC A8 04 00 00 48 8B 05 ?? ?? ?? ?? 48 8B D9 48 8B 09 48 8B 90 D0 00 00 00" }
+      ]
+    },
+    "items.levelAttribute": {
+      "find": {
+        "at": 6,
+        "operand": true,
+        "pattern": "8B 0B 89 4C 84 58 8B 05 ?? ?? ?? ?? 89 4C 84 58"
+      }
+    },
+    "items.lookup": {
+      "signature": "const void*(std::uint32_t itemId, const void* registry)",
+      "find": {
+        "at": 0,
+        "pattern": "89 4C 24 08 48 83 EC 28 85 C9 74 1B"
+      },
+      "site": {
+        "registry": {
+          "register": "rdx",
+          "type": "pointer",
+          "doc": "the item registry looked in"
+        }
+      }
+    },
+    "items.maxLevelAttribute": {
+      "find": {
+        "at": 6,
+        "operand": true,
+        "pattern": "44 38 63 04 74 37 8B 05 ?? ?? ?? ?? 8B 0B"
+      }
+    },
+    "items.weaponDamage": {
+      "signature": "std::uint32_t(float scale, float factor, std::uint32_t level, const void* balancing)",
+      "find": {
+        "at": 0,
+        "pattern": "49 8B 41 20 0F 28 D9 0F 28 E0 48 85 C0"
+      }
+    }
+  }
+}

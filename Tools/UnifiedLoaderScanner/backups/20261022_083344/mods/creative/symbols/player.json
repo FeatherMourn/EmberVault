@@ -1,0 +1,27 @@
+{
+  "offsets": {
+    "player.modeState": {
+      "value": "0x1F0"
+    }
+  },
+  "symbols": {
+    "player.isMenuMode": {
+      "signature": "bool(std::uint8_t mode)",
+      "exe": "client",
+      // Three twins share the code (0x1202760, ...870, ...980 in 1.0); the mode table that follows tells them apart, so a
+      // change to which modes are menus fails here instead of finding a twin (1.0.0.2 moved the table, 2026-10-17).
+      "find": {
+        "at": 0,
+        "pattern": "80 F9 35 77 21 0F B6 C1 48 8D 15 ?? ?? ?? ?? 0F B6 84 02 ?? ?? ?? ?? 8B 8C 82 ?? ?? ?? ?? 48 03 CA FF E1 B0 01 C3 32 C0 C3 0F 1F 00 ?? ?? ?? ?? ?? ?? ?? ?? 00 00 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 00 01 01 01 01 01 01 01 00 01 00 00 00 01 01 01 00 01 01 01 01 01 01 01 01 01 01 00 01 01 00 01 01"
+      }
+    },
+    "player.setMode": {
+      "signature": "void(void* modeState, std::uint8_t mode)",
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "pattern": "44 0F B6 91 D8 1C 00 00 4C 8B C1 44 0F B6 CA 45 3A CA"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "offsets": {
+    "client.balancing": {
+      "value": "0x4667D8"
+    },
+    "client.items": {
+      "value": "0x4667B8"
+    },
+    "client.knowledge": {
+      "value": "0x466828"
+    },
+    "client.recipes": {
+      "value": "0x4667C0"
+    },
+    "client.session": {
+      "value": "0x35280"
+    }
+  }
+}

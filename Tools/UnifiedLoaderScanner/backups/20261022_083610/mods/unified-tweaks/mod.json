@@ -1,0 +1,16 @@
+{
+  "id": "unifiedemltweaks",
+  "name": "Unified EML Tweaks",
+  "description": "Asset-patching mod that adjusts levels, combat, crafting, loot, fog, building rules, and more. Settings are controlled from the Modloader. Cleaned UI-only settings.",
+  "version": "1.4.0",
+  "authors": [
+    "Canarious"
+  ],
+  "license": null,
+  "icon": null,
+  "dependencies": [],
+  "capabilities": [
+    "patch",
+    "runtime"
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "RelativePath": "dinput8.dll",
+    "Status": "Backed up",
+    "Source": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\dinput8.dll",
+    "BackupPath": "I:\\My Drive\\Enshrouded Mods\\EmberVault_Research\\Embervault_Researcher\\1.0\\tools\\UnifiedLoaderScanner\\backups\\20261022_083344\\dinput8.dll"
+  },
+  {
+    "RelativePath": "winmm.dll",
+    "Status": "Backed up",
+    "Source": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\winmm.dll",
+    "BackupPath": "I:\\My Drive\\Enshrouded Mods\\EmberVault_Research\\Embervault_Researcher\\1.0\\tools\\UnifiedLoaderScanner\\backups\\20261022_083344\\winmm.dll"
+  },
+  {
+    "RelativePath": "dbghelp.dll",
+    "Status": "Backed up",
+    "Source": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\dbghelp.dll",
+    "BackupPath": "I:\\My Drive\\Enshrouded Mods\\EmberVault_Research\\Embervault_Researcher\\1.0\\tools\\UnifiedLoaderScanner\\backups\\20261022_083344\\dbghelp.dll"
+  },
+  {
+    "RelativePath": "chainloader.ini",
+    "Status": "Backed up",
+    "Source": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\chainloader.ini",
+    "BackupPath": "I:\\My Drive\\Enshrouded Mods\\EmberVault_Research\\Embervault_Researcher\\1.0\\tools\\UnifiedLoaderScanner\\backups\\20261022_083344\\chainloader.ini"
+  },
+  {
+    "RelativePath": "creative",
+    "Status": "Backed up",
+    "Source": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\creative",
+    "BackupPath": "I:\\My Drive\\Enshrouded Mods\\EmberVault_Research\\Embervault_Researcher\\1.0\\tools\\UnifiedLoaderScanner\\backups\\20261022_083344\\creative"
+  },
+  {
+    "RelativePath": "mods",
+    "Status": "Backed up",
+    "Source": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\mods",
+    "BackupPath": "I:\\My Drive\\Enshrouded Mods\\EmberVault_Research\\Embervault_Researcher\\1.0\\tools\\UnifiedLoaderScanner\\backups\\20261022_083344\\mods"
+  },
+  {
+    "RelativePath": "M182_Client",
+    "Status": "Backed up",
+    "Source": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\M182_Client",
+    "BackupPath": "I:\\My Drive\\Enshrouded Mods\\EmberVault_Research\\Embervault_Researcher\\1.0\\tools\\UnifiedLoaderScanner\\backups\\20261022_083344\\M182_Client"
+  },
+  {
+    "RelativePath": "shroudforge-original",
+    "Status": "Backed up",
+    "Source": "H:\\SteamLibrary\\steamapps\\common\\Enshrouded\\shroudforge-original",
+    "BackupPath": "I:\\My Drive\\Enshrouded Mods\\EmberVault_Research\\Embervault_Researcher\\1.0\\tools\\UnifiedLoaderScanner\\backups\\20261022_083344\\shroudforge-original"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "offsets": {
+    "itemSpawn.attributeValues": {
+      "value": "0x8",
+      "doc": "the attributes override's values (u32 by attribute index): +0x08 in 1.0's 16-byte buffer (0.9: +0x24)"
+    },
+    "itemSpawn.attributesHash": {
+      "value": "0xE550DA37"
+    },
+    "itemSpawn.gemSlotHash": {
+      "hash": "keen::ecs::WeaponGemSlot",
+      "doc": "a weapon's gem slot, a component its creation adds by the rarity's chance (re/items.md, C16)"
+    },
+    "itemSpawn.gemSlotSize": {
+      "size": "keen::ecs::WeaponGemSlot"
+    },
+    "itemSpawn.perksHash": {
+      "value": "0xE288D50C"
+    }
+  }
+}

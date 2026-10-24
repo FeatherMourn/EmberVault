@@ -1,0 +1,8 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/extended.mod.schema.json",
+  "schemaVersion": 1,
+  "enabled": true,
+  "targets": ["client"],
+  "launcher": "SF",
+  "changelog": ["Probe exact 1.0 character customization and scale schemas read-only."]
+}

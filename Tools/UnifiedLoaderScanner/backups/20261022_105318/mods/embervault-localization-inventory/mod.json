@@ -1,0 +1,10 @@
+{
+  "id": "embervault-localization-inventory",
+  "name": "EmberVault Localization Inventory",
+  "version": "1.0.0",
+  "description": "Read-only inventory of localization resources, languages, and tag references exposed by EML.",
+  "authors": ["EmberVault"],
+  "license": null,
+  "dependencies": [],
+  "capabilities": ["export"]
+}

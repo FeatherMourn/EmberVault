@@ -1,0 +1,11 @@
+{
+  "$schema": "https://bonsaibauer.github.io/shroudforge/schemas/manifest.schema.json",
+  "id": "embervault_appearance_write_probe_sf",
+  "name": "EmberVault appearance write probe",
+  "version": "1.0.0",
+  "description": "Private-world guarded no-op write/readback test for a character preset hair ID.",
+  "authors": ["EmberVault"],
+  "license": "MIT",
+  "dependencies": [],
+  "capabilities": ["runtime"]
+}

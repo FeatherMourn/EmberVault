@@ -1,0 +1,35 @@
+{
+  "offsets": {
+    // An ECS context (what entities.update gets): [ctx] is its world, the byte at +0x08 its kind (0 server, 1 and 2
+    // the client's two).
+    "entities.kind": { "value": "0x8", "doc": "re/entities.md#an-entitys-template-name-the-games-own-way" },
+    // The context's entity map (the lookup's first argument), how many slots it has, and the slots: an entity's
+    // record pointer at slots + index * 8 (add-component, 0x9547A3..0x9547D0 in 1.0.0.2).
+    "entities.map": { "value": "0x148", "doc": "re/entities.md#an-entitys-template-name-the-games-own-way" },
+    "entities.count": { "value": "0x158", "doc": "re/entities.md#an-entitys-template-name-the-games-own-way" },
+    "entities.slots": { "value": "0x188", "doc": "re/entities.md#an-entitys-template-name-the-games-own-way" },
+    // An entity record's template, and the template's name: a string view {char* data, u64 length}.
+    "entities.template": { "value": "0x28", "doc": "re/entities.md#an-entitys-template-name-the-games-own-way" },
+    "entities.templateName": { "value": "0x10", "doc": "re/entities.md#an-entitys-template-name-the-games-own-way" }
+  },
+  "symbols": {
+    // An ECS context's slot index for an entity id (a hash map); valid while below [ctx + entities.count].
+    "entities.index": {
+      "signature": "std::uint64_t(const void* map, const std::uint32_t* entity)",
+      "find": [
+        // add-component: lea map; call index; cmp rax, [ctx + count]
+        { "pattern": "48 81 C1 48 01 00 00 E8 ?? ?? ?? ?? 48 3B 86 58 01 00 00", "at": 7, "operand": true },
+        { "pattern": "48 89 5C 24 08 48 89 7C 24 10 83 79 54 00 4C 8B C9 4C 8B 59 10", "at": 0 }
+      ],
+      "doc": "re/entities.md#an-entitys-template-name-the-games-own-way"
+    },
+    // An ECS context's per-tick update: the server's world where it runs here, and the client's two, each tick.
+    "entities.update": {
+      "find": { "pattern": "40 55 53 56 41 55 48 8D AC 24 F8 FF FD FF B8 08 01 02 00", "at": 0 },
+      "doc": "re/entities.md#the-ecs-contexts-2026-10-19",
+      "site": {
+        "context": { "register": "rcx", "type": "pointer", "doc": "the ECS context (the update's first instruction)" }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "offsets": {
+    "game.client": {
+      "value": "0x258"
+    }
+  },
+  "symbols": {
+    "game.instance": {
+      "exe": "client",
+      "find": {
+        "at": 0,
+        "operand": true,
+        "pattern": "48 8B 05 ?? ?? ?? ?? 48 8D 0D ?? ?? ?? ?? 33 D2 FF 10"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "ShroudForge preview",
+  "rootLoader": "dinput8.dll",
+  "forwardTo": "shroudforge-original\\dinput8.dll",
+  "nativePlugins": [
+    "creative\\creative.dll",
+    "mods\\XHL-Area-Harvest\\XHL-Area-Harvest.dll",
+    "mods\\XHL-Enemy-Difficulty-Limits\\XHL-Enemy-Difficulty-Limits.dll",
+    "M182_Client\\M182_Panel.dll"
+  ],
+  "regularMods": [
+    "mods\\aldrich-more-colors",
+    "mods\\unified-tweaks"
+  ],
+  "blockedLoaders": [
+    "StatSliders",
+    "Shroudtopia",
+    "ShroudHud Standalone"
+  ]
+}

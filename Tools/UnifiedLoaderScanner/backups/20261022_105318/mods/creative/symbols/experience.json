@@ -1,0 +1,17 @@
+{
+  "symbols": {
+    "experience.levelRead": {
+      "find": {
+        "at": 6,
+        "pattern": "45 32 E4 8B 04 91 89 85 38 01 00 00 EB 0A"
+      },
+      "site": {
+        "level": {
+          "doc": "the player's level, just read",
+          "register": "rax",
+          "type": "u32"
+        }
+      }
+    }
+  }
+}
